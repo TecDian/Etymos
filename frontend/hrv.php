@@ -5,70 +5,70 @@
 // -------------------------------------------------------------------------------------------------
 
 // Header
-// $loc_etymos_woerterbuch = 'Etymos-Wörterbuch - multilingual und multidirektional';
+$loc_etymos_woerterbuch = 'Etymos Rječnik - višejezični i višesmjerni';
 // $loc_description = 'Das Etymos-Wörterbuch liefert Übersetzungen zwischen 36 Sprachen in jeder beliebigen Richtung mit umfangreichen Informationen zu Semantik, Grammatik und Phonetik.';
 // $loc_keywords = 'Sprache, Übersetzung, Wörterbuch, Grammatik, Flexion, Deklination, Konjugation, Phonetik, Aussprache';
 
 // Wörterbuchsprachen in spezifischer Reihenfolge
-// $dictlanguage = array('sqi', 'ara', 'bel', 'bos', 'bul', 'dan', 'deu', 'eng', 'est', 'fin', 'fra', 'ell', 'gle', 'isl', 'ita', 'cat', 'hrv', 'lav', 'lit', 'ltz', 'mkd', 'nld', 'nor', 'pol', 'por', 'ron', 'rus', 'swe', 'srp', 'slk', 'slv', 'spa', 'ces', 'tur', 'ukr', 'hun');
+$dictlanguage = array('sqi', 'ara', 'bel', 'bos', 'bul', 'ces', 'dan', 'eng', 'est', 'fin', 'fra', 'ell', 'hrv', 'gle', 'isl', 'cat', 'lav', 'lit', 'ltz', 'hun', 'mkd', 'deu', 'nld', 'nor', 'pol', 'por', 'ron', 'rus', 'slk', 'slv', 'srp', 'spa', 'swe', 'ita', 'tur', 'ukr');
 
 // Sprachnamen
-/*$language = array(
-    'ara' => 'Arabisch',
-    'bel' => 'Belarussisch',
-    'bos' => 'Bosnisch',
-    'bul' => 'Bulgarisch',
-    'cat' => 'Katalanisch',
-    'ces' => 'Tschechisch',
-    'dan' => 'Dänisch',
-    'deu' => 'Deutsch',
-    'ell' => 'Griechisch',
-    'eng' => 'Englisch',
-    'est' => 'Estnisch',
-    'fin' => 'Finnisch',
-    'fra' => 'Französisch',
-    'gle' => 'Irisch',
-    'hrv' => 'Kroatisch',
-    'hun' => 'Ungarisch',
-    'isl' => 'Isländisch',
-    'ita' => 'Italienisch',
-    'lav' => 'Lettisch',
-    'lit' => 'Litauisch',
-    'ltz' => 'Luxemburgisch',
-    'mkd' => 'Mazedonisch',
-    'nld' => 'Niederländisch',
-    'nor' => 'Norwegisch',
-    'pol' => 'Polnisch',
-    'por' => 'Portugiesisch',
-    'ron' => 'Rumänisch',
-    'rus' => 'Russisch',
-    'slk' => 'Slowakisch',
-    'slv' => 'Slowenisch',
-    'spa' => 'Spanisch',
-    'sqi' => 'Albanisch',
-    'srp' => 'Serbisch',
-    'swe' => 'Schwedisch',
-    'tur' => 'Türkisch',
-    'ukr' => 'Ukrainisch',
+$language = array(
+    'ara' => 'Arapiski',
+    'bel' => 'Bjeloruski',
+    'bos' => 'Bošnjački',
+    'bul' => 'Bugarski',
+    'cat' => 'Katalonski',
+    'ces' => 'Češki',
+    'dan' => 'Danski',
+    'deu' => 'Njemački',
+    'ell' => 'Grčki',
+    'eng' => 'Engleski',
+    'est' => 'Estonski',
+    'fin' => 'Finski',
+    'fra' => 'Francuski',
+    'gle' => 'Irski',
+    'hrv' => 'Hrvatski',
+    'hun' => 'Mađarski',
+    'isl' => 'Islandski',
+    'ita' => 'Talijanski',
+    'lav' => 'Letonski',
+    'lit' => 'Litavski',
+    'ltz' => 'Luksemburški',
+    'mkd' => 'Makedonski',
+    'nld' => 'Nizozemski',
+    'nor' => 'Norveški',
+    'pol' => 'Poljski',
+    'por' => 'Portugalski',
+    'ron' => 'Rumunjski',
+    'rus' => 'Ruski',
+    'slk' => 'Slovački',
+    'slv' => 'Slovenski',
+    'spa' => 'Španjolski',
+    'sqi' => 'Albanski',
+    'srp' => 'Srpski',
+    'swe' => 'Švedski',
+    'tur' => 'Turski',
+    'ukr' => 'Ukrajinski',
 
-    'fas' => 'Persisch',
-    'fry' => 'Friesisch',
-    'goh' => 'Althochdeutsch',
-    'hye' => 'Armenisch',
-    'lat' => 'Lateinisch',
-    'pie' => 'Urindoeuropäisch',
-    'pgm' => 'Urgermanisch'
-);*/
+    'fas' => 'Persijski',
+    'fry' => 'Frizijski',
+    'goh' => 'Starovisokonjemački',
+    'hye' => 'Jermenski',
+    'lat' => 'Latinski',
+    'pie' => 'Praindoeuropski',
+    'pgm' => 'Pragermanski'
+);
 
 // Navigationsbox
-// $loc_portal = 'Portal';
-// $loc_suche = 'Suche';
-// $loc_downloads = 'Downloads';
-// $loc_fragen = 'Fragen';
-// $loc_team = 'Team';
+$loc_portal = 'Portal';
+$loc_suche = 'Traženje';
+$loc_downloads = 'Skidanja';
+$loc_fragen = 'Pitanja';
+$loc_team = 'Tim';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
+$loc_impressum = 'Otisak';
 // $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
 // $loc_webseite = 'Webseite';
 // $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';

@@ -91,7 +91,7 @@ $loc_titel = 'Этымос-Словарь';
 // $loc_waehlen = 'Quell- und Zielsprache wählen';
 // $loc_aufschlagen = 'Wörterbuch aufschlagen';
 
-// $loc_information = 'Information';
+$loc_information = 'Информация';
 // $loc_info_pre = 'Wir sind nicht die Größten und nicht die Besten. Wir machen auch Fehler, denn nur wer nichts macht, macht keine Fehler. (Also hier schon mal die in unserer Zeit leider notwendige Warnung: <span class="level4">Keine Garantie für die Richtigkeit der Einträge und die Funktionalität der Seite, keine Haftung für Folgen aus der Nutzung der Seite und der bereitgestellten Informationen!</span>) Unser Projekt entsteht in Freizeitarbeit, seht es uns also bitte nach, wenn nicht alles sofort perfekt ist. Aber was auch immer das Problem zu sein scheint: Wir arbeiten daran, Tag und Nacht, ohne Pause, ohne Schlaf, ohne Rücksicht auf unsere Gesundheit, unsere Familien, unsere Freunde. Zumindest manchmal, wie es die Zeit eben erlaubt.';
 // $loc_info_1 = '<span class="ori">36 Sprachen</span>, mehr in Vorbereitung';
 // $loc_info_2 = 'in <span class="state">beliebiger Paarung</span> nutzbar, dank linguistisch basierter Semem-Katalogisierung und fortgeschrittener Suchtechnologie';

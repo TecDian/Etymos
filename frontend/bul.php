@@ -5,7 +5,7 @@
 // -------------------------------------------------------------------------------------------------
 
 // Header
-// $loc_etymos_woerterbuch = 'Etymos-Wörterbuch - multilingual und multidirektional';
+// $loc_etymos_woerterbuch = 'Етимос-Речник - multilingual und multidirektional';
 // $loc_description = 'Das Etymos-Wörterbuch liefert Übersetzungen zwischen 36 Sprachen in jeder beliebigen Richtung mit umfangreichen Informationen zu Semantik, Grammatik und Phonetik.';
 // $loc_keywords = 'Sprache, Übersetzung, Wörterbuch, Grammatik, Flexion, Deklination, Konjugation, Phonetik, Aussprache';
 
@@ -61,14 +61,14 @@
 );*/
 
 // Navigationsbox
-// $loc_portal = 'Portal';
-// $loc_suche = 'Suche';
-// $loc_downloads = 'Downloads';
-// $loc_fragen = 'Fragen';
-// $loc_team = 'Team';
+$loc_portal = 'Портал';
+$loc_suche = 'Тьрсене';
+$loc_downloads = 'Изтегляния';
+$loc_fragen = 'Въпроси';
+$loc_team = 'Тийм';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
+$loc_impressum = 'Издателско каре';
 // $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
 // $loc_webseite = 'Webseite';
 // $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
@@ -83,7 +83,7 @@
 // $loc_loeschen = 'Löschen';
 
 // Portalseite
-// $loc_titel = 'Etymos-Wörterbuch';
+$loc_titel = 'Етимос-Речник';
 // $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert noch nicht. Also eigentlich fast alles, aber … ###';
 // $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
 // $loc_news = '29. Juni 2019</span> <span class="code">neu:</span> Belarussisch wurde auf 245 Einträge erweitert. Zahlreiche Einträge wurden bearbeitet.';
@@ -105,8 +105,8 @@
 // $loc_achtung2 = 'Achtung! Diese Webseite enthält Links zu externen Seiten, namentlich zu Amazon. Etymos ist für den Inhalt dieser Seiten nicht verantwortlich und stellt die Links nur zu Informationszwecken zur Verfügung. Obwohl es sich um handverlesene Ratschläge handelt, stellen diese Links rechtlich Werbung dar - und ja, wir bekommen eine kleine Provision für Verkäufe über Amazon.';
 
 // Suchseite
-// $loc_etymos = 'Etymos';
-// $loc_woerterbuch = 'Wörterbuch';
+$loc_etymos = 'Етимос';
+$loc_woerterbuch = 'Речник';
 // Ergebnisfenster
 // $loc_warning1 = 'Der Suchbegriff wurde nicht gefunden.';
 // $loc_warning2 = 'Der Suchbegriff wurde nicht direkt gefunden. Der folgende Begriff kommt dem am nächsten.';

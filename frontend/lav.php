@@ -61,14 +61,14 @@
 );*/
 
 // Navigationsbox
-// $loc_portal = 'Portal';
-// $loc_suche = 'Suche';
-// $loc_downloads = 'Downloads';
-// $loc_fragen = 'Fragen';
-// $loc_team = 'Team';
+$loc_portal = 'Portāls';
+$loc_suche = 'Meklēšana';
+$loc_downloads = 'Lejupielādes';
+$loc_fragen = 'Jautājumi';
+$loc_team = 'Kolektīvs';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
+$loc_impressum = 'Izdevniecības ziņas';
 // $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
 // $loc_webseite = 'Webseite';
 // $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';

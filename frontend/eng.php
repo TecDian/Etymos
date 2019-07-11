@@ -86,7 +86,7 @@ $loc_loeschen = 'Reset';
 $loc_titel = 'Etymos-Dictionary';
 $loc_willkommen = '### Welcome to Etymos. Most of it doesn’t work yet. Well, nearly everything, but … ###';
 $loc_wir_arbeiten = 'We work on it and we have a lot more in mind yet!';
-$loc_news = '29 June 2019</span> <span class="code">new:</span> Belarusian was extended to 245 entries. A great number of entries was revised.';
+$loc_news = '11 July 2019</span> <span class="code">new:</span> A great number of entries was revised and added. Revision stage A 50 is complete.';
 
 $loc_waehlen = 'Choose source and target language';
 $loc_aufschlagen = 'Open dictionary';

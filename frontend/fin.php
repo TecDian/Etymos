@@ -68,7 +68,7 @@ $loc_fragen = 'Kysymykset';
 $loc_team = 'Joukkue';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
+$loc_impressum = 'Tunnuslaatikko';
 // $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
 // $loc_webseite = 'Webseite';
 // $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';

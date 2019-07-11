@@ -86,7 +86,7 @@ $loc_loeschen = 'Löschen';
 $loc_titel = 'Etymos-Wörterbuch';
 $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert noch nicht. Also eigentlich fast alles, aber … ###';
 $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
-$loc_news = '29. Juni 2019</span> <span class="code">neu:</span> Belarussisch wurde auf 245 Einträge erweitert. Zahlreiche Einträge wurden bearbeitet.';
+$loc_news = '11. Juli 2019</span> <span class="code">neu:</span> Zahlreiche Einträge wurden bearbeitet und hinzugefügt. Bearbeitungsstufe A 50 ist abgeschlossen.';
 
 $loc_waehlen = 'Quell- und Zielsprache wählen';
 $loc_aufschlagen = 'Wörterbuch aufschlagen';

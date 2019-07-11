@@ -61,14 +61,14 @@
 );*/
 
 // Navigationsbox
-// $loc_portal = 'Portal';
-// $loc_suche = 'Suche';
-// $loc_downloads = 'Downloads';
-// $loc_fragen = 'Fragen';
-// $loc_team = 'Team';
+$loc_portal = 'Portal';
+$loc_suche = 'Kërkim';
+$loc_downloads = 'Shkarkime';
+$loc_fragen = 'Pyeta';
+$loc_team = 'Skuadre';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
+$loc_impressum = 'Ngulit';
 // $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
 // $loc_webseite = 'Webseite';
 // $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';

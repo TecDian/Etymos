@@ -5,7 +5,7 @@
 // -------------------------------------------------------------------------------------------------
 
 // Header
-// $loc_etymos_woerterbuch = 'Etymos-Wörterbuch - multilingual und multidirektional';
+$loc_etymos_woerterbuch = 'Etymos-Wierderbuch - multilingual an multidirektional';
 // $loc_description = 'Das Etymos-Wörterbuch liefert Übersetzungen zwischen 36 Sprachen in jeder beliebigen Richtung mit umfangreichen Informationen zu Semantik, Grammatik und Phonetik.';
 // $loc_keywords = 'Sprache, Übersetzung, Wörterbuch, Grammatik, Flexion, Deklination, Konjugation, Phonetik, Aussprache';
 
@@ -14,8 +14,8 @@
 
 // Sprachnamen
 /*$language = array(
-    'ara' => 'Arabisch',
-    'bel' => 'Belarussisch',
+    'ara' => 'Arabesch',
+    'bel' => 'Wäissrussesch',
     'bos' => 'Bosnisch',
     'bul' => 'Bulgarisch',
     'cat' => 'Katalanisch',
@@ -61,29 +61,29 @@
 );*/
 
 // Navigationsbox
-// $loc_portal = 'Portal';
-// $loc_suche = 'Suche';
-// $loc_downloads = 'Downloads';
-// $loc_fragen = 'Fragen';
-// $loc_team = 'Team';
+$loc_portal = 'Portal';
+$loc_suche = 'Sich';
+$loc_downloads = 'Downloaden';
+$loc_fragen = 'Froen';
+$loc_team = 'Team';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
-// $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
-// $loc_webseite = 'Webseite';
-// $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
-// $loc_autor = 'verantwortlicher Autor: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
-// $loc_kontakt = 'Kontakt';
-// $loc_anschrift = 'Postanschrift: <span class="ori">Am Eichhornpark 1, 06217 Merseburg, Deutschland, Europäische Union</span>';
-// $loc_telefon = 'Telefon';
-// $loc_telefax = 'Telefax';
-// $loc_nachricht = 'Nachricht';
-// $loc_adresse = 'E-Mail-Adresse';
-// $loc_absenden = 'Absenden';
-// $loc_loeschen = 'Löschen';
+$loc_impressum = 'Impressum';
+$loc_gesetz = 'no dem Telemediengesetz (TMG) an dem Pressgesetz fir de Land Sachsen-Anhalt (Landespressegesetz)';
+$loc_webseite = 'Websäit';
+$loc_eigentuemer = 'Eegentemer von der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
+$loc_autor = 'verantwortleche Auteur: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
+$loc_kontakt = 'Kontakt';
+$loc_anschrift = 'Adress: <span class="ori">Am Eichhornpark 1, 06217 Merseburg, Däitschland, Europäesch Unioun</span>';
+$loc_telefon = 'Telefon';
+$loc_telefax = 'Telefax';
+$loc_nachricht = 'Message';
+$loc_adresse = 'E-Mail-Adress';
+$loc_absenden = 'Fortschécken';
+$loc_loeschen = 'Läschen';
 
 // Portalseite
-// $loc_titel = 'Etymos-Wörterbuch';
+$loc_titel = 'Etymos-Wierderbuch';
 // $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert noch nicht. Also eigentlich fast alles, aber … ###';
 // $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
 // $loc_news = '29. Juni 2019</span> <span class="code">neu:</span> Belarussisch wurde auf 245 Einträge erweitert. Zahlreiche Einträge wurden bearbeitet.';
@@ -105,8 +105,8 @@
 // $loc_achtung2 = 'Achtung! Diese Webseite enthält Links zu externen Seiten, namentlich zu Amazon. Etymos ist für den Inhalt dieser Seiten nicht verantwortlich und stellt die Links nur zu Informationszwecken zur Verfügung. Obwohl es sich um handverlesene Ratschläge handelt, stellen diese Links rechtlich Werbung dar - und ja, wir bekommen eine kleine Provision für Verkäufe über Amazon.';
 
 // Suchseite
-// $loc_etymos = 'Etymos';
-// $loc_woerterbuch = 'Wörterbuch';
+$loc_etymos = 'Etymos';
+$loc_woerterbuch = 'Wierderbuch';
 // Ergebnisfenster
 // $loc_warning1 = 'Der Suchbegriff wurde nicht gefunden.';
 // $loc_warning2 = 'Der Suchbegriff wurde nicht direkt gefunden. Der folgende Begriff kommt dem am nächsten.';

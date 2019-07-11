@@ -48,7 +48,7 @@
     'sqi' => 'Albanisch',
     'srp' => 'Serbisch',
     'swe' => 'Schwedisch',
-    'tur' => 'Türkisch',
+    'tur' => 'Türkçe',
     'ukr' => 'Ukrainisch',
 
     'fas' => 'Persisch',
@@ -61,14 +61,14 @@
 );*/
 
 // Navigationsbox
-// $loc_portal = 'Portal';
-// $loc_suche = 'Suche';
-// $loc_downloads = 'Downloads';
-// $loc_fragen = 'Fragen';
-// $loc_team = 'Team';
+$loc_portal = 'Portalı';
+$loc_suche = 'Arama';
+$loc_downloads = 'İndirmeler';
+$loc_fragen = 'Sorular';
+$loc_team = 'Takım';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
+$loc_impressum = 'Künye';
 // $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
 // $loc_webseite = 'Webseite';
 // $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';

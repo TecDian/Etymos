@@ -68,7 +68,7 @@ $loc_fragen = 'Questions';
 $loc_team = 'Équipe';
 
 // Impressumseite
-// $loc_impressum = 'Impressum';
+$loc_impressum = 'Ours';
 // $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
 // $loc_webseite = 'Webseite';
 // $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
