@@ -1,64 +1,357 @@
 <?php
 // -------------------------------------------------------------------------------------------------
-// Frontend Türkisch
-
+// Seiteninhalt Türkisch
 // -------------------------------------------------------------------------------------------------
 
 // Header
-// $loc_etymos_woerterbuch = 'Etymos-Wörterbuch - multilingual und multidirektional';
-// $loc_description = 'Das Etymos-Wörterbuch liefert Übersetzungen zwischen 36 Sprachen in jeder beliebigen Richtung mit umfangreichen Informationen zu Semantik, Grammatik und Phonetik.';
-// $loc_keywords = 'Sprache, Übersetzung, Wörterbuch, Grammatik, Flexion, Deklination, Konjugation, Phonetik, Aussprache';
+// $loc_etymos_woerterbuch = '';
+// $loc_description = '';
+// $loc_keywords = '';
 
 // Wörterbuchsprachen in spezifischer Reihenfolge
-// $dictlanguage = array('sqi', 'ara', 'bel', 'bos', 'bul', 'dan', 'deu', 'eng', 'est', 'fin', 'fra', 'ell', 'gle', 'isl', 'ita', 'cat', 'hrv', 'lav', 'lit', 'ltz', 'mkd', 'nld', 'nor', 'pol', 'por', 'ron', 'rus', 'swe', 'srp', 'slk', 'slv', 'spa', 'ces', 'tur', 'ukr', 'hun');
+//$dictlanguage fehlt
 
 // Sprachnamen
-/*$language = array(
-    'ara' => 'Arabisch',
-    'bel' => 'Belarussisch',
-    'bos' => 'Bosnisch',
-    'bul' => 'Bulgarisch',
-    'cat' => 'Katalanisch',
-    'ces' => 'Tschechisch',
-    'dan' => 'Dänisch',
-    'deu' => 'Deutsch',
-    'ell' => 'Griechisch',
-    'eng' => 'Englisch',
-    'est' => 'Estnisch',
-    'fin' => 'Finnisch',
-    'fra' => 'Französisch',
-    'gle' => 'Irisch',
-    'hrv' => 'Kroatisch',
-    'hun' => 'Ungarisch',
-    'isl' => 'Isländisch',
-    'ita' => 'Italienisch',
-    'lav' => 'Lettisch',
-    'lit' => 'Litauisch',
-    'ltz' => 'Luxemburgisch',
-    'mkd' => 'Mazedonisch',
-    'nld' => 'Niederländisch',
-    'nor' => 'Norwegisch',
-    'pol' => 'Polnisch',
-    'por' => 'Portugiesisch',
-    'ron' => 'Rumänisch',
-    'rus' => 'Russisch',
-    'slk' => 'Slowakisch',
-    'slv' => 'Slowenisch',
-    'spa' => 'Spanisch',
-    'sqi' => 'Albanisch',
-    'srp' => 'Serbisch',
-    'swe' => 'Schwedisch',
-    'tur' => 'Türkçe',
-    'ukr' => 'Ukrainisch',
+// $language['ara'] = 'Arabisch';
+// $language['bel'] = 'Belarusisch';
+// $language['bos'] = 'Bosnisch';
+// $language['bul'] = 'Bulgarisch';
+// $language['cat'] = 'Katalanisch';
+// $language['ces'] = 'Tschechisch';
+// $language['dan'] = 'Dänisch';
+// $language['deu'] = 'Deutsch';
+// $language['ell'] = 'Griechisch';
+// $language['eng'] = 'Englisch';
+// $language['est'] = 'Estnisch';
+// $language['fin'] = 'Finnisch';
+// $language['fra'] = 'Französisch';
+// $language['gle'] = 'Irisch';
+// $language['hrv'] = 'Kroatisch';
+// $language['hun'] = 'Ungarisch';
+// $language['isl'] = 'Isländisch';
+// $language['ita'] = 'Italienisch';
+// $language['lav'] = 'Lettisch';
+// $language['lit'] = 'Litauisch';
+// $language['ltz'] = 'Luxemburgisch';
+// $language['mkd'] = 'Mazedonisch';
+// $language['nld'] = 'Niederländisch';
+// $language['nor'] = 'Norwegisch';
+// $language['pol'] = 'Polnisch';
+// $language['por'] = 'Portugiesisch';
+// $language['ron'] = 'Rumänisch';
+// $language['rus'] = 'Russisch';
+// $language['slk'] = 'Slowakisch';
+// $language['slv'] = 'Slowenisch';
+// $language['spa'] = 'Spanisch';
+// $language['sqi'] = 'Albanisch';
+// $language['srp'] = 'Serbisch';
+// $language['swe'] = 'Schwedisch';
+// $language['tur'] = 'Türkisch';
+// $language['ukr'] = 'Ukrainisch';
+// $language['fas'] = 'Persisch';
+// $language['fry'] = 'Friesisch';
+// $language['hye'] = 'Armenisch';
+// $language['goh'] = 'Althochdeutsch';
+// $language['lat'] = 'Lateinisch';
+// $language['pie'] = 'Urindoeuropäisch';
+// $language['pgm'] = 'Urgermanisch';
 
-    'fas' => 'Persisch',
-    'fry' => 'Friesisch',
-    'goh' => 'Althochdeutsch',
-    'hye' => 'Armenisch',
-    'lat' => 'Lateinisch',
-    'pie' => 'Urindoeuropäisch',
-    'pgm' => 'Urgermanisch'
-);*/
+// Tooltips für Kategorien
+// $loc_verwendungsbereich = '';
+// $loc_stilebene = '';
+// $loc_fachgebiet = '';
+// $loc_region = '';
+// $tooltip[1] = 'archaisch, altertümlich';
+// $tooltip[2] = 'klassisch, altliterarisch';
+// $tooltip[3] = 'kolloquial, umgangssprachlich';
+// $tooltip[4] = 'dialektal, mundartlich';
+$tooltip[5] = 'ailevi';
+// $tooltip[6] = 'falsial, fälschlich';
+$tooltip[7] = 'mecazi';
+// $tooltip[8] = 'infantil, kindersprachlich, babysprachlich';
+// $tooltip[9] = 'jargonal, milieusprachlich';
+// $tooltip[10] = 'literarisch, literatursprachlich';
+// $tooltip[11] = 'neologistisch, kunstsprachlich';
+// $tooltip[12] = 'obsolet, veraltet';
+// $tooltip[13] = 'obszön, unanständig';
+// $tooltip[14] = 'poetisch, lyrisch';
+// $tooltip[15] = 'raritätisch, ungebräuchlich';
+// $tooltip[16] = 'regional, gebietsweise';
+// $tooltip[17] = 'skribal, schriftsprachlich';
+// $tooltip[18] = 'slang, straßensprachlich';
+// $tooltip[19] = 'gehoben, bildungssprachlich';
+// $tooltip[20] = 'tabuisiert, geächtet';
+// $tooltip[21] = 'vulgär, derb';
+// $tooltip[32] = 'kalmierativ, beschwichtigend, beruhigend';
+// $tooltip[33] = 'kommandierend, befehlend';
+// $tooltip[34] = 'dysphemisch, herabsetzend, verfälschend negativ';
+// $tooltip[35] = 'emphatisch, leidenschaftlich, nachdrücklich';
+// $tooltip[36] = 'euphemisch, beschönigend, verfälschend positiv';
+// $tooltip[37] = 'euphorisch, begeistert';
+// $tooltip[38] = 'exklematorisch, ausrufend';
+// $tooltip[39] = 'formell, förmlich';
+// $tooltip[40] = 'humorvoll, scherzhaft';
+// $tooltip[41] = 'insultiv, beleidigend';
+// $tooltip[42] = 'ironisch, umkehrend';
+// $tooltip[43] = 'meliorativ, aufwertend, lobend';
+// $tooltip[44] = 'negativ, verneinend';
+// $tooltip[45] = 'pejorativ, abwertend, verächtlich';
+// $tooltip[46] = 'positiv, bejahend';
+// $tooltip[47] = 'provokativ, hetzerisch';
+// $tooltip[48] = 'sarkastisch, verhöhnend, verspottend';
+// $tooltip[49] = 'zynisch, verletzend, missachtend';
+// $tooltip[50] = 'inquestiv, fragend';
+// $tooltip[51] = 'surpressiv, überrascht';
+// $tooltip[64] = 'Wissenschaft';
+// $tooltip[65] = 'Pojonik, Philosophie';
+// $tooltip[66] = 'Posonik, Mathematik';
+// $tooltip[67] = 'Fysonik, Physik';
+// $tooltip[68] = 'Vivonik, Biologie';
+// $tooltip[69] = 'Sykonik, Psychologie';
+// $tooltip[70] = 'Komonik, Soziologie';
+// $tooltip[71] = 'Hylonik, Chemie';
+// $tooltip[72] = 'Gejonik, Physiogeografie, Geologie, Meteorologie';
+// $tooltip[73] = 'Kelonik, Astronomie';
+// $tooltip[74] = 'Vironik, Virologie';
+// $tooltip[75] = 'Litonik, Bakteriologie';
+// $tooltip[76] = 'Zojonik, Zoologie';
+// $tooltip[77] = 'Botonik, Botanik';
+// $tooltip[78] = 'Mykonik, Mykologie';
+// $tooltip[79] = 'Domonik, Ökologie';
+// $tooltip[80] = 'Fabonik, Historik, Geschichte, Archäologie';
+// $tooltip[81] = 'Kolonik, Humangeografie';
+// $tooltip[82] = 'Voxonik, Linguistik, Sprachwissenschaft';
+// $tooltip[83] = 'Mosonik, Kulturwissenschaft';
+// $tooltip[128] = 'Technik, Ingenieurwesen';
+// $tooltip[129] = 'Ökonomie, Wirtschaft, Management';
+// $tooltip[130] = 'Bildungswesen, Ausbildung, Erziehung, Pädagogik';
+// $tooltip[131] = 'Finanzen, Banken, Versicherungen, Immobilien';
+// $tooltip[132] = 'Handel, Lagerwirtschaft';
+// $tooltip[133] = 'Transportwesen, Landtransportmittel';
+// $tooltip[134] = 'Marine, Seefahrt, Schifffahrt';
+$tooltip[135] = 'havacılık';
+// $tooltip[136] = 'Astronautik, Raumfahrt';
+// $tooltip[137] = 'Postwesen, Nachrichtenwesen';
+// $tooltip[138] = 'Telekommunikation, Fernsehtechnik, Radiotechnik';
+// $tooltip[139] = 'Informatik, Informationstechnik, Computer, Kybernetik';
+// $tooltip[140] = 'Agronomie, Landwirtschaft, Forstwirtschaft, Gartenbau, Fischwirtschaft, Jagd';
+// $tooltip[141] = 'Bergbau, Rohstoffextraktion';
+// $tooltip[142] = 'Energie-, Wasserversorgung, Abwasser-, Müllentsorgung';
+// $tooltip[143] = 'Chemieindustrie, Metallurgie, Naturstoffverarbeitung';
+// $tooltip[144] = 'Materialwissenschaft, Werkstoffwissenschaft';
+// $tooltip[145] = 'Bauwesen, Architektur (Technik), Stadtplanung';
+// $tooltip[146] = 'Maschinenbau, Gerätebau, Möbel';
+// $tooltip[147] = 'Elektrotechnik, Elektrik, Elektronik';
+$tooltip[148] = 'moda';
+// $tooltip[149] = 'Kosmetik, Körperpflege, Hygiene';
+// $tooltip[150] = 'Typografie, Buchdruck, Zeitungswesen, Layout';
+// $tooltip[151] = 'Fotografie, Lichttechnik';
+// $tooltip[152] = 'Journalistik, Medien';
+// $tooltip[153] = 'Tourismus, Freizeitwirtschaft';
+// $tooltip[176] = 'Medizin, Humanmedizin';
+// $tooltip[177] = 'Veterinärmedizin';
+// $tooltip[178] = 'Anatomie';
+// $tooltip[179] = 'Pharmazie, Pharmazeutik';
+// $tooltip[184] = 'Administration, Verwaltung, Amtssprache';
+// $tooltip[185] = 'Politik, Politologie, Staat, Regierung, Parlament';
+// $tooltip[186] = 'Jura, Recht, Justiz';
+// $tooltip[187] = 'Militär, Polizei, Geheimdienst, Waffen';
+// $tooltip[192] = 'Grafik, Malerei, Zeichnen, Gravur, Fotokunst';
+// $tooltip[193] = 'Skulpturen, Plastiken';
+// $tooltip[194] = 'Architektur, Baukunst, Landgestaltung';
+// $tooltip[195] = 'Objektdesign, Gebrauchsgegenstandgestaltung';
+// $tooltip[196] = 'Kunsthandwerk';
+// $tooltip[197] = 'Gastronomie, Kochkunst';
+// $tooltip[198] = 'Belletristik, Literatur, Schriftstellerei';
+// $tooltip[199] = 'Lyrik, Poesie, Dichtung';
+// $tooltip[200] = 'Theater, Schauspiel';
+// $tooltip[201] = 'Audiokunst, Hörspielkunst';
+// $tooltip[202] = 'Filmkunst, Videokunst';
+// $tooltip[203] = 'Komposition, Musik';
+// $tooltip[204] = 'Choreografie, Tanz';
+// $tooltip[205] = 'Entertainment, Unterhaltung';
+// $tooltip[208] = 'Athletik, Sport';
+// $tooltip[209] = 'Spiele, Gaming, Spielzeug';
+// $tooltip[210] = 'Sammeln, Philatelie, Numismatik';
+// $tooltip[224] = 'Religion, Kirche, Theologie';
+// $tooltip[225] = 'Esoterik, Pseudoreligion';
+// $tooltip[226] = 'Mythologie';
+// $tooltip[227] = 'Heraldik';
+// $tooltip[256] = 'Hochsprache formal, nicht gebräuchlich';
+// $tooltip[257] = 'Nord-';
+// $tooltip[258] = 'Ost-';
+// $tooltip[259] = 'Süd-';
+// $tooltip[260] = 'West-';
+// $tooltip[261] = 'Zentral-';
+// $tooltip[264] = 'Niederlande';
+// $tooltip[265] = 'Flandern (Belgien)';
+// $tooltip[268] = 'Schweden';
+// $tooltip[269] = 'Finnland';
+// $tooltip[272] = 'Portugal';
+// $tooltip[273] = 'Brasilien';
+// $tooltip[276] = 'Rumänien';
+// $tooltip[277] = 'Moldawien';
+// $tooltip[280] = 'Andorra und Valencia';
+// $tooltip[281] = 'Katalonien';
+// $tooltip[320] = 'Deutschland';
+// $tooltip[321] = 'Österreich';
+// $tooltip[322] = 'Schweiz';
+// $tooltip[328] = 'Serbien';
+// $tooltip[329] = 'Kroatien';
+// $tooltip[330] = 'Bosnien';
+// $tooltip[331] = 'Herzegowina';
+// $tooltip[332] = 'Montenegro';
+// $tooltip[333] = 'Dalmatien';
+// $tooltip[384] = 'Ägypten';
+// $tooltip[385] = 'Syrien';
+// $tooltip[416] = 'Großbritannien';
+// $tooltip[417] = 'Amerika';
+// $tooltip[418] = 'Irland';
+// $tooltip[419] = 'Kanada';
+// $tooltip[420] = 'Australien';
+// $tooltip[421] = 'Neuseeland';
+// $tooltip[422] = 'Indien';
+// $tooltip[423] = 'Südafrika';
+// $tooltip[424] = 'England';
+// $tooltip[425] = 'Schottland';
+// $tooltip[448] = 'Frankreich';
+// $tooltip[449] = 'Kanada (Quebec)';
+// $tooltip[480] = 'Spanien';
+// $tooltip[481] = 'Latinika';
+// $tooltip['adj'] = 'Adjektiv, Eigenschaftswort';
+// $tooltip['adv'] = 'Adverb, Umstandswort';
+// $tooltip['art'] = 'Artikel, Begleiter';
+// $tooltip['int'] = 'Interjektion, Empfindungswort';
+// $tooltip['con'] = 'Konjunktion, Bindewort';
+// $tooltip['pro'] = 'Pronomen, Fürwort';
+// $tooltip['s'] = 'Substantiv, Hauptwort';
+// $tooltip['v'] = 'Verb, Tätigkeitswort';
+// $tooltip['cntr'] = 'Kontraktion, Zusammenziehung';
+// $tooltip['abbr'] = 'Abbreviation, Abkürzung';
+// $tooltip['acro'] = 'Akronym, Silbenwort';
+// $tooltip['brax'] = 'Brachonym, Kurzwort';
+// $tooltip['brad'] = 'Bradonym, Langwort';
+// $tooltip['part'] = 'Partikel, Verhältnisbeiwort';
+// $tooltip['prep'] = 'Präposition, Verhältnisvorwort';
+// $tooltip['post'] = 'Postposition, Verhältnisnachwort';
+// $tooltip['circ'] = 'Zirkumposition, Verhältnisumwort';
+// $tooltip['affx'] = 'Affix, Hinzufügung';
+// $tooltip['prfx'] = 'Präfix, vorangestellte Hinzufügung';
+// $tooltip['sufx'] = 'Suffix, nachgestellte Hinzufügung';
+// $tooltip['cifx'] = 'Zirkumfix, vor- und nachgestellte Hinzufügung';
+// $tooltip['infx'] = 'Infix, Einfügung in den Stamm';
+// $tooltip['itfx'] = 'Interfix, Einfügung zwischen Teilwörtern';
+// $tooltip['cnfx'] = 'Konfix, nur als Hinzufügung existierendes Wort';
+// $tooltip['mdfx'] = 'Modifix, Modifikator in einem Kompositum';
+// $tooltip['pos'] = 'Positv, Grundform als Ausdruck der Tatsache';
+// $tooltip['com'] = 'Komparativ, höherer Grad im Vergleich mit einem anderen';
+// $tooltip['ela'] = 'Elativ, sehr hoher Grad im Vergleich mit Durchschnitt';
+// $tooltip['sup'] = 'Superlativ, höchster Grad im Vergleich mit allen anderen';
+// $tooltip['exc'] = 'Exzessiv, überhöhter Grad im Vergleich mit Optimum';
+// $tooltip['ass'] = 'Assoziativ, mit Gelenkartikel';
+// $tooltip['def'] = 'definit, bestimmt';
+// $tooltip['dem'] = 'demonstativ, hinweisend';
+// $tooltip['det'] = 'determinativ, bestimmend';
+// $tooltip['ind'] = 'indefinit, unbestimmt';
+// $tooltip['int'] = 'interrogativ, fragend';
+// $tooltip['per'] = 'personal, personanzeigend';
+// $tooltip['pos'] = 'possessiv, besitzanzeigend';
+// $tooltip['rec'] = 'reziprok, wechselseitig';
+// $tooltip['ref'] = 'reflexiv, rückbezüglich';
+// $tooltip['rel'] = 'relativ, bezüglich';
+// $tooltip['si'] = 'Substantiv Infinitiv, Tätigkeitshauptwort';
+// $tooltip['sv'] = 'Substantiv Verbalnomen Gerundium, Ausführungshauptwort';
+// $tooltip['ss'] = 'Substantiv Singularetantum, Einzahlwort';
+// $tooltip['sp'] = 'Substantiv Pluraletantum, Mehrzahlwort';
+// $tooltip['sn'] = 'Substantiv Proprialnomen, Eigenname';
+// $tooltip['ssn'] = 'Substantiv Proprialnomen als Singularetantum, Eigenname als Einzahlwort';
+// $tooltip['ssp'] = 'Substantiv Proprialnomen als Pluraletantum, Eigenname als Mehrzahlwort';
+// $tooltip['m'] = 'maskulinum, männlich';
+// $tooltip['f'] = 'femininum, weiblich';
+// $tooltip['n'] = 'neutrum, sächlich';
+// $tooltip['a'] = 'animativum, belebt';
+// $tooltip['i'] = 'inanimativum, unbelebt';
+// $tooltip['u'] = 'utrum, doppelgeschlechtlich';
+// $tooltip['va'] = 'auxiliares Verb, Hilfsverb';
+// $tooltip['vi'] = 'intransitives Verb, ohne Objekte und zwingende Erweiterungen';
+// $tooltip['vis'] = 'intransitives Verb, mit zwingender Anfügung eines stativen Objekts';
+// $tooltip['via'] = 'intransitives Verb, mit zwingender Anfügung eines Adverbials';
+// $tooltip['vip'] = 'intransitives Verb, mit zwingender Anfügung eines präpositiven Objekts';
+// $tooltip['vt'] = 'transitives Verb, mit direktem Objekt';
+// $tooltip['vts'] = 'transitives Verb, mit direktem Objekt und zwingender Anfügung eines stativen Objekts';
+// $tooltip['vm'] = 'ministratives Verb, mit indirektem Objekt';
+// $tooltip['vd'] = 'ditransitives Verb, mit direktem und indirektem Objekt';
+// $tooltip['vr'] = 'reflexives Verb, mit direktem Objekt identisch zum Subjekt';
+// $tooltip['vu'] = 'uniteratives Verb, mit indirektem Objekt identisch zum Subjekt';
+// $tooltip['vc'] = 'konsekratives Verb, mit direktem Objekt identisch zum Subjekt und mit indirektem Objekt';
+// $tooltip['vo'] = 'okkupatives Verb, mit direktem Objekt und mit indirektem Objekt identisch zum Subjekt';
+// $tooltip['num'] = 'Numeral, Zahlwort';
+// $tooltip['card'] = 'kardinal, eine Grundzahl angebend (eins)';
+// $tooltip['coll'] = 'kollektiv, eine Sammelmenge angebend (Dutzend)';
+// $tooltip['diff'] = 'diffus, eine unbestimmte Menge angebend (viel)';
+// $tooltip['dist'] = 'distinktiv, eine Unterscheidung angebend (zweierlei)';
+// $tooltip['frac'] = 'fraktional, einen Bruchteil angebend (halb)';
+// $tooltip['iter'] = 'iterativ, eine Wiederholung angebend (einmal)';
+// $tooltip['mult'] = 'multiplikativ, eine Vervielfältigung angebend (einfach)';
+// $tooltip['ordi'] = 'ordinal, die Ordnung angebend (erstens)';
+// $tooltip['soci'] = 'soziativ, die Gesellschaft angebend (zu zweit)';
+// $tooltip['succ'] = 'sukzessiv, die Abfolge angebend (erstmals)';
+// $tooltip['attr'] = 'attributiv, als Teil des Attributs';
+// $tooltip['pred'] = 'prädikativ, als Teil des Prädikats';
+// $tooltip['adve'] = 'adversativ, entgegensetzend (aber)';
+// $tooltip['caus'] = 'kausal, Ursache oder Grund angebend (wegen)';
+// $tooltip['conc'] = 'konzessiv, einräumend (obwohl)';
+// $tooltip['cond'] = 'konditional, Bedingung angebend (falls)';
+// $tooltip['cons'] = 'konsekutiv, Reihenfolge angebend (nach)';
+// $tooltip['copu'] = 'kopulativ, anfügend (und)';
+// $tooltip['disj'] = 'disjunktiv, alternativ (oder)';
+// $tooltip['fina'] = 'final, Zweck angebend (zwecks)';
+// $tooltip['grad'] = 'graduell, konkretisierend (circa)';
+// $tooltip['inst'] = 'instrumental, Mittel angebend (mittels)';
+// $tooltip['inte'] = 'intensional, Absicht angebend (weil)';
+// $tooltip['loca'] = 'lokal, örtlich (neben)';
+// $tooltip['moda'] = 'modal, Art und Weise angebend (so)';
+// $tooltip['orig'] = 'original, Quelle angebend (von)';
+// $tooltip['part'] = 'partiell, anteilig (teils)';
+// $tooltip['prop'] = 'propertär, Zugehörigkeit angebend (von)';
+// $tooltip['refe'] = 'referent, Bezug angebend (betreffs)';
+// $tooltip['rest'] = 'restriktiv, beschränkend (nur)';
+// $tooltip['subs'] = 'substitutiv, ersetzend (anstatt)';
+// $tooltip['temp'] = 'temporal, zeitlich (bevor)';
+// $tooltip['them'] = 'themativ, Thema angebend (über)';
+// $tooltip['univ'] = 'universell, Subjekt oder Objekt angebend (man)';
+// $tooltip['abs'] = 'absolut, unbezüglich';
+// $tooltip['arb'] = 'arbiträr, beliebig';
+// $tooltip['dir'] = 'direktional, richtungsbestimmend';
+// $tooltip['sg'] = 'Singular, Einzahl';
+// $tooltip['du'] = 'Dual, Zweizahl';
+// $tooltip['pa'] = 'Paukal, Kleinzahl';
+// $tooltip['pl'] = 'Plural, Mehrzahl';
+// $tooltip['1.sg'] = '1. Person Singular, Sprecher Einzahl';
+// $tooltip['2.sg'] = '2. Person Singular, Angesprochener Einzahl';
+// $tooltip['3.sg'] = '3. Person Singular, Gesprächsgegenstand Einzahl';
+// $tooltip['1.pl'] = '1. Person Plural, Sprecher Mehrzahl';
+// $tooltip['2.pl'] = '2. Person Plural, Angesprochene Mehrzahl';
+// $tooltip['3.pl'] = '3. Person Plural, Gesprächsgegenstände Mehrzahl';
+// $tooltip['hon'] = 'Honorativ, Ehrenfürwort';
+// $tooltip['hon.sg'] = 'Honorativ Singular, Ehrenfürwort Einzahl';
+// $tooltip['hon.pl'] = 'Honorativ Plural, Ehrenfürwort Mehrzahl';
+// $tooltip['impe'] = 'Imperfektiv, unvollendete Handlung';
+// $tooltip['perf'] = 'Perfektiv, vollendete Handlung';
+// $tooltip['flec'] = 'flektiv, regelwidrig gebeugt';
+// $tooltip['infl'] = 'inflektiv, ungebeugt';
+// $tooltip['di'] = 'direkt, unmittelbar';
+// $tooltip['in'] = 'indirekt, mittelbar';
+// $tooltip['sepa'] = 'separabel, trennbar';
+// $tooltip['inse'] = 'inseparabel, untrennbar';
+// $tooltip['acce'] = 'akzentual, betont';
+// $tooltip['inac'] = 'inakzentual, unbetont';
+// $tooltip['(in)'] = 'initial, am Satzanfang';
+// $tooltip['(fi)'] = 'final, am Satzende';
+// $tooltip['(av)'] = 'antivokalisch, vor Vokal';
+// $tooltip['(ac)'] = 'antikonsonantisch, vor Konsonant';
+// $tooltip['(pv)'] = 'postvokalisch, nach Vokal';
+// $tooltip['(pc)'] = 'postkonsonantisch, nach Konsonant';
 
 // Navigationsbox
 $loc_portal = 'Portalı';
@@ -69,183 +362,224 @@ $loc_team = 'Takım';
 
 // Impressumseite
 $loc_impressum = 'Künye';
-// $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
-// $loc_webseite = 'Webseite';
-// $loc_eigentuemer = 'Eigentümer der Webpräsenz: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
-// $loc_autor = 'verantwortlicher Autor: <span class="ori">Dipl.-Phys. Tec Dian de Akilet</span>';
-// $loc_kontakt = 'Kontakt';
-// $loc_anschrift = 'Postanschrift: <span class="ori">Am Eichhornpark 1, 06217 Merseburg, Deutschland, Europäische Union</span>';
-// $loc_telefon = 'Telefon';
-// $loc_telefax = 'Telefax';
-// $loc_nachricht = 'Nachricht';
-// $loc_adresse = 'E-Mail-Adresse';
-// $loc_absenden = 'Absenden';
-// $loc_loeschen = 'Löschen';
+// $loc_gesetz = '';
+// $loc_webseite = '';
+// $loc_eigentuemer = '';
+// $loc_autor = '';
+// $loc_kontakt = '';
+// $loc_anschrift = '';
+$loc_deutschland = 'Almanya';
+// $loc_eu = '';
+// $loc_telefon = '';
+// $loc_telefax = '';
+// $loc_nachricht = '';
+// $loc_adresse = '';
+// $loc_spamblock = '';
+// $loc_spamtext = '';
+// $loc_absenden = '';
+// $loc_loeschen = '';
 
 // Portalseite
-// $loc_titel = 'Etymos-Wörterbuch';
-// $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert noch nicht. Also eigentlich fast alles, aber … ###';
-// $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
-// $loc_news = '29. Juni 2019</span> <span class="code">neu:</span> Belarussisch wurde auf 245 Einträge erweitert. Zahlreiche Einträge wurden bearbeitet.';
-
-// $loc_waehlen = 'Quell- und Zielsprache wählen';
-// $loc_aufschlagen = 'Wörterbuch aufschlagen';
-
-// $loc_information = 'Information';
-// $loc_info_pre = 'Wir sind nicht die Größten und nicht die Besten. Wir machen auch Fehler, denn nur wer nichts macht, macht keine Fehler. (Also hier schon mal die in unserer Zeit leider notwendige Warnung: <span class="level4">Keine Garantie für die Richtigkeit der Einträge und die Funktionalität der Seite, keine Haftung für Folgen aus der Nutzung der Seite und der bereitgestellten Informationen!</span>) Unser Projekt entsteht in Freizeitarbeit, seht es uns also bitte nach, wenn nicht alles sofort perfekt ist. Aber was auch immer das Problem zu sein scheint: Wir arbeiten daran, Tag und Nacht, ohne Pause, ohne Schlaf, ohne Rücksicht auf unsere Gesundheit, unsere Familien, unsere Freunde. Zumindest manchmal, wie es die Zeit eben erlaubt.';
-// $loc_info_1 = '<span class="ori">36 Sprachen</span>, mehr in Vorbereitung';
-// $loc_info_2 = 'in <span class="state">beliebiger Paarung</span> nutzbar, dank linguistisch basierter Semem-Katalogisierung und fortgeschrittener Suchtechnologie';
-// $loc_info_3 = 'stetige Verbesserung der <span class="term">Übersetzungsqualität</span> durch systematische manuelle Bearbeitung der Einträge';
-// $loc_info_4 = 'stetige Verbesserung der <span class="term">Nutzerfreundlichkeit</span> durch Optimierung der Programmierung';
-// $loc_info_5 = 'systematische Erweiterung der Informationen zu <span class="level7">Semantik, Grammatik und Phonetik</span>';
-// $loc_info_6 = 'systematische Erweiterung der Einträge um Informationen zur <span class="level7">sprachlichen Herkunft und Verwandschaft</span>';
-// $loc_info_7 = 'stetig wachsende <span class="level2">Audio- und Kollokationssammlung</span>';
-// $loc_info_8 = '<span class="level6">keine</span> Cookies, <span class="level6">kein</span> Tracking, <span class="level6">keine</span> Sammlung und Speicherung von Nutzerinformationen (IP-Adresse pro Zugriff wird aus technischen und rechtlichen Gründen geloggt)';
-// $loc_achtung1 = 'Achtung! Die Wörterbücher von Etymos enthalten tierische Produkte, genmanipulierte Nahrungsmittel sowie Stoffe, die im Verdacht stehen, Unverträglichkeiten oder Allergien auszulösen oder Krebs zu erregen. Sie können Spuren von Erdnüssen enthalten. Während der Herstellung der Wörterbücher wurden große Mengen toter Tiere gegessen und die Atmosphäre mit klimaschädlichen Treibhausgasen wie CO<sub>2</sub> aus der Atmung und Methan aus der Verdauung belastet. Aber alle Wörterbucheinträge sind vollständig wiederverwertbar und werden auf Mehrweg-Webseiten angeboten.';
-// $loc_achtung2 = 'Achtung! Diese Webseite enthält Links zu externen Seiten, namentlich zu Amazon. Etymos ist für den Inhalt dieser Seiten nicht verantwortlich und stellt die Links nur zu Informationszwecken zur Verfügung. Obwohl es sich um handverlesene Ratschläge handelt, stellen diese Links rechtlich Werbung dar - und ja, wir bekommen eine kleine Provision für Verkäufe über Amazon.';
+// $loc_titel = '';
+// $loc_willkommen = '';
+// $loc_wir_arbeiten = '';
+// $loc_news = '';
+// Sprachwahlfenster
+// $loc_waehlen = '';
+// $loc_aufschlagen = '';
+// Informationsfenster
+// $loc_information = '';
+// $loc_info_pre = '';
+// $loc_info_pre.= '';
+// $loc_info_pre.= '';
+// $loc_info_pre.= '';
+// $loc_info_1 = '';
+// $loc_info_2 = '';
+// $loc_info_3 = '';
+// $loc_info_4 = '';
+// $loc_info_5 = '';
+// $loc_info_6 = '';
+// $loc_info_7 = '';
+// $loc_info_8 = '';
+// $loc_achtung1 = '';
+// $loc_achtung1.= '';
+// $loc_achtung1.= '';
+// $loc_achtung2 = '';
+// $loc_achtung2.= '';
 
 // Suchseite
-// $loc_etymos = 'Etymos';
-// $loc_woerterbuch = 'Wörterbuch';
+// $loc_etymos = '';
+// $loc_woerterbuch = '';
 // Ergebnisfenster
-// $loc_warning1 = 'Der Suchbegriff wurde nicht gefunden.';
-// $loc_warning2 = 'Der Suchbegriff wurde nicht direkt gefunden. Der folgende Begriff kommt dem am nächsten.';
+// $loc_warning1 = '';
+// $loc_warning2 = '';
 // Zusatzfunktionsfenster
-// $loc_collocation = 'Kollokationen';
-// $loc_definition = 'Definition';
-// $loc_inflection = 'Flexion';
-// $loc_origin = 'Herkunft';
-// $loc_family = 'Familie';
-// $loc_keine_kollokation = 'Für diesen Suchbegriff sind keine Kollokationen erfasst.';
-// $loc_keine_definition = 'Für diesen Suchbegriff sind keine Definitionen erfasst.';
-// $loc_keine_flexion = 'Für diese Sprache sind keine Flexionsschemata verfügbar.';
-// $loc_keine_herkunft = 'Für diesen Suchbegriff ist keine Herkunft erfasst.';
-// $loc_keine_familie = 'Für diesen Suchbegriff ist keine Familie erfasst.';
+// $loc_collocation = '';
+// $loc_definition = '';
+// $loc_inflection = '';
+// $loc_origin = '';
+// $loc_family = '';
+// $loc_keine_kollokation = '';
+// $loc_keine_definition = '';
+// $loc_keine_flexion = '';
+// $loc_keine_herkunft = '';
+// $loc_keine_familie = '';
 // Wortsuchefenster
-// $loc_wortsuche = 'Wortsuche';
-// $loc_suchen = 'Suchen';
+// $loc_wortsuche = '';
+// $loc_suchen = '';
 // Wortlistenfenster
-// $loc_wortliste = 'Wortliste';
-// $loc_kein_suchbegriff = 'kein Suchbegriff';
+// $loc_wortliste = '';
+// $loc_kein_suchbegriff = '';
 // Statusfenter
-// $loc_status = 'Status';
-// $loc_bearbeitungsstufe = 'Bearbeitungsstufe';
-// $loc_erklaerung = 'Erklärung';
-// $loc_lemmata_in = 'Lemmata in';
-// $loc_artikel = 'Übersetzungsartikel';
-// $loc_level_name[1] = 'Grundeintrag';
-// $loc_level_explain[1] = 'Übersetzung Wort-in-Wort; keine systematischen Zusatzinformationen; Quelle und Zuverlässigkeit zweifelhaft.';
-// $loc_level_name[2] = 'Aufbaueintrag 1';
-// $loc_level_explain[2] = 'Stichwort und Übersetzung grammatisch klassifiziert; Angaben nicht sicher verifiziert.';
-// $loc_level_name[3] = 'Aufbaueintrag 2';
-// $loc_level_explain[3] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion des Stichworts angegeben; Angaben verifiziert.';
-// $loc_level_name[4] = 'Aufbaueintrag 3';
-// $loc_level_explain[4] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion und Phonetik des Stichworts angegeben; Angaben verifiziert.';
-// $loc_level_name[5] = 'Aufbaueintrag 4';
-// $loc_level_explain[5] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion, Phonetik und Definition des Stichworts angegeben; Angaben verifiziert.';
-// $loc_level_name[6] = 'Aufbaueintrag 5';
-// $loc_level_explain[6] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion, Phonetik, Definition und Etymologie des Stichworts angegeben; Angaben verifiziert.';
-// $loc_level_name[7] = 'Volleintrag';
-// $loc_level_explain[7] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion, Phonetik, Definition und Etymologie des Stichworts angegeben, Kollokationen vorhanden; Angaben verifiziert.';
+// $loc_status = '';
+// $loc_bearbeitungsstufe = '';
+// $loc_erklaerung = '';
+// $loc_lemmata_in = '';
+// $loc_artikel = '';
+// $loc_level_name[1] = '';
+// $loc_level_explain[1] = '';
+// $loc_level_name[2] = '';
+// $loc_level_explain[2] = '';
+// $loc_level_name[3] = '';
+// $loc_level_explain[3] = '';
+// $loc_level_name[4] = '';
+// $loc_level_explain[4] = '';
+// $loc_level_name[5] = '';
+// $loc_level_explain[5] = '';
+// $loc_level_name[6] = '';
+// $loc_level_explain[6] = '';
+// $loc_level_name[7] = '';
+// $loc_level_explain[7] = '';
 // Materialfenter
-// $loc_material = 'Material';
+// $loc_material = '';
 
 // Flexionsmodul
-// $loc_fall_zahl = 'Fall \ Zahl';
-// $loc_sg = 'Singular';
-// $loc_pl = 'Plural';
-// $loc_nom = 'Nominativ';
-// $loc_gen = 'Genitiv';
-// $loc_dat = 'Dativ';
-// $loc_acc = 'Akkusativ';
-// $loc_flex_para = 'Flexionsparadigma';
-// $loc_kein_schema = 'Für dieses Flexionsparadigma ist noch kein Schema verfügbar.';
-// $loc_kein_paradigma = 'Für diesen Suchbegriff ist noch kein Flexionsparadigma erfasst.';
-// $loc_inflektierbar = 'Dieser Suchbegriff ist nicht flektierbar.';
-// $loc_siehe_einzelworte = 'Angaben zur Flexion sind bei den einzelnen Bestandteilen zu finden.';
-// $loc_anmerkung = 'Anmerkung';
-// $loc_genitivattribut_untypisch ='Wird das Wort im Singular als isoliertes vorangestelltes <span class="term">Genitivattribut</span> verwendet, tritt die untypische Genitivendung <span class="targetlight">-</span><span class="sourcelight">s</span> hinzu.';
+// $loc_fall_zahl = '';
+// $loc_sg = '';
+// $loc_pl = '';
+// $loc_nom = '';
+// $loc_gen = '';
+// $loc_dat = '';
+// $loc_acc = '';
+// $loc_flex_para = '';
+// $loc_kein_schema = '';
+// $loc_kein_paradigma = '';
+// $loc_inflektierbar = '';
+// $loc_siehe_einzelworte = '';
+// $loc_anmerkung = '';
+// $loc_genitivattribut_untypisch = '';
 
 // Fragenseite
-// $loc_fragen_antworten = 'Fragen und Antworten';
-// $loc_projekt = 'Projekt';
-// $loc_projekt_frage1 = 'FRAGE: Der Umfang eurer Wörterbücher ist absolut unzureichend, die Qualität der Einträge ist sehr schlecht. Das macht Etymos völlig nutzlos.';
-// $loc_projekt_antwort1 = 'ANTWORT: Zuerst einmal ist das natürlich keine Frage, sondern eine Meinungsäußerung, aber eine, die wir recht häufig lesen, wenn auch nicht immer so drastisch formuliert, manchmal aber sogar noch drastischer. Die Bearbeitung der Wörterbücher erfolgt in <span class="key">unbezahlter Freizeitarbeit</span> als Zukunfstsprojekt und eine solche Aufgabe benötigt nun einmal Zeit. Auch wenn sie möglicherweise in der Sache zutreffen, sind <span class="state">Pauschalkritiken</span> da nicht hilfreich und daher <span class="sourcelight">ausdrücklich unerwünscht</span>. Schließlich kann sich ja jeder anderweitig informieren, wenn ihm das von uns zur Verfügung gestellte Material nicht ausreicht.';
-// $loc_projekt_frage2 = 'FRAGE: Nach welchen Kriterien wurde der Wortschatz der Wörterbücher zusammengestellt?';
-// $loc_projekt_antwort2 = 'ANTWORT: Die Zusammenstellung stellt keine repräsentative Auswahl aus dem Wortschatz der Sprachen dar, sondern ergibt sich aus dem aktuell digital zur Verfügung stehenden Datenbestand. Aufnahme finden Begriffe aus allen Bereichen der sprachlichen Kommunikation, aus Umgangssprache und Slang ebenso wie aus Zeitungs-, Medien- und Literatursprache sowie aus den Fachsprachen der verschiedenen Wissenschafts-, Technik- und Kulturbereiche. Neben dieser eher unsystematischen Erweiterung wird angestrebt, den Wortschatz systematisch aufzubauen. Dementsprechend gibt es mehrere <span class="key">Bearbeitungsstufen</span>.';
-// $loc_projekt_frage3 = 'FRAGE: Welche Bearbeitungsstufen für die Wörterbücher gibt es?';
-// $loc_projekt_antwort3a = 'ANTWORT: Die Bearbeitungsstufe wird nach zwei Kriterien bestimmt. Erstes Kriterium ist die <span class="key">Mindestqualität aller Einträge</span>.';
-// $loc_projekt_antwort3b = 'Befüllung mit <span class="level1">Grundeinträgen</span>';
-// $loc_projekt_antwort3c = 'Aufbau aller Einträge bis mindestens <span class="level2">Aufbaueintrag 1</span>';
-// $loc_projekt_antwort3d = 'Aufbau aller Einträge bis mindestens <span class="level3">Aufbaueintrag 2</span>';
-// $loc_projekt_antwort3e = 'Aufbau aller Einträge bis mindestens <span class="level4">Aufbaueintrag 3</span>';
-// $loc_projekt_antwort3f = 'Endbearbeitung aller Einträge zu <span class="level7">Volleinträgen</span>';
-// $loc_projekt_antwort3g = 'Zweites Kriterium ist die <span class="key">Abdeckung des Wortschatzes</span>. Dazu werden abgestufte Standardwortschätze verschiedenen Umfangs erarbeitet. Diese basieren einerseits auf Häufigkeitsanalysen einer Vielzahl moderner Texte, andererseits werden bestimmte Gesprächssituationen und Nutzungsszenarien besonders berücksichtigt.';
-// $loc_projekt_antwort3h = 'unspezifische, automatisch generierte <span class="key">Wortsammlung</span>';
-// $loc_projekt_antwort3i = 'mindestens <span class="key">Grundwortschatz</span> <span class="state">~1.000</span> Wörter, Grundkommunikation';
-// $loc_projekt_antwort3j = 'mindestens <span class="key">Grundwortschatz</span> <span class="state">~4.000</span> Wörter, Alltagskommunikation';
-// $loc_projekt_antwort3k = 'mindestens <span class="key">Aufbauwortschatz</span> <span class="state">~10.000</span> Wörter, gehobene Textabdeckung';
-// $loc_projekt_antwort3l = 'mindestens <span class="key">Aufbauwortschatz</span> <span class="state">~40.000</span> Wörter, umfassende Textabdeckung';
-// $loc_projekt_antwort3m = '<span class="key">Universalwortschatz</span> <span class="state">&gt;40.000</span> Wörter, möglichst vollständige Textabdeckung';
-// $loc_projekt_frage4 = 'FRAGE: Welche Bearbeitungsstufen für die Einträge gibt es?';
-// $loc_projekt_antwort4 = 'ANTWORT: Es wird angestrebt, die einzelnen Einträge so gut wie möglich zu <span class="key">verifizieren</span> und mit Informationen zur <span class="plane">Semantik</span>, <span class="name">Grammatik</span> und <span class="phon">Phonetik</span> zu ergänzen. Es gibt sieben <span class="key">Bearbeitungsstufen</span>, die durch unterschiedliche Symbole gekennzeichnet werden.';
-// $loc_projekt_frage5 = 'FRAGE: Wieso weichen die Flexionsklassen, grammatischen Beschreibungen und Ausspracheangaben bei Etymos von denen in anderen Wörterbüchern ab?';
-// $loc_projekt_antwort5 = 'ANTWORT: Wir wenden eine strikt <span class="key">wissenschaftliche Betrachtung</span> an. Wir folgen also nicht der traditionellen, oftmals von <span class="sourcelight">nationalistischer Ideologie</span> und <span class="sourcelight">literarischer Ästhetik</span> durchsetzten Linguistik, die die Dinge häufig so beschreibt, wie sie nach Meinung einzelner Autoren sein sollten, anstatt wie sie sind. Das führt zu gewissen Abweichungen, die bei der Beschreibung der Flexion am größten, aber auch am sinnvollsten und nützlichsten sind. Wer sich ohnehin nicht mit diesen Dingen beschäftigt hat, freut sich nur einfach über die Klarheit unseres Systems. Wer anderes gewohnt ist und sich auf unser System einlässt, wird mit leicht nutzbaren Symbolen und Schemata und mit sinnvollen Zusammenhängen belohnt. Wer weder den Sinn noch den Nutzen unseres Systems erkennt, sei wieder an die anderen möglichen Anbieter verwiesen.';
-// $loc_mitwirkung = 'Mitwirkung';
-// $loc_mitwirkung_frage1 = 'FRAGE: Die Webseite ist nicht vollständig übersetzt. Kann ich helfen?';
-// $loc_mitwirkung_antwort1 = 'ANTWORT: <span class="markwhite">Unbedingt!</span> Hilfe in diesem Bereich ist sehr willkommen. Du solltest jedoch <span class="key">Primärsprachler</span> in der betreffenden Sprache sein oder zumindest über <span class="key">sehr gute Kenntnisse</span> verfügen. <span class="sourcelight">Bitte keine automatischen Übersetzungen!</span> Den aktuellen Stand der Übersetzungen findest du bei <a href="https://github.com/TecDian/Etymos" target="_blank">GitHub</a>. Als Referenz dient jeweils Deutsch, mit geringerer Priorität auch Englisch.';
-// $loc_mitwirkung_frage2 = 'FRAGE: Kann ich Vorschläge für Wörter einreichen, die noch nicht enthalten sind?';
-// $loc_mitwirkung_antwort2 = 'ANTWORT: Wir verfügen über kaum überschaubare Mengen an verifiziertem Quellenmaterial, mit dessen Integration wir noch sehr lange zu tun haben werden. Einzelne Vorschläge zu bearbeiten, die überdies noch verifiziert werden müssten, würde den Arbeitsfluss stören und letztlich mehr Zeit kosten, als das vorhandene Material weiter abzuarbeiten, wäre also <span class="key">uneffizient</span>. <span class="sourcelight">Daher können wir keine Wortvorschläge berücksichtigen.</span>';
-// $loc_mitwirkung_frage3 = 'FRAGE: Kann ich Korrekturen vorschlagen, wenn mir Fehler auffallen?';
-// $loc_mitwirkung_antwort3a = 'ANTWORT: Uns ist bewusst, dass unsere Wörterbücher viele Merkwürdigkeiten und auch Fehler, teilweise sogar grobe, enthalten. Dies ist der Tatsache geschuldet, dass die Erstbefüllung der Datenbank durch maschinelle Datensammlung und -klassifizierung geschah. Auch hier gilt jedoch das gleiche Argument wie bei Neuvorschlägen: Die Bearbeitung einzelner Korrekturen ist erheblich <span class="key">uneffizienter</span> als die systematische Bearbeitung der automatisch generierten Einträge. Daher können wir keine Korrekturvorschläge für <span class="level1">Grundeinträge</span> und <span class="level2">Aufbaueinträge 1</span> berücksichtigen.';
-// $loc_mitwirkung_antwort3b = 'Anders sieht es jedoch mit den bereits manuell bearbeiteten Einträgen ab <span class="level3">Aufbaueintrag 2</span> aus. <span class="markwhite">Für eine Korrektur eines Fehlers in einem solchen Eintrag wären wir sehr dankbar.</span> Fehler können über das Kontaktformular des <a href="?site=imprint'.// $lang_link.'">Impressums</a> gemeldet werden. Bitte gib das <span class="key">Stichwort</span> sowie <span class="key">Seiten-, Quell- und Zielsprache</span> an und beschreibe das <span class="key">Problem</span> und deine <span class="key">Lösung</span> hinreichend exakt. Eventuell ist eine <span class="key">Quellenangabe</span> sinnvoll.';
-// $loc_mitwirkung_frage4 = 'FRAGE: Ich würde gern mehr tun. Kann ich richtig bei Etymos einsteigen und mitarbeiten?';
-// $loc_mitwirkung_antwort4 = 'ANTWORT: Wir würden uns sehr freuen, dich als neues <span class="key">Teammitglied</span> begrüßen zu dürfen. Im Gegensatz zu vielen anderen freien Informationsseiten arbeitet Etymos jedoch nicht auf der Basis, dass jeder beliebige Nutzer Beiträge schreiben kann. Wir bemühen uns um eine wissenschaftliche Arbeitsweise und setzen daher für Teammitglieder gewisse <span class="key">Mindeststandards</span>. Näheres dazu findest du bei den Stellenausschreibungen auf unserer <a href="?site=team'.// $lang_link.'">Team-Seite</a>.';
-// $loc_mitwirkung_frage5 = 'FRAGE: Habt ihr spezielles Material, mit dem ich für euch werben kann?';
-// $loc_mitwirkung_antwort5 = 'ANTWORT: Haben wir. Zum <span class="key">Verlinken</span> unserer Seite stellen wir eine Reihe von <span class="state">Buttons</span> und <span class="plane">Bannern</span> zur Verfügung.';
-// $loc_button = 'Buttons verschiedener Form';
-// $loc_button_quadrat = 'Button, Würfel';
-// $loc_button_rund = 'Button, Kreis';
-// $loc_button_weich = 'Button, weicher Würfel';
-// $loc_button_schirm = 'Button, Bildschirm';
-// $loc_banner_klein = 'Banner, klein';
-// $loc_banner_normal = 'Banner, normal';
-// $loc_banner_gross = 'Banner, groß';
-// $loc_banner_riesig = 'Banner, riesig';
-// $loc_banner_nichtoriginal = 'nicht Originalgröße';
-// $loc_spenden = 'Spenden';
-// $loc_spenden_frage1 = 'FRAGE: Wie kann man das Projekt finanziell unterstützen?';
-// $loc_spenden_antwort1 ='ANTWORT: Etymos arbeitet rein nichtkommerziell. Hardware, Software und Onlinezugang werden von uns privat finanziert. Notwendige Arbeiten werden ausschließlich unentgeltlich erledigt, weshalb wir sehr kostensparend arbeiten. Daher haben wir es auch eigentlich nicht nötig, um Spenden zu bitten.';
-// $loc_spenden_trotzdem = 'Trotzdem freuen wir uns natürlich über finanzielle Beiträge, die uns bei Unterhaltung, Weiterführung und Ausbau unseres Projekts unterstützen. Wenn du dich also gar nicht zurückhalten kannst, Geld an uns loszuwerden, kannst du das hier tun. Unser zeitlich begrenzter ewiger Dank ist dir sicher, ebenso wie einige Karmapunkte auf deinem Weg von einer Darmbakterie zum Nirwana. Die Zahlung wird einfach über Paypal abgewickelt (Empfänger: Tec’s Ilaros WoW). Die Mindestspende beträgt <span class="markwhite">5,- €.';
-// $loc_spenden_betrag = 'Bitte wähle einen Betrag:';
-// $loc_jetzt_spenden = 'Spenden';
-// $loc_charakteristik = 'Charakteristik';
-// $loc_name = 'Name';
-// $loc_sprachen = 'Sprachen';
-// $loc_eintraege = 'Einträge';
-// $loc_lemmata = 'Lemmata';
-// $loc_kleinste_sprache = 'kleinste Sprache';
-// $loc_groesste_sprache = 'größste Sprache';
-// $loc_datenbank = 'Datenbank';
-// $loc_programm = 'Programm';
-// $loc_rubriken = 'Rubriken';
-
-// Teamseite
-// $loc_noch_nicht = 'Noch nicht.';
+// $loc_fragen_antworten = '';
+// $loc_projekt = '';
+// $loc_projekt_frage1 = '';
+// $loc_projekt_antwort1 = '';
+// $loc_projekt_antwort1.= '';
+// $loc_projekt_antwort1.= '';
+// $loc_projekt_antwort1.= '';
+// $loc_projekt_frage2 = '';
+// $loc_projekt_antwort2 = '';
+// $loc_projekt_antwort2.= '';
+// $loc_projekt_antwort2.= '';
+// $loc_projekt_frage3 = '';
+// $loc_projekt_antwort3a = '';
+// $loc_projekt_antwort3b = '';
+// $loc_projekt_antwort3c = '';
+// $loc_projekt_antwort3d = '';
+// $loc_projekt_antwort3e = '';
+// $loc_projekt_antwort3f = '';
+// $loc_projekt_antwort3g = '';
+// $loc_projekt_antwort3g.= '';
+// $loc_projekt_antwort3h = '';
+// $loc_projekt_antwort3i = '';
+// $loc_projekt_antwort3j = '';
+// $loc_projekt_antwort3k = '';
+// $loc_projekt_antwort3l = '';
+// $loc_projekt_antwort3m = '';
+// $loc_projekt_frage4 = '';
+// $loc_projekt_antwort4 = '';
+// $loc_projekt_antwort4.= '';
+// $loc_projekt_frage5 = '';
+// $loc_projekt_antwort5 = '';
+// $loc_projekt_antwort5.= '';
+// $loc_projekt_antwort5.= '';
+// $loc_projekt_antwort5.= '';
+// $loc_projekt_antwort5.= '';
+// $loc_projekt_antwort5.= '';
+// $loc_projekt_antwort5.= '';
+// $loc_mitwirkung = '';
+// $loc_mitwirkung_frage1 = '';
+// $loc_mitwirkung_antwort1 = '';
+// $loc_mitwirkung_antwort1.= '';
+// $loc_mitwirkung_antwort1.= '';
+// $loc_mitwirkung_antwort1.= '';
+// $loc_mitwirkung_frage2 = '';
+// $loc_mitwirkung_antwort2 = '';
+// $loc_mitwirkung_antwort2.= '';
+// $loc_mitwirkung_antwort2.= '';
+// $loc_mitwirkung_frage3 = '';
+// $loc_mitwirkung_antwort3a = '';
+// $loc_mitwirkung_antwort3a.= '';
+// $loc_mitwirkung_antwort3a.= '';
+// $loc_mitwirkung_antwort3a.= '';
+// $loc_mitwirkung_antwort3b = '';
+// $loc_mitwirkung_antwort3b.= '';
+// $loc_mitwirkung_antwort3b.= '';
+// $loc_mitwirkung_antwort3b.= '';
+// $loc_mitwirkung_frage4 = '';
+// $loc_mitwirkung_antwort4 = '';
+// $loc_mitwirkung_antwort4.= '';
+// $loc_mitwirkung_antwort4.= '';
+// $loc_mitwirkung_antwort4.= '';
+// $loc_mitwirkung_frage5 = '';
+// $loc_mitwirkung_antwort5 = '';
+// $loc_button = '';
+// $loc_button_quadrat = '';
+// $loc_button_rund = '';
+// $loc_button_weich = '';
+// $loc_button_schirm = '';
+// $loc_banner_klein = '';
+// $loc_banner_normal = '';
+// $loc_banner_gross = '';
+// $loc_banner_riesig = '';
+// $loc_banner_nichtoriginal = '';
+// $loc_spenden = '';
+// $loc_spenden_frage1 = '';
+// $loc_spenden_antwort1 = '';
+// $loc_spenden_antwort1.= '';
+// $loc_spenden_trotzdem = '';
+// $loc_spenden_trotzdem.= '';
+// $loc_spenden_trotzdem.= '';
+// $loc_spenden_betrag = '';
+// $loc_jetzt_spenden = '';
+// $loc_charakteristik = '';
+// $loc_name = '';
+// $loc_sprachen = '';
+// $loc_eintraege = '';
+// $loc_lemmata = '';
+// $loc_kleinste_sprache = '';
+// $loc_groesste_sprache = '';
+// $loc_datenbank = '';
+// $loc_programm = '';
+// $loc_rubriken = '';
 
 // Dankseite
-// $loc_spende1 = 'Vielen Dank für die Spende.';
-// $loc_spende2 = 'Wir freuen uns, dass unsere Arbeit gewürdigt wird.';
-// $loc_keine_adresse1 = 'Um eine Nachricht senden zu können, ist die Angabe einer korrekten E-Mail-Adresse notwendig.';
-// $loc_keine_adresse2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
-// $loc_kein_inhalt1 = 'Um eine Nachricht senden zu können, muss sie vorher eingegeben werden.';
-// $loc_kein_inhalt2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
-// $loc_danke1 = 'Vielen Dank für die Nachricht. Wir kümmern uns so bald wie möglich darum.';
-// $loc_danke2 = 'Bei sehr dringenden Problemen, die die grundsätzliche Funktion der Webseite betreffen, sind wir auch unter <span class="white">+49 (0) 1520 - 9839094</span> zu erreichen.';
+// $loc_spende1 = '';
+// $loc_spende2 = '';
+// $loc_keine_adresse1 = '';
+// $loc_keine_adresse2 = '';
+// $loc_kein_inhalt1 = '';
+// $loc_kein_inhalt2 = '';
+// $loc_spam1 = '';
+// $loc_spam2 = '';
+// $loc_danke1 = '';
+// $loc_danke2 = '';
+
+// Teamseite
+// $loc_noch_nicht = '';
 
 // Logseite
-// $loc_suchlog = 'Such-Log';
-// $loc_letzte_suche = 'Letzte Suche';
-// $loc_auflistung = 'Hier werden alle <span class="sememe">Suchbegriffe</span> mit <span class="key">Sprachenpaar</span> bezüglich <span class="term">IP-Adresse</span> und <span class="term">Zeit</span> aufgelistet.';
-
+// $loc_suchlog = '';
+// $loc_letzte_suche = '';
+// $loc_auflistung = '';
 ?>
