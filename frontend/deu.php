@@ -56,6 +56,8 @@ $language = array(
     'lat' => 'Lateinisch',
     'pie' => 'Urindoeuropäisch',
     'pgm' => 'Urgermanisch',
+    'akk' => 'Akkadisch',
+    'grc' => 'Altgriechisch',
 );
 
 // Tooltips für Kategorien
@@ -286,6 +288,7 @@ $tooltip = array(
     'vm' => 'ministratives Verb, mit indirektem Objekt',
     'vd' => 'ditransitives Verb, mit direktem und indirektem Objekt',
     'vr' => 'reflexives Verb, mit direktem Objekt identisch zum Subjekt',
+    'vrp' => 'reflexives Verb, mit direktem Objekt identisch zum Subjekt und zwingender Anfügung eines präpositiven Objekts',
     'vu' => 'uniteratives Verb, mit indirektem Objekt identisch zum Subjekt',
     'vc' => 'konsekratives Verb, mit direktem Objekt identisch zum Subjekt und mit indirektem Objekt',
     'vo' => 'okkupatives Verb, mit direktem Objekt und mit indirektem Objekt identisch zum Subjekt',
@@ -331,6 +334,27 @@ $tooltip = array(
     'du' => 'Dual, Zweizahl',
     'pa' => 'Paukal, Kleinzahl',
     'pl' => 'Plural, Mehrzahl',
+    'nom' => 'Nominativ, Subjekt wer?',
+    'gen' => 'Genitiv, Eigentümer wessen?',
+    'dat' => 'Dativ, indirektes Objekt wem?',
+    'acc' => 'Akkusativ, direktes Objekt wen?',
+    'abl' => 'Ablativ, Herkunft woher?',
+    'ins' => 'Instrumentiv, Mittel womit?',
+    'loc' => 'Lokativ, Ort wo?',
+    'voc' => 'Vokativ, Anrede wer?',
+    'norm' => 'Normativ, Normalform',
+    'dimi' => 'Diminutiv, Verkleinerungsform',
+    'augm' => 'Augmentativ, Vergrößerungsform',
+    'inf' => 'Infinitiv, Grundform',
+    'ifl' => 'Inflektiv, Stammform',
+    'imp' => 'Imperativ, Befehlsform',
+    'par' => 'Partizip, Mittelwort',
+    'tra' => 'Transgressiv, Nebenwort',
+    'aor' => 'Aorist, abgeschlossene Vergangenheit',
+    'fut' => 'Futurum, Zukunft',
+    'pres' => 'Präsentum, Gegenwart',
+    'pret' => 'Päteritum, Vergangenheit',
+    'conj' => 'Konjunktiv, Möglichkeit',
     '1.sg' => '1. Person Singular, Sprecher Einzahl',
     '2.sg' => '2. Person Singular, Angesprochener Einzahl',
     '3.sg' => '3. Person Singular, Gesprächsgegenstand Einzahl',
@@ -383,6 +407,19 @@ $loc_spamblock = 'Abfrage';
 $loc_spamtext = 'Wie heißt das deutsche Wort \'Person\' (Anzahl) auf Griechisch?';
 $loc_absenden = 'Absenden';
 $loc_loeschen = 'Löschen';
+
+// Dankseite
+$loc_danke = 'Danke';
+$loc_danke1 = 'Vielen Dank für die Nachricht. Wir kümmern uns so bald wie möglich darum.';
+$loc_danke2 = 'Bei sehr dringenden Problemen, die die grundsätzliche Funktion der Webseite betreffen, sind wir auch unter <span class="white">+49 (0) 1520 - 9839094</span> zu erreichen.';
+$loc_spende1 = 'Vielen Dank für die Spende.';
+$loc_spende2 = 'Wir freuen uns, dass unsere Arbeit gewürdigt wird.';
+$loc_keine_adresse1 = 'Um eine Nachricht senden zu können, ist die Angabe einer korrekten E-Mail-Adresse notwendig.';
+$loc_keine_adresse2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
+$loc_kein_inhalt1 = 'Um eine Nachricht senden zu können, muss sie vorher eingegeben werden.';
+$loc_kein_inhalt2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
+$loc_spam1 = 'Die Sicherheitsfrage wurde falsch beantwortet.';
+$loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
 
 // Portalseite
 $loc_titel = 'Etymos-Wörterbuch';
@@ -457,22 +494,21 @@ $loc_level_name[7] = 'Volleintrag';
 $loc_level_explain[7] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion, Phonetik, Definition und Etymologie des Stichworts angegeben, Kollokationen vorhanden; Angaben verifiziert.';
 // Materialfenter
 $loc_material = 'Material';
+$loc_flex_para = 'Flexionsparadigma';
+$loc_einzelformen = 'Einzelformen';
 
 // Flexionsmodul
 $loc_fall_zahl = 'Fall \ Zahl';
-$loc_sg = 'Singular';
-$loc_pl = 'Plural';
-$loc_nom = 'Nominativ';
-$loc_gen = 'Genitiv';
-$loc_dat = 'Dativ';
-$loc_acc = 'Akkusativ';
-$loc_flex_para = 'Flexionsparadigma';
+$loc_alle_genera = 'alle Genera';
 $loc_kein_schema = 'Für dieses Flexionsparadigma ist noch kein Schema verfügbar.';
 $loc_kein_paradigma = 'Für diesen Suchbegriff ist noch kein Flexionsparadigma erfasst.';
 $loc_inflektierbar = 'Dieser Suchbegriff ist nicht flektierbar.';
 $loc_siehe_einzelworte = 'Angaben zur Flexion sind bei den einzelnen Bestandteilen zu finden.';
 $loc_anmerkung = 'Anmerkung';
 $loc_genitivattribut_untypisch = 'Wird das Wort im Singular als isoliertes vorangestelltes <span class="term">Genitivattribut</span> verwendet, tritt die untypische Genitivendung <span class="targetlight">-</span><span class="sourcelight">s</span> hinzu.';
+
+// Downloadseite
+$loc_noch_nicht = 'Noch nicht.';
 
 // Fragenseite
 $loc_fragen_antworten = 'Fragen und Antworten';
@@ -567,21 +603,64 @@ $loc_groesste_sprache = 'größste Sprache';
 $loc_datenbank = 'Datenbank';
 $loc_programm = 'Programm';
 $loc_rubriken = 'Rubriken';
-
-// Dankseite
-$loc_spende1 = 'Vielen Dank für die Spende.';
-$loc_spende2 = 'Wir freuen uns, dass unsere Arbeit gewürdigt wird.';
-$loc_keine_adresse1 = 'Um eine Nachricht senden zu können, ist die Angabe einer korrekten E-Mail-Adresse notwendig.';
-$loc_keine_adresse2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
-$loc_kein_inhalt1 = 'Um eine Nachricht senden zu können, muss sie vorher eingegeben werden.';
-$loc_kein_inhalt2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
-$loc_spam1 = 'Die Sicherheitsfrage wurde falsch beantwortet.';
-$loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
-$loc_danke1 = 'Vielen Dank für die Nachricht. Wir kümmern uns so bald wie möglich darum.';
-$loc_danke2 = 'Bei sehr dringenden Problemen, die die grundsätzliche Funktion der Webseite betreffen, sind wir auch unter <span class="white">+49 (0) 1520 - 9839094</span> zu erreichen.';
-
-// Teamseite
-$loc_noch_nicht = 'Noch nicht.';
+$loc_wir1 = 'Wir, das ';
+$loc_wir2 = 'Team von Etymos';
+$loc_wir3 = ', möchten uns kurz vorstellen. Wenn es Fragen, Meinungen, Hinweise oder Probleme gibt, stehen wir bereit, um zu helfen. Am Ende dieser Seite kann eine ';
+$loc_wir4 = 'Nachricht';
+$loc_wir5 = 'an uns geschickt werden.';
+$loc_verstaendnis1 = 'Wir bitten vielmals um ';
+$loc_verstaendnis2 = 'Verständnis und Entschuldigung';
+$loc_verstaendnis3 = ', dass wir nicht alle Probleme lösen und nicht alle Wünsche erfüllen können werden, weil unsere Möglichkeiten begrenzt sind und weil wir am Charakter unseres Wörterbuchs nichts ändern möchten. Aber wir bemühen uns und geben unser Bestes!';
+$loc_teamliste = 'Teamliste';
+$loc_projektleitung1 = 'Projektleitung';
+$loc_projektleitung2 = 'administrative, linguistische und informatische Projektleitung';
+$loc_redakteure1 = 'Redakteure';
+$loc_redakteure2 = 'Bisher konnten wir noch ';
+$loc_redakteure3 = 'keine';
+$loc_redakteure4 = ' Redakteure für die Betreuung einzelner ';
+$loc_redakteure5 = 'Sprachen';
+$loc_redakteure6 = ' rekrutieren. Die Redaktionsarbeit wird direkt von der Projektleitung ausgeführt, unterstützt von ';
+$loc_redakteure7 = 'Gelegenheitshilfskräten';
+$loc_redakteure8 = '.';
+$loc_programmierer1 = 'Programmierer';
+$loc_programmierer2 = 'PHP, Datenbanken, Webseite, Serverbetrieb';
+$loc_tester1 = 'Tester';
+$loc_tester2 = 'Layout, Benutzerfreundlichkeit';
+$loc_ausschreibungen = 'Ausschreibungen';
+$loc_bewerbungen1 = 'Bewerbungen';
+$loc_bewerbungen2 = 'Wir sind immer auf der Suche nach ';
+$loc_bewerbungen3 = 'engagierten Mitarbeitern';
+$loc_bewerbungen4 = ' für unser Team. ';
+$loc_bewerbungen5 = 'Interessenten';
+$loc_bewerbungen6 = ' können sich über unser ';
+$loc_bewerbungen7 = ' bewerben.';
+$loc_bewerbung_warnung1 = 'Wir ziehen nur Anfragen von Bewerbern in Betracht, die unser Projekt so mögen, wie es ist.';
+$loc_bewerbung_warnung2 = 'Um Enttäuschungen vorzubeugen, möchten wir darauf hinweisen, dass unser Team ';
+$loc_bewerbung_warnung3 = 'nicht demokratisch';
+$loc_bewerbung_warnung4 = ' funktioniert, sondern einer strikten Hierarchie unterliegt, an der Spitze die ';
+$loc_bewerbung_warnung5 = 'Projektleitung';
+$loc_bewerbung_warnung6 = ', dann eine Weile nichts.';
+$loc_redaktion1 = 'Bereich Redaktion';
+$loc_redaktion2 = 'Wir suchen Redakteure, die sich um die Bearbeitung und Erweiterung einzelner Sprachen kümmern';
+$loc_redaktion3 = 'flüssige Beherrschung der betreffenden Sprache';
+$loc_redaktion4 = 'Primärsprachler bevorzugt, aber nicht Bedingung';
+$loc_redaktion5 = 'gute Beherrschung von Deutsch oder Englisch';
+$loc_redaktion6 = 'linguistische Grundkenntnisse erwünscht';
+$loc_redaktion7 = 'aber Ausbildung in der Praxis möglich';
+$loc_redaktion8 = 'keine ideologischen Einstellungen';
+$loc_redaktion9 = 'bezüglich politischer Korrektheit';
+$loc_redaktion10 = 'und konventioneller Linguistik';
+$loc_aussprache1 = 'Bereich Aussprache';
+$loc_aussprache2 = 'Wir suchen Sprecher für die einzelnen Sprachen';
+$loc_aussprache3 = 'akzentfreie Aussprache der betreffenden Sprache';
+$loc_aussprache4 = 'geeignete Stimmlage und Stimmfarbe';
+$loc_aussprache5 = 'eigene technische Ausrüstung für Sprachaufnahme und Audiobearbeitung in sehr guter Qualität';
+$loc_entwicklung1 = 'Bereich Entwicklung';
+$loc_entwicklung2 = 'Wir suchen dringend Entwickler für folgende Aufgaben';
+$loc_entwicklung3 = 'C++-Programmierung Android, Apple, Windows';
+$loc_entwicklung4 = 'Entwurf und Programmierung von Apps';
+$loc_kontaktformular = 'Kontaktformular';
+$loc_gibt_es_fragen = 'Gibt es Fragen, Anmerkungen, Hinweise, Probleme oder Bewerbungen?';
 
 // Logseite
 $loc_suchlog = 'Such-Log';

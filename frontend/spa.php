@@ -4,7 +4,7 @@
 // -------------------------------------------------------------------------------------------------
 
 // Header
-$loc_etymos_woerterbuch = 'Etymos diccionario - multilingüe y multidireccional';
+$loc_etymos_woerterbuch = 'Etymos-Diccionario - multilingüe y multidireccional';
 // $loc_description = '';
 $loc_keywords = 'lengua, traducción, diccionario, gramática, flexión, declinación, conjugación, fonética, pronunciación';
 
@@ -56,6 +56,8 @@ $language = array(
     'lat' => 'Latín',
     'pie' => 'Protoindoeuropeo',
     'pgm' => 'Protogermánico',
+    'akk' => 'Acadio',
+    'grc' => 'Griego antiguo',
 );
 
 // Tooltips für Kategorien
@@ -195,7 +197,7 @@ $tooltip[148] = 'moda';
 // $tooltip[277] = 'Moldawien';
 // $tooltip[280] = 'Andorra und Valencia';
 // $tooltip[281] = 'Katalonien';
-// $tooltip[320] = 'Deutschland';
+$tooltip[320] = 'Alemania';
 // $tooltip[321] = 'Österreich';
 // $tooltip[322] = 'Schweiz';
 // $tooltip[328] = 'Serbien';
@@ -284,6 +286,7 @@ $tooltip[148] = 'moda';
 // $tooltip['vm'] = 'ministratives Verb, mit indirektem Objekt';
 // $tooltip['vd'] = 'ditransitives Verb, mit direktem und indirektem Objekt';
 // $tooltip['vr'] = 'reflexives Verb, mit direktem Objekt identisch zum Subjekt';
+// $tooltip['vrp'] = 'reflexives Verb, mit direktem Objekt identisch zum Subjekt und zwingender Anfügung eines präpositiven Objekts';
 // $tooltip['vu'] = 'uniteratives Verb, mit indirektem Objekt identisch zum Subjekt';
 // $tooltip['vc'] = 'konsekratives Verb, mit direktem Objekt identisch zum Subjekt und mit indirektem Objekt';
 // $tooltip['vo'] = 'okkupatives Verb, mit direktem Objekt und mit indirektem Objekt identisch zum Subjekt';
@@ -329,6 +332,27 @@ $tooltip[148] = 'moda';
 // $tooltip['du'] = 'Dual, Zweizahl';
 // $tooltip['pa'] = 'Paukal, Kleinzahl';
 // $tooltip['pl'] = 'Plural, Mehrzahl';
+// $tooltip['nom'] = 'Nominativ, Subjekt wer?';
+// $tooltip['gen'] = 'Genitiv, Eigentümer wessen?';
+// $tooltip['dat'] = 'Dativ, indirektes Objekt wem?';
+// $tooltip['acc'] = 'Akkusativ, direktes Objekt wen?';
+// $tooltip['abl'] = 'Ablativ, Herkunft woher?';
+// $tooltip['ins'] = 'Instrumentiv, Mittel womit?';
+// $tooltip['loc'] = 'Lokativ, Ort wo?';
+// $tooltip['voc'] = 'Vokativ, Anrede wer?';
+// $tooltip['norm'] = 'Normativ, Normalform';
+// $tooltip['dimi'] = 'Diminutiv, Verkleinerungsform';
+// $tooltip['augm'] = 'Augmentativ, Vergrößerungsform';
+// $tooltip['inf'] = 'Infinitiv, Grundform';
+// $tooltip['ifl'] = 'Inflektiv, Stammform';
+// $tooltip['imp'] = 'Imperativ, Befehlsform';
+// $tooltip['par'] = 'Partizip, Mittelwort';
+// $tooltip['tra'] = 'Transgressiv, Nebenwort';
+// $tooltip['aor'] = 'Aorist, abgeschlossene Vergangenheit';
+// $tooltip['fut'] = 'Futurum, Zukunft';
+// $tooltip['pres'] = 'Präsentum, Gegenwart';
+// $tooltip['pret'] = 'Päteritum, Vergangenheit';
+// $tooltip['conj'] = 'Konjunktiv, Möglichkeit';
 // $tooltip['1.sg'] = '1. Person Singular, Sprecher Einzahl';
 // $tooltip['2.sg'] = '2. Person Singular, Angesprochener Einzahl';
 // $tooltip['3.sg'] = '3. Person Singular, Gesprächsgegenstand Einzahl';
@@ -371,7 +395,7 @@ $loc_impressum = 'Pie de imprenta';
 // $loc_kontakt = '';
 // $loc_anschrift = '';
 $loc_deutschland = 'Alemania';
-// $loc_eu = '';
+$loc_eu = 'Unión Europea';
 // $loc_telefon = '';
 // $loc_telefax = '';
 // $loc_nachricht = '';
@@ -381,8 +405,21 @@ $loc_deutschland = 'Alemania';
 // $loc_absenden = '';
 // $loc_loeschen = '';
 
+// Dankseite
+// $loc_danke = '';
+// $loc_danke1 = '';
+// $loc_danke2 = '';
+// $loc_spende1 = '';
+// $loc_spende2 = '';
+// $loc_keine_adresse1 = '';
+// $loc_keine_adresse2 = '';
+// $loc_kein_inhalt1 = '';
+// $loc_kein_inhalt2 = '';
+// $loc_spam1 = '';
+// $loc_spam2 = '';
+
 // Portalseite
-$loc_titel = 'Etymos diccionario';
+$loc_titel = 'Etymos-Diccionario';
 // $loc_willkommen = '';
 // $loc_wir_arbeiten = '';
 // $loc_news = '';
@@ -410,8 +447,8 @@ $loc_titel = 'Etymos diccionario';
 // $loc_achtung2.= '';
 
 // Suchseite
-// $loc_etymos = '';
-// $loc_woerterbuch = '';
+$loc_etymos = 'Etymos';
+$loc_woerterbuch = 'Diccionario';
 // Ergebnisfenster
 // $loc_warning1 = '';
 // $loc_warning2 = '';
@@ -454,22 +491,21 @@ $loc_titel = 'Etymos diccionario';
 // $loc_level_explain[7] = '';
 // Materialfenter
 // $loc_material = '';
+// $loc_flex_para = '';
+// $loc_einzelformen = '';
 
 // Flexionsmodul
 // $loc_fall_zahl = '';
-// $loc_sg = '';
-// $loc_pl = '';
-// $loc_nom = '';
-// $loc_gen = '';
-// $loc_dat = '';
-// $loc_acc = '';
-// $loc_flex_para = '';
+// $loc_alle_genera = '';
 // $loc_kein_schema = '';
 // $loc_kein_paradigma = '';
 // $loc_inflektierbar = '';
 // $loc_siehe_einzelworte = '';
 // $loc_anmerkung = '';
 // $loc_genitivattribut_untypisch = '';
+
+// Downloadseite
+// $loc_noch_nicht = '';
 
 // Fragenseite
 // $loc_fragen_antworten = '';
@@ -564,21 +600,64 @@ $loc_titel = 'Etymos diccionario';
 // $loc_datenbank = '';
 // $loc_programm = '';
 // $loc_rubriken = '';
-
-// Dankseite
-// $loc_spende1 = '';
-// $loc_spende2 = '';
-// $loc_keine_adresse1 = '';
-// $loc_keine_adresse2 = '';
-// $loc_kein_inhalt1 = '';
-// $loc_kein_inhalt2 = '';
-// $loc_spam1 = '';
-// $loc_spam2 = '';
-// $loc_danke1 = '';
-// $loc_danke2 = '';
-
-// Teamseite
-// $loc_noch_nicht = '';
+// $loc_wir1 = '';
+// $loc_wir2 = '';
+// $loc_wir3 = '';
+// $loc_wir4 = '';
+// $loc_wir5 = '';
+// $loc_verstaendnis1 = '';
+// $loc_verstaendnis2 = '';
+// $loc_verstaendnis3 = '';
+// $loc_teamliste = '';
+// $loc_projektleitung1 = '';
+// $loc_projektleitung2 = '';
+// $loc_redakteure1 = '';
+// $loc_redakteure2 = '';
+// $loc_redakteure3 = '';
+// $loc_redakteure4 = '';
+// $loc_redakteure5 = '';
+// $loc_redakteure6 = '';
+// $loc_redakteure7 = '';
+// $loc_redakteure8 = '';
+// $loc_programmierer1 = '';
+// $loc_programmierer2 = '';
+// $loc_tester1 = '';
+// $loc_tester2 = '';
+// $loc_ausschreibungen = '';
+// $loc_bewerbungen1 = '';
+// $loc_bewerbungen2 = '';
+// $loc_bewerbungen3 = '';
+// $loc_bewerbungen4 = '';
+// $loc_bewerbungen5 = '';
+// $loc_bewerbungen6 = '';
+// $loc_bewerbungen7 = '';
+// $loc_bewerbung_warnung1 = '';
+// $loc_bewerbung_warnung2 = '';
+// $loc_bewerbung_warnung3 = '';
+// $loc_bewerbung_warnung4 = '';
+// $loc_bewerbung_warnung5 = '';
+// $loc_bewerbung_warnung6 = '';
+// $loc_redaktion1 = '';
+// $loc_redaktion2 = '';
+// $loc_redaktion3 = '';
+// $loc_redaktion4 = '';
+// $loc_redaktion5 = '';
+// $loc_redaktion6 = '';
+// $loc_redaktion7 = '';
+// $loc_redaktion8 = '';
+// $loc_redaktion9 = '';
+// $loc_redaktion10 = '';
+// $loc_aussprache1 = '';
+// $loc_aussprache2 = '';
+// $loc_aussprache3 = '';
+// $loc_aussprache4 = '';
+// $loc_aussprache5 = '';
+// $loc_entwicklung1 = '';
+// $loc_entwicklung2 = '';
+// $loc_entwicklung3 = '';
+// $loc_entwicklung4 = '';
+// $loc_kontaktformular = '';
+// $loc_gibt_es_fragen = '';
 
 // Logseite
 // $loc_suchlog = '';
