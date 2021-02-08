@@ -600,6 +600,8 @@ $loc_groesste_sprache = 'Largest language';
 $loc_datenbank = 'Database';
 $loc_programm = 'Program';
 $loc_rubriken = 'Categories';
+
+// Teamseite
 $loc_wir1 = 'We, the ';
 $loc_wir2 = 'Etymos team';
 $loc_wir3 = ', want to introduce ourselves. Should there be questions, opinions, hints or problems, we are there to help. At the end of this page a ';

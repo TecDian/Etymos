@@ -20,7 +20,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'chemisches Element E, als Gas E₂'
+--     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -53,6 +53,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento químico Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento químico Cr';
+
+DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='por';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupfer', -- $deu[0] = 'Kupfer'
+    'por',    -- $por[0] = 'cobre'
+    'elemento químico Cu'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'elemento químico Cu';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='por';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -97,7 +105,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='ytterbium' AND `language`='por';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ytterbium', -- $deu[0] = 'Ytterbium'
-    'por',       -- $por[0] = ''
+    'por',       -- $por[0] = 'itérbio'
     'elemento químico Yb'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento químico Yb';
@@ -105,7 +113,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='yttrium' AND `language`='por';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'yttrium', -- $deu[0] = 'Yttrium'
-    'por',     -- $por[0] = ''
+    'por',     -- $por[0] = 'ítrio'
     'elemento químico Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento químico Y';

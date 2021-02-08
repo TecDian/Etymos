@@ -20,7 +20,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'chemisches Element E, als Gas E₂'
+--     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -78,6 +78,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'material textil sau material similar care se aplică în interiorul obiectelor de îmbrăcăminte sau de genți și altele asemenea';
 
+DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupfer', -- $deu[0] = 'Kupfer'
+    'ron',    -- $ron[0] = 'cupru'
+    'element chimic Cu'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'element chimic Cu';
+
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
@@ -121,7 +129,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='ytterbium' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ytterbium', -- $deu[0] = 'Ytterbium'
-    'ron',       -- $ron[0] = ''
+    'ron',       -- $ron[0] = 'yterbiu'
     'element chimic Yb'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic Yb';
@@ -129,7 +137,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='yttrium' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'yttrium', -- $deu[0] = 'Yttrium'
-    'ron',     -- $ron[0] = ''
+    'ron',     -- $ron[0] = 'ytriu'
     'element chimic Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic Y';

@@ -20,7 +20,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'chemisches Element E, als Gas E₂'
+--     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -53,6 +53,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'element kimik Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element kimik Cr';
+
+DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='sqi';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupfer', -- $deu[0] = 'Kupfer'
+    'sqi',    -- $sqi[0] = ''
+    'element kimik Cu'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'element kimik Cu';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='sqi';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

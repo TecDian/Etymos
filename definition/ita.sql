@@ -12,7 +12,7 @@
 -- Staaten, Hauptstädte und Städte/Ortschaften/Dörfer
 --     'Staat in Musterkontinent in Musterregion'
 --     'Staat auf der gleichnamigen Insel in der Karibik'
---     'Hauptstadt Musterlands'
+--     'capitale d’Musterland'
 --     'administratives Zentrum von Musterland'
 --     'Dorf in Musterland (in der Region Mustergebiet)'
 
@@ -20,7 +20,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'chemisches Element E, als Gas E₂'
+--     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -46,6 +46,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Ac';
 
+DELETE FROM `definition` WHERE `sememe`='baku' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'baku', -- $deu[0] = 'Baku'
+    'ita',  -- $ita[0] = ''
+    'capitale dell'Azerbaigian'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'capitale dell'Azerbaigian';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -62,6 +70,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fiume della Slovenia e Croazia nella Istria';
 
+DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupfer', -- $deu[0] = 'Kupfer'
+    'ita',    -- $ita[0] = 'rame'
+    'elemento chimico Cu'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'elemento chimico Cu';
+
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
@@ -69,6 +85,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento chimico Li'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Li';
+
+DELETE FROM `definition` WHERE `sememe`='luxemburg_1' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'luxemburg_1', -- $deu[0] = 'Luxemburg'
+    'ita',         -- $ita[0] = ''
+    'capitale del Lussemburgo'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'capitale del Lussemburgo';
 
 DELETE FROM `definition` WHERE `sememe`='lüb' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -86,6 +110,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Mg';
 
+DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rom_0', -- $deu[0] = 'Rom'
+    'ita',   -- $ita[0] = 'Roma'
+    'capitale d’Italia'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'capitale d’Italia';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -93,6 +125,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento chimico Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Ag';
+
+DELETE FROM `definition` WHERE `sememe`='vilnius' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vilnius', -- $deu[0] = 'Vilnius'
+    'ita',     -- $ita[0] = 'Vilnius'
+    'capitale della Lituania'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'capitale della Lituania';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -105,7 +145,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='ytterbium' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ytterbium', -- $deu[0] = 'Ytterbium'
-    'ita',       -- $ita[0] = ''
+    'ita',       -- $ita[0] = 'itterbio'
     'elemento chimico Yb'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Yb';
@@ -113,7 +153,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='yttrium' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'yttrium', -- $deu[0] = 'Yttrium'
-    'ita',     -- $ita[0] = ''
+    'ita',     -- $ita[0] = 'ittrio'
     'elemento chimico Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Y';

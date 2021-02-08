@@ -600,6 +600,8 @@ $loc_suchen = 'Найти';
 // $loc_datenbank = '';
 // $loc_programm = '';
 // $loc_rubriken = '';
+
+// Teamseite
 // $loc_wir1 = '';
 // $loc_wir2 = '';
 // $loc_wir3 = '';

@@ -603,6 +603,8 @@ $loc_groesste_sprache = 'größste Sprache';
 $loc_datenbank = 'Datenbank';
 $loc_programm = 'Programm';
 $loc_rubriken = 'Rubriken';
+
+// Teamseite
 $loc_wir1 = 'Wir, das ';
 $loc_wir2 = 'Team von Etymos';
 $loc_wir3 = ', möchten uns kurz vorstellen. Wenn es Fragen, Meinungen, Hinweise oder Probleme gibt, stehen wir bereit, um zu helfen. Am Ende dieser Seite kann eine ';

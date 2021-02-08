@@ -12,7 +12,7 @@
 -- Staaten, Hauptstädte und Städte/Ortschaften/Dörfer
 --     'Staat in Musterkontinent in Musterregion'
 --     'Staat auf der gleichnamigen Insel in der Karibik'
---     'Hauptstadt Musterlands'
+--     'huvudstad i Musterland'
 --     'administratives Zentrum von Musterland'
 --     'Dorf in Musterland (in der Region Mustergebiet)'
 
@@ -20,7 +20,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'chemisches Element E, als Gas E₂'
+--     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -46,6 +46,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Ac';
 
+DELETE FROM `definition` WHERE `sememe`='baku' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'baku', -- $deu[0] = 'Baku'
+    'swe',  -- $swe[0] = ''
+    'huvudstad i Azerbajdzjan'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'huvudstad i Azerbajdzjan';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -62,6 +70,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'rollspelsliknande barnlek som innehåller skattjakt och tagande av fångar på de två lagens respektive territorium';
 
+DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupfer', -- $deu[0] = 'Kupfer'
+    'swe',    -- $swe[0] = 'koppar'
+    'grundämne Cu'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grundämne Cu';
+
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
@@ -69,6 +85,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundämne Li'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Li';
+
+DELETE FROM `definition` WHERE `sememe`='luxemburg_1' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'luxemburg_1', -- $deu[0] = 'Luxemburg'
+    'swe',         -- $swe[0] = ''
+    'huvudstad i Luxemburg'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'huvudstad i Luxemburg';
 
 DELETE FROM `definition` WHERE `sememe`='magnesium' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -78,6 +102,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Mg';
 
+DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rom_0', -- $deu[0] = 'Rom'
+    'swe',   -- $swe[0] = 'Rom'
+    'huvudstad i Italien'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'huvudstad i Italien';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -85,6 +117,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundämne Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Ag';
+
+DELETE FROM `definition` WHERE `sememe`='vilnius' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vilnius', -- $deu[0] = 'Vilnius'
+    'swe',     -- $swe[0] = ''
+    'huvudstad i Litauen'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'huvudstad i Litauen';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -97,7 +137,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='ytterbium' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ytterbium', -- $deu[0] = 'Ytterbium'
-    'swe',       -- $swe[0] = ''
+    'swe',       -- $swe[0] = 'ytterbium'
     'grundämne Yb'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Yb';
@@ -105,7 +145,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='yttrium' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'yttrium', -- $deu[0] = 'Yttrium'
-    'swe',     -- $swe[0] = ''
+    'swe',     -- $swe[0] = 'yttrium'
     'grundämne Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Y';

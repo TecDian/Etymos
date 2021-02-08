@@ -20,7 +20,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'chemisches Element E, als Gas E₂'
+--     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -54,6 +54,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Cr';
 
+DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ell';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupfer', -- $deu[0] = 'Kupfer'
+    'ell',    -- $ell[0] = 'χαλκός'
+    'χημικό στοιχείο Cu'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'χημικό στοιχείο Cu';
+
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
@@ -69,6 +77,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'χημικό στοιχείο Mg'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Mg';
+
+DELETE FROM `definition` WHERE `sememe`='seaborgium' AND `language`='ell';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'seaborgium', -- $deu[0] = 'Seaborgium'
+    'ell',        -- $ell[0] = 'σιμπόργκιο'
+    'χημικό στοιχείο Sg'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'χημικό στοιχείο Sg';
 
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
