@@ -70,6 +70,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'rollspelsliknande barnlek som innehåller skattjakt och tagande av fångar på de två lagens respektive territorium';
 
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'swe',   -- $swe[0] = 'järn'
+    'grundämne Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grundämne Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'swe',    -- $swe[0] = 'helium'
+    'grundämne He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grundämne He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'swe',    -- $swe[0] = 'kalium'
+    'grundämne K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grundämne K';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -102,6 +126,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'swe',     -- $swe[0] = 'natrium'
+    'grundämne Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grundämne Na';
+
 DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'rom_0', -- $deu[0] = 'Rom'
@@ -125,6 +157,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'huvudstad i Litauen'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'huvudstad i Litauen';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'swe',         -- $swe[0] = 'väte'
+    'grundämne H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grundämne H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

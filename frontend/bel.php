@@ -4,7 +4,7 @@
 // -------------------------------------------------------------------------------------------------
 
 // Header
-// $loc_etymos_woerterbuch = '';
+$loc_etymos_woerterbuch = 'Этымос-Слоўнік - шматмоўны і рознанакіраваны';
 // $loc_description = '';
 // $loc_keywords = '';
 
@@ -58,6 +58,7 @@ $language = array(
     'pgm' => 'Прагерманская',
     'akk' => 'Акадская',
     'grc' => 'Старажытнагрэчаская',
+    'pfi' => 'Прафінская',
 );
 
 // Tooltips für Kategorien
@@ -197,6 +198,8 @@ $language = array(
 // $tooltip[277] = 'Moldawien';
 // $tooltip[280] = 'Andorra und Valencia';
 // $tooltip[281] = 'Katalonien';
+// $tooltip[284] = 'Böhmen';
+// $tooltip[285] = 'Mähren';
 $tooltip[320] = 'Германія';
 // $tooltip[321] = 'Österreich';
 // $tooltip[322] = 'Schweiz';
@@ -232,9 +235,9 @@ $tooltip[320] = 'Германія';
 // $tooltip['v'] = 'Verb, Tätigkeitswort';
 // $tooltip['cntr'] = 'Kontraktion, Zusammenziehung';
 // $tooltip['abbr'] = 'Abbreviation, Abkürzung';
-// $tooltip['acro'] = 'Akronym, Silbenwort';
+// $tooltip['acro'] = 'Akronym, Initialwort oder Silbenwort';
 // $tooltip['brax'] = 'Brachonym, Kurzwort';
-// $tooltip['brad'] = 'Bradonym, Langwort';
+// $tooltip['brad'] = 'Bradonym, Vollform';
 // $tooltip['part'] = 'Partikel, Verhältnisbeiwort';
 // $tooltip['prep'] = 'Präposition, Verhältnisvorwort';
 // $tooltip['post'] = 'Postposition, Verhältnisnachwort';
@@ -263,13 +266,13 @@ $tooltip[320] = 'Германія';
 // $tooltip['rec'] = 'reziprok, wechselseitig';
 // $tooltip['ref'] = 'reflexiv, rückbezüglich';
 // $tooltip['rel'] = 'relativ, bezüglich';
-// $tooltip['si'] = 'Substantiv Infinitiv, Tätigkeitshauptwort';
-// $tooltip['sv'] = 'Substantiv Verbalnomen Gerundium, Ausführungshauptwort';
-// $tooltip['ss'] = 'Substantiv Singularetantum, Einzahlwort';
-// $tooltip['sp'] = 'Substantiv Pluraletantum, Mehrzahlwort';
-// $tooltip['sn'] = 'Substantiv Proprialnomen, Eigenname';
-// $tooltip['ssn'] = 'Substantiv Proprialnomen als Singularetantum, Eigenname als Einzahlwort';
-// $tooltip['ssp'] = 'Substantiv Proprialnomen als Pluraletantum, Eigenname als Mehrzahlwort';
+// $tooltip['si'] = 'Substantiv: Infinitiv, Tätigkeitshauptwort';
+// $tooltip['sv'] = 'Substantiv: Verbalnomen Gerundium, Ausführungshauptwort';
+// $tooltip['ss'] = 'Substantiv: Singularetantum, Einzahlwort';
+// $tooltip['sp'] = 'Substantiv: Pluraletantum, Mehrzahlwort';
+// $tooltip['sn'] = 'Substantiv: Proprialnomen, Eigenname';
+// $tooltip['ssn'] = 'Substantiv: Proprialnomen als Singularetantum, Eigenname als Einzahlwort';
+// $tooltip['ssp'] = 'Substantiv: Proprialnomen als Pluraletantum, Eigenname als Mehrzahlwort';
 // $tooltip['m'] = 'maskulinum, männlich';
 // $tooltip['f'] = 'femininum, weiblich';
 // $tooltip['n'] = 'neutrum, sächlich';
@@ -393,7 +396,7 @@ $loc_impressum = 'Адбітак';
 // $loc_eigentuemer = '';
 // $loc_autor = '';
 // $loc_kontakt = '';
-// $loc_anschrift = '';
+$loc_anschrift = 'Паштовы адрас';
 $loc_deutschland = 'Германія';
 $loc_eu = 'Еўрапейскі Саюз';
 // $loc_telefon = '';
@@ -452,6 +455,8 @@ $loc_woerterbuch = 'Слоўнік';
 // Ergebnisfenster
 // $loc_warning1 = '';
 // $loc_warning2 = '';
+// $loc_explanation1 = '';
+// $loc_explanation2 = '';
 // Zusatzfunktionsfenster
 // $loc_collocation = '';
 // $loc_definition = '';
@@ -593,7 +598,9 @@ $loc_woerterbuch = 'Слоўнік';
 // $loc_charakteristik = '';
 // $loc_name = '';
 // $loc_sprachen = '';
-// $loc_eintraege = '';
+// $loc_sememe = '';
+// $loc_bestaetigte_sememe = '';
+// $loc_komplette_sememe = '';
 // $loc_lemmata = '';
 // $loc_kleinste_sprache = '';
 // $loc_groesste_sprache = '';

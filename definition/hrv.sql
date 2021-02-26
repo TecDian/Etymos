@@ -54,6 +54,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Cr';
 
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'hrv',   -- $hrv[0] = 'željezo'
+    'kemijski element Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kemijski element Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'hrv',    -- $hrv[0] = 'helij'
+    'kemijski element He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kemijski element He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'hrv',    -- $hrv[0] = 'kalij'
+    'kemijski element K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kemijski element K';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -78,6 +102,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'hrv',     -- $hrv[0] = 'natrij'
+    'kemijski element Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kemijski element Na';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -85,6 +117,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kemijski element Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Ag';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'hrv',         -- $hrv[0] = 'vodik'
+    'kemijski element H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kemijski element H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

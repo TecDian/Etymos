@@ -54,6 +54,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'frumefni Cr';
 
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='isl';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'isl',   -- $isl[0] = 'járn'
+    'frumefni Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'frumefni Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='isl';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'isl',    -- $isl[0] = 'helín'
+    'frumefni He, eðalgas'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'frumefni He, eðalgas';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='isl';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'isl',    -- $isl[0] = 'kalín'
+    'frumefni K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'frumefni K';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -78,6 +102,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'frumefni Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='isl';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'isl',     -- $isl[0] = 'natríum'
+    'frumefni Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'frumefni Na';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -86,13 +118,21 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'frumefni Ag';
 
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='isl';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'isl',         -- $isl[0] = 'vetni'
+    'frumefni H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'frumefni H';
+
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'xenon', -- $deu[0] = 'Xenon'
     'isl',   -- $isl[0] = 'xenon'
-    'frumefni Xe'
+    'frumefni Xe, eðalgas'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'frumefni Xe';
+    'frumefni Xe, eðalgas';
 
 DELETE FROM `definition` WHERE `sememe`='ytterbium' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

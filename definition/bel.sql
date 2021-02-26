@@ -54,6 +54,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Cr';
 
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'bel',   -- $bel[0] = ''
+    'хімічны элемент Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'хімічны элемент Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'bel',    -- $bel[0] = ''
+    'хімічны элемент He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'хімічны элемент He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'bel',    -- $bel[0] = ''
+    'хімічны элемент K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'хімічны элемент K';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -78,6 +102,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'bel',     -- $bel[0] = ''
+    'хімічны элемент Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'хімічны элемент Na';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -85,6 +117,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'хімічны элемент Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Ag';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'bel',         -- $bel[0] = 'вадарод'
+    'хімічны элемент H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'хімічны элемент H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

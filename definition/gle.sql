@@ -54,6 +54,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dúil cheimiceach Cr';
 
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='gle';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'gle',   -- $gle[0] = ''
+    'dúil cheimiceach Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dúil cheimiceach Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='gle';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'gle',    -- $gle[0] = ''
+    'dúil cheimiceach He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dúil cheimiceach He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='gle';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'gle',    -- $gle[0] = ''
+    'dúil cheimiceach K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dúil cheimiceach K';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='gle';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -78,6 +102,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dúil cheimiceach Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='gle';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'gle',     -- $gle[0] = ''
+    'dúil cheimiceach Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dúil cheimiceach Na';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='gle';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -85,6 +117,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'dúil cheimiceach Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dúil cheimiceach Ag';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='gle';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'gle',         -- $gle[0] = 'hidrigin'
+    'dúil cheimiceach H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dúil cheimiceach H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='gle';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

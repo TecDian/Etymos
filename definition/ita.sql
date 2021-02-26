@@ -54,6 +54,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitale dell'Azerbaigian';
 
+DELETE FROM `definition` WHERE `sememe`='bukarest' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bukarest', -- $deu[0] = 'Bukarest'
+    'ita',      -- $ita[0] = 'Bucarest'
+    'capitale della Romania'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'capitale della Romania';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -69,6 +77,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fiume della Slovenia e Croazia nella Istria'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fiume della Slovenia e Croazia nella Istria';
+
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'ita',   -- $ita[0] = 'ferro'
+    'elemento chimico Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'elemento chimico Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'ita',    -- $ita[0] = 'elio'
+    'elemento chimico He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'elemento chimico He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'ita',    -- $ita[0] = 'potassio'
+    'elemento chimico K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'elemento chimico K';
 
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -110,6 +142,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'ita',     -- $ita[0] = 'sodio'
+    'elemento chimico Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'elemento chimico Na';
+
 DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'rom_0', -- $deu[0] = 'Rom'
@@ -133,6 +173,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'capitale della Lituania'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitale della Lituania';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'ita',         -- $ita[0] = 'idrogeno'
+    'elemento chimico H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'elemento chimico H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

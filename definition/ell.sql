@@ -54,6 +54,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Cr';
 
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='ell';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'ell',   -- $ell[0] = 'σίδηρος'
+    'χημικό στοιχείο Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'χημικό στοιχείο Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='ell';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'ell',    -- $ell[0] = 'ήλιο'
+    'χημικό στοιχείο He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'χημικό στοιχείο He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='ell';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'ell',    -- $ell[0] = 'κάλιο'
+    'χημικό στοιχείο K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'χημικό στοιχείο K';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -78,6 +102,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='ell';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'ell',     -- $ell[0] = 'νάτριο'
+    'χημικό στοιχείο Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'χημικό στοιχείο Na';
+
 DELETE FROM `definition` WHERE `sememe`='seaborgium' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'seaborgium', -- $deu[0] = 'Seaborgium'
@@ -93,6 +125,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'χημικό στοιχείο Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Ag';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='ell';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'ell',         -- $ell[0] = 'υδρογόνο'
+    'χημικό στοιχείο H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'χημικό στοιχείο H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

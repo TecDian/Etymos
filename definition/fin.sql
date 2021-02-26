@@ -54,6 +54,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'alkuaine Cr';
 
+DELETE FROM `definition` WHERE `sememe`='der_0' AND `language`='fin';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'der_0', -- $deu[0] = 'der'
+    'fin',   -- $fin[0] = '#part1'
+    'määräinen artikkeli, ei saatavilla monilla kielillä'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'määräinen artikkeli, ei saatavilla monilla kielillä';
+
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='fin';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'fin',   -- $fin[0] = 'rauta'
+    'alkuaine Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'alkuaine Fe';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='fin';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'fin',    -- $fin[0] = 'helium'
+    'alkuaine He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'alkuaine He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='fin';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'fin',    -- $fin[0] = 'kalium'
+    'alkuaine K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'alkuaine K';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='fin';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -78,6 +110,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'alkuaine Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='fin';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'fin',     -- $fin[0] = 'natrium'
+    'alkuaine Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'alkuaine Na';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='fin';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -85,6 +125,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'alkuaine Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'alkuaine Ag';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='fin';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'fin',         -- $fin[0] = 'vety'
+    'alkuaine H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'alkuaine H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='fin';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

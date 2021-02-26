@@ -54,6 +54,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic Ac';
 
+DELETE FROM `definition` WHERE `sememe`='bukarest' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bukarest', -- $deu[0] = 'Bukarest'
+    'ron',      -- $ron[0] = 'București'
+    'capitala României'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'capitala României';
+
 DELETE FROM `definition` WHERE `sememe`='bătrâna' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'bătrâna', -- $deu[0] = 'Bătrâna'
@@ -70,6 +78,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic Cr';
 
+DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eisen', -- $deu[0] = 'Eisen'
+    'ron',   -- $ron[0] = 'fier'
+    'element chimic Fe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'element chimic Fe';
+
 DELETE FROM `definition` WHERE `sememe`='futter_1' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'futter_1', -- $deu[0] = 'Futter'
@@ -77,6 +93,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'material textil sau material similar care se aplică în interiorul obiectelor de îmbrăcăminte sau de genți și altele asemenea'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'material textil sau material similar care se aplică în interiorul obiectelor de îmbrăcăminte sau de genți și altele asemenea';
+
+DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'helium', -- $deu[0] = 'Helium'
+    'ron',    -- $ron[0] = 'heliu'
+    'element chimic He'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'element chimic He';
+
+DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kalium', -- $deu[0] = 'Kalium'
+    'ron',    -- $ron[0] = 'kaliu'
+    'element chimic K'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'element chimic K';
 
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -102,6 +134,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic Mg';
 
+DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'natrium', -- $deu[0] = 'Natrium'
+    'ron',     -- $ron[0] = 'natriu'
+    'element chimic Na'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'element chimic Na';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -117,6 +157,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'capitala Lituaniei'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitala Lituaniei';
+
+DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wasserstoff', -- $deu[0] = 'Wasserstoff'
+    'ron',         -- $ron[0] = 'hidrogen'
+    'element chimic H'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'element chimic H';
 
 DELETE FROM `definition` WHERE `sememe`='xenon' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

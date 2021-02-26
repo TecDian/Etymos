@@ -58,6 +58,7 @@ $language = array(
     'pgm' => 'Urgermanisch',
     'akk' => 'Akkadisch',
     'grc' => 'Altgriechisch',
+    'pfi' => 'Urfinnisch',
 );
 
 // Tooltips für Kategorien
@@ -199,6 +200,8 @@ $tooltip = array(
     277 => 'Moldawien',
     280 => 'Andorra und Valencia',
     281 => 'Katalonien',
+    284 => 'Böhmen',
+    285 => 'Mähren',
     320 => 'Deutschland',
     321 => 'Österreich',
     322 => 'Schweiz',
@@ -234,9 +237,9 @@ $tooltip = array(
     'v' => 'Verb, Tätigkeitswort',
     'cntr' => 'Kontraktion, Zusammenziehung',
     'abbr' => 'Abbreviation, Abkürzung',
-    'acro' => 'Akronym, Silbenwort',
+    'acro' => 'Akronym, Initialwort oder Silbenwort',
     'brax' => 'Brachonym, Kurzwort',
-    'brad' => 'Bradonym, Langwort',
+    'brad' => 'Bradonym, Vollform',
     'part' => 'Partikel, Verhältnisbeiwort',
     'prep' => 'Präposition, Verhältnisvorwort',
     'post' => 'Postposition, Verhältnisnachwort',
@@ -265,13 +268,13 @@ $tooltip = array(
     'rec' => 'reziprok, wechselseitig',
     'ref' => 'reflexiv, rückbezüglich',
     'rel' => 'relativ, bezüglich',
-    'si' => 'Substantiv Infinitiv, Tätigkeitshauptwort',
-    'sv' => 'Substantiv Verbalnomen Gerundium, Ausführungshauptwort',
-    'ss' => 'Substantiv Singularetantum, Einzahlwort',
-    'sp' => 'Substantiv Pluraletantum, Mehrzahlwort',
-    'sn' => 'Substantiv Proprialnomen, Eigenname',
-    'ssn' => 'Substantiv Proprialnomen als Singularetantum, Eigenname als Einzahlwort',
-    'ssp' => 'Substantiv Proprialnomen als Pluraletantum, Eigenname als Mehrzahlwort',
+    'si' => 'Substantiv: Infinitiv, Tätigkeitshauptwort',
+    'sv' => 'Substantiv: Verbalnomen Gerundium, Ausführungshauptwort',
+    'ss' => 'Substantiv: Singularetantum, Einzahlwort',
+    'sp' => 'Substantiv: Pluraletantum, Mehrzahlwort',
+    'sn' => 'Substantiv: Proprialnomen, Eigenname',
+    'ssn' => 'Substantiv: Proprialnomen als Singularetantum, Eigenname als Einzahlwort',
+    'ssp' => 'Substantiv: Proprialnomen als Pluraletantum, Eigenname als Mehrzahlwort',
     'm' => 'maskulinum, männlich',
     'f' => 'femininum, weiblich',
     'n' => 'neutrum, sächlich',
@@ -425,7 +428,7 @@ $loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Z
 $loc_titel = 'Etymos-Wörterbuch';
 $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert schon. Also eigentlich fast alles, aber … ###';
 $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
-$loc_news = '12. Januar 2021</span> <span class="code">neu:</span> Schwebetext für Wortarten, Fachgebiete, Stilebenen und Regionen wurde hinzugefügt. Übersetzungen sind jetzt anklickbar. Mazedonisch wurde wesentlich erweitert.';
+$loc_news = '26. Februar 2021</span> <span class="code">neu:</span> Einträge wurden überarbeitet, Phonetik und Definitionen wurden hinzugefügt. Strukturen für Phrasen und nicht übersetzbare Wörter wurden hinzugefügt. Estnisch wurde wesentlich erweitert.';
 // Sprachwahlfenster
 $loc_waehlen = 'Quell- und Zielsprache wählen';
 $loc_aufschlagen = 'Wörterbuch aufschlagen';
@@ -455,6 +458,8 @@ $loc_woerterbuch = 'Wörterbuch';
 // Ergebnisfenster
 $loc_warning1 = 'Der Suchbegriff wurde nicht gefunden.';
 $loc_warning2 = 'Der Suchbegriff wurde nicht direkt gefunden. Der folgende Begriff kommt dem am nächsten.';
+$loc_explanation1 = 'nicht übersetzt, durch Kasus ausgedrückt';
+$loc_explanation2 = 'nicht übersetzbar, zur Funktion siehe Definition';
 // Zusatzfunktionsfenster
 $loc_collocation = 'Kollokationen';
 $loc_definition = 'Definition';
@@ -596,10 +601,12 @@ $loc_jetzt_spenden = 'Spenden';
 $loc_charakteristik = 'Charakteristik';
 $loc_name = 'Name';
 $loc_sprachen = 'Sprachen';
-$loc_eintraege = 'Einträge';
+$loc_sememe = 'Sememe';
+$loc_bestaetigte_sememe = 'bestätigt';
+$loc_komplette_sememe = 'komplett';
 $loc_lemmata = 'Lemmata';
-$loc_kleinste_sprache = 'kleinste Sprache';
-$loc_groesste_sprache = 'größste Sprache';
+$loc_kleinste_sprache = 'Minimum';
+$loc_groesste_sprache = 'Maximum';
 $loc_datenbank = 'Datenbank';
 $loc_programm = 'Programm';
 $loc_rubriken = 'Rubriken';
