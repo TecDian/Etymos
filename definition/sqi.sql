@@ -73,7 +73,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='sqi';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kalium', -- $deu[0] = 'Kalium'
-    'sqi',    -- $sqi[0] = ''
+    'sqi',    -- $sqi[0] = 'kalium'
     'element kimik K'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element kimik K';

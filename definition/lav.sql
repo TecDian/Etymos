@@ -57,7 +57,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='lav';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'
-    'lav',   -- $lav[0] = ''
+    'lav',   -- $lav[0] = 'dzelzs'
     'ķīmiskais elements Fe'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ķīmiskais elements Fe';
@@ -65,7 +65,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='lav';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
-    'lav',    -- $lav[0] = ''
+    'lav',    -- $lav[0] = 'hēlijs'
     'ķīmiskais elements He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ķīmiskais elements He';
@@ -73,7 +73,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='lav';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kalium', -- $deu[0] = 'Kalium'
-    'lav',    -- $lav[0] = ''
+    'lav',    -- $lav[0] = 'kālijs'
     'ķīmiskais elements K'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ķīmiskais elements K';
@@ -81,7 +81,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='lav';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
-    'lav',    -- $lav[0] = ''
+    'lav',    -- $lav[0] = 'varš'
     'ķīmiskais elements Cu'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ķīmiskais elements Cu';

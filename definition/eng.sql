@@ -38,6 +38,14 @@
 -- Definitionsliste
 -- -----------------------------------------------------------------------------------------------
 
+DELETE FROM `definition` WHERE `sememe`='aaskäfer' AND `language`='eng';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'aaskäfer', -- $deu[0] = 'Aaskäfer'
+    'eng',       -- $eng[0] = 'silphid'
+    'animal of the family Silphidae'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'animal of the family Silphidae';
+
 DELETE FROM `definition` WHERE `sememe`='actinium' AND `language`='eng';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'actinium', -- $deu[0] = 'Actinium'
@@ -565,6 +573,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'plant of the species Ocimum basilicum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'plant of the species Ocimum basilicum';
+
+DELETE FROM `definition` WHERE `sememe`='laser' AND `language`='eng';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'laser', -- $deu[0] = 'Laser'
+    'eng',   -- $eng[0] = 'laser'
+    'device which generates a coherent beam of light, originally as an acronym for ‹light amplification by stimulated emission of radiation›'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'device which generates a coherent beam of light, originally as an acronym for ‹light amplification by stimulated emission of radiation›';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='eng';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

@@ -126,6 +126,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'химичен елемент Ag';
 
+DELETE FROM `definition` WHERE `sememe`='stickstoff' AND `language`='bul';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'stickstoff', -- $deu[0] = 'Stickstoff'
+    'bul',        -- $bul[0] = 'азот'
+    'неметал, химичен елемент N, като газ N₂, на пниктогените'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметал, химичен елемент N, като газ N₂, на пниктогените';
+
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='bul';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'wasserstoff', -- $deu[0] = 'Wasserstoff'
