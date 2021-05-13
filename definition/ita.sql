@@ -129,7 +129,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='lüb' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lüb', -- $deu[0] = 'Lüb'
-    'ita',  -- $ita[0] = 'Ulbo'
+    'ita', -- $ita[0] = 'Ulbo'
     'isola della Croazia nella Dalmazia'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'isola della Croazia nella Dalmazia';

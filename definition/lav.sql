@@ -137,7 +137,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='ytterbium' AND `language`='lav';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ytterbium', -- $deu[0] = 'Ytterbium'
-    'lav',       -- $lav[0] = ''
+    'lav',       -- $lav[0] = 'iterbijs'
     'ķīmiskais elements Yb'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ķīmiskais elements Yb';
@@ -145,7 +145,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='yttrium' AND `language`='lav';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'yttrium', -- $deu[0] = 'Yttrium'
-    'lav',     -- $lav[0] = ''
+    'lav',     -- $lav[0] = 'itrijs'
     'ķīmiskais elements Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ķīmiskais elements Y';

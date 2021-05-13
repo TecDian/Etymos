@@ -65,7 +65,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='bătrâna' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'bătrâna', -- $deu[0] = 'Bătrâna'
-    'ron',       -- $ron[0] = 'Bătrâna'
+    'ron',     -- $ron[0] = 'Bătrâna'
     'sat în România în Transilvania'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'sat în România în Transilvania';

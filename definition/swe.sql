@@ -65,7 +65,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='die_rote-und-weiße_rose' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'die_rote-und-weiße_rose', -- $deu[0] = 'Die rote und weiße Rose'
-    'swe',                      -- $swe[0] = 'Röda och vita rosen'
+    'swe',                     -- $swe[0] = 'Röda och vita rosen'
     'rollspelsliknande barnlek som innehåller skattjakt och tagande av fångar på de två lagens respektive territorium'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'rollspelsliknande barnlek som innehåller skattjakt och tagande av fångar på de två lagens respektive territorium';

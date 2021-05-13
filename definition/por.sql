@@ -113,7 +113,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='schultüte_0' AND `language`='por';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'schultüte_0', -- $deu[0] = 'Schultüte'
-    'por',          -- $por[0] = 'Schultüte'
+    'por',         -- $por[0] = 'Schultüte'
     'um cone cheio de doces e pequenos presentes, decorado com fitas de papel crepom, que são dados às crianças no seu primeiro dia de aula'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'um cone cheio de doces e pequenos presentes, decorado com fitas de papel crepom, que são dados às crianças no seu primeiro dia de aula';
