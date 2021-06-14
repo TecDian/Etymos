@@ -54,6 +54,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Silphidae';
 
+DELETE FROM `definition` WHERE `sememe`='abelisaurus' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'abelisaurus', -- $deu[0] = 'Abelisaurus'
+    'rus',         -- $rus[0] = ''
+    'животное вида Abelisaurus comahuensis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Abelisaurus comahuensis';
+
 DELETE FROM `definition` WHERE `sememe`='actinium' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'actinium', -- $deu[0] = 'Actinium'
@@ -245,6 +253,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'неофициальная глобальная криптоденежная единица с 2009 года, псевдокод: BTC, код ISO 4217: XBT, символ: ₿'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неофициальная глобальная криптоденежная единица с 2009 года, псевдокод: BTC, код ISO 4217: XBT, символ: ₿';
+
+DELETE FROM `definition` WHERE `sememe`='borretsch_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'borretsch_1', -- $deu[0] = 'Borretsch'
+    'rus',         -- $rus[0] = ''
+    'растение рода Borago'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение рода Borago';
 
 DELETE FROM `definition` WHERE `sememe`='brandgans' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -726,14 +742,6 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Cu подгруппы меди';
 
-DELETE FROM `definition` WHERE `sememe`='königskraut_0' AND `language`='rus';
-INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'königskraut_0', -- $deu[0] = 'Königskraut'
-    'rus',           -- $rus[0] = ''
-    'растение вида Ocimum basilicum'
-) ON DUPLICATE KEY UPDATE `text` = 
-    'растение вида Ocimum basilicum';
-
 DELETE FROM `definition` WHERE `sememe`='litas' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'litas', -- $deu[0] = 'Litas'
@@ -766,6 +774,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Mg щёлочноземельных металлов';
 
+DELETE FROM `definition` WHERE `sememe`='montenegro-spitzkopfeidechse' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'montenegro-spitzkopfeidechse', -- $deu[0] = 'Montenegro-Spitzkopfeidechse'
+    'rus',                          -- $rus[0] = ''
+    'животное вида Dinarolacerta montenegrina'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Dinarolacerta montenegrina';
+
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'natrium', -- $deu[0] = 'Natrium'
@@ -797,6 +813,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Petroselinum crispum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Petroselinum crispum';
+
+DELETE FROM `definition` WHERE `sememe`='pythonschlange' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'pythonschlange', -- $deu[0] = 'Pythonschlange'
+    'rus',            -- $rus[0] = ''
+    'животное вида Pythonidae'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Pythonidae';
 
 DELETE FROM `definition` WHERE `sememe`='rauchschwalbe' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -885,6 +909,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'гриб вида Boletus calopus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Boletus calopus';
+
+DELETE FROM `definition` WHERE `sememe`='sekretär_2' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sekretär_2', -- $deu[0] = 'Sekretär'
+    'rus',        -- $rus[0] = 'птица-секретарь'
+    'животное вида Sagittarius serpentarius'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Sagittarius serpentarius';
 
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

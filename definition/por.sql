@@ -49,7 +49,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='por';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
-    'por',   -- $por[0] = 'crómio [Port.]'
+    'por',   -- $por[0] = 'crómio'
     'elemento químico Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento químico Cr';

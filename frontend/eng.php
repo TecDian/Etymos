@@ -144,7 +144,7 @@ $tooltip = array(
     140 => 'agronomy, agriculture, forestry, horticulture, fishing, hunting',
     141 => 'mining, raw material extraction',
     142 => 'energy supply, water supply, sewage disposal, garbage disposal',
-    143 => 'chemical industry, metallurgyprocessing of natural materials',
+    143 => 'chemical industry, metallurgy, processing of natural materials',
     144 => 'materials science',
     145 => 'construction, architecture (technology), urban planning',
     146 => 'mechanical engineering, equipment manufacturing, furniture',
@@ -155,6 +155,7 @@ $tooltip = array(
     151 => 'photography, lighting technology',
     152 => 'journalism, media',
     153 => 'tourism, leisure industry',
+    154 => 'food processing, fodder processing',
     176 => 'medicine, human medicine',
     177 => 'veterinary medicine',
     178 => 'anatomy',
@@ -197,6 +198,7 @@ $tooltip = array(
     269 => 'Finland',
     272 => 'Portugal',
     273 => 'Brazil',
+    274 => 'Africa',
     276 => 'Romania',
     277 => 'Moldova',
     280 => 'Andorra and Valencia',
@@ -446,7 +448,7 @@ $loc_spam2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in 
 $loc_titel = 'Etymos-Dictionary';
 $loc_willkommen = '### Welcome to Etymos. Most of it does work yet. Well, nearly everything, but … ###';
 $loc_wir_arbeiten = 'We work on it and we have a lot more in mind yet!';
-$loc_news = '13 April 2021</span> <span class="code">neu:</span> Entries were revised. Greek, Turkish, Finnish and Hungarian were considerably extended.';
+$loc_news = '14 June 2021</span> <span class="code">neu:</span> Entries were revised. Portuguese was considerably extended.';
 // Sprachwahlfenster
 $loc_waehlen = 'Choose source and target language';
 $loc_aufschlagen = 'Open dictionary';

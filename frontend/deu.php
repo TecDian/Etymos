@@ -155,6 +155,7 @@ $tooltip = array(
     151 => 'Fotografie, Lichttechnik',
     152 => 'Journalistik, Medien',
     153 => 'Tourismus, Freizeitwirtschaft',
+    154 => 'Nahrungsmittelwirtschaft, Futtermittelwirtschaft',
     176 => 'Medizin, Humanmedizin',
     177 => 'Veterinärmedizin',
     178 => 'Anatomie',
@@ -197,6 +198,7 @@ $tooltip = array(
     269 => 'Finnland',
     272 => 'Portugal',
     273 => 'Brasilien',
+    274 => 'Afrika',
     276 => 'Rumänien',
     277 => 'Moldawien',
     280 => 'Andorra und Valencia',
@@ -446,7 +448,7 @@ $loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Z
 $loc_titel = 'Etymos-Wörterbuch';
 $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert schon. Also eigentlich fast alles, aber … ###';
 $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
-$loc_news = '13. April 2021</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Griechisch, Türkisch, Finnisch und Ungarisch wurden wesentlich erweitert.';
+$loc_news = '14. Juni 2021</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Portugiesisch wurde wesentlich erweitert.';
 // Sprachwahlfenster
 $loc_waehlen = 'Quell- und Zielsprache wählen';
 $loc_aufschlagen = 'Wörterbuch aufschlagen';
