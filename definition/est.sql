@@ -46,6 +46,62 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Ac';
 
+DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'astat', -- $deu[0] = 'Astat'
+    'est',   -- $est[0] = ''
+    'keemiline element At'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element At';
+
+DELETE FROM `definition` WHERE `sememe`='barium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'barium', -- $deu[0] = 'Barium'
+    'est',    -- $est[0] = ''
+    'keemiline element Ba'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Ba';
+
+DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beryllium', -- $deu[0] = 'Beryllium'
+    'est',       -- $est[0] = ''
+    'keemiline element Be'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Be';
+
+DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bor', -- $deu[0] = 'Bor'
+    'est', -- $est[0] = ''
+    'keemiline element B'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element B';
+
+DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brom', -- $deu[0] = 'Brom'
+    'est',  -- $est[0] = ''
+    'keemiline element Br'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Br';
+
+DELETE FROM `definition` WHERE `sememe`='calcium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'calcium', -- $deu[0] = 'Calcium'
+    'est',     -- $est[0] = ''
+    'keemiline element Ca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Ca';
+
+DELETE FROM `definition` WHERE `sememe`='chlor' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chlor', -- $deu[0] = 'Chlor'
+    'est',   -- $est[0] = ''
+    'keemiline element Cl'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Cl';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -53,6 +109,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'keemiline element Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Cr';
+
+DELETE FROM `definition` WHERE `sememe`='cobalt' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'cobalt', -- $deu[0] = 'Cobalt'
+    'est',    -- $est[0] = ''
+    'keemiline element Co'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Co';
 
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -62,6 +126,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Fe';
 
+DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fluor', -- $deu[0] = 'Fluor'
+    'est',   -- $est[0] = ''
+    'keemiline element F'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element F';
+
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
@@ -69,6 +141,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'keemiline element He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element He';
+
+DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iod', -- $deu[0] = 'Iod'
+    'est', -- $est[0] = ''
+    'keemiline element I'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element I';
+
+DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iridium', -- $deu[0] = 'Iridium'
+    'est',     -- $est[0] = ''
+    'keemiline element Ir'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Ir';
 
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -102,6 +190,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Mg';
 
+DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meitnerium', -- $deu[0] = 'Meitnerium'
+    'est',        -- $est[0] = ''
+    'keemiline element Mt'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Mt';
+
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'natrium', -- $deu[0] = 'Natrium'
@@ -110,6 +206,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Na';
 
+DELETE FROM `definition` WHERE `sememe`='neon' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'neon', -- $deu[0] = 'Neon'
+    'est',  -- $est[0] = ''
+    'keemiline element Ne'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Ne';
+
+DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'radium', -- $deu[0] = 'Radium'
+    'est',    -- $est[0] = ''
+    'keemiline element Ra'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Ra';
+
+DELETE FROM `definition` WHERE `sememe`='rhodium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rhodium', -- $deu[0] = 'Rhodium'
+    'est',     -- $est[0] = ''
+    'keemiline element Rh'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Rh';
+
+DELETE FROM `definition` WHERE `sememe`='scandium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'scandium', -- $deu[0] = 'Scandium'
+    'est',      -- $est[0] = ''
+    'keemiline element Sc'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Sc';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -117,6 +245,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'keemiline element Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Ag';
+
+DELETE FROM `definition` WHERE `sememe`='strontium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'strontium', -- $deu[0] = 'Strontium'
+    'est',       -- $est[0] = ''
+    'keemiline element Sr'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Sr';
+
+DELETE FROM `definition` WHERE `sememe`='tenness' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tenness', -- $deu[0] = 'Tenness'
+    'est',     -- $est[0] = ''
+    'keemiline element Ts'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Ts';
+
+DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titan_0', -- $deu[0] = 'Titan'
+    'est',     -- $est[0] = ''
+    'keemiline element Ti'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element Ti';
+
+DELETE FROM `definition` WHERE `sememe`='vanadium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vanadium', -- $deu[0] = 'Vanadium'
+    'est',      -- $est[0] = ''
+    'keemiline element V'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'keemiline element V';
 
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

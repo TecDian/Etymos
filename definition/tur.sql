@@ -46,6 +46,62 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kimyasal element Ac';
 
+DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'astat', -- $deu[0] = 'Astat'
+    'tur',   -- $tur[0] = 'astatin'
+    'kimyasal element At'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element At';
+
+DELETE FROM `definition` WHERE `sememe`='barium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'barium', -- $deu[0] = 'Barium'
+    'tur',    -- $tur[0] = 'baryum'
+    'kimyasal element Ba'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Ba';
+
+DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beryllium', -- $deu[0] = 'Beryllium'
+    'tur',       -- $tur[0] = 'berilyum'
+    'kimyasal element Be'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Be';
+
+DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bor', -- $deu[0] = 'Bor'
+    'tur', -- $tur[0] = 'bor'
+    'kimyasal element B'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element B';
+
+DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brom', -- $deu[0] = 'Brom'
+    'tur',  -- $tur[0] = 'brom'
+    'kimyasal element Br'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Br';
+
+DELETE FROM `definition` WHERE `sememe`='calcium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'calcium', -- $deu[0] = 'Calcium'
+    'tur',     -- $tur[0] = 'kalsiyum'
+    'kimyasal element Ca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Ca';
+
+DELETE FROM `definition` WHERE `sememe`='chlor' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chlor', -- $deu[0] = 'Chlor'
+    'tur',   -- $tur[0] = ''
+    'kimyasal element Cl'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Cl';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='tur';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -53,6 +109,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kimyasal element Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kimyasal element Cr';
+
+DELETE FROM `definition` WHERE `sememe`='cobalt' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'cobalt', -- $deu[0] = 'Cobalt'
+    'tur',    -- $tur[0] = ''
+    'kimyasal element Co'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Co';
 
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='tur';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -62,6 +126,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kimyasal element Fe';
 
+DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fluor', -- $deu[0] = 'Fluor'
+    'tur',   -- $tur[0] = 'flor'
+    'kimyasal element F'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element F';
+
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='tur';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
@@ -69,6 +141,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kimyasal element He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kimyasal element He';
+
+DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iod', -- $deu[0] = 'Iod'
+    'tur', -- $tur[0] = ''
+    'kimyasal element I'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element I';
+
+DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iridium', -- $deu[0] = 'Iridium'
+    'tur',     -- $tur[0] = 'iridyum'
+    'kimyasal element Ir'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Ir';
 
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='tur';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -102,6 +190,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kimyasal element Mg';
 
+DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meitnerium', -- $deu[0] = 'Meitnerium'
+    'tur',        -- $tur[0] = 'meitneriyum'
+    'kimyasal element Mt'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Mt';
+
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='tur';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'natrium', -- $deu[0] = 'Natrium'
@@ -110,6 +206,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kimyasal element Na';
 
+DELETE FROM `definition` WHERE `sememe`='neon' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'neon', -- $deu[0] = 'Neon'
+    'tur',  -- $tur[0] = ''
+    'kimyasal element Ne'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Ne';
+
+DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'radium', -- $deu[0] = 'Radium'
+    'tur',    -- $tur[0] = ''
+    'kimyasal element Ra'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Ra';
+
+DELETE FROM `definition` WHERE `sememe`='rhodium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rhodium', -- $deu[0] = 'Rhodium'
+    'tur',     -- $tur[0] = ''
+    'kimyasal element Rh'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Rh';
+
+DELETE FROM `definition` WHERE `sememe`='scandium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'scandium', -- $deu[0] = 'Scandium'
+    'tur',      -- $tur[0] = 'skandiyum'
+    'kimyasal element Sc'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Sc';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='tur';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -117,6 +245,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kimyasal element Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kimyasal element Ag';
+
+DELETE FROM `definition` WHERE `sememe`='strontium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'strontium', -- $deu[0] = 'Strontium'
+    'tur',       -- $tur[0] = 'stronsiyum'
+    'kimyasal element Sr'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Sr';
+
+DELETE FROM `definition` WHERE `sememe`='tenness' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tenness', -- $deu[0] = 'Tenness'
+    'tur',     -- $tur[0] = ''
+    'kimyasal element Ts'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Ts';
+
+DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titan_0', -- $deu[0] = 'Titan'
+    'tur',     -- $tur[0] = ''
+    'kimyasal element Ti'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element Ti';
+
+DELETE FROM `definition` WHERE `sememe`='vanadium' AND `language`='tur';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vanadium', -- $deu[0] = 'Vanadium'
+    'tur',      -- $tur[0] = ''
+    'kimyasal element V'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kimyasal element V';
 
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='tur';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

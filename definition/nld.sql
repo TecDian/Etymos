@@ -46,6 +46,62 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemisch element Ac';
 
+DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'astat', -- $deu[0] = 'Astat'
+    'nld',   -- $nld[0] = 'astaat'
+    'chemisch element At'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element At';
+
+DELETE FROM `definition` WHERE `sememe`='barium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'barium', -- $deu[0] = 'Barium'
+    'nld',    -- $nld[0] = 'barium'
+    'chemisch element Ba'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Ba';
+
+DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beryllium', -- $deu[0] = 'Beryllium'
+    'nld',       -- $nld[0] = 'beryllium'
+    'chemisch element Be'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Be';
+
+DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bor', -- $deu[0] = 'Bor'
+    'nld', -- $nld[100] = 'boor'
+    'chemisch element B'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element B';
+
+DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brom', -- $deu[0] = 'Brom'
+    'nld',  -- $nld[0] = 'broom'
+    'chemisch element Br'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Br';
+
+DELETE FROM `definition` WHERE `sememe`='calcium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'calcium', -- $deu[0] = 'Calcium'
+    'nld',     -- $nld[0] = 'calcium'
+    'chemisch element Ca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Ca';
+
+DELETE FROM `definition` WHERE `sememe`='chlor' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chlor', -- $deu[0] = 'Chlor'
+    'nld',   -- $nld[0] = 'chloor'
+    'chemisch element Cl'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Cl';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='nld';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -53,6 +109,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemisch element Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemisch element Cr';
+
+DELETE FROM `definition` WHERE `sememe`='cobalt' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'cobalt', -- $deu[0] = 'Cobalt'
+    'nld',    -- $nld[0] = 'kobalt'
+    'chemisch element Co'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Co';
 
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='nld';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -62,6 +126,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemisch element Fe';
 
+DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fluor', -- $deu[0] = 'Fluor'
+    'nld',   -- $nld[0] = 'fluor'
+    'chemisch element F'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element F';
+
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='nld';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
@@ -69,6 +141,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemisch element He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemisch element He';
+
+DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iod', -- $deu[0] = 'Iod'
+    'nld', -- $nld[0] = 'jodium'
+    'chemisch element I'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element I';
+
+DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iridium', -- $deu[0] = 'Iridium'
+    'nld',     -- $nld[0] = 'iridium'
+    'chemisch element Ir'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Ir';
+
+DELETE FROM `definition` WHERE `sememe`='ja_0' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ja_0', -- $deu[0] = 'ja'
+    'nld',  -- $nld[0] = 'ja'
+    'uiting van positiviteit met betrekking tot een vraag'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'uiting van positiviteit met betrekking tot een vraag';
 
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='nld';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -102,6 +198,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemisch element Mg';
 
+DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meitnerium', -- $deu[0] = 'Meitnerium'
+    'nld',        -- $nld[0] = 'meitnerium'
+    'chemisch element Mt'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Mt';
+
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='nld';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'natrium', -- $deu[0] = 'Natrium'
@@ -110,6 +214,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemisch element Na';
 
+DELETE FROM `definition` WHERE `sememe`='neon' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'neon', -- $deu[0] = 'Neon'
+    'nld',  -- $nld[0] = 'neon'
+    'chemisch element Ne'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Ne';
+
+DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'radium', -- $deu[0] = 'Radium'
+    'nld',    -- $nld[0] = 'radium'
+    'chemisch element Ra'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Ra';
+
+DELETE FROM `definition` WHERE `sememe`='rhodium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rhodium', -- $deu[0] = 'Rhodium'
+    'nld',     -- $nld[0] = 'rhodium'
+    'chemisch element Rh'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Rh';
+
+DELETE FROM `definition` WHERE `sememe`='scandium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'scandium', -- $deu[0] = 'Scandium'
+    'nld',      -- $nld[0] = 'scandium'
+    'chemisch element Sc'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Sc';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='nld';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -117,6 +253,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemisch element Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemisch element Ag';
+
+DELETE FROM `definition` WHERE `sememe`='strontium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'strontium', -- $deu[0] = 'Strontium'
+    'nld',       -- $nld[0] = 'strontium'
+    'chemisch element Sr'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Sr';
+
+DELETE FROM `definition` WHERE `sememe`='tenness' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tenness', -- $deu[0] = 'Tenness'
+    'nld',     -- $nld[0] = 'tennessine'
+    'chemisch element Ts'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Ts';
+
+DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titan_0', -- $deu[0] = 'Titan'
+    'nld',     -- $nld[0] = 'titaan'
+    'chemisch element Ti'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element Ti';
+
+DELETE FROM `definition` WHERE `sememe`='vanadium' AND `language`='nld';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vanadium', -- $deu[0] = 'Vanadium'
+    'nld',      -- $nld[0] = 'vanadium'
+    'chemisch element V'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemisch element V';
 
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='nld';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

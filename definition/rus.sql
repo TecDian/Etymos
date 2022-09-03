@@ -150,6 +150,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Prunus armeniaca';
 
+DELETE FROM `definition` WHERE `sememe`='arizona' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'arizona', -- $deu[0] = 'Arizona'
+    'rus',     -- $rus[0] = 'Аризона'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'arkansas_1', -- $deu[1] = 'Arkansas'
+    'rus',        -- $rus[0] = 'Арканзас'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='asselspinne' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'asselspinne', -- $deu[0] = 'Asselspinne'
+    'rus',         -- $rus[0] = ''
+    'животное класса Pycnogonida'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное класса Pycnogonida';
+
+DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'astat', -- $deu[0] = 'Astat'
+    'rus',   -- $rus[0] = 'астат'
+    'неметалл, химический элемент At галогенов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметалл, химический элемент At галогенов';
+
 DELETE FROM `definition` WHERE `sememe`='atlantischer_hering_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'atlantischer_hering_0', -- $deu[0] = 'Atlantischer Hering'
@@ -173,6 +205,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Anas bahamensis'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Anas bahamensis';
+
+DELETE FROM `definition` WHERE `sememe`='barium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'barium', -- $deu[0] = 'Barium'
+    'rus',    -- $rus[0] = 'барий'
+    'металл, химический элемент Ba щёлочноземельных металлов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Ba щёлочноземельных металлов';
 
 DELETE FROM `definition` WHERE `sememe`='bartnachtschwalbe' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -230,6 +270,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Equus zebra';
 
+DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beryllium', -- $deu[0] = 'Beryllium'
+    'rus',       -- $rus[0] = 'бериллий'
+    'металл, химический элемент Be щёлочноземельных металлов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Be щёлочноземельных металлов';
+
 DELETE FROM `definition` WHERE `sememe`='beutelbarsch' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'beutelbarsch', -- $deu[0] = 'Beutelbarsch'
@@ -254,6 +302,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неофициальная глобальная криптоденежная единица с 2009 года, псевдокод: BTC, код ISO 4217: XBT, символ: ₿';
 
+DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bor', -- $deu[0] = 'Bor'
+    'rus', -- $rus[0] = 'бор'
+    'металл, химический элемент B подгруппы бора'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент B подгруппы бора';
+
 DELETE FROM `definition` WHERE `sememe`='borretsch_1' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'borretsch_1', -- $deu[0] = 'Borretsch'
@@ -261,6 +317,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение рода Borago'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение рода Borago';
+
+DELETE FROM `definition` WHERE `sememe`='bosnischer_strömer' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bosnischer_strömer', -- $deu[0] = 'Bosnischer Strömer'
+    'rus',                -- $rus[0] = ''
+    'животное вида Telestes metohiensis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Telestes metohiensis';
 
 DELETE FROM `definition` WHERE `sememe`='brandgans' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -278,6 +342,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Erinaceus europaeus';
 
+DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brom', -- $deu[0] = 'Brom'
+    'rus',  -- $rus[0] = 'бром'
+    'неметалл, химический элемент Br галогенов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметалл, химический элемент Br галогенов';
+
 DELETE FROM `definition` WHERE `sememe`='bullenhai' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'bullenhai', -- $deu[0] = 'Bullenhai'
@@ -294,6 +366,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Melica picta';
 
+DELETE FROM `definition` WHERE `sememe`='calcium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'calcium', -- $deu[0] = 'Calcium'
+    'rus',     -- $rus[0] = 'кальций ‹Ca›'
+    'металл, химический элемент Ca щёлочноземельных металлов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Ca щёлочноземельных металлов';
+
 DELETE FROM `definition` WHERE `sememe`='champignon' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'champignon', -- $deu[0] = 'Champignon'
@@ -302,6 +382,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб рода Agaricus';
 
+DELETE FROM `definition` WHERE `sememe`='chlor' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chlor', -- $deu[0] = 'Chlor'
+    'rus',   -- $rus[0] = 'хлор'
+    'неметалл, химический элемент Cl галогенов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметалл, химический элемент Cl галогенов';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -309,6 +397,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'металл, химический элемент Cr подгруппы хрома'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Cr подгруппы хрома';
+
+DELETE FROM `definition` WHERE `sememe`='cobalt' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'cobalt', -- $deu[0] = 'Cobalt'
+    'rus',    -- $rus[0] = 'кобальт'
+    'металл, химический элемент Co подгруппы кобальта'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Co подгруппы кобальта';
+
+DELETE FROM `definition` WHERE `sememe`='colorado_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'colorado_1', -- $deu[1] = 'Colorado'
+    'rus',        -- $rus[0] = 'Колорадо'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='connecticut' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'connecticut', -- $deu[0] = 'Connecticut'
+    'rus',         -- $rus[0] = 'Коннектикут'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='delaware_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delaware_1', -- $deu[1] = 'Delaware'
+    'rus',        -- $rus[0] = 'Делавэр'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='der_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -390,6 +510,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Fe подгруппы железа';
 
+DELETE FROM `definition` WHERE `sememe`='elster' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'elster', -- $deu[0] = 'Elster'
+    'rus',    -- $rus[0] = 'обыкновенная сорока'
+    'животное вида Pica pica'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Pica pica';
+
 DELETE FROM `definition` WHERE `sememe`='endivie_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'endivie_0', -- $deu[0] = 'Endivie'
@@ -462,6 +590,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Boletus erythropus';
 
+DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fluor', -- $deu[0] = 'Fluor'
+    'rus',   -- $rus[0] = 'фтор'
+    'неметалл, химический элемент F галогенов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметалл, химический элемент F галогенов';
+
 DELETE FROM `definition` WHERE `sememe`='flussbarsch' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'flussbarsch', -- $deu[0] = 'Flussbarsch'
@@ -486,6 +622,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Silurus glanis';
 
+DELETE FROM `definition` WHERE `sememe`='fuchsschwanzkiefer' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fuchsschwanzkiefer', -- $deu[0] = 'Fuchsschwanzkiefer'
+    'rus',                -- $rus[0] = ''
+    'растение вида Pinus balfouriana'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Pinus balfouriana';
+
 DELETE FROM `definition` WHERE `sememe`='gemeine_esche' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'gemeine_esche', -- $deu[0] = 'Gemeine Esche'
@@ -509,6 +653,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Rheum rhabarbarum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Rheum rhabarbarum';
+
+DELETE FROM `definition` WHERE `sememe`='georgia' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'georgia', -- $deu[0] = 'Georgia'
+    'rus',     -- $rus[0] = 'Джорджия [штат США]'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='gerste' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -541,6 +693,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'гриб вида Suillellus queletii'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Suillellus queletii';
+
+DELETE FROM `definition` WHERE `sememe`='grannenkiefer' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'grannenkiefer', -- $deu[0] = 'Grannenkiefer'
+    'rus',           -- $rus[0] = ''
+    'растение вида Pinus aristata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Pinus aristata';
 
 DELETE FROM `definition` WHERE `sememe`='grasnadel' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -614,6 +774,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Casuarius casuarius';
 
+DELETE FROM `definition` WHERE `sememe`='hering' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hering', -- $deu[0] = 'Hering'
+    'rus',    -- $rus[0] = 'селёдка'
+    'животное вида Clupeidae'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Clupeidae';
+
 DELETE FROM `definition` WHERE `sememe`='häherkuckuck' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'häherkuckuck', -- $deu[0] = 'Häherkuckuck'
@@ -621,6 +789,54 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Clamator glandarius'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Clamator glandarius';
+
+DELETE FROM `definition` WHERE `sememe`='idaho' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'idaho', -- $deu[0] = 'Idaho'
+    'rus',   -- $rus[0] = 'Айдахо'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='indiana' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'indiana', -- $deu[0] = 'Indiana'
+    'rus',     -- $rus[0] = 'Индиана [штат США]'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iod', -- $deu[0] = 'Iod'
+    'rus', -- $rus[0] = 'иод'
+    'неметалл, химический элемент I галогенов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметалл, химический элемент I галогенов';
+
+DELETE FROM `definition` WHERE `sememe`='iowa' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iowa', -- $deu[0] = 'Iowa'
+    'rus',  -- $rus[0] = 'Айова'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iridium', -- $deu[0] = 'Iridium'
+    'rus',     -- $rus[0] = 'иридий'
+    'металл, химический элемент Ir подгруппы кобальта'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Ir подгруппы кобальта';
+
+DELETE FROM `definition` WHERE `sememe`='ja_0' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ja_0', -- $deu[0] = 'ja'
+    'rus',  -- $rus[0] = 'да'
+    'выражение положительного отношения к вопросу'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'выражение положительного отношения к вопросу';
 
 DELETE FROM `definition` WHERE `sememe`='kaffeekirschenkäfer_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -670,6 +886,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Orthotomus chaktomuk';
 
+DELETE FROM `definition` WHERE `sememe`='kansas' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kansas', -- $deu[0] = 'Kansas'
+    'rus',    -- $rus[0] = 'Канзас'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
 DELETE FROM `definition` WHERE `sememe`='kasarka' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kasarka', -- $deu[0] = 'Kasarka'
@@ -685,6 +909,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Chasiempis sclateri'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Chasiempis sclateri';
+
+DELETE FROM `definition` WHERE `sememe`='kentucky' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kentucky', -- $deu[0] = 'Kentucky'
+    'rus',      -- $rus[0] = 'Кентукки'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='kiebitz_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -758,6 +990,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Li щелочных металлов';
 
+DELETE FROM `definition` WHERE `sememe`='louisiana' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'louisiana', -- $deu[0] = 'Louisiana'
+    'rus',       -- $rus[0] = 'Луизиана'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
 DELETE FROM `definition` WHERE `sememe`='löwe_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'löwe_0', -- $deu[0] = 'Löwe'
@@ -773,6 +1013,70 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'металл, химический элемент Mg щёлочноземельных металлов'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Mg щёлочноземельных металлов';
+
+DELETE FROM `definition` WHERE `sememe`='maine' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'maine', -- $deu[0] = 'Maine'
+    'rus',   -- $rus[0] = 'Мэн'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='maryland' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'maryland', -- $deu[0] = 'Maryland'
+    'rus',      -- $rus[0] = 'Мэриленд'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='massachusetts' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'massachusetts', -- $deu[0] = 'Massachusetts'
+    'rus',           -- $rus[0] = 'Массачусетс'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meitnerium', -- $deu[0] = 'Meitnerium'
+    'rus',        -- $rus[0] = 'мейтнерий'
+    'металл, химический элемент Mt подгруппы кобальта'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Mt подгруппы кобальта';
+
+DELETE FROM `definition` WHERE `sememe`='michigan' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'michigan', -- $deu[0] = 'Michigan'
+    'rus',      -- $rus[0] = 'Мичиган'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='mississippi_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'mississippi_1', -- $deu[1] = 'Mississippi'
+    'rus',           -- $rus[0] = 'Миссисипи'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='missouri_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'missouri_1', -- $deu[1] = 'Missouri'
+    'rus',        -- $rus[0] = 'Миссури'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='montana' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'montana', -- $deu[0] = 'Montana'
+    'rus',     -- $rus[0] = 'Монтана'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='montenegro-spitzkopfeidechse' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -790,6 +1094,78 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Na щелочных металлов';
 
+DELETE FROM `definition` WHERE `sememe`='nebraska' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'nebraska', -- $deu[0] = 'Nebraska'
+    'rus',      -- $rus[0] = 'Небраска'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='neon' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'neon', -- $deu[0] = 'Neon'
+    'rus',  -- $rus[0] = 'неон'
+    'неметалл, химический элемент Ne инертных газов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметалл, химический элемент Ne инертных газов';
+
+DELETE FROM `definition` WHERE `sememe`='nevada' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'nevada', -- $deu[0] = 'Nevada'
+    'rus',    -- $rus[0] = 'Невада'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='new_hampshire' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'new_hampshire', -- $deu[0] = 'New Hampshire'
+    'rus',           -- $rus[0] = 'Нью-Гэмпшир'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='new_jersey' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'new_jersey', -- $deu[0] = 'New Jersey'
+    'rus',        -- $rus[0] = 'Нью-Джерси'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='new_mexico' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'new_mexico', -- $deu[0] = 'New Mexico'
+    'rus',        -- $rus[0] = 'Нью-Мексико'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='new_york' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'new_york', -- $deu[0] = 'New York'
+    'rus',      -- $rus[0] = 'Нью-Йорк'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='north_carolina' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'north_carolina', -- $deu[0] = 'North Carolina'
+    'rus',            -- $rus[0] = 'Северная Каролина'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='north_dakota' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'north_dakota', -- $deu[0] = 'North Dakota'
+    'rus',          -- $rus[0] = 'Северная Дакота'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
 DELETE FROM `definition` WHERE `sememe`='oahu-elepaio' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'oahu-elepaio', -- $deu[0] = 'Oahu-Elepaio'
@@ -798,6 +1174,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Chasiempis ibidis';
 
+DELETE FROM `definition` WHERE `sememe`='ohio_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ohio_1', -- $deu[1] = 'Ohio'
+    'rus',    -- $rus[0] = 'Огайо [нескл.] [штат США]'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
 DELETE FROM `definition` WHERE `sememe`='olivenbaum_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'olivenbaum_0', -- $deu[0] = 'Olivenbaum'
@@ -805,6 +1189,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Olea europaea'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Olea europaea';
+
+DELETE FROM `definition` WHERE `sememe`='oregon' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'oregon', -- $deu[0] = 'Oregon'
+    'rus',    -- $rus[0] = 'Орегон'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='petersilie_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -821,6 +1213,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Pythonidae'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Pythonidae';
+
+DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'radium', -- $deu[0] = 'Radium'
+    'rus',    -- $rus[0] = 'радий'
+    'металл, химический элемент Ra щёлочноземельных металлов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Ra щёлочноземельных металлов';
 
 DELETE FROM `definition` WHERE `sememe`='rauchschwalbe' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -846,6 +1246,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Viteus vitifolii';
 
+DELETE FROM `definition` WHERE `sememe`='rhodium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rhodium', -- $deu[0] = 'Rhodium'
+    'rus',     -- $rus[0] = 'родий'
+    'металл, химический элемент Rh подгруппы кобальта'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Rh подгруппы кобальта';
+
 DELETE FROM `definition` WHERE `sememe`='ringelgans' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ringelgans', -- $deu[0] = 'Ringelgans'
@@ -869,6 +1277,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'гриб вида Boletus satanas'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Boletus satanas';
+
+DELETE FROM `definition` WHERE `sememe`='sauerkirschbaum' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sauerkirschbaum', -- $deu[0] = 'Sauerkirschbaum'
+    'rus',             -- $rus[0] = ''
+    'растение вида Prunus cerasus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Prunus cerasus';
+
+DELETE FROM `definition` WHERE `sememe`='scandium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'scandium', -- $deu[0] = 'Scandium'
+    'rus',      -- $rus[0] = 'скандий'
+    'металл, химический элемент Sc подгруппы скандия'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Sc подгруппы скандия';
 
 DELETE FROM `definition` WHERE `sememe`='schnittlauch_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -926,6 +1350,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Ag подгруппы меди';
 
+DELETE FROM `definition` WHERE `sememe`='south_carolina' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'south_carolina', -- $deu[0] = 'South Carolina'
+    'rus',            -- $rus[0] = ''
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='south_dakota' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'south_dakota', -- $deu[0] = 'South Dakota'
+    'rus',          -- $rus[0] = 'Южная Дакота'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
 DELETE FROM `definition` WHERE `sememe`='spitzklette' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'spitzklette', -- $deu[0] = 'Spitzklette'
@@ -966,6 +1406,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Otus brucei';
 
+DELETE FROM `definition` WHERE `sememe`='strontium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'strontium', -- $deu[0] = 'Strontium'
+    'rus',       -- $rus[0] = 'стронций'
+    'металл, химический элемент Sr щёлочноземельных металлов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Sr щёлочноземельных металлов';
+
 DELETE FROM `definition` WHERE `sememe`='sturmmöwe_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'sturmmöwe_0', -- $deu[0] = 'Sturmmöwe'
@@ -973,6 +1421,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Larus canus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Larus canus';
+
+DELETE FROM `definition` WHERE `sememe`='tenness' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tenness', -- $deu[0] = 'Tenness'
+    'rus',     -- $rus[0] = 'теннессин'
+    'неметалл, химический элемент Ts галогенов'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'неметалл, химический элемент Ts галогенов';
+
+DELETE FROM `definition` WHERE `sememe`='tennessee_1' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tennessee_1', -- $deu[1] = 'Tennessee'
+    'rus',         -- $rus[0] = 'Теннесси'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='texas' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'texas', -- $deu[0] = 'Texas'
+    'rus',   -- $rus[0] = 'Техас'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='tiger_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -990,6 +1462,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное подвида Taeniopygia guttata guttata';
 
+DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titan_0', -- $deu[0] = 'Titan'
+    'rus',     -- $rus[0] = 'титан'
+    'металл, химический элемент Ti подгруппы титана'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент Ti подгруппы титана';
+
 DELETE FROM `definition` WHERE `sememe`='truthuhn' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'truthuhn', -- $deu[0] = 'Truthuhn'
@@ -998,6 +1478,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Meleagris gallopavo';
 
+DELETE FROM `definition` WHERE `sememe`='utah' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'utah', -- $deu[0] = 'Utah'
+    'rus',  -- $rus[0] = 'Юта'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='vanadium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vanadium', -- $deu[0] = 'Vanadium'
+    'rus',      -- $rus[0] = 'ванадий'
+    'металл, химический элемент V подгруппы ванадия'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'металл, химический элемент V подгруппы ванадия';
+
 DELETE FROM `definition` WHERE `sememe`='vierfleck-zartspinne' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'vierfleck-zartspinne', -- $deu[0] = 'Vierfleck-Zartspinne'
@@ -1005,6 +1501,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Anyphaena accentuata'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Anyphaena accentuata';
+
+DELETE FROM `definition` WHERE `sememe`='virginia' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'virginia', -- $deu[100] = 'Virginia'
+    'rus',      -- $rus[0] = 'Виргиния [штат США]'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='waldbirkenmaus' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1046,6 +1550,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Chlidonias leucopterus';
 
+DELETE FROM `definition` WHERE `sememe`='weißrückengeier' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'weißrückengeier', -- $deu[0] = 'Weißrückengeier'
+    'rus',             -- $rus[0] = 'африканский гриф'
+    'животное вида Gyps africanus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Gyps africanus';
+
 DELETE FROM `definition` WHERE `sememe`='weißwangengans_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'weißwangengans_0', -- $deu[0] = 'Weißwangengans'
@@ -1053,6 +1565,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Branta leucopsis'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Branta leucopsis';
+
+DELETE FROM `definition` WHERE `sememe`='west_virginia' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'west_virginia', -- $deu[0] = 'West Virginia'
+    'rus',           -- $rus[0] = 'Западная Виргиния [штат США]'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='wiesenchampignon_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1069,6 +1589,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'гриб вида Tuber brumale'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Tuber brumale';
+
+DELETE FROM `definition` WHERE `sememe`='wisconsin' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wisconsin', -- $deu[0] = 'Wisconsin'
+    'rus',       -- $rus[0] = 'Висконсин'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='wyoming' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wyoming', -- $deu[0] = 'Wyoming'
+    'rus',     -- $rus[0] = 'Вайоминг'
+    'федеральный штат Америки'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'федеральный штат Америки';
 
 DELETE FROM `definition` WHERE `sememe`='wüstengimpel' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

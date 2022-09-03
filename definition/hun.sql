@@ -46,6 +46,62 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kémiai elem Ac';
 
+DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'astat', -- $deu[0] = 'Astat'
+    'hun',   -- $hun[0] = 'asztácium'
+    'kémiai elem At'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem At';
+
+DELETE FROM `definition` WHERE `sememe`='barium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'barium', -- $deu[0] = 'Barium'
+    'hun',    -- $hun[0] = 'bárium'
+    'kémiai elem Ba'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Ba';
+
+DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beryllium', -- $deu[0] = 'Beryllium'
+    'hun',       -- $hun[0] = 'berillium'
+    'kémiai elem Be'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Be';
+
+DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bor', -- $deu[0] = 'Bor'
+    'hun', -- $hun[0] = 'bór'
+    'kémiai elem B'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem B';
+
+DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brom', -- $deu[0] = 'Brom'
+    'hun',  -- $hun[0] = 'bróm'
+    'kémiai elem Br'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Br';
+
+DELETE FROM `definition` WHERE `sememe`='calcium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'calcium', -- $deu[0] = 'Calcium'
+    'hun',     -- $hun[0] = 'kalcium'
+    'kémiai elem Ca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Ca';
+
+DELETE FROM `definition` WHERE `sememe`='chlor' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chlor', -- $deu[0] = 'Chlor'
+    'hun',   -- $hun[0] = 'klór'
+    'kémiai elem Cl'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Cl';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='hun';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -53,6 +109,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kémiai elem Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kémiai elem Cr';
+
+DELETE FROM `definition` WHERE `sememe`='cobalt' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'cobalt', -- $deu[0] = 'Cobalt'
+    'hun',    -- $hun[0] = 'kobalt'
+    'kémiai elem Co'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Co';
 
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='hun';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -62,6 +126,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kémiai elem Fe';
 
+DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fluor', -- $deu[0] = 'Fluor'
+    'hun',   -- $hun[0] = 'fluor'
+    'kémiai elem F'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem F';
+
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='hun';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
@@ -69,6 +141,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kémiai elem He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kémiai elem He';
+
+DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iod', -- $deu[0] = 'Iod'
+    'hun', -- $hun[0] = 'jód'
+    'kémiai elem I'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem I';
+
+DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iridium', -- $deu[0] = 'Iridium'
+    'hun',     -- $hun[0] = 'irídium'
+    'kémiai elem Ir'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Ir';
 
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='hun';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -102,6 +190,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kémiai elem Mg';
 
+DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meitnerium', -- $deu[0] = 'Meitnerium'
+    'hun',        -- $hun[0] = 'meitnerium'
+    'kémiai elem Mt'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Mt';
+
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='hun';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'natrium', -- $deu[0] = 'Natrium'
@@ -110,6 +206,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kémiai elem Na';
 
+DELETE FROM `definition` WHERE `sememe`='neon' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'neon', -- $deu[0] = 'Neon'
+    'hun',  -- $hun[0] = 'neon'
+    'kémiai elem Ne'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Ne';
+
+DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'radium', -- $deu[0] = 'Radium'
+    'hun',    -- $hun[0] = 'rádium'
+    'kémiai elem Ra'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Ra';
+
+DELETE FROM `definition` WHERE `sememe`='rhodium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rhodium', -- $deu[0] = 'Rhodium'
+    'hun',     -- $hun[0] = 'ródium'
+    'kémiai elem Rh'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Rh';
+
+DELETE FROM `definition` WHERE `sememe`='scandium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'scandium', -- $deu[0] = 'Scandium'
+    'hun',      -- $hun[0] = 'szkandium'
+    'kémiai elem Sc'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Sc';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='hun';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -117,6 +245,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kémiai elem Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kémiai elem Ag';
+
+DELETE FROM `definition` WHERE `sememe`='strontium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'strontium', -- $deu[0] = 'Strontium'
+    'hun',       -- $hun[0] = 'stroncium'
+    'kémiai elem Sr'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Sr';
+
+DELETE FROM `definition` WHERE `sememe`='tenness' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tenness', -- $deu[0] = 'Tenness'
+    'hun',     -- $hun[0] = ''
+    'kémiai elem Ts'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Ts';
+
+DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titan_0', -- $deu[0] = 'Titan'
+    'hun',     -- $hun[1] = 'titán'
+    'kémiai elem Ti'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem Ti';
+
+DELETE FROM `definition` WHERE `sememe`='vanadium' AND `language`='hun';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vanadium', -- $deu[0] = 'Vanadium'
+    'hun',      -- $hun[0] = 'vanádium'
+    'kémiai elem V'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kémiai elem V';
 
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='hun';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

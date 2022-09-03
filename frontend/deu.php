@@ -59,6 +59,12 @@ $language = array(
     'akk' => 'Akkadisch',
     'grc' => 'Altgriechisch',
     'pfi' => 'Urfinnisch',
+    'gmh' => 'Mittelhochdeutsch',
+    'ota' => 'Osmanisch',
+    'ofs' => 'Altfriesisch',
+    'osx' => 'Altsächsisch',
+    'got' => 'Gotisch',
+    'cym' => 'Kymrisch',
 );
 
 // Tooltips für Kategorien
@@ -66,6 +72,7 @@ $loc_verwendungsbereich = 'Verwendungsbereich';
 $loc_stilebene = 'Stilebene';
 $loc_fachgebiet = 'Fachgebiet';
 $loc_region = 'Region';
+$loc_sprache = 'Sprache';
 $tooltip = array(
     0 => '',
     1 => 'archaisch, altertümlich',
@@ -235,9 +242,11 @@ $tooltip = array(
     425 => 'Schottland',
     448 => 'Frankreich',
     449 => 'Kanada (Quebec)',
+    450 => 'Wallonien',
     480 => 'Spanien',
     481 => 'Latinika',
     'adj' => 'Adjektiv, Eigenschaftswort',
+    'adn' => 'Adnomen, Merkmalwort',
     'adv' => 'Adverb, Umstandswort',
     'art' => 'Artikel, Begleiter',
     'int' => 'Interjektion, Empfindungswort',
@@ -260,25 +269,29 @@ $tooltip = array(
     'cnfx' => 'Konfix, nur als Hinzufügung existierendes Wort',
     'mdfx' => 'Modifix, Modifikator in einem Kompositum',
     'phra' => 'Phrase, Wortgruppe',
-    'pos' => 'Positv, Grundform als Ausdruck der Tatsache',
+    'pst' => 'Positv, Grundform als Ausdruck der Tatsache',
     'com' => 'Komparativ, höherer Grad im Vergleich mit einem anderen',
     'ela' => 'Elativ, sehr hoher Grad im Vergleich mit Durchschnitt',
     'sup' => 'Superlativ, höchster Grad im Vergleich mit allen anderen',
     'exc' => 'Exzessiv, überhöhter Grad im Vergleich mit Optimum',
     'ass' => 'Assoziativ, mit Gelenkartikel',
+    'aut' => 'autonom, selbstständig existierend',
+    'tra' => 'transformiert, von Adjektiv abgeleitet',
     'def' => 'definit, bestimmt',
-    'ind' => 'indefinit, unbestimmt',
-    'neg' => 'negativ, verneinend',
     'sel' => 'selektiv, auswählend',
-    'uni' => 'universell, allumfassend',
-    'dem' => 'demonstativ, hinweisend',
+    'ind' => 'indefinit, unbestimmt',
+    'coo' => 'koordinativ, beiordnend',
+    'sbo' => 'subordinativ, unterordnend',
+    'cor' => 'korrelativ, verweisend',
+    'per' => 'personal, personanzeigend',
     'det' => 'determinativ, bestimmend',
     'int' => 'interrogativ, fragend',
-    'per' => 'personal, personanzeigend',
-    'pos' => 'possessiv, besitzanzeigend',
-    'rec' => 'reziprok, wechselseitig',
+    'dem' => 'demonstativ, hinweisend',
     'ref' => 'reflexiv, rückbezüglich',
+    'rec' => 'reziprok, wechselseitig',
     'rel' => 'relativ, bezüglich',
+    'pos' => 'possessiv, besitzanzeigend',
+    'dsk' => 'deskriptiv, beschreibend',
     'si' => 'Substantiv: Infinitiv, Tätigkeitshauptwort',
     'sv' => 'Substantiv: Verbalnomen Gerundium, Ausführungshauptwort',
     'ss' => 'Substantiv: Singularetantum, Einzahlwort',
@@ -294,9 +307,9 @@ $tooltip = array(
     'u' => 'utrum, doppelgeschlechtlich',
     'va' => 'auxiliares Verb, Hilfsverb',
     'vi' => 'intransitives Verb, ohne Objekte und zwingende Erweiterungen',
-    'vis' => 'intransitives Verb, mit zwingender Anfügung eines stativen Objekts',
-    'via' => 'intransitives Verb, mit zwingender Anfügung eines alternativen Objekts',
+    'via' => 'intransitives Verb, mit zwingender Anfügung eines Adverbials',
     'vip' => 'intransitives Verb, mit zwingender Anfügung eines präpositiven Objekts',
+    'vis' => 'intransitives Verb, mit zwingender Anfügung eines statuellen Objekts',
     'vt' => 'transitives Verb, mit direktem Objekt',
     'vts' => 'transitives Verb, mit direktem Objekt und zwingender Anfügung eines stativen Objekts',
     'vm' => 'ministratives Verb, mit indirektem Objekt',
@@ -320,31 +333,27 @@ $tooltip = array(
     'succ' => 'sukzessiv, die Abfolge angebend (erstmals)',
     'attr' => 'attributiv, als Teil des Attributs',
     'pred' => 'prädikativ, als Teil des Prädikats',
-    'adve' => 'adversativ, entgegensetzend (aber)',
-    'caus' => 'kausal, Ursache oder Grund angebend (wegen)',
-    'conc' => 'konzessiv, einräumend (obwohl)',
-    'cond' => 'konditional, Bedingung angebend (falls)',
-    'cons' => 'konsekutiv, Reihenfolge angebend (nach)',
-    'copu' => 'kopulativ, anfügend (und)',
-    'disj' => 'disjunktiv, alternativ (oder)',
-    'fina' => 'final, Zweck angebend (zwecks)',
-    'grad' => 'graduell, konkretisierend (circa)',
-    'inst' => 'instrumental, Mittel angebend (mittels)',
-    'inte' => 'intensional, Absicht angebend (weil)',
-    'loca' => 'lokal, örtlich (neben)',
-    'moda' => 'modal, Art und Weise angebend (so)',
-    'orig' => 'original, Quelle angebend (von)',
-    'part' => 'partiell, anteilig (teils)',
-    'pers' => 'personell, Subjekt oder Objekt angebend (man)',
-    'prop' => 'propertär, Zugehörigkeit angebend (von)',
-    'refe' => 'referent, Bezug angebend (betreffs)',
-    'rest' => 'restriktiv, beschränkend (nur)',
-    'subs' => 'substitutiv, ersetzend (anstatt)',
-    'temp' => 'temporal, zeitlich (bevor)',
-    'them' => 'themativ, Thema angebend (über)',
-    'abs' => 'absolut, unbezüglich',
-    'arb' => 'arbiträr, beliebig',
-    'dir' => 'direktional, richtungsbestimmend',
+    'adve' => 'adversativ, Gegensatz angebend',
+    'caus' => 'kausal, Ursache/Objektivgrund angebend',
+    'conc' => 'konzessiv, Einräumung/Zugeständnis angebend',
+    'cond' => 'konditional, Bedingung angebend',
+    'copu' => 'kopulativ, Hinzufügung angebend',
+    'disj' => 'disjunktiv, Alternative angebend',
+    'effe' => 'effektual, Wirkung/Folge angebend',
+    'fina' => 'final, Zweck/Ziel angebend',
+    'grad' => 'gradual, Grad/Ausmaß angebend',
+    'inst' => 'instrumental, Mittel/Werkzeug angebend',
+    'inte' => 'intensional, Absicht/Subjektivgrund angebend',
+    'loca' => 'lokal, Ort angebend',
+    'moda' => 'modal, Art/Weise angebend',
+    'obst' => 'obstruktiv, Hindernis/Gegengrund angebend',
+    'refe' => 'referential, Bezug angebend',
+    'rest' => 'restriktiv, Beschränkung angebend',
+    'temp' => 'temporal, Zeit angebend',
+    'them' => 'themativ, Thema angebend',
+    'dir' => 'direktional, Richtung angebend',
+    'uni' => 'universell, allumfassend',
+    'neg' => 'negativ, verneinend',
     'sg' => 'Singular, Einzahl',
     'du' => 'Dual, Zweizahl',
     'pa' => 'Paukal, Kleinzahl',
@@ -355,12 +364,17 @@ $tooltip = array(
     '1.pl' => '1. Person Plural, Sprecher Mehrzahl',
     '2.pl' => '2. Person Plural, Angesprochene Mehrzahl',
     '3.pl' => '3. Person Plural, Gesprächsgegenstände Mehrzahl',
+    'gnr' => 'Generalitiv, Allgemeinform',
     'hon' => 'Honorativ, Ehrenform',
     'hon.sg' => 'Honorativ Singular, Ehrenform Einzahl',
     'hon.pl' => 'Honorativ Plural, Ehrenform Mehrzahl',
+    'pej' => 'Pejorativ, Abwertungsform',
+    'pej.sg' => 'Pejorativ Singular, Abwertungsform Einzahl',
+    'pej.pl' => 'Pejorativ Plural, Abwertungsform Mehrzahl',
     'dimi' => 'Diminutiv, Verkleinerungsform',
     'augm' => 'Augmentativ, Vergrößerungsform',
     'acro' => 'Akronym, Initial- oder Silbenabkürzung',
+    'bipe' => 'Biperfektiv, vollendete oder unvollendete Handlung',
     'impe' => 'Imperfektiv, unvollendete Handlung',
     'perf' => 'Perfektiv, vollendete Handlung',
     'flec' => 'flektiv, regelwidrig gebeugt',
@@ -383,12 +397,15 @@ $tooltip = array(
     'gen' => 'Genitiv, Eigentümer wessen?',
     'dat' => 'Dativ, indirektes Objekt wem?',
     'acc' => 'Akkusativ, direktes Objekt wen?',
+    'obj' => 'Objektiv, Objekt wem? oder wen?',
     'abl' => 'Ablativ, Herkunft woher?',
     'ins' => 'Instrumentiv, Mittel womit?',
     'loc' => 'Lokativ, Ort wo?',
     'voc' => 'Vokativ, Anrede wer?',
+    'des' => 'Destinativ, Empfänger für wen?',
     'prt' => 'Partitiv, Teil einer Menge wen?',
-    'obj' => 'Objektiv, Objekt wem? oder wen?',
+    'ter' => 'Terminativ, Zielort bis wohin?',
+    'trl' => 'Translativ, Veränderungsziel wozu werdend?',
     'norm' => 'Normativ, Normalform',
     'pler' => 'Pleronym, Vollform',
     'brax' => 'Brachonym, Kurzwort',
@@ -397,7 +414,7 @@ $tooltip = array(
     'ifl' => 'Inflektiv, Stammform',
     'imp' => 'Imperativ, Befehlsform',
     'par' => 'Partizip, Mittelwort',
-    'tra' => 'Transgressiv, Nebenwort',
+    'trg' => 'Transgressiv, Nebenwort',
     'aor' => 'Aorist, abgeschlossene Vergangenheit',
     'fut' => 'Futurum, Zukunft',
     'pres' => 'Präsentum, Gegenwart',
@@ -415,7 +432,7 @@ $loc_team = 'Team';
 // Impressumseite
 $loc_impressum = 'Impressum';
 $loc_gesetz = 'entsprechend Telemediengesetz (TMG) und Pressegesetz für das Land Sachsen-Anhalt (Landespressegesetz)';
-$loc_webseite = 'Webseite';
+$loc_webseite = 'Webpräsenz';
 $loc_eigentuemer = 'Eigentümer der Webpräsenz';
 $loc_autor = 'verantwortlicher Autor';
 $loc_kontakt = 'Kontakt';
@@ -423,7 +440,6 @@ $loc_anschrift = 'Postanschrift';
 $loc_deutschland = 'Deutschland';
 $loc_eu = 'Europäische Union';
 $loc_telefon = 'Telefon';
-$loc_telefax = 'Telefax';
 $loc_nachricht = 'Nachricht';
 $loc_adresse = 'E-Mail-Adresse';
 $loc_spamblock = 'Abfrage';
@@ -448,7 +464,7 @@ $loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Z
 $loc_titel = 'Etymos-Wörterbuch';
 $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert schon. Also eigentlich fast alles, aber … ###';
 $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
-$loc_news = '14. Juni 2021</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Portugiesisch wurde wesentlich erweitert.';
+$loc_news = '3. September 2022</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Belarusisch und Litauisch wurden wesentlich erweitert.';
 // Sprachwahlfenster
 $loc_waehlen = 'Quell- und Zielsprache wählen';
 $loc_aufschlagen = 'Wörterbuch aufschlagen';
@@ -491,6 +507,11 @@ $loc_keine_definition = 'Für diesen Suchbegriff sind keine Definitionen erfasst
 $loc_keine_flexion = 'Für diese Sprache sind keine Flexionsschemata verfügbar.';
 $loc_keine_herkunft = 'Für diesen Suchbegriff ist keine Herkunft erfasst.';
 $loc_keine_familie = 'Für diesen Suchbegriff ist keine Familie erfasst.';
+$loc_weg['◄'] = 'entwickelt aus';
+$loc_weg['►'] = 'entwickelt zu';
+$$loc_weg['▼'] = 'entlehnt von';
+$loc_weg['▲'] = 'entlehnt nach';
+$loc_weg['♦'] = 'urverwandt mit';
 // Wortsuchefenster
 $loc_wortsuche = 'Wortsuche';
 $loc_suchen = 'Suchen';
@@ -503,20 +524,22 @@ $loc_bearbeitungsstufe = 'Bearbeitungsstufe';
 $loc_erklaerung = 'Erklärung';
 $loc_lemmata_in = 'Lemmata in';
 $loc_artikel = 'Übersetzungsartikel';
-$loc_level_name[1] = 'Grundeintrag';
-$loc_level_explain[1] = 'Übersetzung Wort-in-Wort; keine systematischen Zusatzinformationen; Quelle und Zuverlässigkeit zweifelhaft.';
-$loc_level_name[2] = 'Aufbaueintrag 1';
-$loc_level_explain[2] = 'Stichwort und Übersetzung grammatisch klassifiziert; Angaben nicht sicher verifiziert.';
-$loc_level_name[3] = 'Aufbaueintrag 2';
-$loc_level_explain[3] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion des Stichworts angegeben; Angaben verifiziert.';
-$loc_level_name[4] = 'Aufbaueintrag 3';
-$loc_level_explain[4] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion und Phonetik des Stichworts angegeben; Angaben verifiziert.';
-$loc_level_name[5] = 'Aufbaueintrag 4';
-$loc_level_explain[5] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion, Phonetik und Definition des Stichworts angegeben; Angaben verifiziert.';
-$loc_level_name[6] = 'Aufbaueintrag 5';
-$loc_level_explain[6] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion, Phonetik, Definition und Etymologie des Stichworts angegeben; Angaben verifiziert.';
+$loc_level_name[0] = 'Grundeintrag';
+$loc_level_explain[0] = 'Stichwort und Übersetzung Wort-in-Wort; Quelle und Zuverlässigkeit zweifelhaft.';
+$loc_level_name[1] = 'Aufbaueintrag 1';
+$loc_level_explain[1] = 'Stichwort und Übersetzung mit Klassifizierung; nicht sicher verifiziert.';
+$loc_level_name[2] = 'Aufbaueintrag 2';
+$loc_level_explain[2] = 'Stichwort und Übersetzung mit vollständiger Typisierung; Stichwort mit Flexion; verifiziert.';
+$loc_level_name[3] = 'Aufbaueintrag 3';
+$loc_level_explain[3] = 'Stichwort und Übersetzung mit vollständiger Typisierung, Stichwort mit Flexion und Phonetik; verifiziert.';
+$loc_level_name[4] = 'Aufbaueintrag 4';
+$loc_level_explain[4] = 'Stichwort und Übersetzung mit vollständiger Typisierung, Stichwort mit Flexion, Phonetik und Audio; verifiziert.';
+$loc_level_name[5] = 'Aufbaueintrag 5';
+$loc_level_explain[5] = 'Stichwort und Übersetzung mit vollständiger Typisierung, Stichwort mit Flexion, Phonetik, Audio und Definition; verifiziert.';
+$loc_level_name[6] = 'Aufbaueintrag 6';
+$loc_level_explain[6] = 'Stichwort und Übersetzung mit vollständiger Typisierung, Stichwort mit Flexion, Phonetik, Audio, Definition und Etymologie; verifiziert.';
 $loc_level_name[7] = 'Volleintrag';
-$loc_level_explain[7] = 'Stichwort und Übersetzung vollständig grammatisch typisiert; Flexion, Phonetik, Definition und Etymologie des Stichworts angegeben, Kollokationen vorhanden; Angaben verifiziert.';
+$loc_level_explain[7] = 'Stichwort und Übersetzung mit vollständiger Typisierung, Stichwort mit Flexion, Phonetik, Audio, Definition, Etymologie und Kollokation; verifiziert.';
 // Materialfenter
 $loc_material = 'Material';
 $loc_flex_para = 'Flexionsparadigma';
@@ -531,6 +554,8 @@ $loc_inflektierbar = 'Dieser Suchbegriff ist nicht flektierbar.';
 $loc_siehe_einzelworte = 'Angaben zur Flexion sind bei denjenigen Bestandteilen zu finden, die bei Gebrauch flektiert werden müssen:';
 $loc_anmerkung = 'Anmerkung';
 $loc_genitivattribut_untypisch = 'Wird das Wort im Singular als isoliertes vorangestelltes <span class="term">Genitivattribut</span> verwendet, tritt die untypische Genitivendung <span class="targetlight">-</span><span class="sourcelight">s</span> hinzu.';
+$loc_stummes_s = 'Das <span class="targetlight">-s</span> ist stumm, außer im <span class="term">Genitiv Singular</span> und im <span class="term">Plural</span>.';
+$loc_endung_kurz_lang = 'Die Endung wird im <span class="term">Singular</span> kurz, im <span class="term">Plural</span> lang ausgesprochen.';
 
 // Downloadseite
 $loc_noch_nicht = 'Noch nicht.';
@@ -559,12 +584,12 @@ $loc_projekt_antwort3g.= 'Diese basieren einerseits auf Häufigkeitsanalysen ein
 $loc_projekt_antwort3h = 'unspezifische, automatisch generierte <span class="key">Wortsammlung</span>';
 $loc_projekt_antwort3i = 'mindestens <span class="key">Grundwortschatz</span> <span class="state">~1.000</span> Wörter, Grundkommunikation';
 $loc_projekt_antwort3j = 'mindestens <span class="key">Grundwortschatz</span> <span class="state">~4.000</span> Wörter, Alltagskommunikation';
-$loc_projekt_antwort3k = 'mindestens <span class="key">Aufbauwortschatz</span> <span class="state">~10.000</span> Wörter, gehobene Textabdeckung';
-$loc_projekt_antwort3l = 'mindestens <span class="key">Aufbauwortschatz</span> <span class="state">~40.000</span> Wörter, umfassende Textabdeckung';
-$loc_projekt_antwort3m = '<span class="key">Universalwortschatz</span> <span class="state">&gt;40.000</span> Wörter, möglichst vollständige Textabdeckung';
+$loc_projekt_antwort3k = 'mindestens <span class="key">Aufbauwortschatz</span> <span class="state">~16.000</span> Wörter, gehobene Textabdeckung';
+$loc_projekt_antwort3l = 'mindestens <span class="key">Aufbauwortschatz</span> <span class="state">~64.000</span> Wörter, umfassende Textabdeckung';
+$loc_projekt_antwort3m = '<span class="key">Universalwortschatz</span> <span class="state">&gt;64.000</span> Wörter, möglichst vollständige Textabdeckung';
 $loc_projekt_frage4 = 'FRAGE: Welche Bearbeitungsstufen für die Einträge gibt es?';
 $loc_projekt_antwort4 = 'ANTWORT: Es wird angestrebt, die einzelnen Einträge so gut wie möglich zu <span class="key">verifizieren</span> und mit Informationen zur <span class="plane">Semantik</span>, ';
-$loc_projekt_antwort4.= '<span class="name">Grammatik</span> und <span class="phon">Phonetik</span> zu ergänzen. Es gibt sieben <span class="key">Bearbeitungsstufen</span>, die durch unterschiedliche Symbole gekennzeichnet werden.';
+$loc_projekt_antwort4.= '<span class="name">Grammatik</span> und <span class="phon">Phonetik</span> zu ergänzen. Es gibt acht <span class="key">Bearbeitungsstufen</span>, die durch unterschiedliche Symbole gekennzeichnet werden.';
 $loc_projekt_frage5 = 'FRAGE: Wieso weichen die Flexionsklassen, grammatischen Beschreibungen und Ausspracheangaben bei Etymos von denen in anderen Wörterbüchern ab?';
 $loc_projekt_antwort5 = 'ANTWORT: Wir wenden eine strikt <span class="key">wissenschaftliche Betrachtung</span> an. ';
 $loc_projekt_antwort5.= 'Wir folgen also nicht der traditionellen, oftmals von <span class="sourcelight">nationalistischer Ideologie</span> und <span class="sourcelight">literarischer Ästhetik</span> durchsetzten Linguistik, ';

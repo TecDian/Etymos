@@ -59,6 +59,12 @@ $language = array(
     'akk' => 'Akkadian',
     'grc' => 'Ancient Greek',
     'pfi' => 'Proto-Finnic',
+    'gmh' => 'Middle High German',
+    'ota' => 'Ottoman',
+    'ofs' => 'Old Frisian',
+    'osx' => 'Old Saxon',
+    'got' => 'Gothic',
+    'cym' => 'Cymric',
 );
 
 // Tooltips für Kategorien
@@ -66,6 +72,7 @@ $loc_verwendungsbereich = 'Area of ​​use';
 $loc_stilebene = 'Level of style';
 $loc_fachgebiet = 'Field of expertise';
 $loc_region = 'Region';
+$loc_sprache = 'Language';
 $tooltip = array(
     0 => '',
     1 => 'archaic, antiquated',
@@ -235,9 +242,11 @@ $tooltip = array(
     425 => 'Scotland',
     448 => 'France',
     449 => 'Canada (Quebec)',
+    450 => 'Wallonia',
     480 => 'Spain',
     481 => 'Latinica',
     'adj' => 'adjective, to describe properties',
+    'adn' => 'adnoun, to describe features',
     'adv' => 'adverb, to describe circumstances',
     'art' => 'article, to determine a noun',
     'int' => 'interjection, to express a feeling',
@@ -260,25 +269,29 @@ $tooltip = array(
     'cnfx' => 'confix, word only existing as addition',
     'mdfx' => 'modifix, modifier in a compositum',
     'phra' => 'phrase, group of words',
-    'pos' => 'positive, basic form as an expression of fact',
+    'pst' => 'positive, basic form as an expression of fact',
     'com' => 'comparative, higher grade in comparison with another one',
     'ela' => 'elative, very high grade in comparison with the average',
     'sup' => 'superlative, highest grade in comparison with all',
     'exc' => 'excessive, too high grade in comparison with the optimum',
     'ass' => 'associative, with linking clitic',
+    'aut' => 'autonomous, independently existing',
+    'tra' => 'transformed, derived from adjective',
     'def' => 'definite, to mark a special one or group',
-    'ind' => 'indefinite, to not mark anyone or anything',
-    'neg' => 'negative, to mark no one or nothing',
     'sel' => 'selective, to mark someone or something',
-    'uni' => 'universal, to mark everyone or everything',
-    'dem' => 'demonstative, to relate to one in contrast to others',
+    'ind' => 'indefinite, to not mark anyone or anything',
+    'coo' => 'coordinative, to join',
+    'sbo' => 'subordinative, to append',
+    'cor' => 'correlative, to refer',
+    'per' => 'personal, to relate to the speaker, listener or object',
     'det' => 'determinative, to relate to a special group',
     'int' => 'interrogative, to relate to someone or something in question',
-    'per' => 'personal, to relate to the speaker, listener or object',
-    'pos' => 'possessive, to relate to a possessor',
-    'rec' => 'reciprocal, to relate between parts of a group',
+    'dem' => 'demonstative, to relate to one in contrast to others',
     'ref' => 'reflexive, to relate back to someone or something',
+    'rec' => 'reciprocal, to relate between parts of a group',
     'rel' => 'relative, to relate to someone or something',
+    'pos' => 'possessive, to relate to a possessor',
+    'dsk' => 'descriptive, to describe a circumstance',
     'si' => 'noun infinitive, action noun',
     'sv' => 'noun: verbal noun gerund, execution noun',
     'ss' => 'noun singular tantum, singular word',
@@ -294,9 +307,9 @@ $tooltip = array(
     'u' => 'uter, common',
     'va' => 'auxiliary verb, for the construction of gramatical forms',
     'vi' => 'intransitive verb, without objects and compulsory extentions',
-    'vis' => 'intransitive verb, with compulsory extention by a stative object',
-    'via' => 'intransitive verb, with compulsory extention by an alternative object',
+    'via' => 'intransitive verb, with compulsory extention by an adverbial',
     'vip' => 'intransitive verb, with compulsory extention by a prepositive object',
+    'vis' => 'intransitive verb, with compulsory extention by a statual object',
     'vt' => 'transitive verb, with direct object',
     'vts' => 'transitive verb, with direct object and compulsory extention by a stative object',
     'vm' => 'ministrative verb, with indirect object',
@@ -320,31 +333,27 @@ $tooltip = array(
     'succ' => 'successively, to specify a sequence (for the first time)',
     'attr' => 'attributive, as port of the atribute',
     'pred' => 'predicative, as part of the predicate',
-    'adve' => 'adversative, to specify an opposite (but)',
-    'caus' => 'causal, to specify the cause or reason (because of)',
-    'conc' => 'concessional, to specify a concession (although)',
-    'cond' => 'conditional, to specify a contition (in case of)',
-    'cons' => 'consecutive, to specify a sequence (after)',
-    'copu' => 'copulative, to specify an attachment (and)',
-    'disj' => 'disjunctive, to specify an alternative (or)',
-    'fina' => 'final, to specify a purpose (for the purpose of)',
-    'grad' => 'gradual, to specify a grade (approximately)',
-    'inst' => 'instrumental, to specify a means (by means of)',
-    'inte' => 'intentional, to specify an intention (in order to)',
-    'loca' => 'local, to specify a location (next to)',
-    'moda' => 'modal, to specify a mode (this way)',
-    'orig' => 'original, to specify a source (from)',
-    'part' => 'partial, to specify a part (partly)',
-    'pers' => 'personal, to specify a subject or object (one)',
-    'prop' => 'proprietary, to specify an affiliation (of)',
-    'refe' => 'referential, to specify a reference (concerning)',
-    'rest' => 'restrictive, to specify a limitation (only)',
-    'subs' => 'substitutive, to specify a substitution (instead of)',
-    'temp' => 'temporal, to specify a time (before)',
-    'them' => 'themative, to specify a topic (about)',
-    'abs' => 'absolute, without a reference',
-    'arb' => 'arbitrary, without a restriction',
+    'adve' => 'adversative, to specify an opposite',
+    'caus' => 'causal, to specify the cause/objective reason',
+    'conc' => 'concessional, to specify an admission/concession',
+    'cond' => 'conditional, to specify a contition',
+    'copu' => 'copulative, to specify a joining',
+    'disj' => 'disjunctive, to specify an alternative',
+    'effe' => 'consecutive, to specify an effect/consequence',
+    'fina' => 'final, to specify a purpose/aim',
+    'grad' => 'gradual, to specify a grade/extent',
+    'inst' => 'instrumental, to specify a means/tool',
+    'inte' => 'intentional, to specify an intention/subjective reason',
+    'loca' => 'local, to specify a location',
+    'moda' => 'modal, to specify a way/mode',
+    'obst' => 'obstructive, to specify a obstruction/obstacle',
+    'refe' => 'referential, to specify a reference',
+    'rest' => 'restrictive, to specify a limitation',
+    'temp' => 'temporal, to specify a time',
+    'them' => 'themative, to specify a topic',
     'dir' => 'directional, to specify a direction',
+    'uni' => 'universal, to mark everyone or everything',
+    'neg' => 'negative, to mark no one or nothing',
     'sg' => 'singular, one piece',
     'du' => 'dual, two pieces',
     'pa' => 'paucal, several pieces',
@@ -355,12 +364,17 @@ $tooltip = array(
     '1.pl' => '1. person plural, several speakers',
     '2.pl' => '2. person plural, several listeners',
     '3.pl' => '3. person plural, several objects of speech',
+    'gnr' => 'generalitive, everyone in general',
     'hon' => 'honorative, single or several honoured listeners',
     'hon.sg' => 'honorative singular, single honoured listener',
     'hon.pl' => 'honorative plural, several honoured listeners',
+    'pej' => 'pejorative, single or several inferior listeners',
+    'pej.sg' => 'pejorative singular, single inferior listener',
+    'pej.pl' => 'pejorative plural, several inferior listeners',
     'dimi' => 'diminutive, diminished form',
     'augm' => 'augmentative, intensified form',
     'acro' => 'acronym, initial syllable abbreviation',
+    'bipe' => 'biperfect, finished or unfinished action',
     'impe' => 'imperfect, unfinished action',
     'perf' => 'perfect, finished action',
     'flec' => 'flective, irregularly inflected',
@@ -383,12 +397,15 @@ $tooltip = array(
     'gen' => 'genitive, owner whose?',
     'dat' => 'dative, indirect object whom?',
     'acc' => 'accusative, direct object whom?',
+    'obj' => 'objective, object whom?',
     'abl' => 'ablative, origin where from?',
     'ins' => 'instrumentive, means what with?',
     'loc' => 'locative, location where?',
     'voc' => 'vocative, salutation who?',
+    'des' => 'destinative, recipient for whom?',
     'prt' => 'partitive, part of something whom?',
-    'obj' => 'objective, object whom?',
+    'ter' => 'terminative, destination where to?',
+    'trl' => 'translative, result of transformation turning into what?',
     'norm' => 'normative, normal form',
     'pler' => 'pleronym, full form',
     'brax' => 'brachonym, clipped word',
@@ -397,7 +414,7 @@ $tooltip = array(
     'ifl' => 'inflective, stem form',
     'imp' => 'imperative, command form',
     'par' => 'participle, property form',
-    'tra' => 'transgessive, secondary property form',
+    'trg' => 'transgessive, secondary property form',
     'aor' => 'aorist, finished even before the time',
     'fut' => 'future, after the time',
     'pres' => 'present, at the time',
@@ -423,7 +440,6 @@ $loc_anschrift = 'Postal address';
 $loc_deutschland = 'Germany';
 $loc_eu = 'European Union';
 $loc_telefon = 'Telephone';
-$loc_telefax = 'Telefax';
 $loc_nachricht = 'Message';
 $loc_adresse = 'E-mail address';
 $loc_spamblock = 'Request';
@@ -448,7 +464,7 @@ $loc_spam2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in 
 $loc_titel = 'Etymos-Dictionary';
 $loc_willkommen = '### Welcome to Etymos. Most of it does work yet. Well, nearly everything, but … ###';
 $loc_wir_arbeiten = 'We work on it and we have a lot more in mind yet!';
-$loc_news = '14 June 2021</span> <span class="code">neu:</span> Entries were revised. Portuguese was considerably extended.';
+$loc_news = '3 September 2022</span> <span class="code">neu:</span> Entries were revised. Belarussian and Lithuanian were considerably extended.';
 // Sprachwahlfenster
 $loc_waehlen = 'Choose source and target language';
 $loc_aufschlagen = 'Open dictionary';
@@ -491,6 +507,11 @@ $loc_keine_definition = 'There are no definitions on record for this search word
 $loc_keine_flexion = 'There are no inflection schemes available for this language.';
 $loc_keine_herkunft = 'There is no data on its origin on record for this search word.';
 $loc_keine_familie = 'There is no data on its family on record for this search word.';
+$loc_weg['◄'] = 'developed from';
+$loc_weg['►'] = 'entwickelt to';
+$$loc_weg['▼'] = 'borrowed from';
+$loc_weg['▲'] = 'borrowed to';
+$loc_weg['♦'] = 'cognate to';
 // Wortsuchefenster
 $loc_wortsuche = 'Word search';
 $loc_suchen = 'Find';
@@ -503,20 +524,22 @@ $loc_bearbeitungsstufe = 'Revision status';
 $loc_erklaerung = 'Explanation';
 $loc_lemmata_in = 'Lemmata in';
 $loc_artikel = 'Translation articles';
-$loc_level_name[1] = 'Basic entry';
-$loc_level_explain[1] = 'translation word-in-word; no systematic additional information; source and reliablility uncertain.';
-$loc_level_name[2] = 'Revision entry 1';
-$loc_level_explain[2] = 'lemma and translation grammatically classified; information not reliably verified.';
-$loc_level_name[3] = 'Revision entry 2';
-$loc_level_explain[3] = 'lemma and translation completely grammatically characterised; inflection of the lemma included; information verified.';
-$loc_level_name[4] = 'Revision entry 3';
-$loc_level_explain[4] = 'lemma and translation completely grammatically characterised; inflection and phonetics of the lemma included; information verified.';
-$loc_level_name[5] = 'Revision entry 4';
-$loc_level_explain[5] = 'lemma and translation completely grammatically characterised; inflection, phonetics and definition of the lemma included; information verified.';
-$loc_level_name[6] = 'Revision entry 5';
-$loc_level_explain[6] = 'lemma and translation completely grammatically characterised; inflection, phonetics, definition and etymology of the lemma included; information verified.';
+$loc_level_name[0] = 'Basic entry';
+$loc_level_explain[0] = 'lemma and translation word-in-word; source and reliablility uncertain.';
+$loc_level_name[1] = 'Revision entry 1';
+$loc_level_explain[1] = 'lemma and translation with classification; not reliably verified.';
+$loc_level_name[2] = 'Revision entry 2';
+$loc_level_explain[2] = 'lemma and translation with complete characterisation; lemma with inflection; verified.';
+$loc_level_name[3] = 'Revision entry 3';
+$loc_level_explain[3] = 'lemma and translation with complete characterisation; lemma with inflection and phonetics; verified.';
+$loc_level_name[4] = 'Revision entry 4';
+$loc_level_explain[4] = 'lemma and translation with complete characterisation; lemma with inflection, phonetics and audio; verified.';
+$loc_level_name[5] = 'Revision entry 5';
+$loc_level_explain[5] = 'lemma and translation with complete characterisation; lemma with inflection, phonetics, audio and definition; verified.';
+$loc_level_name[6] = 'Revision entry 6';
+$loc_level_explain[6] = 'lemma and translation with complete characterisation; lemma with inflection, phonetics, audio, definition and etymology; verified.';
 $loc_level_name[7] = 'Full entry';
-$loc_level_explain[7] = 'lemma and translation completely grammatically characterised; inflection, phonetics, definition and etymology of the lemma included, collocations available; information verified.';
+$loc_level_explain[7] = 'lemma and translation with complete characterisation; lemma with inflection, phonetics, audio, definition, etymology and  collocation; verified.';
 // Materialfenter
 $loc_material = 'Material';
 $loc_flex_para = 'inflection paradigm';
@@ -531,6 +554,8 @@ $loc_inflektierbar = 'This search word is inflectible.';
 $loc_siehe_einzelworte = 'Information on inflection can be found at those components that must be inflected for usage:';
 $loc_anmerkung = 'Note';
 $loc_genitivattribut_untypisch = 'If the word in singular is used as an isolated <span class="term">Saxon genitive</span>, the untypical genitive ending <span class="targetlight">-</span><span class="sourcelight">s</span> is added.';
+$loc_stummes_s = 'The <span class="targetlight">-s</span> is silent except for the <span class="term">genitive singular</span> and the <span class="term">plural</span>.';
+$loc_endung_kurz_lang = 'The ending is pronounced short in <span class="term">singular</span> and long in <span class="term">plural</span>.';
 
 // Downloadseite
 $loc_noch_nicht = 'Not yet.';
@@ -559,12 +584,12 @@ $loc_projekt_antwort3g.= 'On the one hand they are based on a frequency analysis
 $loc_projekt_antwort3h = 'unspecific, automatically generated <span class="key">word collection</span>';
 $loc_projekt_antwort3i = 'at least <span class="key">key vocabulary</span> <span class="state">~1.000</span> words, basic communication';
 $loc_projekt_antwort3j = 'at least <span class="key">key vocabulary</span> <span class="state">~4.000</span> words, everyday communication';
-$loc_projekt_antwort3k = 'at least <span class="key">advanced vocabulary</span> <span class="state">~10.000</span> words, extended text coverage';
-$loc_projekt_antwort3l = 'at least <span class="key">advanced vocabulary</span> <span class="state">~40.000</span> words, comprehensive text coverage';
-$loc_projekt_antwort3m = '<span class="key">universal vocabulary</span> <span class="state">&gt;40.000</span> words, text coverage as complete as possible';
+$loc_projekt_antwort3k = 'at least <span class="key">advanced vocabulary</span> <span class="state">~16.000</span> words, extended text coverage';
+$loc_projekt_antwort3l = 'at least <span class="key">advanced vocabulary</span> <span class="state">~64.000</span> words, comprehensive text coverage';
+$loc_projekt_antwort3m = '<span class="key">universal vocabulary</span> <span class="state">&gt;64.000</span> words, text coverage as complete as possible';
 $loc_projekt_frage4 = 'QUESTION: Which revision levels for the entries are there?';
 $loc_projekt_antwort4 = 'ANSWER: We aim at <span class="key">verifying</span> all entries as best as possible and add information about <span class="plane">semantics</span>, ';
-$loc_projekt_antwort4.= '<span class="name">grammar</span> and <span class="phon">phonetics</span>. There are seven <span class="key">revision levels</span>, identified by different symbols.';
+$loc_projekt_antwort4.= '<span class="name">grammar</span> and <span class="phon">phonetics</span>. There are eight <span class="key">revision levels</span>, identified by different symbols.';
 $loc_projekt_frage5 = 'QUESTION: Why do inflection classes, grammatical descriptions, and pronunciation information at Etymos differ from those found in other dictionaries?';
 $loc_projekt_antwort5 = 'ANSWER: We use a strictly <span class="key">scientific approach</span>. ';
 $loc_projekt_antwort5.= 'Thus we do not follow traditional linguistics, often interspersed with <span class="sourcelight">nationalist ideology</span> and <span class="sourcelight">literary aesthetics</span>, ';

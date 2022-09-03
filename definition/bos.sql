@@ -46,6 +46,62 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hemijski element Ac';
 
+DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'astat', -- $deu[0] = 'Astat'
+    'bos',   -- $bos[0] = ''
+    'hemijski element At'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element At';
+
+DELETE FROM `definition` WHERE `sememe`='barium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'barium', -- $deu[0] = 'Barium'
+    'bos',    -- $bos[0] = ''
+    'hemijski element Ba'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Ba';
+
+DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beryllium', -- $deu[0] = 'Beryllium'
+    'bos',       -- $bos[0] = ''
+    'hemijski element Be'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Be';
+
+DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'bor', -- $deu[0] = 'Bor'
+    'bos', -- $bos[0] = ''
+    'hemijski element B'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element B';
+
+DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brom', -- $deu[0] = 'Brom'
+    'bos',  -- $bos[0] = ''
+    'hemijski element Br'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Br';
+
+DELETE FROM `definition` WHERE `sememe`='calcium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'calcium', -- $deu[0] = 'Calcium'
+    'bos',     -- $bos[0] = ''
+    'hemijski element Ca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Ca';
+
+DELETE FROM `definition` WHERE `sememe`='chlor' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chlor', -- $deu[0] = 'Chlor'
+    'bos',   -- $bos[0] = ''
+    'hemijski element Cl'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Cl';
+
 DELETE FROM `definition` WHERE `sememe`='chrom' AND `language`='bos';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chrom', -- $deu[0] = 'Chrom'
@@ -53,6 +109,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'hemijski element Cr'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hemijski element Cr';
+
+DELETE FROM `definition` WHERE `sememe`='cobalt' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'cobalt', -- $deu[0] = 'Cobalt'
+    'bos',    -- $bos[0] = ''
+    'hemijski element Co'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Co';
 
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='bos';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -62,6 +126,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hemijski element Fe';
 
+DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fluor', -- $deu[0] = 'Fluor'
+    'bos',   -- $bos[0] = ''
+    'hemijski element F'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element F';
+
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='bos';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
@@ -69,6 +141,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'hemijski element He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hemijski element He';
+
+DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iod', -- $deu[0] = 'Iod'
+    'bos', -- $bos[0] = ''
+    'hemijski element I'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element I';
+
+DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iridium', -- $deu[0] = 'Iridium'
+    'bos',     -- $bos[0] = ''
+    'hemijski element Ir'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Ir';
 
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='bos';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -102,6 +190,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hemijski element Mg';
 
+DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meitnerium', -- $deu[0] = 'Meitnerium'
+    'bos',        -- $bos[0] = ''
+    'hemijski element Mt'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Mt';
+
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='bos';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'natrium', -- $deu[0] = 'Natrium'
@@ -110,6 +206,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hemijski element Na';
 
+DELETE FROM `definition` WHERE `sememe`='neon' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'neon', -- $deu[0] = 'Neon'
+    'bos',  -- $bos[0] = ''
+    'hemijski element Ne'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Ne';
+
+DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'radium', -- $deu[0] = 'Radium'
+    'bos',    -- $bos[0] = ''
+    'hemijski element Ra'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Ra';
+
+DELETE FROM `definition` WHERE `sememe`='rhodium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rhodium', -- $deu[0] = 'Rhodium'
+    'bos',     -- $bos[0] = ''
+    'hemijski element Rh'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Rh';
+
+DELETE FROM `definition` WHERE `sememe`='scandium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'scandium', -- $deu[0] = 'Scandium'
+    'bos',      -- $bos[0] = ''
+    'hemijski element Sc'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Sc';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='bos';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -117,6 +245,38 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'hemijski element Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hemijski element Ag';
+
+DELETE FROM `definition` WHERE `sememe`='strontium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'strontium', -- $deu[0] = 'Strontium'
+    'bos',       -- $bos[0] = ''
+    'hemijski element Sr'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Sr';
+
+DELETE FROM `definition` WHERE `sememe`='tenness' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tenness', -- $deu[0] = 'Tenness'
+    'bos',     -- $bos[0] = ''
+    'hemijski element Ts'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Ts';
+
+DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titan_0', -- $deu[0] = 'Titan'
+    'bos',     -- $bos[0] = ''
+    'hemijski element Ti'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element Ti';
+
+DELETE FROM `definition` WHERE `sememe`='vanadium' AND `language`='bos';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'vanadium', -- $deu[0] = 'Vanadium'
+    'bos',      -- $bos[0] = ''
+    'hemijski element V'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hemijski element V';
 
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='bos';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
