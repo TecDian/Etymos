@@ -4,7 +4,9 @@
 // -------------------------------------------------------------------------------------------------
 
 // Header
-$loc_etymos_woerterbuch = 'Etymos-Dictionary - multilingual and multidirectional';
+$loc_etymos = 'Etymos';
+$loc_woerterbuch = 'Dictionary';
+$loc_multilingual = 'multilingual and multidirectional';
 $loc_description = 'The Etymos-Dictionary offers translation between 36 languages in any direction with extensive information on semantics, grammar and phonetics.';
 $loc_keywords = 'language, translation, dictionary, grammar, inflection, declension, conjugation, phonetics, pronunciation';
 
@@ -49,9 +51,40 @@ $language = array(
     'swe' => 'Swedish',
     'tur' => 'Turkish',
     'ukr' => 'Ukrainian',
-    'fas' => 'Persian',
-    'fry' => 'Frisian',
+    'amh' => 'Amharic',
+    'aze' => 'Azerbaijani',
+    'ben' => 'Bengali',
+    'dzo' => 'Dzongkha',
+    'fil' => 'Filipino',
+    'heb' => 'Hebrew',
+    'hin' => 'Hindi',
     'hye' => 'Armenian',
+    'ind' => 'Indonesian',
+    'jpn' => 'Japanese',
+    'kat' => 'Georgian',
+    'kaz' => 'Kazakh',
+    'khk' => 'Mongolian',
+    'khm' => 'Khmer',
+    'kir' => 'Kyrgyz',
+    'kor' => 'Korean',
+    'lao' => 'Lao',
+    'mlt' => 'Maltese',
+    'msa' => 'Malaysian',
+    'mya' => 'Burmese',
+    'nep' => 'Nepali',
+    'pes' => 'Persian',
+    'prs' => 'Dari',
+    'pus' => 'Pashto',
+    'sin' => 'Sinhala',
+    'som' => 'Somali',
+    'swa' => 'Swahili',
+    'tgk' => 'Tajik',
+    'tha' => 'Thai',
+    'tuk' => 'Turkmen',
+    'urd' => 'Urdu',
+    'uzb' => 'Uzbek',
+    'vie' => 'Vietnamese',
+    'zho' => 'Chinese',
     'goh' => 'Old High German',
     'lat' => 'Latin',
     'pie' => 'Proto-Indo-European',
@@ -65,6 +98,7 @@ $language = array(
     'osx' => 'Old Saxon',
     'got' => 'Gothic',
     'cym' => 'Cymric',
+    'fry' => 'Frisian',
 );
 
 // Tooltips für Kategorien
@@ -461,7 +495,6 @@ $loc_spam1 = 'The security question was not answered correctly.';
 $loc_spam2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in your browser, correct it and submit again. Was it intentional: <span class="source">Stop this nonsense!</span>';
 
 // Portalseite
-$loc_titel = 'Etymos-Dictionary';
 $loc_willkommen = '### Welcome to Etymos. Most of it does work yet. Well, nearly everything, but … ###';
 $loc_wir_arbeiten = 'We work on it and we have a lot more in mind yet!';
 $loc_news = '3 September 2022</span> <span class="code">neu:</span> Entries were revised. Belarussian and Lithuanian were considerably extended.';
@@ -489,9 +522,6 @@ $loc_achtung2 = 'Attention! This website contains links to external sites, espec
 $loc_achtung2.= 'Although they are hand-picked recommendations, legally, this is advertising - and yes, we earn a little commission for sales via Amazon.';
 
 // Suchseite
-$loc_etymos = 'Etymos';
-$loc_woerterbuch = 'Dictionary';
-// Ergebnisfenster
 $loc_warning1 = 'The search word was not found.';
 $loc_warning2 = 'The search word was not found as such. The following term is the best match.';
 $loc_explanation1 = 'not translated, expressed by case';
@@ -512,6 +542,119 @@ $loc_weg['►'] = 'entwickelt to';
 $$loc_weg['▼'] = 'borrowed from';
 $loc_weg['▲'] = 'borrowed to';
 $loc_weg['♦'] = 'cognate to';
+// Flexionsmodul
+$loc_flex_para = 'inflection paradigm';
+$loc_einzelformen = 'simple forms';
+$loc_fall_zahl = 'case \ number';
+$loc_alle_genera = 'all genders';
+$loc_kein_schema = 'There is no scheme on record yet for this inflection paradigm.';
+$loc_kein_paradigma = 'There is no inflection paradigm available yet for this search word.';
+$loc_inflektierbar = 'This search word is inflectible.';
+$loc_siehe_einzelworte = 'Information on inflection can be found at those components that must be inflected for usage:';
+$loc_anmerkung = 'Note';
+$loc_genitivattribut_untypisch = 'If the word in singular is used as an isolated <span class="term">Saxon genitive</span>, the untypical genitive ending <span class="targetlight">-</span><span class="sourcelight">s</span> is added.';
+$loc_stummes_s = 'The <span class="targetlight">-s</span> is silent except for the <span class="term">genitive singular</span> and the <span class="term">plural</span>.';
+$loc_endung_kurz_lang = 'The ending is pronounced short in <span class="term">singular</span> and long in <span class="term">plural</span>.';
+// Sononikfenster
+$loc_sononische_notation = 'Sononic Notation';
+$loc_grundlagen = 'Fundamentals';
+$loc_lautliche_umschrift1 = 'For <span class="state">phonetic transcription</span> the <span class="sourcelight">sonic notation</span> is used. ';
+$loc_lautliche_umschrift2 = 'It reflects <span class="state">sound-distinctive features</span> and in some cases deviates significantly from the <span class="level1">IPA</span>.';
+$loc_phon_deu1 = 'The basis of the description of the <span class="name">German pronunciation</span> is the <span class="state">Central German standard form</span> of the colloquial language spoken in Germany. ';
+$loc_phon_deu2 = 'German <span class="name">r-sounds</span> are specified as <span class="phon">[ʀ]</span> and <span class="name">partially rhoticised</span>. ';
+$loc_phon_deu3 = '<span class="name">Short vowel</span> + <span class="source">r</span> is specified alternatively as <span class="state">dark vowel</span> + <span class="phon">[ʕ]</span> and as <span class="state">clear vowel</span> + <span class="phon">[ʀ]</span>.';
+$loc_phon_eng1 = 'The basis of the description of the <span class="name">English pronunciation</span> is the <span class="state">Received Pronunciation</span> of the colloquial language spoken in Great Britain. ';
+$loc_phon_eng2 = 'English <span class="name">r-sounds</span> are specified as <span class="phon">[ɾ]</span> and <span class="name">unrhoticised</span>.';
+$loc_phon_spa1 = 'The basis of the description of the <span class="name">Spanish pronunciation</span> is the <span class="state">Castilian standard form</span> of the colloquial language spoken in Spain. ';
+$loc_phon_spa2 = 'This mainly affects the pairs <span class="source">b</span> and <span class="source">v</span>, <span class="source">c</span> and <span class="source">z</span>, <span class="source">j</span> and <span class="source">ll</span> ';
+$loc_phon_spa3 = 'as well as <span class="source">d</span>, <span class="source">g</span> and <span class="source">x</span>.';
+$loc_vokale = 'Vowels';
+$loc_vokale_wichtig1 = 'The <span class="name">signs</span> <span class="phon">ᴀ</span>, <span class="phon">ɵ</span>, <span class="phon">ɜ</span>, <span class="phon">ɞ</span>, <span class="phon">ʉ</span>, <span class="phon">ɨ</span>, <span class="phon">ʚ</span> ';
+$loc_vokale_wichtig2 = 'are <span class="state">used</span> <span class="level3">differently</span> than the corresponding <span class="level1">IPA signs</span>, <span class="phon">ɑ</span>, ';
+$loc_vokale_wichtig3 = '<span class="phon">ɒ</span>, <span class="phon">ɐ</span> are <span class="state">interpreted</span> <span class="level3">differently</span>.';
+$loc_klarvokale = 'Clear vowels';
+$loc_blassvokale = 'Pale vowels';
+$loc_dunkelvokale = 'Dark vowels';
+$loc_nasalvokale = 'Nasal vowels';
+$loc_diphtonge = 'Diphtongs';
+$loc_klar = 'clear';
+$loc_blass = 'pale';
+$loc_dunkel = 'dark';
+$loc_nasal = 'nasal';
+$loc_diphtong = 'diphtong';
+$loc_hoch = 'high';
+$loc_breit = 'broad';
+$loc_hinten = 'back';
+$loc_mittel = 'middle';
+$loc_vorn = 'front';
+$loc_stumpf = 'dull';
+$loc_spitz = 'sharp';
+$loc_gleichmäßig = 'steady';
+$loc_frontlastig = 'front-heavy';
+$loc_basiert = 'based';
+$loc_konsonanten = 'Consonants';
+$loc_konsonanten_wichtig1 = 'The <span class="name">signs</span> <span class="phon">[ʀ]</span>, <span class="phon">[ʁ]</span>, <span class= "phon">[r]</span>, <span class="phon">[ɹ]</span>, <span class="phon">[ɾ]</span> ';
+$loc_konsonanten_wichtig2 = 'are <span class="state">used</span> <span class="level3 ">differently</span> than the corresponding <span class="level1">IPA signs</span>, ';
+$loc_konsonanten_wichtig3 = '<span class="phon">ɼ</span> <span class="state">is used additionally</span>, <span class="phone">j</span> is <span class=" state">interpreted</span> <span class="level3">differently</span>.';
+$loc_konsonanten_wichtig4 = 'In contrast to the <span class="level1">IPA practice</span>, <span class="phon">[ʔ]</span> is always written before vowels, <span class="state">even in the initial sound of a word</span >, ';
+$loc_konsonanten_wichtig5 = 'if it corresponds to the <span class="name">language standard</span>.';
+$loc_nasale = 'Nasals';
+$loc_plosive = 'Plosives';
+$loc_frikative = 'Fricatives';
+$loc_approximanten = 'Approximants';
+$loc_laterale = 'Laterals';
+$loc_perkussive = 'Percussives';
+$loc_plosiv = 'plosive';
+$loc_frikativ = 'fricative';
+$loc_approximant = 'approximant';
+$loc_lateral = 'lateral';
+$loc_perkussiv = 'percussive';
+$loc_bilabial = 'bilabial';
+$loc_labiodental = 'labiodental';
+$loc_dental = 'dental';
+$loc_alveolar = 'alveolar';
+$loc_alveopalatal = 'alveopalatal';
+$loc_alveovelar = 'alveovelar';
+$loc_postalveolar = 'postalveolar';
+$loc_retroflex = 'retroflex';
+$loc_praepalatal = 'prepalatal';
+$loc_palatal = 'palatal';
+$loc_velar = 'velar';
+$loc_uvular = 'uvular';
+$loc_glotal = 'glotal';
+$loc_fortis = 'fortis';
+$loc_lenis = 'lenis';
+$loc_pulsativ = 'pulsative';
+$loc_vibrant = 'vibrant';
+$loc_zusatzzeichen = 'Additional signs';
+$loc_suprasegmentale = 'Suprasegmentals';
+$loc_modifikatoren = 'Modificators';
+$loc_separtativ = 'separtative';
+$loc_quantitativ = 'quantitative';
+$loc_tonal = 'tonal';
+$loc_diakritisch = 'diacritic';
+$loc_postpositiv = 'postpositive';
+$loc_silbe = 'Syllable';
+$loc_laut = 'Sound';
+$loc_silbisch = 'syllabic';
+$loc_stimmlos = 'voiceless';
+$loc_stimmhaft = 'voiced';
+$loc_nasaliert = 'nasalised';
+$loc_aspiriert = 'aspirated';
+$loc_palatalisiert = 'palatalised';
+$loc_pharyngalisiert = 'pharyngalised';
+$loc_ejektiv = 'ejective';
+$loc_unbetont = 'unstressed';
+$loc_hauptbetont = 'primarily stressed';
+$loc_nebenbetont = 'secondarily stressed';
+$loc_lang = 'long';
+$loc_sehr_hoch = 'very high';
+$loc_tief = 'low';
+$loc_sehr_tief = 'very low';
+$loc_realisierung = 'Realisation';
+// Materialfenter
+$loc_material = 'Material';
+
 // Wortsuchefenster
 $loc_wortsuche = 'Word search';
 $loc_suchen = 'Find';
@@ -521,7 +664,6 @@ $loc_kein_suchbegriff = 'no search word';
 // Statusfenter
 $loc_status = 'Status';
 $loc_bearbeitungsstufe = 'Revision status';
-$loc_erklaerung = 'Explanation';
 $loc_lemmata_in = 'Lemmata in';
 $loc_artikel = 'Translation articles';
 $loc_level_name[0] = 'Basic entry';
@@ -540,25 +682,37 @@ $loc_level_name[6] = 'Revision entry 6';
 $loc_level_explain[6] = 'lemma and translation with complete characterisation; lemma with inflection, phonetics, audio, definition and etymology; verified.';
 $loc_level_name[7] = 'Full entry';
 $loc_level_explain[7] = 'lemma and translation with complete characterisation; lemma with inflection, phonetics, audio, definition, etymology and  collocation; verified.';
-// Materialfenter
-$loc_material = 'Material';
-$loc_flex_para = 'inflection paradigm';
-$loc_einzelformen = 'simple forms';
-
-// Flexionsmodul
-$loc_fall_zahl = 'case \ number';
-$loc_alle_genera = 'all genders';
-$loc_kein_schema = 'There is no scheme on record yet for this inflection paradigm.';
-$loc_kein_paradigma = 'There is no inflection paradigm available yet for this search word.';
-$loc_inflektierbar = 'This search word is inflectible.';
-$loc_siehe_einzelworte = 'Information on inflection can be found at those components that must be inflected for usage:';
-$loc_anmerkung = 'Note';
-$loc_genitivattribut_untypisch = 'If the word in singular is used as an isolated <span class="term">Saxon genitive</span>, the untypical genitive ending <span class="targetlight">-</span><span class="sourcelight">s</span> is added.';
-$loc_stummes_s = 'The <span class="targetlight">-s</span> is silent except for the <span class="term">genitive singular</span> and the <span class="term">plural</span>.';
-$loc_endung_kurz_lang = 'The ending is pronounced short in <span class="term">singular</span> and long in <span class="term">plural</span>.';
+$loc_grammatik = 'Grammar';
+$loc_dokument = 'Document';
+$loc_oeffnen = 'Open';
+$loc_zustand[0] = 'State';
+$loc_zustand[1] = 'rudimentary, verified';
+$loc_zustand[2] = 'incomplete, verified';
+$loc_zustand[3] = 'substantial, verified';
+$loc_zustand[4] = 'comprehensive, verified';
 
 // Downloadseite
-$loc_noch_nicht = 'Not yet.';
+$loc_treiber = 'Keyboard driver';
+$loc_version = 'Version';
+$loc_system = 'System';
+$loc_inhalt = 'Content';
+$loc_installation = 'Installation';
+$loc_treiber_typ = 'Keyboard driver for German keyboards';
+$loc_treiber_name1 = 'UniLatein';
+$loc_treiber_kommentar1 = 'to be able to easily type any';
+$loc_treiber_zweck1 = 'Latin script';
+$loc_treiber_kommentar2 = 'based state language. Numerous other useful special characters are available.';
+$loc_treiber_kommentar3 = 'Installation files';
+$loc_treiber_kommentar4 = 'Functional description';
+$loc_treiber_kommentar5 = 'Layout schematics';
+$loc_treiber_kommentar6 = 'Extract the contents of the archive to any directory.';
+$loc_treiber_kommentar7 = 'Run <span class="reg">setup.exe</span> and confirm any queries.';
+$loc_treiber_kommentar8 = 'Open Windows keyboard settings.';
+$loc_treiber_kommentar9 = 'In <span class="reg">language options</span> remove German default keyboard.';
+$loc_treiber_kommentar10 = 'Reboot the system.';
+$loc_anmerkung = 'Note';
+$loc_treiber_kommentar11 = 'If an earlier version is already installed, a different layout must be selected as the default and the old version must be uninstalled.';
+$loc_treiber_kommentar12 = 'After the installation and before the restart, the new layout can be selected as the default again. However, changes are only active after the restart.';
 
 // Fragenseite
 $loc_fragen_antworten = 'Questions and Answers';

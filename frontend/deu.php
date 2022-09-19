@@ -4,7 +4,9 @@
 // -------------------------------------------------------------------------------------------------
 
 // Header
-$loc_etymos_woerterbuch = 'Etymos-Wörterbuch - multilingual und multidirektional';
+$loc_etymos = 'Etymos';
+$loc_woerterbuch = 'Wörterbuch';
+$loc_multilingual = 'multilingual und multidirektional';
 $loc_description = 'Das Etymos-Wörterbuch liefert Übersetzungen zwischen 36 Sprachen in jeder beliebigen Richtung mit umfangreichen Informationen zu Semantik, Grammatik und Phonetik.';
 $loc_keywords = 'Sprache, Übersetzung, Wörterbuch, Grammatik, Flexion, Deklination, Konjugation, Phonetik, Aussprache';
 
@@ -49,9 +51,40 @@ $language = array(
     'swe' => 'Schwedisch',
     'tur' => 'Türkisch',
     'ukr' => 'Ukrainisch',
-    'fas' => 'Persisch',
-    'fry' => 'Friesisch',
+    'amh' => 'Amharisch',
+    'aze' => 'Aserbaidschanisch',
+    'ben' => 'Bengalisch',
+    'dzo' => 'Bhutanisch',
+    'fil' => 'Philippinisch',
+    'heb' => 'Ivritisch',
+    'hin' => 'Hindisch',
     'hye' => 'Armenisch',
+    'ind' => 'Indonesisch',
+    'jpn' => 'Japanisch',
+    'kat' => 'Georgisch',
+    'kaz' => 'Kasachisch',
+    'khk' => 'Mongolisch',
+    'khm' => 'Kambodschanisch',
+    'kir' => 'Kirgisisch',
+    'kor' => 'Koreanisch',
+    'lao' => 'Laotisch',
+    'mlt' => 'Maltesisch',
+    'msa' => 'Malaysisch',
+    'mya' => 'Birmanisch',
+    'nep' => 'Nepalesisch',
+    'pes' => 'Persisch',
+    'prs' => 'Darisch',
+    'pus' => 'Paschtunisch',
+    'sin' => 'Singhalesisch',
+    'som' => 'Somalisch',
+    'swa' => 'Swahilisch',
+    'tgk' => 'Tadschikisch',
+    'tha' => 'Thailändisch',
+    'tuk' => 'Turkmenisch',
+    'urd' => 'Urdunisch',
+    'uzb' => 'Usbekisch',
+    'vie' => 'Vietnamesisch',
+    'zho' => 'Chinesisch',
     'goh' => 'Althochdeutsch',
     'lat' => 'Lateinisch',
     'pie' => 'Urindoeuropäisch',
@@ -65,6 +98,7 @@ $language = array(
     'osx' => 'Altsächsisch',
     'got' => 'Gotisch',
     'cym' => 'Kymrisch',
+    'fry' => 'Friesisch',
 );
 
 // Tooltips für Kategorien
@@ -461,7 +495,6 @@ $loc_spam1 = 'Die Sicherheitsfrage wurde falsch beantwortet.';
 $loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
 
 // Portalseite
-$loc_titel = 'Etymos-Wörterbuch';
 $loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert schon. Also eigentlich fast alles, aber … ###';
 $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
 $loc_news = '3. September 2022</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Belarusisch und Litauisch wurden wesentlich erweitert.';
@@ -489,9 +522,6 @@ $loc_achtung2 = 'Achtung! Diese Webseite enthält Links zu externen Seiten, name
 $loc_achtung2.= 'Obwohl es sich um handverlesene Ratschläge handelt, stellen diese Links rechtlich Werbung dar - und ja, wir bekommen eine kleine Provision für Verkäufe über Amazon.';
 
 // Suchseite
-$loc_etymos = 'Etymos';
-$loc_woerterbuch = 'Wörterbuch';
-// Ergebnisfenster
 $loc_warning1 = 'Der Suchbegriff wurde nicht gefunden.';
 $loc_warning2 = 'Der Suchbegriff wurde nicht direkt gefunden. Der folgende Begriff kommt dem am nächsten.';
 $loc_explanation1 = 'nicht übersetzt, durch Kasus ausgedrückt';
@@ -512,6 +542,119 @@ $loc_weg['►'] = 'entwickelt zu';
 $$loc_weg['▼'] = 'entlehnt von';
 $loc_weg['▲'] = 'entlehnt nach';
 $loc_weg['♦'] = 'urverwandt mit';
+// Flexionsmodul
+$loc_flex_para = 'Flexionsparadigma';
+$loc_einzelformen = 'Einzelformen';
+$loc_fall_zahl = 'Fall \ Zahl';
+$loc_alle_genera = 'alle Genera';
+$loc_kein_schema = 'Für dieses Flexionsparadigma ist noch kein Schema verfügbar.';
+$loc_kein_paradigma = 'Für diesen Suchbegriff ist noch kein Flexionsparadigma erfasst.';
+$loc_inflektierbar = 'Dieser Suchbegriff ist nicht flektierbar.';
+$loc_siehe_einzelworte = 'Angaben zur Flexion sind bei denjenigen Bestandteilen zu finden, die bei Gebrauch flektiert werden müssen:';
+$loc_anmerkung = 'Anmerkung';
+$loc_genitivattribut_untypisch = 'Wird das Wort im Singular als isoliertes vorangestelltes <span class="term">Genitivattribut</span> verwendet, tritt die untypische Genitivendung <span class="targetlight">-</span><span class="sourcelight">s</span> hinzu.';
+$loc_stummes_s = 'Das <span class="targetlight">-s</span> ist stumm, außer im <span class="term">Genitiv Singular</span> und im <span class="term">Plural</span>.';
+$loc_endung_kurz_lang = 'Die Endung wird im <span class="term">Singular</span> kurz, im <span class="term">Plural</span> lang ausgesprochen.';
+// Sononikfenster
+$loc_sononische_notation = 'Sononische Notation';
+$loc_grundlagen = 'Grundlagen';
+$loc_lautliche_umschrift1 = 'Für die <span class="state">lautliche Umschrift</span> wird die <span class="sourcelight">sononische Notation</span> verwendet. ';
+$loc_lautliche_umschrift2 = 'Sie gibt <span class="state">schalldistiktive Merkmale</span> wieder und weicht teilweise erheblich vom <span class="level1">IPA</span> ab.';
+$loc_phon_deu1 = 'Grundlage der <span class="name">deutschen Aussprachebeschreibung</span> ist die in Deutschland gesprochene <span class="state">mitteldeutsche Standardform</span> der Umgangssprache. ';
+$loc_phon_deu2 = 'Deutsche <span class="name">r-Laute</span> werden als <span class="phon">[ʀ]</span> und <span class="name">teilrhotiziert</span> angegeben. ';
+$loc_phon_deu3 = '<span class="name">Kurzvokal</span> + <span class="source">r</span> wird alternativ als <span class="state">Dunkelvokal</span> + <span class="phon">[ʕ]</span> und als <span class="state">Klarvokal</span> + <span class="phon">[ʀ]</span> angegeben.';
+$loc_phon_eng1 = 'Grundlage der <span class="name">englischen Aussprachebeschreibung</span> ist die in Großbritannien gesprochene <span class="state">Received Pronunciation</span> der Umgangssprache. ';
+$loc_phon_eng2 = 'Englische <span class="name">r-Laute</span> werden als <span class="phon">[ɾ]</span> und <span class="name">nichtrhotiziert</span> angegeben.';
+$loc_phon_spa1 = 'Grundlage der <span class="name">spanischen Aussprachebeschreibung</span> ist die in Spanien gesprochene <span class="state">kastilische Standardform</span> der Umgangssprache. ';
+$loc_phon_spa2 = 'Dies betrifft vor allem die Paare <span class="source">b</span> und <span class="source">v</span>, <span class="source">c</span> und <span class="source">z</span>, <span class="source">j</span> und <span class="source">ll</span> ';
+$loc_phon_spa3 = 'sowie <span class="source">d</span>, <span class="source">g</span> und <span class="source">x</span>.';
+$loc_vokale = 'Vokale';
+$loc_vokale_wichtig1 = 'Die <span class="name">Zeichen</span> <span class="phon">ᴀ</span>, <span class="phon">ɵ</span>, <span class="phon">ɜ</span>, <span class="phon">ɞ</span>, <span class="phon">ʉ</span>, <span class="phon">ɨ</span>, <span class="phon">ʚ</span> ';
+$loc_vokale_wichtig2 = 'werden <span class="level3">anders</span> als die entsprechenden <span class="level1">IPA-Zeichen</span> <span class="state">verwendet</span>, ';
+$loc_vokale_wichtig3 = '<span class="phon">ɑ</span>, <span class="phon">ɒ</span>, <span class="phon">ɐ</span> werden <span class="level3">anders</span> <span class="state">interpretiert</span>.';
+$loc_klarvokale = 'Klarvokale';
+$loc_blassvokale = 'Blassvokale';
+$loc_dunkelvokale = 'Dunkelvokale';
+$loc_nasalvokale = 'Nasalvokale';
+$loc_diphtonge = 'Diphtonge';
+$loc_klar = 'klar';
+$loc_blass = 'blass';
+$loc_dunkel = 'dunkel';
+$loc_nasal = 'nasal';
+$loc_diphtong = 'diphtong';
+$loc_hoch = 'hoch';
+$loc_breit = 'breit';
+$loc_hinten = 'hinten';
+$loc_mittel = 'mittel';
+$loc_vorn = 'vorn';
+$loc_stumpf = 'stumpf';
+$loc_spitz = 'spitz';
+$loc_gleichmäßig = 'gleichmäßig';
+$loc_frontlastig = 'frontlastig';
+$loc_basiert = 'basiert';
+$loc_konsonanten = 'Konsonanten';
+$loc_konsonanten_wichtig1 = 'Die <span class="name">Zeichen</span> <span class="phon">[ʀ]</span>, <span class="phon">[ʁ]</span>, <span class="phon">[r]</span>, <span class="phon">[ɹ]</span>, <span class="phon">[ɾ]</span> ';
+$loc_konsonanten_wichtig2 = 'werden <span class="level3">anders</span> als die entsprechenden <span class="level1">IPA-Zeichen</span> <span class="state">verwendet</span>, <span class="phon">ɼ</span> wird <span class="state">zusätzlich verwendet</span>, ';
+$loc_konsonanten_wichtig3 = '<span class="phon">j</span> wird <span class="level3">anders</span> <span class="state">interpretiert</span>.';
+$loc_konsonanten_wichtig4 = 'Im Gegensatz zur <span class="level1">IPA-Praxis</span> wird <span class="phon">[ʔ]</span> vor Vokalen <span class="state">auch im Wortanlaut</span> grundsätzlich immer angegeben, ';
+$loc_konsonanten_wichtig5 = 'wenn es dem <span class="name">Sprachstandard</span> entspricht.';
+$loc_nasale = 'Nasale';
+$loc_plosive = 'Plosive';
+$loc_frikative = 'Frikative';
+$loc_approximanten = 'Approximanten';
+$loc_laterale = 'Laterale';
+$loc_perkussive = 'Perkussive';
+$loc_plosiv = 'plosiv';
+$loc_frikativ = 'frikativ';
+$loc_approximant = 'approximant';
+$loc_lateral = 'lateral';
+$loc_perkussiv = 'perkussiv';
+$loc_bilabial = 'bilabial';
+$loc_labiodental = 'labiodental';
+$loc_dental = 'dental';
+$loc_alveolar = 'alveolar';
+$loc_alveopalatal = 'alveopalatal';
+$loc_alveovelar = 'alveovelar';
+$loc_postalveolar = 'postalveolar';
+$loc_retroflex = 'retroflex';
+$loc_praepalatal = 'präpalatal';
+$loc_palatal = 'palatal';
+$loc_velar = 'velar';
+$loc_uvular = 'uvular';
+$loc_glotal = 'glotal';
+$loc_fortis = 'fortis';
+$loc_lenis = 'lenis';
+$loc_pulsativ = 'pulsativ';
+$loc_vibrant = 'vibrant';
+$loc_zusatzzeichen = 'Zusatzzeichen';
+$loc_suprasegmentale = 'Suprasegmentale';
+$loc_modifikatoren = 'Modifikatoren';
+$loc_separtativ = 'separtativ';
+$loc_quantitativ = 'quantitativ';
+$loc_tonal = 'tonal';
+$loc_diakritisch = 'diakritisch';
+$loc_postpositiv = 'postpositiv';
+$loc_silbe = 'Silbe';
+$loc_laut = 'Laut';
+$loc_silbisch = 'silbisch';
+$loc_stimmlos = 'stimmlos';
+$loc_stimmhaft = 'stimmhaft';
+$loc_nasaliert = 'nasaliert';
+$loc_aspiriert = 'aspiriert';
+$loc_palatalisiert = 'palatalisiert';
+$loc_pharyngalisiert = 'pharyngalisiert';
+$loc_ejektiv = 'ejektiv';
+$loc_unbetont = 'unbetont';
+$loc_hauptbetont = 'hauptbetont';
+$loc_nebenbetont = 'nebenbetont';
+$loc_lang = 'lang';
+$loc_sehr_hoch = 'sehr hoch';
+$loc_tief = 'tief';
+$loc_sehr_tief = 'sehr tief';
+$loc_realisierung = 'Realisierung';
+// Materialfenter
+$loc_material = 'Material';
+
 // Wortsuchefenster
 $loc_wortsuche = 'Wortsuche';
 $loc_suchen = 'Suchen';
@@ -521,7 +664,6 @@ $loc_kein_suchbegriff = 'kein Suchbegriff';
 // Statusfenter
 $loc_status = 'Status';
 $loc_bearbeitungsstufe = 'Bearbeitungsstufe';
-$loc_erklaerung = 'Erklärung';
 $loc_lemmata_in = 'Lemmata in';
 $loc_artikel = 'Übersetzungsartikel';
 $loc_level_name[0] = 'Grundeintrag';
@@ -540,25 +682,37 @@ $loc_level_name[6] = 'Aufbaueintrag 6';
 $loc_level_explain[6] = 'Stichwort und Übersetzung mit vollständiger Typisierung, Stichwort mit Flexion, Phonetik, Audio, Definition und Etymologie; verifiziert.';
 $loc_level_name[7] = 'Volleintrag';
 $loc_level_explain[7] = 'Stichwort und Übersetzung mit vollständiger Typisierung, Stichwort mit Flexion, Phonetik, Audio, Definition, Etymologie und Kollokation; verifiziert.';
-// Materialfenter
-$loc_material = 'Material';
-$loc_flex_para = 'Flexionsparadigma';
-$loc_einzelformen = 'Einzelformen';
-
-// Flexionsmodul
-$loc_fall_zahl = 'Fall \ Zahl';
-$loc_alle_genera = 'alle Genera';
-$loc_kein_schema = 'Für dieses Flexionsparadigma ist noch kein Schema verfügbar.';
-$loc_kein_paradigma = 'Für diesen Suchbegriff ist noch kein Flexionsparadigma erfasst.';
-$loc_inflektierbar = 'Dieser Suchbegriff ist nicht flektierbar.';
-$loc_siehe_einzelworte = 'Angaben zur Flexion sind bei denjenigen Bestandteilen zu finden, die bei Gebrauch flektiert werden müssen:';
-$loc_anmerkung = 'Anmerkung';
-$loc_genitivattribut_untypisch = 'Wird das Wort im Singular als isoliertes vorangestelltes <span class="term">Genitivattribut</span> verwendet, tritt die untypische Genitivendung <span class="targetlight">-</span><span class="sourcelight">s</span> hinzu.';
-$loc_stummes_s = 'Das <span class="targetlight">-s</span> ist stumm, außer im <span class="term">Genitiv Singular</span> und im <span class="term">Plural</span>.';
-$loc_endung_kurz_lang = 'Die Endung wird im <span class="term">Singular</span> kurz, im <span class="term">Plural</span> lang ausgesprochen.';
+$loc_grammatik = 'Grammatik';
+$loc_dokument = 'Dokument';
+$loc_oeffnen = 'Öffnen';
+$loc_zustand[0] = 'Zustand';
+$loc_zustand[1] = 'rudimentär, verifiziert';
+$loc_zustand[2] = 'unvollständig, verifiziert';
+$loc_zustand[3] = 'substantiell, verifiziert';
+$loc_zustand[4] = 'umfassend, verifiziert';
 
 // Downloadseite
-$loc_noch_nicht = 'Noch nicht.';
+$loc_treiber = 'Tastaturtreiber';
+$loc_version = 'Version';
+$loc_system = 'System';
+$loc_inhalt = 'Inhalt';
+$loc_installation = 'Installation';
+$loc_treiber_typ = 'Tastaturtreiber für deutsche Tastaturen';
+$loc_treiber_name1 = 'UniLatein';
+$loc_treiber_kommentar1 = 'zum problemlosen Schreiben von beliebigen auf';
+$loc_treiber_zweck1 = 'lateinischer Schrift';
+$loc_treiber_kommentar2 = 'basierenden Staatssprachen. Zahlreiche weitere nützliche Sonderzeichen sind verfügbar.';
+$loc_treiber_kommentar3 = 'Installationsdateien';
+$loc_treiber_kommentar4 = 'Funktionsbeschreibung';
+$loc_treiber_kommentar5 = 'Layoutschemata';
+$loc_treiber_kommentar6 = 'Inhalt des Archivs in ein beliebiges Verzeichnis entpacken.';
+$loc_treiber_kommentar7 = 'Datei <span class="reg">setup.exe</span> ausführen und eventuelle Rückfragen bestätigen.';
+$loc_treiber_kommentar8 = 'Windows-Tastatureinstellungen öffnen.';
+$loc_treiber_kommentar9 = 'In <span class="reg">Sprachoptionen</span> deutsche Standard-Tastatur entfernen.';
+$loc_treiber_kommentar10 = 'Neustart des Systems ausführen.';
+$loc_anmerkung = 'Anmerkung';
+$loc_treiber_kommentar11 = 'Ist bereits eine frühere Version installiert, muss vorher ein anderes Layout als Standard gewählt und die alte Version deinstalliert werden.';
+$loc_treiber_kommentar12 = 'Nach der Installation und noch vor dem Neustart kann das neue Layout wieder als Standard gewählt werden. Änderungen sind aber erst nach dem Neustart aktiv.';
 
 // Fragenseite
 $loc_fragen_antworten = 'Fragen und Antworten';
@@ -674,7 +828,7 @@ $loc_redakteure3 = 'keine';
 $loc_redakteure4 = ' Redakteure für die Betreuung einzelner ';
 $loc_redakteure5 = 'Sprachen';
 $loc_redakteure6 = ' rekrutieren. Die Redaktionsarbeit wird direkt von der Projektleitung ausgeführt, unterstützt von ';
-$loc_redakteure7 = 'Gelegenheitshilfskräten';
+$loc_redakteure7 = 'Gelegenheitshilfskräften';
 $loc_redakteure8 = '.';
 $loc_programmierer1 = 'Programmierer';
 $loc_programmierer2 = 'PHP, Datenbanken, Webseite, Serverbetrieb';
