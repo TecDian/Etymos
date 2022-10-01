@@ -326,6 +326,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животно од видот Erinaceus europaeus';
 
+DELETE FROM `definition` WHERE `sememe`='brillenbär' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brillenbär', -- $deu[0] = 'Brillenbär'
+    'mkd',        -- $mkd[0] = ''
+    'животно од видот Tremarctos ornatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Tremarctos ornatus';
+
 DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'brom', -- $deu[0] = 'Brom'
@@ -806,6 +814,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение од видот Carduus personata';
 
+DELETE FROM `definition` WHERE `sememe`='kragenbär' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kragenbär', -- $deu[0] = 'Kragenbär'
+    'mkd',       -- $mkd[0] = ''
+    'животно од видот Ursus thibetanus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Ursus thibetanus';
+
 DELETE FROM `definition` WHERE `sememe`='kuckuck_0' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kuckuck_0', -- $deu[0] = 'Kuckuck'
@@ -885,6 +901,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'сојузна држава на Америка'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'сојузна држава на Америка';
+
+DELETE FROM `definition` WHERE `sememe`='meerschweinchen' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meerschweinchen', -- $deu[0] = 'Meerschweinchen'
+    'mkd',             -- $mkd[0] = 'морско прасе'
+    'животно од видот Cavia porcellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Cavia porcellus';
 
 DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

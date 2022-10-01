@@ -342,6 +342,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Erinaceus europaeus';
 
+DELETE FROM `definition` WHERE `sememe`='brillenbär' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brillenbär', -- $deu[0] = 'Brillenbär'
+    'rus',        -- $rus[0] = ''
+    'животное вида Tremarctos ornatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Tremarctos ornatus';
+
 DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'brom', -- $deu[0] = 'Brom'
@@ -430,10 +438,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
 
-DELETE FROM `definition` WHERE `sememe`='der_0' AND `language`='rus';
+DELETE FROM `definition` WHERE `sememe`='der~art' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'der_0', -- $deu[0] = 'der'
-    'rus',   -- $rus[0] = '#part1'
+    'der~art', -- $deu[0] = 'der'
+    'rus',     -- $rus[0] = '#part1'
     'определённый артикль, не существует в многих языках'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'определённый артикль, не существует в многих языках';
@@ -830,10 +838,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Ir подгруппы кобальта';
 
-DELETE FROM `definition` WHERE `sememe`='ja_0' AND `language`='rus';
+DELETE FROM `definition` WHERE `sememe`='ja~int' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ja_0', -- $deu[0] = 'ja'
-    'rus',  -- $rus[0] = 'да'
+    'ja~int', -- $deu[0] = 'ja'
+    'rus',    -- $rus[0] = 'да'
     'выражение положительного отношения к вопросу'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'выражение положительного отношения к вопросу';
@@ -942,6 +950,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'денежная единица в России, Беларуси и на Украине';
 
+DELETE FROM `definition` WHERE `sememe`='kragenbär' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kragenbär', -- $deu[0] = 'Kragenbär'
+    'rus',       -- $rus[0] = ''
+    'животное вида Ursus thibetanus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Ursus thibetanus';
+
 DELETE FROM `definition` WHERE `sememe`='krempling_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'krempling_0', -- $deu[0] = 'Krempling'
@@ -1037,6 +1053,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'федеральный штат Америки'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='meerschweinchen' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meerschweinchen', -- $deu[0] = 'Meerschweinchen'
+    'rus',             -- $rus[0] = 'морская свинка'
+    'животное вида Cavia porcellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Cavia porcellus';
 
 DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

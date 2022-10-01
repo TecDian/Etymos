@@ -217,7 +217,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='gle';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'radium', -- $deu[0] = 'Radium'
-    'gle',    -- $gle[0] = ''
+    'gle',    -- $gle[0] = 'raidiam'
     'dúil cheimiceach Ra'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dúil cheimiceach Ra';

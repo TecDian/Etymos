@@ -246,8 +246,6 @@ $tooltip = array(
     281 => 'Katalonien',
     284 => 'Böhmen',
     285 => 'Mähren',
-    288 => 'Iran',
-    289 => 'Afghanistan',
     292 => 'Albanien',
     293 => 'Kosovo',
     320 => 'Deutschland',
@@ -336,9 +334,9 @@ $tooltip = array(
     'm' => 'maskulinum, männlich',
     'f' => 'femininum, weiblich',
     'n' => 'neutrum, sächlich',
+    'u' => 'utrum, doppelgeschlechtlich',
     'a' => 'animativum, belebt',
     'i' => 'inanimativum, unbelebt',
-    'u' => 'utrum, doppelgeschlechtlich',
     'va' => 'auxiliares Verb, Hilfsverb',
     'vi' => 'intransitives Verb, ohne Objekte und zwingende Erweiterungen',
     'via' => 'intransitives Verb, mit zwingender Anfügung eines Adverbials',
@@ -362,9 +360,9 @@ $tooltip = array(
     'frac' => 'fraktional, einen Bruchteil angebend (halb)',
     'iter' => 'iterativ, eine Wiederholung angebend (einmal)',
     'mult' => 'multiplikativ, eine Vervielfältigung angebend (einfach)',
-    'ordi' => 'ordinal, die Ordnung angebend (erstens)',
-    'soci' => 'soziativ, die Gesellschaft angebend (zu zweit)',
-    'succ' => 'sukzessiv, die Abfolge angebend (erstmals)',
+    'ordi' => 'ordinal, eine Ordnung angebend (erstens)',
+    'soci' => 'soziativ, eine Gesellschaft angebend (zu zweit)',
+    'succ' => 'sukzessiv, eine Abfolge angebend (erstmals)',
     'attr' => 'attributiv, als Teil des Attributs',
     'pred' => 'prädikativ, als Teil des Prädikats',
     'adve' => 'adversativ, Gegensatz angebend',
@@ -393,10 +391,10 @@ $tooltip = array(
     'pa' => 'Paukal, Kleinzahl',
     'pl' => 'Plural, Mehrzahl',
     '1.sg' => '1. Person Singular, Sprecher Einzahl',
-    '2.sg' => '2. Person Singular, Angesprochener Einzahl',
+    '2.sg' => '2. Person Singular, Hörer Einzahl',
     '3.sg' => '3. Person Singular, Gesprächsgegenstand Einzahl',
     '1.pl' => '1. Person Plural, Sprecher Mehrzahl',
-    '2.pl' => '2. Person Plural, Angesprochene Mehrzahl',
+    '2.pl' => '2. Person Plural, Hörer Mehrzahl',
     '3.pl' => '3. Person Plural, Gesprächsgegenstände Mehrzahl',
     'gnr' => 'Generalitiv, Allgemeinform',
     'hon' => 'Honorativ, Ehrenform',
@@ -495,9 +493,9 @@ $loc_spam1 = 'Die Sicherheitsfrage wurde falsch beantwortet.';
 $loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
 
 // Portalseite
-$loc_willkommen = '### Willkommen bei Etymos. Das meiste funktioniert schon. Also eigentlich fast alles, aber … ###';
+$loc_willkommen = '### Willkommen bei Etymos. Das Meiste funktioniert schon. Also eigentlich fast alles, aber … ###';
 $loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
-$loc_news = '3. September 2022</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Belarusisch und Litauisch wurden wesentlich erweitert.';
+$loc_news = '30. September 2022</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Luxemburgisch wurde wesentlich erweitert.';
 // Sprachwahlfenster
 $loc_waehlen = 'Quell- und Zielsprache wählen';
 $loc_aufschlagen = 'Wörterbuch aufschlagen';
@@ -593,10 +591,10 @@ $loc_gleichmäßig = 'gleichmäßig';
 $loc_frontlastig = 'frontlastig';
 $loc_basiert = 'basiert';
 $loc_konsonanten = 'Konsonanten';
-$loc_konsonanten_wichtig1 = 'Die <span class="name">Zeichen</span> <span class="phon">[ʀ]</span>, <span class="phon">[ʁ]</span>, <span class="phon">[r]</span>, <span class="phon">[ɹ]</span>, <span class="phon">[ɾ]</span> ';
+$loc_konsonanten_wichtig1 = 'Die <span class="name">Zeichen</span> <span class="phon">r</span>, <span class="phon">ɹ</span>, <span class="phon">ʀ</span>, <span class="phon">ʁ</span>, <span class="phon">ɽ</span>, <span class="phon">ɻ</span>, <span class="phon">ɾ</span> ';
 $loc_konsonanten_wichtig2 = 'werden <span class="level3">anders</span> als die entsprechenden <span class="level1">IPA-Zeichen</span> <span class="state">verwendet</span>, <span class="phon">ɼ</span> wird <span class="state">zusätzlich verwendet</span>, ';
 $loc_konsonanten_wichtig3 = '<span class="phon">j</span> wird <span class="level3">anders</span> <span class="state">interpretiert</span>.';
-$loc_konsonanten_wichtig4 = 'Im Gegensatz zur <span class="level1">IPA-Praxis</span> wird <span class="phon">[ʔ]</span> vor Vokalen <span class="state">auch im Wortanlaut</span> grundsätzlich immer angegeben, ';
+$loc_konsonanten_wichtig4 = 'Im Gegensatz zur <span class="level1">IPA-Praxis</span> wird <span class="phon">ʔ</span> vor Vokalen <span class="state">auch im Wortanlaut</span> grundsätzlich immer angegeben, ';
 $loc_konsonanten_wichtig5 = 'wenn es dem <span class="name">Sprachstandard</span> entspricht.';
 $loc_nasale = 'Nasale';
 $loc_plosive = 'Plosive';
@@ -692,27 +690,49 @@ $loc_zustand[3] = 'substantiell, verifiziert';
 $loc_zustand[4] = 'umfassend, verifiziert';
 
 // Downloadseite
-$loc_treiber = 'Tastaturtreiber';
 $loc_version = 'Version';
 $loc_system = 'System';
 $loc_inhalt = 'Inhalt';
 $loc_installation = 'Installation';
+$loc_anmerkung = 'Anmerkung';
+$loc_treiber = 'Tastaturtreiber';
 $loc_treiber_typ = 'Tastaturtreiber für deutsche Tastaturen';
 $loc_treiber_name1 = 'UniLatein';
-$loc_treiber_kommentar1 = 'zum problemlosen Schreiben von beliebigen auf';
+$loc_treiber_name2 = 'Phonetisch';
+$loc_treiber_name3 = 'Kyrillisch';
+$loc_treiber_name4 = 'Griechisch';
 $loc_treiber_zweck1 = 'lateinischer Schrift';
-$loc_treiber_kommentar2 = 'basierenden Staatssprachen. Zahlreiche weitere nützliche Sonderzeichen sind verfügbar.';
-$loc_treiber_kommentar3 = 'Installationsdateien';
-$loc_treiber_kommentar4 = 'Funktionsbeschreibung';
-$loc_treiber_kommentar5 = 'Layoutschemata';
-$loc_treiber_kommentar6 = 'Inhalt des Archivs in ein beliebiges Verzeichnis entpacken.';
-$loc_treiber_kommentar7 = 'Datei <span class="reg">setup.exe</span> ausführen und eventuelle Rückfragen bestätigen.';
-$loc_treiber_kommentar8 = 'Windows-Tastatureinstellungen öffnen.';
-$loc_treiber_kommentar9 = 'In <span class="reg">Sprachoptionen</span> deutsche Standard-Tastatur entfernen.';
-$loc_treiber_kommentar10 = 'Neustart des Systems ausführen.';
-$loc_anmerkung = 'Anmerkung';
-$loc_treiber_kommentar11 = 'Ist bereits eine frühere Version installiert, muss vorher ein anderes Layout als Standard gewählt und die alte Version deinstalliert werden.';
-$loc_treiber_kommentar12 = 'Nach der Installation und noch vor dem Neustart kann das neue Layout wieder als Standard gewählt werden. Änderungen sind aber erst nach dem Neustart aktiv.';
+$loc_treiber_zweck2 = 'Lautumschrift';
+$loc_treiber_zweck3 = 'kyrillischer Schrift';
+$loc_treiber_zweck4 = 'griechischer Schrift';
+$loc_treiber_zweck5 = 'arabischer Schrift';
+$loc_treiber_kommentar1 = 'zum problemlosen Schreiben von';
+$loc_treiber_kommentar2 = ' beliebigen auf';
+$loc_treiber_kommentar3 = 'basierenden Staatssprachen.';
+$loc_treiber_kommentar4 = '.';
+$loc_treiber_kommentar5 = 'basierenden Staatssprachen und Kirchenslawisch.';
+$loc_treiber_kommentar6 = 'für Griechisch und Altgriechisch.';
+$loc_treiber_kommentar7 = ' Zahlreiche weitere nützliche Sonderzeichen sind verfügbar.';
+$loc_treiber_inhalt1 = 'Installationsdateien';
+$loc_treiber_inhalt2 = 'Funktionsbeschreibung';
+$loc_treiber_inhalt3 = 'Layoutschemata';
+$loc_treiber_installation1 = 'Inhalt des Archivs in ein beliebiges Verzeichnis entpacken.';
+$loc_treiber_installation2 = 'Datei <span class="reg">setup.exe</span> ausführen und eventuelle Rückfragen bestätigen.';
+$loc_treiber_installation3 = 'Windows-Tastatureinstellungen öffnen.';
+$loc_treiber_installation4 = 'In <span class="reg">Sprachoptionen</span> deutsche Standard-Tastatur entfernen.';
+$loc_treiber_installation5 = 'Neustart des Systems ausführen.';
+$loc_treiber_anmerkung1 = 'Ist bereits eine frühere Version installiert, muss vorher ein anderes Layout als Standard gewählt und die alte Version deinstalliert werden.';
+$loc_treiber_anmerkung2 = 'Nach der Installation und noch vor dem Neustart kann das neue Layout wieder als Standard gewählt werden.';
+$loc_treiber_anmerkung3 = 'Änderungen sind erst nach dem Neustart aktiv.';
+$loc_treiber_anmerkung4 = 'Der Treiber wird von Windows unter der Sprachoption ';
+$loc_treiber_anmerkung5 = ' geführt.';
+$loc_listen_typ = 'Tabellen für Zuordnungen, Lemmata und Kollokationen';
+$loc_listen_name = 'Mustertabellen';
+$loc_listen_kommentar = 'zum Einreichen von Beiträgen zum Etymos-Wörterbuch.';
+$loc_listen_inhalt1 = 'Excel-Datei mit Tabellen';
+$loc_listen_inhalt2 = 'Anwendungshinweise (PDF)';
+$loc_listen_inhalt3 = 'Liste mit Grammatikkürzeln (PDF)';
+$loc_listen_inhalt4 = 'Liste mit Kategoriecodes (PDF)';
 
 // Fragenseite
 $loc_fragen_antworten = 'Fragen und Antworten';

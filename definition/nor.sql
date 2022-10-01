@@ -294,6 +294,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dyr av arten Ursus arctos';
 
+DELETE FROM `definition` WHERE `sememe`='brillenbär' AND `language`='nor';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brillenbär', -- $deu[0] = 'Brillenbär'
+    'nor',        -- $nor[0] = ''
+    'dyr av arten Tremarctos ornatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dyr av arten Tremarctos ornatus';
+
 DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='nor';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'brom', -- $deu[0] = 'Brom'
@@ -678,6 +686,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dyr av arten Vanellus vanellus';
 
+DELETE FROM `definition` WHERE `sememe`='kragenbär' AND `language`='nor';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kragenbär', -- $deu[0] = 'Kragenbär'
+    'nor',       -- $nor[0] = 'kragebjørn [Ursus thibetanus]'
+    'dyr av arten Ursus thibetanus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dyr av arten Ursus thibetanus';
+
 DELETE FROM `definition` WHERE `sememe`='kuckuck_0' AND `language`='nor';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kuckuck_0', -- $deu[0] = 'Kuckuck'
@@ -757,6 +773,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
+
+DELETE FROM `definition` WHERE `sememe`='meerschweinchen' AND `language`='nor';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meerschweinchen', -- $deu[0] = 'Meerschweinchen'
+    'nor',             -- $nor[0] = ''
+    'dyr av arten Cavia porcellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dyr av arten Cavia porcellus';
 
 DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='nor';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

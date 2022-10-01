@@ -246,8 +246,6 @@ $tooltip = array(
     281 => 'Catalonia',
     284 => 'Bohemia',
     285 => 'Moravia',
-    288 => 'Iran',
-    289 => 'Afghanistan',
     292 => 'Albania',
     293 => 'Kosovo',
     320 => 'Germany',
@@ -336,9 +334,9 @@ $tooltip = array(
     'm' => 'masculine, male',
     'f' => 'feminine, female',
     'n' => 'neuter, neutral',
+    'u' => 'uter, common',
     'a' => 'animate, alive',
     'i' => 'inanimate, not alive',
-    'u' => 'uter, common',
     'va' => 'auxiliary verb, for the construction of gramatical forms',
     'vi' => 'intransitive verb, without objects and compulsory extentions',
     'via' => 'intransitive verb, with compulsory extention by an adverbial',
@@ -477,7 +475,7 @@ $loc_telefon = 'Telephone';
 $loc_nachricht = 'Message';
 $loc_adresse = 'E-mail address';
 $loc_spamblock = 'Request';
-$loc_spamtext = 'What is the Greek word for German \'Person\' (Anzahl)?';
+$loc_spamtext = 'What is the Greek word for German \'Person\' (count)?';
 $loc_absenden = 'Submit';
 $loc_loeschen = 'Reset';
 
@@ -497,7 +495,7 @@ $loc_spam2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in 
 // Portalseite
 $loc_willkommen = '### Welcome to Etymos. Most of it does work yet. Well, nearly everything, but … ###';
 $loc_wir_arbeiten = 'We work on it and we have a lot more in mind yet!';
-$loc_news = '3 September 2022</span> <span class="code">neu:</span> Entries were revised. Belarussian and Lithuanian were considerably extended.';
+$loc_news = '30 September 2022</span> <span class="code">neu:</span> Entries were revised. Luxembourgish was considerably extended.';
 // Sprachwahlfenster
 $loc_waehlen = 'Choose source and target language';
 $loc_aufschlagen = 'Open dictionary';
@@ -593,10 +591,10 @@ $loc_gleichmäßig = 'steady';
 $loc_frontlastig = 'front-heavy';
 $loc_basiert = 'based';
 $loc_konsonanten = 'Consonants';
-$loc_konsonanten_wichtig1 = 'The <span class="name">signs</span> <span class="phon">[ʀ]</span>, <span class="phon">[ʁ]</span>, <span class= "phon">[r]</span>, <span class="phon">[ɹ]</span>, <span class="phon">[ɾ]</span> ';
+$loc_konsonanten_wichtig1 = 'The <span class="name">signs</span> <span class= "phon">r</span>, <span class="phon">ɹ</span>, <span class="phon">ʀ</span>, <span class="phon">ʁ</span>, <span class="phon">ɽ</span>, <span class="phon">ɻ</span>, <span class="phon">ɾ</span> ';
 $loc_konsonanten_wichtig2 = 'are <span class="state">used</span> <span class="level3 ">differently</span> than the corresponding <span class="level1">IPA signs</span>, ';
-$loc_konsonanten_wichtig3 = '<span class="phon">ɼ</span> <span class="state">is used additionally</span>, <span class="phone">j</span> is <span class=" state">interpreted</span> <span class="level3">differently</span>.';
-$loc_konsonanten_wichtig4 = 'In contrast to the <span class="level1">IPA practice</span>, <span class="phon">[ʔ]</span> is always written before vowels, <span class="state">even in the initial sound of a word</span >, ';
+$loc_konsonanten_wichtig3 = '<span class="phon">ɼ</span> <span class="state">is used additionally</span>, <span class="phon">j</span> is <span class=" state">interpreted</span> <span class="level3">differently</span>.';
+$loc_konsonanten_wichtig4 = 'In contrast to the <span class="level1">IPA practice</span>, <span class="phon">ʔ</span> is always written before vowels, <span class="state">even in the initial sound of a word</span >, ';
 $loc_konsonanten_wichtig5 = 'if it corresponds to the <span class="name">language standard</span>.';
 $loc_nasale = 'Nasals';
 $loc_plosive = 'Plosives';
@@ -692,27 +690,49 @@ $loc_zustand[3] = 'substantial, verified';
 $loc_zustand[4] = 'comprehensive, verified';
 
 // Downloadseite
-$loc_treiber = 'Keyboard driver';
 $loc_version = 'Version';
 $loc_system = 'System';
 $loc_inhalt = 'Content';
 $loc_installation = 'Installation';
-$loc_treiber_typ = 'Keyboard driver for German keyboards';
-$loc_treiber_name1 = 'UniLatein';
-$loc_treiber_kommentar1 = 'to be able to easily type any';
-$loc_treiber_zweck1 = 'Latin script';
-$loc_treiber_kommentar2 = 'based state language. Numerous other useful special characters are available.';
-$loc_treiber_kommentar3 = 'Installation files';
-$loc_treiber_kommentar4 = 'Functional description';
-$loc_treiber_kommentar5 = 'Layout schematics';
-$loc_treiber_kommentar6 = 'Extract the contents of the archive to any directory.';
-$loc_treiber_kommentar7 = 'Run <span class="reg">setup.exe</span> and confirm any queries.';
-$loc_treiber_kommentar8 = 'Open Windows keyboard settings.';
-$loc_treiber_kommentar9 = 'In <span class="reg">language options</span> remove German default keyboard.';
-$loc_treiber_kommentar10 = 'Reboot the system.';
 $loc_anmerkung = 'Note';
-$loc_treiber_kommentar11 = 'If an earlier version is already installed, a different layout must be selected as the default and the old version must be uninstalled.';
-$loc_treiber_kommentar12 = 'After the installation and before the restart, the new layout can be selected as the default again. However, changes are only active after the restart.';
+$loc_treiber = 'Keyboard driver';
+$loc_treiber_typ = 'Keyboard driver for German keyboards';
+$loc_treiber_name1 = 'UniLatin';
+$loc_treiber_name2 = 'Phonetic';
+$loc_treiber_name3 = 'Cyrillic';
+$loc_treiber_name4 = 'Greek';
+$loc_treiber_zweck1 = 'Latin script';
+$loc_treiber_zweck2 = 'phonetic transcription';
+$loc_treiber_zweck3 = 'Cyrillic script';
+$loc_treiber_zweck4 = 'Greek script';
+$loc_treiber_zweck5 = 'Arabic script';
+$loc_treiber_kommentar1 = 'to be able to easily type';
+$loc_treiber_kommentar2 = ' any';
+$loc_treiber_kommentar3 = 'based state language.';
+$loc_treiber_kommentar4 = '.';
+$loc_treiber_kommentar5 = 'based state language als well as Church Slavonic.';
+$loc_treiber_kommentar6 = 'for Greek and Ancient Greek.';
+$loc_treiber_kommentar7 = ' Numerous other useful special characters are available.';
+$loc_treiber_inhalt1 = 'Installation files';
+$loc_treiber_inhalt2 = 'Functional description';
+$loc_treiber_inhalt3 = 'Layout schematics';
+$loc_treiber_installation1 = 'Extract the contents of the archive to any directory.';
+$loc_treiber_installation2 = 'Run <span class="reg">setup.exe</span> and confirm any queries.';
+$loc_treiber_installation3 = 'Open Windows keyboard settings.';
+$loc_treiber_installation4 = 'In <span class="reg">language options</span> remove German default keyboard.';
+$loc_treiber_installation5 = 'Reboot the system.';
+$loc_treiber_anmerkung1 = 'If an earlier version is already installed, a different layout must be selected as the default and the old version must be uninstalled.';
+$loc_treiber_anmerkung2 = 'After the installation and before the restart, the new layout can be selected as the default again.';
+$loc_treiber_anmerkung3 = 'Changes are only active after the restart.';
+$loc_treiber_anmerkung4 = 'Windows registers the driver under the language option ';
+$loc_treiber_anmerkung5 = '.';
+$loc_listen_typ = 'Tables for assignments, lemmas and collocations';
+$loc_listen_name = 'Sample tables';
+$loc_listen_kommentar = 'for submitting contributions to the Etymos dictionary.';
+$loc_listen_inhalt1 = 'Excel file with tables';
+$loc_listen_inhalt2 = 'Usage instructions (PDF)';
+$loc_listen_inhalt3 = 'List of grammar abbreviations (PDF)';
+$loc_listen_inhalt4 = 'List of category codes (PDF)';
 
 // Fragenseite
 $loc_fragen_antworten = 'Questions and Answers';

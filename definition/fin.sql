@@ -118,10 +118,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'alkuaine Co';
 
-DELETE FROM `definition` WHERE `sememe`='der_0' AND `language`='fin';
+DELETE FROM `definition` WHERE `sememe`='der~art' AND `language`='fin';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'der_0', -- $deu[0] = 'der'
-    'fin',   -- $fin[0] = '#part1'
+    'der~art', -- $deu[0] = 'der'
+    'fin',     -- $fin[0] = '#part1'
     'määräinen artikkeli, ei saatavilla monilla kielillä'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'määräinen artikkeli, ei saatavilla monilla kielillä';

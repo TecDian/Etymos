@@ -910,6 +910,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Großstadt in Frankreich in der Region Bretagne, eine der beiden Hauptstädte des Bezirks Finistère ';
 
+DELETE FROM `definition` WHERE `sememe`='brillenbär' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brillenbär', -- $deu[0] = 'Brillenbär'
+    'deu',        -- $deu[0] = 'Brillenbär'
+    'Tier der Art Tremarctos ornatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Tremarctos ornatus';
+
 DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'brom', -- $deu[0] = 'Brom'
@@ -1094,10 +1102,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Bundesstaat von Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='der_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='der~art' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'der_0', -- $deu[0] = 'der'
-    'deu',   -- $deu[0] = 'der'
+    'der~art', -- $deu[0] = 'der'
+    'deu',     -- $deu[0] = 'der'
     'bestimmter Artikel, ist in vielen Sprachen nicht vorhanden'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'bestimmter Artikel, ist in vielen Sprachen nicht vorhanden';
@@ -2134,14 +2142,6 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Asteroid des Hauptgürtels mit der Registriernummer 42, benannt nach einer Göttin der altägyptischen Religion';
 
-DELETE FROM `definition` WHERE `sememe`='ja_0' AND `language`='deu';
-INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ja_0', -- $deu[0] = 'ja'
-    'deu',  -- $deu[0] = 'ja'
-    'Ausdruck der Positivität bezüglich einer Frage'
-) ON DUPLICATE KEY UPDATE `text` = 
-    'Ausdruck der Positivität bezüglich einer Frage';
-
 DELETE FROM `definition` WHERE `sememe`='jamaika_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'jamaika_0', -- $deu[0] = 'Jamaika'
@@ -2189,6 +2189,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Stadt in Russland im Süden des Urals'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Stadt in Russland im Süden des Urals';
+
+DELETE FROM `definition` WHERE `sememe`='ja~int' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ja~int', -- $deu[0] = 'ja'
+    'deu',    -- $deu[0] = 'ja'
+    'Ausdruck der Positivität bezüglich einer Frage'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Ausdruck der Positivität bezüglich einer Frage';
 
 DELETE FROM `definition` WHERE `sememe`='jochbein_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2469,6 +2477,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Untereinheit der Währungseinheiten in Russland, Belarus und der Ukraine'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Untereinheit der Währungseinheiten in Russland, Belarus und der Ukraine';
+
+DELETE FROM `definition` WHERE `sememe`='kragenbär' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kragenbär', -- $deu[0] = 'Kragenbär'
+    'deu',       -- $deu[0] = 'Kragenbär'
+    'Tier der Art Ursus thibetanus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Ursus thibetanus';
 
 DELETE FROM `definition` WHERE `sememe`='krebs_1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2854,6 +2870,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Teilgebiet der Physik und der Technik';
 
+DELETE FROM `definition` WHERE `sememe`='meerschweinchen' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meerschweinchen', -- $deu[0] = 'Meerschweinchen'
+    'deu',             -- $deu[0] = 'Meerschweinchen'
+    'Tier der Art Cavia porcellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Cavia porcellus';
+
 DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'meitnerium', -- $deu[0] = 'Meitnerium'
@@ -2998,10 +3022,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Bundesstaat von Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='nein_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='nein~int' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'nein_0', -- $deu[0] = 'nein'
-    'deu',    -- $deu[0] = 'nein'
+    'nein~int', -- $deu[0] = 'nein'
+    'deu',      -- $deu[0] = 'nein'
     'Ausdruck der Negativität bezüglich einer Frage'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Ausdruck der Negativität bezüglich einer Frage';
@@ -4198,25 +4222,25 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'scherzhafte Bezeichnung für Gebiete mit vergleichsweise schlechter Medienanbindung, vorwiegend historisch Gebiete der ehemaligen DDR ohne Empfang von BRD-Fernsehen, auch modern Gebiete mit fehlendem oder nur schlecht ausgebautem Breitband-Internet-Zugang';
 
-DELETE FROM `definition` WHERE `sememe`='tanz_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='tanz~1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tanz_0', -- $deu[0] = 'Tanz'
+    'tanz~1', -- $deu[0] = 'Tanz'
     'deu',    -- $deu[0] = 'Tanz'
     'festgelegte Art, sich zur Musik eines bestimmtens Stils und Rhythmuses körperlich zu bewegen oder festgelegte Abfolge von Bewegungen dieser Art'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'festgelegte Art, sich zur Musik eines bestimmtens Stils und Rhythmuses körperlich zu bewegen oder festgelegte Abfolge von Bewegungen dieser Art';
 
-DELETE FROM `definition` WHERE `sememe`='tanz_1' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='tanz~2' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tanz_1', -- $deu[0] = 'Tanz'
+    'tanz~2', -- $deu[0] = 'Tanz'
     'deu',    -- $deu[0] = 'Tanz'
     'Kunst-, Kultur- und Sportform der körperlichen Bewegung zu Musik mit speziellem kulturellem oder historischem Hintergrund'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Kunst-, Kultur- und Sportform der körperlichen Bewegung zu Musik mit speziellem kulturellem oder historischem Hintergrund';
 
-DELETE FROM `definition` WHERE `sememe`='tanz_2' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='tanz~3' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tanz_2', -- $deu[0] = 'Tanz'
+    'tanz~3', -- $deu[0] = 'Tanz'
     'deu',    -- $deu[0] = 'Tanz'
     'körperliche Bewegung zu Musik als soziale Freizeitbeschäftigung oder Kulturveranstaltung, die den Teilnehmern die Möglichkeit dazu bietet'
 ) ON DUPLICATE KEY UPDATE `text` = 

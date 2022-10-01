@@ -230,10 +230,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Ir';
 
-DELETE FROM `definition` WHERE `sememe`='ja_0' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='ja~int' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ja_0', -- $deu[0] = 'ja'
-    'dan',  -- $dan[0] = 'ja'
+    'ja~int', -- $deu[0] = 'ja'
+    'dan',    -- $dan[0] = 'ja'
     'udtryk for positivitet i forhold til et spørgsmål'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'udtryk for positivitet i forhold til et spørgsmål';

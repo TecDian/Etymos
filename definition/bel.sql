@@ -158,10 +158,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Ir';
 
-DELETE FROM `definition` WHERE `sememe`='ja_0' AND `language`='bel';
+DELETE FROM `definition` WHERE `sememe`='ja~int' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ja_0', -- $deu[0] = 'ja'
-    'bel',  -- $bel[0] = 'так'
+    'ja~int', -- $deu[0] = 'ja'
+    'bel',    -- $bel[0] = 'так'
     'выказванне пазітыўнасці адносна пытання'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'выказванне пазітыўнасці адносна пытання';

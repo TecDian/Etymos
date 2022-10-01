@@ -462,6 +462,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'animal of the family Tabanidae';
 
+DELETE FROM `definition` WHERE `sememe`='brillenbär' AND `language`='eng';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brillenbär', -- $deu[0] = 'Brillenbär'
+    'eng',        -- $eng[0] = 'Andean bear'
+    'animal of the species Tremarctos ornatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'animal of the species Tremarctos ornatus';
+
 DELETE FROM `definition` WHERE `sememe`='brom' AND `language`='eng';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'brom', -- $deu[0] = 'Brom'
@@ -1062,10 +1070,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'metal, chemical element Ir of the cobalt group';
 
-DELETE FROM `definition` WHERE `sememe`='ja_0' AND `language`='eng';
+DELETE FROM `definition` WHERE `sememe`='ja~int' AND `language`='eng';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ja_0', -- $deu[0] = 'ja'
-    'eng',  -- $eng[0] = 'yes'
+    'ja~int', -- $deu[0] = 'ja'
+    'eng',    -- $eng[0] = 'yes'
     'expression of positivity regarding a question'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'expression of positivity regarding a question';
@@ -1181,6 +1189,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'plant of the species Carduus personata'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'plant of the species Carduus personata';
+
+DELETE FROM `definition` WHERE `sememe`='kragenbär' AND `language`='eng';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kragenbär', -- $deu[0] = 'Kragenbär'
+    'eng',       -- $eng[0] = 'Tibetan black bear'
+    'animal of the species Ursus thibetanus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'animal of the species Ursus thibetanus';
 
 DELETE FROM `definition` WHERE `sememe`='krebs_2' AND `language`='eng';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1349,6 +1365,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'federal state of America'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'federal state of America';
+
+DELETE FROM `definition` WHERE `sememe`='meerschweinchen' AND `language`='eng';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'meerschweinchen', -- $deu[0] = 'Meerschweinchen'
+    'eng',             -- $eng[0] = 'guinea pig'
+    'animal of the species Cavia porcellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'animal of the species Cavia porcellus';
 
 DELETE FROM `definition` WHERE `sememe`='meitnerium' AND `language`='eng';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
