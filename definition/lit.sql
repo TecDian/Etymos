@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -65,7 +67,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='lit';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'beryllium', -- $deu[0] = 'Beryllium'
-    'lit',       -- $lit[0] = ''
+    'lit',       -- $lit[0] = 'berilis'
     'cheminis elementas Be'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'cheminis elementas Be';
@@ -73,7 +75,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='lit';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'bor', -- $deu[0] = 'Bor'
-    'lit', -- $lit[0] = ''
+    'lit', -- $lit[0] = 'boras'
     'cheminis elementas B'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'cheminis elementas B';
@@ -137,7 +139,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='lit';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
-    'lit',    -- $lit[0] = ''
+    'lit',    -- $lit[0] = 'helis'
     'cheminis elementas He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'cheminis elementas He';
@@ -177,7 +179,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='lit';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
-    'lit',     -- $lit[0] = ''
+    'lit',     -- $lit[0] = 'litis'
     'cheminis elementas Li'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'cheminis elementas Li';
@@ -262,10 +264,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'cheminis elementas Ts';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='lit';
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='lit';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'lit',     -- $lit[0] = ''
+    'titanium', -- $deu[0] = 'Titan'
+    'lit',      -- $lit[0] = ''
     'cheminis elementas Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'cheminis elementas Ti';

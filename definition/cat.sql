@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -145,7 +147,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='cat';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'iod', -- $deu[0] = 'Iod'
-    'cat', -- $cat[0] = ''
+    'cat', -- $cat[0] = 'iode'
     'element químic I'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element químic I';
@@ -262,10 +264,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element químic Ts';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='cat';
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='cat';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'cat',     -- $cat[0] = ''
+    'titanium', -- $deu[0] = 'Titan'
+    'cat',      -- $cat[0] = ''
     'element químic Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element químic Ti';

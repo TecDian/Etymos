@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
---     'Pflanze der Art Exemplum commune'
+--     'животно од видот Exemplum commune'
+--     'растение од видот Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'неметал, хемиски елемент E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -126,6 +128,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животно од видот Mirafra angolensis';
 
+DELETE FROM `definition` WHERE `sememe`='apfelblütenstecher' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'apfelblütenstecher', -- $deu[0] = 'Apfelblütenstecher'
+    'mkd',                -- $mkd[0] = ''
+    'животно од видот Anthonomus pomorum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Anthonomus pomorum';
+
 DELETE FROM `definition` WHERE `sememe`='apfelwickler' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'apfelwickler', -- $deu[0] = 'Apfelwickler'
@@ -133,14 +143,6 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животно од видот Cydia pomonella'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животно од видот Cydia pomonella';
-
-DELETE FROM `definition` WHERE `sememe`='aprikosenbaum' AND `language`='mkd';
-INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'aprikosenbaum', -- $deu[0] = 'Aprikosenbaum'
-    'mkd',           -- $mkd[0] = ''
-    'растение од видот Prunus armeniaca'
-) ON DUPLICATE KEY UPDATE `text` = 
-    'растение од видот Prunus armeniaca';
 
 DELETE FROM `definition` WHERE `sememe`='arizona' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -189,6 +191,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение од видот Passiflora herbertiana'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение од видот Passiflora herbertiana';
+
+DELETE FROM `definition` WHERE `sememe`='australische_weißbuche' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'australische_weißbuche', -- $deu[0] = 'Australische Weißbuche'
+    'mkd',                    -- $mkd[0] = ''
+    'растение од видот Gmelina leichhardtii'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение од видот Gmelina leichhardtii';
 
 DELETE FROM `definition` WHERE `sememe`='bahamaente' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -325,6 +335,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животно од видот Erinaceus europaeus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животно од видот Erinaceus europaeus';
+
+DELETE FROM `definition` WHERE `sememe`='braungelber_flechtenspinner' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'braungelber_flechtenspinner', -- $deu[0] = 'Braungelber Flechtenspinner'
+    'mkd',                         -- $mkd[0] = ''
+    'животно од видот Pelosia obtusa'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Pelosia obtusa';
 
 DELETE FROM `definition` WHERE `sememe`='brillenbär' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -614,6 +632,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение од видот Xanthium strumarium';
 
+DELETE FROM `definition` WHERE `sememe`='gimpel' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gimpel', -- $deu[0] = 'Gimpel'
+    'mkd',    -- $mkd[0] = ''
+    'животно од видот Pyrrhula pyrrhula'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Pyrrhula pyrrhula';
+
 DELETE FROM `definition` WHERE `sememe`='giraffe' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'giraffe', -- $deu[0] = 'Giraffe'
@@ -701,6 +727,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животно од видот Clamator glandarius'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животно од видот Clamator glandarius';
+
+DELETE FROM `definition` WHERE `sememe`='hühnerhabicht' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hühnerhabicht', -- $deu[0] = 'Hühnerhabicht'
+    'mkd',           -- $mkd[0] = 'јастреб кокошкар'
+    'животно од видот Accipiter gentilis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Accipiter gentilis';
 
 DELETE FROM `definition` WHERE `sememe`='idaho' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -846,6 +880,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'метал, хемиски елемент Cu';
 
+DELETE FROM `definition` WHERE `sememe`='kupferstecher~käfer' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupferstecher~käfer', -- $deu[100] = 'Kupferstecher'
+    'mkd',                 -- $mkd[0] = ''
+    'животно од видот Pityogenes chalcographus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животно од видот Pityogenes chalcographus';
+
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
@@ -885,6 +927,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'сојузна држава на Америка'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'сојузна држава на Америка';
+
+DELETE FROM `definition` WHERE `sememe`='marillenbaum' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'marillenbaum', -- $deu[0] = 'Marillenbaum'
+    'mkd',          -- $mkd[0] = ''
+    'растение од видот Prunus armeniaca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение од видот Prunus armeniaca';
 
 DELETE FROM `definition` WHERE `sememe`='maryland' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1270,10 +1320,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животно од видот Panthera tigris';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='mkd';
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'mkd',     -- $mkd[0] = 'титан'
+    'titanium', -- $deu[0] = 'Titan'
+    'mkd',      -- $mkd[0] = 'титан'
     'метал, хемиски елемент Ti од титанска група'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'метал, хемиски елемент Ti од титанска група';
@@ -1341,6 +1391,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'неметал, хемиски елемент H'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неметал, хемиски елемент H';
+
+DELETE FROM `definition` WHERE `sememe`='weißbuche' AND `language`='mkd';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'weißbuche', -- $deu[0] = 'Weißbuche'
+    'mkd',       -- $mkd[0] = ''
+    'растение од видот Carpinus betulus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение од видот Carpinus betulus';
 
 DELETE FROM `definition` WHERE `sememe`='weiße_taubnessel' AND `language`='mkd';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

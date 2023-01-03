@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -45,6 +47,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento chimico Ac'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Ac';
+
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'ita',   -- $ita[0] = ''
+    'lettera greca α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca α, Α';
 
 DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -93,6 +103,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento chimico Be'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Be';
+
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'ita',  -- $ita[0] = ''
+    'lettera greca β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca β, Β';
 
 DELETE FROM `definition` WHERE `sememe`='bissau' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -166,6 +184,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Co';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'ita',             -- $ita[0] = 'delta'
+    'lettera greca δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca δ, Δ';
+
 DELETE FROM `definition` WHERE `sememe`='dragonja' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'dragonja', -- $deu[0] = 'Dragonja'
@@ -182,6 +208,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Fe';
 
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'ita',     -- $ita[0] = ''
+    'lettera greca ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca ε, Ε';
+
 DELETE FROM `definition` WHERE `sememe`='eriwan' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eriwan', -- $deu[0] = 'Eriwan'
@@ -190,6 +224,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitale dell’Armenia ';
 
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'ita', -- $ita[0] = ''
+    'lettera greca η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca η, Η';
+
 DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fluor', -- $deu[0] = 'Fluor'
@@ -197,6 +239,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento chimico F'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico F';
+
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'ita',   -- $ita[100] = 'gamma'
+    'lettera greca γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca γ, Γ';
 
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -213,6 +263,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento chimico I'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico I';
+
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'ita',  -- $ita[0] = ''
+    'lettera greca ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca ι, Ι';
 
 DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -238,6 +296,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico K';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'ita',             -- $ita[0] = ''
+    'lettera greca κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca κ, Κ';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -245,6 +311,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'elemento chimico Cu'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Cu';
+
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'ita',    -- $ita[0] = ''
+    'lettera greca λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca λ, Λ';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -342,6 +416,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Sc';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'ita',   -- $ita[0] = ''
+    'lettera greca σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -374,10 +456,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Ts';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='ita';
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'ita',     -- $ita[0] = 'titanio'
+    'theta', -- $deu[0] = 'Theta'
+    'ita',   -- $ita[0] = ''
+    'lettera greca θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca θ, Θ';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'ita',      -- $ita[0] = 'titanio'
     'elemento chimico Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Ti';
@@ -445,4 +535,12 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'capitale della Croazia'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitale della Croazia';
+
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'ita',  -- $ita[0] = 'zeta'
+    'lettera greca ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'lettera greca ζ, Ζ';
 

@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
---     'Pflanze der Art Exemplum commune'
+--     'животное вида Exemplum commune'
+--     'растение вида Exemplum commune'
+--     'гриб вида Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'неметалл и химический элемент E, в виде газа E₂, подруппы периодической системы
+--     'неметалл, химический элемент E, в виде газа E₂, подруппы периодической системы
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -102,6 +104,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Salamandra atra';
 
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'rus',   -- $rus[0] = 'альфа'
+    'греческая буква α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква α, Α';
+
 DELETE FROM `definition` WHERE `sememe`='amerikanischer_schwarzbär' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'amerikanischer_schwarzbär', -- $deu[0] = 'Amerikanischer Schwarzbär'
@@ -134,6 +144,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Mirafra angolensis';
 
+DELETE FROM `definition` WHERE `sememe`='apfelblütenstecher' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'apfelblütenstecher', -- $deu[0] = 'Apfelblütenstecher'
+    'rus',                -- $rus[0] = 'яблонный цветоед [Anthonomus pomorum]'
+    'животное вида Anthonomus pomorum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Anthonomus pomorum';
+
 DELETE FROM `definition` WHERE `sememe`='apfelwickler' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'apfelwickler', -- $deu[0] = 'Apfelwickler'
@@ -141,14 +159,6 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Cydia pomonella'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Cydia pomonella';
-
-DELETE FROM `definition` WHERE `sememe`='aprikosenbaum' AND `language`='rus';
-INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'aprikosenbaum', -- $deu[0] = 'Aprikosenbaum'
-    'rus',           -- $rus[0] = 'абрикос [дерево]'
-    'растение вида Prunus armeniaca'
-) ON DUPLICATE KEY UPDATE `text` = 
-    'растение вида Prunus armeniaca';
 
 DELETE FROM `definition` WHERE `sememe`='arizona' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -190,6 +200,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Clupea harengus';
 
+DELETE FROM `definition` WHERE `sememe`='austernseitling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'austernseitling', -- $deu[0] = 'Austernseitling'
+    'rus',             -- $rus[0] = ''
+    'гриб вида Pleurotus ostreatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Pleurotus ostreatus';
+
 DELETE FROM `definition` WHERE `sememe`='australische_passionsblume' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'australische_passionsblume', -- $deu[0] = 'Australische Passionsblume'
@@ -197,6 +215,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Passiflora herbertiana'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Passiflora herbertiana';
+
+DELETE FROM `definition` WHERE `sememe`='australische_weißbuche' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'australische_weißbuche', -- $deu[0] = 'Australische Weißbuche'
+    'rus',                    -- $rus[0] = ''
+    'растение вида Gmelina leichhardtii'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Gmelina leichhardtii';
 
 DELETE FROM `definition` WHERE `sememe`='bahamaente' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -278,6 +304,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Be щёлочноземельных металлов';
 
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'rus',  -- $rus[0] = 'бета'
+    'греческая буква β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква β, Β';
+
 DELETE FROM `definition` WHERE `sememe`='beutelbarsch' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'beutelbarsch', -- $deu[0] = 'Beutelbarsch'
@@ -285,6 +319,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Serranus hepatus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Serranus hepatus';
+
+DELETE FROM `definition` WHERE `sememe`='birkenpilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'birkenpilz', -- $deu[0] = 'Birkenpilz'
+    'rus',        -- $rus[0] = 'подберёзовик обыкновенный'
+    'гриб вида Leccinum scabrum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Leccinum scabrum';
+
+DELETE FROM `definition` WHERE `sememe`='birkenrotkappe' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'birkenrotkappe', -- $deu[0] = 'Birkenrotkappe'
+    'rus',            -- $rus[0] = ''
+    'гриб вида Leccinum versipelle'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Leccinum versipelle';
 
 DELETE FROM `definition` WHERE `sememe`='bisamratte' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -341,6 +391,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Erinaceus europaeus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Erinaceus europaeus';
+
+DELETE FROM `definition` WHERE `sememe`='brauner_filzröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brauner_filzröhrling', -- $deu[0] = 'Brauner Filzröhrling'
+    'rus',                  -- $rus[0] = 'моховик зелёный'
+    'гриб вида Xerocomus ferrugineus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Xerocomus ferrugineus';
+
+DELETE FROM `definition` WHERE `sememe`='braungelber_flechtenspinner' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'braungelber_flechtenspinner', -- $deu[0] = 'Braungelber Flechtenspinner'
+    'rus',                         -- $rus[0] = ''
+    'животное вида Pelosia obtusa'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Pelosia obtusa';
 
 DELETE FROM `definition` WHERE `sememe`='brillenbär' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -438,6 +504,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'rus',             -- $rus[0] = ''
+    'греческая буква δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква δ, Δ';
+
 DELETE FROM `definition` WHERE `sememe`='der~art' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'der~art', -- $deu[0] = 'der'
@@ -494,6 +568,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Lobaria pulmonaria';
 
+DELETE FROM `definition` WHERE `sememe`='echter_pfifferling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'echter_pfifferling', -- $deu[0] = 'Echter Pfifferling'
+    'rus',                -- $rus[0] = 'лисичка обыкновенная'
+    'гриб вида Cantharellus cibarius'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Cantharellus cibarius';
+
+DELETE FROM `definition` WHERE `sememe`='eichenrotkappe' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eichenrotkappe', -- $deu[0] = 'Eichenrotkappe'
+    'rus',            -- $rus[0] = ''
+    'гриб вида Leccinum aurantiacum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Leccinum aurantiacum';
+
 DELETE FROM `definition` WHERE `sememe`='eichenspinner' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eichenspinner', -- $deu[0] = 'Eichenspinner'
@@ -501,6 +591,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Lasiocampa quercus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Lasiocampa quercus';
+
+DELETE FROM `definition` WHERE `sememe`='eierwulstling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eierwulstling', -- $deu[0] = 'Echter Eierwulstling'
+    'rus',           -- $rus[0] = ''
+    'гриб вида Amanita ovoidea'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Amanita ovoidea';
 
 DELETE FROM `definition` WHERE `sememe`='eisbär' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -534,6 +632,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Cichorium endivia';
 
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'rus',     -- $rus[0] = 'эпсилон'
+    'греческая буква ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква ε, Ε';
+
+DELETE FROM `definition` WHERE `sememe`='espenrotkappe' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'espenrotkappe', -- $deu[0] = 'Espenrotkappe'
+    'rus',           -- $rus[0] = 'подосиновик красный'
+    'гриб вида Leccinum leucopodium'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Leccinum leucopodium';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'rus', -- $rus[0] = 'эта'
+    'греческая буква η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква η, Η';
+
 DELETE FROM `definition` WHERE `sememe`='eurasisches_eichhörnchen_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eurasisches_eichhörnchen_0', -- $deu[0] = 'Eurasisches Eichhörnchen'
@@ -549,6 +671,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'денежная единица Европы с 1999 года, код ISO 4217: EUR, символ: €'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'денежная единица Европы с 1999 года, код ISO 4217: EUR, символ: €';
+
+DELETE FROM `definition` WHERE `sememe`='faltentintling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'faltentintling', -- $deu[0] = 'Faltentintling'
+    'rus',            -- $rus[0] = ''
+    'гриб вида Coprinopsis atramentaria'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Coprinopsis atramentaria';
 
 DELETE FROM `definition` WHERE `sememe`='fasan_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -566,6 +696,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Agroeca brunnea';
 
+DELETE FROM `definition` WHERE `sememe`='feldtrichterling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'feldtrichterling', -- $deu[0] = 'Feldtrichterling'
+    'rus',              -- $rus[0] = ''
+    'гриб вида Clitocybe dealbata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Clitocybe dealbata';
+
 DELETE FROM `definition` WHERE `sememe`='fichten-steinpilz' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fichten-steinpilz', -- $deu[0] = 'Fichten-Steinpilz'
@@ -582,6 +720,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Arctium tomentosum';
 
+DELETE FROM `definition` WHERE `sememe`='filzröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'filzröhrling', -- $deu[0] = 'Filzröhrling'
+    'rus',          -- $rus[0] = ''
+    'гриб рода Xerocomus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Xerocomus';
+
 DELETE FROM `definition` WHERE `sememe`='fledermausfalke' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fledermausfalke', -- $deu[0] = 'Fledermausfalke'
@@ -589,6 +735,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Falco rufigularis'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Falco rufigularis';
+
+DELETE FROM `definition` WHERE `sememe`='fliegenpilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fliegenpilz', -- $deu[0] = 'Fliegenpilz'
+    'rus',         -- $rus[0] = 'красный мухомор'
+    'гриб вида Amanita muscaria'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Amanita muscaria';
 
 DELETE FROM `definition` WHERE `sememe`='flockenstieliger_hexenröhrling' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -630,6 +784,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Silurus glanis';
 
+DELETE FROM `definition` WHERE `sememe`='frauentäubling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'frauentäubling', -- $deu[0] = 'Frauentäubling'
+    'rus',            -- $rus[0] = ''
+    'гриб вида Russula cyanoxantha'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Russula cyanoxantha';
+
+DELETE FROM `definition` WHERE `sememe`='frühjahrsgiftlorchel' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'frühjahrsgiftlorchel', -- $deu[0] = 'Frühjahrsgiftlorchel'
+    'rus',                  -- $rus[0] = ''
+    'гриб вида Gyromitra esculenta'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Gyromitra esculenta';
+
 DELETE FROM `definition` WHERE `sememe`='fuchsschwanzkiefer' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fuchsschwanzkiefer', -- $deu[0] = 'Fuchsschwanzkiefer'
@@ -637,6 +807,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Pinus balfouriana'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Pinus balfouriana';
+
+DELETE FROM `definition` WHERE `sememe`='gallenröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gallenröhrling', -- $deu[0] = 'Gallenröhrling'
+    'rus',            -- $rus[0] = ''
+    'гриб рода Tylopilus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Tylopilus';
+
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'rus',   -- $rus[100] = 'гамма'
+    'греческая буква γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква γ, Γ';
+
+DELETE FROM `definition` WHERE `sememe`='gelbporiger_raufußröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gelbporiger_raufußröhrling', -- $deu[0] = 'Gelbporiger Raufußröhrling'
+    'rus',                        -- $rus[0] = ''
+    'гриб вида Leccinellum crocipodium'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Leccinellum crocipodium';
 
 DELETE FROM `definition` WHERE `sememe`='gemeine_esche' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -654,6 +848,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Beta vulgaris и его корнеклубень';
 
+DELETE FROM `definition` WHERE `sememe`='gemeiner_gallenröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gemeiner_gallenröhrling', -- $deu[0] = 'Gemeiner Gallenröhrling'
+    'rus',                     -- $rus[0] = 'жёлчный гриб'
+    'гриб вида Tylopilus felleus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Tylopilus felleus';
+
 DELETE FROM `definition` WHERE `sememe`='gemeiner_rhabarber_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'gemeiner_rhabarber_0', -- $deu[0] = 'Gemeiner Rhabarber'
@@ -661,6 +863,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Rheum rhabarbarum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Rheum rhabarbarum';
+
+DELETE FROM `definition` WHERE `sememe`='gemeiner_wetterstern' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gemeiner_wetterstern', -- $deu[0] = 'Gemeiner Wetterstern'
+    'rus',                  -- $rus[0] = ''
+    'гриб вида Astraeus hygrometricus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Astraeus hygrometricus';
 
 DELETE FROM `definition` WHERE `sememe`='georgia' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -685,6 +895,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Xanthium strumarium'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Xanthium strumarium';
+
+DELETE FROM `definition` WHERE `sememe`='gifthäubling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gifthäubling', -- $deu[0] = 'Gifthäubling'
+    'rus',          -- $rus[0] = ''
+    'гриб вида Galerina marginata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Galerina marginata';
+
+DELETE FROM `definition` WHERE `sememe`='giftlorchel' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'giftlorchel', -- $deu[0] = 'Giftlorchel'
+    'rus',         -- $rus[0] = ''
+    'гриб рода Gyromitra'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Gyromitra';
+
+DELETE FROM `definition` WHERE `sememe`='gimpel' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gimpel', -- $deu[0] = 'Gimpel'
+    'rus',    -- $rus[0] = 'обыкновенный снегирь'
+    'животное вида Pyrrhula pyrrhula'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Pyrrhula pyrrhula';
 
 DELETE FROM `definition` WHERE `sememe`='giraffe' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -729,10 +963,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='grüner_knollenblätterpilz' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grüner_knollenblätterpilz', -- $deu[0] = 'Grüner Knollenblätterpilz'
-    'rus',                       -- $rus[0] = 'бледная поганка [Amanita phalloides]'
+    'rus',                       -- $rus[0] = 'бледная поганка'
     'гриб вида Amanita phalloides'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Amanita phalloides';
+
+DELETE FROM `definition` WHERE `sememe`='grünsporschirmling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'grünsporschirmling', -- $deu[0] = 'Grünsporschirmling'
+    'rus',                -- $rus[0] = ''
+    'гриб рода Chlorophyllum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Chlorophyllum';
 
 DELETE FROM `definition` WHERE `sememe`='gürtelfischer_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -741,6 +983,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Megaceryle alcyon'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Megaceryle alcyon';
+
+DELETE FROM `definition` WHERE `sememe`='hainbuchenröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hainbuchenröhrling', -- $deu[0] = 'Hainbuchenröhrling'
+    'rus',                -- $rus[0] = 'подберёзовик серый'
+    'гриб вида Leccinellum pseudoscabrum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Leccinellum pseudoscabrum';
+
+DELETE FROM `definition` WHERE `sememe`='hallimasch' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hallimasch', -- $deu[0] = 'Hallimasch'
+    'rus',        -- $rus[0] = 'опёнок'
+    'гриб рода Armillaria'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Armillaria';
 
 DELETE FROM `definition` WHERE `sememe`='halsband-scherenschnabel' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -790,6 +1048,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Clupeidae';
 
+DELETE FROM `definition` WHERE `sememe`='honiggelber_hallimasch' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'honiggelber_hallimasch', -- $deu[0] = 'Honiggelber Hallimasch'
+    'rus',                    -- $rus[0] = 'опёнок осенний'
+    'гриб вида Armillaria mellea'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Armillaria mellea';
+
 DELETE FROM `definition` WHERE `sememe`='häherkuckuck' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'häherkuckuck', -- $deu[0] = 'Häherkuckuck'
@@ -797,6 +1063,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Clamator glandarius'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Clamator glandarius';
+
+DELETE FROM `definition` WHERE `sememe`='häubling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'häubling', -- $deu[0] = 'Häubling'
+    'rus',      -- $rus[0] = ''
+    'гриб рода Galerina'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Galerina';
+
+DELETE FROM `definition` WHERE `sememe`='hühnerhabicht' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hühnerhabicht', -- $deu[0] = 'Hühnerhabicht'
+    'rus',           -- $rus[0] = 'ястреб-курятник'
+    'животное вида Accipiter gentilis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Accipiter gentilis';
 
 DELETE FROM `definition` WHERE `sememe`='idaho' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -821,6 +1103,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'неметалл, химический элемент I галогенов'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неметалл, химический элемент I галогенов';
+
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'rus',  -- $rus[0] = 'йота'
+    'греческая буква ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква ι, Ι';
 
 DELETE FROM `definition` WHERE `sememe`='iowa' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -862,10 +1152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Paxillus involutus';
 
-DELETE FROM `definition` WHERE `sememe`='kaiserling_0' AND `language`='rus';
+DELETE FROM `definition` WHERE `sememe`='kaiserling' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'kaiserling_0', -- $deu[0] = 'Kaiserling'
-    'rus',          -- $rus[0] = 'цезарский гриб'
+    'kaiserling', -- $deu[0] = 'Kaiserling'
+    'rus',        -- $rus[0] = 'цезарский гриб'
     'гриб вида Amanita caesarea'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Amanita caesarea';
@@ -901,6 +1191,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'федеральный штат Америки'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'rus',             -- $rus[0] = 'каппа'
+    'греческая буква κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква κ, Κ';
+
+DELETE FROM `definition` WHERE `sememe`='karbolchampignon' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'karbolchampignon', -- $deu[0] = 'Karbolchampignon'
+    'rus',              -- $rus[0] = ''
+    'гриб вида Agaricus xanthodermus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Agaricus xanthodermus';
 
 DELETE FROM `definition` WHERE `sememe`='kasarka' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -958,13 +1264,21 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Ursus thibetanus';
 
-DELETE FROM `definition` WHERE `sememe`='krempling_0' AND `language`='rus';
+DELETE FROM `definition` WHERE `sememe`='kraterelle' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'krempling_0', -- $deu[0] = 'Krempling'
-    'rus',         -- $rus[0] = ''
-    'гриб рода Paxillus or Tapinella'
+    'kraterelle', -- $deu[0] = 'Kraterelle'
+    'rus',        -- $rus[0] = ''
+    'гриб рода Craterellus'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'гриб рода Paxillus or Tapinella';
+    'гриб рода Craterellus';
+
+DELETE FROM `definition` WHERE `sememe`='krempling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'krempling', -- $deu[0] = 'Krempling'
+    'rus',       -- $rus[0] = ''
+    'гриб рода Paxillus или Tapinella'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Paxillus или Tapinella';
 
 DELETE FROM `definition` WHERE `sememe`='kuckuck_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -990,6 +1304,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Cu подгруппы меди';
 
+DELETE FROM `definition` WHERE `sememe`='kupferstecher~käfer' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupferstecher~käfer', -- $deu[100] = 'Kupferstecher'
+    'rus',                 -- $rus[0] = ''
+    'животное вида Pityogenes chalcographus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Pityogenes chalcographus';
+
+DELETE FROM `definition` WHERE `sememe`='königsfliegenpilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'königsfliegenpilz', -- $deu[0] = 'Königsfliegenpilz'
+    'rus',               -- $rus[0] = ''
+    'гриб вида Amanita regalis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Amanita regalis';
+
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'rus',    -- $rus[0] = 'лямбда'
+    'греческая буква λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква λ, Λ';
+
 DELETE FROM `definition` WHERE `sememe`='litas' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'litas', -- $deu[0] = 'Litas'
@@ -1001,7 +1339,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
-    'rus',     -- $rus[0] = 'литий ‹Li›'
+    'rus',     -- $rus[0] = 'литий'
     'металл, химический элемент Li щелочных металлов'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Li щелочных металлов';
@@ -1037,6 +1375,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'федеральный штат Америки'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='maipilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'maipilz', -- $deu[0] = 'Maipilz'
+    'rus',     -- $rus[0] = ''
+    'гриб вида Calocybe gambosa'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Calocybe gambosa';
+
+DELETE FROM `definition` WHERE `sememe`='marillenbaum' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'marillenbaum', -- $deu[0] = 'Marillenbaum'
+    'rus',          -- $rus[0] = 'абрикос обыкновенный'
+    'растение вида Prunus armeniaca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Prunus armeniaca';
+
+DELETE FROM `definition` WHERE `sememe`='maronenröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'maronenröhrling', -- $deu[0] = 'Maronenröhrling'
+    'rus',             -- $rus[0] = ''
+    'гриб вида Imleria badia'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Imleria badia';
 
 DELETE FROM `definition` WHERE `sememe`='maryland' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1110,6 +1472,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Dinarolacerta montenegrina';
 
+DELETE FROM `definition` WHERE `sememe`='morchel' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'morchel', -- $deu[0] = 'Morchel'
+    'rus',     -- $rus[0] = 'сморчок'
+    'гриб рода Morchella'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Morchella';
+
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'natrium', -- $deu[0] = 'Natrium'
@@ -1133,6 +1503,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'неметалл, химический элемент Ne инертных газов'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неметалл, химический элемент Ne инертных газов';
+
+DELETE FROM `definition` WHERE `sememe`='netziger_wachsporling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'netziger_wachsporling', -- $deu[0] = 'Netziger Wachsporling'
+    'rus',                   -- $rus[0] = ''
+    'гриб вида Ceriporia reticulata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Ceriporia reticulata';
 
 DELETE FROM `definition` WHERE `sememe`='nevada' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1222,6 +1600,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
 
+DELETE FROM `definition` WHERE `sememe`='pantherpilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'pantherpilz', -- $deu[0] = 'Pantherpilz'
+    'rus',         -- $rus[0] = ''
+    'гриб вида Amanita pantherina'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Amanita pantherina';
+
+DELETE FROM `definition` WHERE `sememe`='perlpilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'perlpilz', -- $deu[0] = 'Perlpilz'
+    'rus',      -- $rus[0] = 'мухомор серо-розовый'
+    'гриб вида Amanita rubescens'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Amanita rubescens';
+
 DELETE FROM `definition` WHERE `sememe`='petersilie_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'petersilie_0', -- $deu[0] = 'Petersilie'
@@ -1229,6 +1623,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Petroselinum crispum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Petroselinum crispum';
+
+DELETE FROM `definition` WHERE `sememe`='pfifferling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'pfifferling', -- $deu[0] = 'Pfifferling'
+    'rus',         -- $rus[0] = 'лисичка'
+    'гриб рода Cantharellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Cantharellus';
 
 DELETE FROM `definition` WHERE `sememe`='pythonschlange' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1254,6 +1656,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Hirundo rustica';
 
+DELETE FROM `definition` WHERE `sememe`='rauer_stachelschirmling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rauer_stachelschirmling', -- $deu[0] = 'Rauer Stachelschirmling'
+    'rus',                     -- $rus[0] = ''
+    'гриб вида Lepiota aspera'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Lepiota aspera';
+
+DELETE FROM `definition` WHERE `sememe`='raufußröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'raufußröhrling', -- $deu[0] = 'Raufußröhrling'
+    'rus',            -- $rus[0] = 'обабок'
+    'гриб рода Leccinum или Leccinellum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Leccinum или Leccinellum';
+
 DELETE FROM `definition` WHERE `sememe`='rebhuhn_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'rebhuhn_0', -- $deu[0] = 'Rebhuhn'
@@ -1278,6 +1696,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Rh подгруппы кобальта';
 
+DELETE FROM `definition` WHERE `sememe`='riesenrötling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'riesenrötling', -- $deu[0] = 'Riesenrötling'
+    'rus',           -- $rus[0] = ''
+    'гриб вида Entoloma sinuatum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Entoloma sinuatum';
+
+DELETE FROM `definition` WHERE `sememe`='riesenschirmling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'riesenschirmling', -- $deu[0] = 'Riesenschirmling'
+    'rus',              -- $rus[0] = ''
+    'гриб рода Macrolepiota'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Macrolepiota';
+
 DELETE FROM `definition` WHERE `sememe`='ringelgans' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ringelgans', -- $deu[0] = 'Ringelgans'
@@ -1285,6 +1719,78 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Branta bernicla'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Branta bernicla';
+
+DELETE FROM `definition` WHERE `sememe`='risspilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'risspilz', -- $deu[0] = 'Risspilz'
+    'rus',      -- $rus[0] = ''
+    'гриб рода Inocybe или Inosperma'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Inocybe или Inosperma';
+
+DELETE FROM `definition` WHERE `sememe`='ritterling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ritterling', -- $deu[0] = 'Ritterling'
+    'rus',        -- $rus[0] = ''
+    'гриб рода Tricholoma'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Tricholoma';
+
+DELETE FROM `definition` WHERE `sememe`='rotfußröhrling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rotfußröhrling', -- $deu[0] = 'Rotfußröhrling'
+    'rus',            -- $rus[0] = ''
+    'гриб рода Xerocomellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Xerocomellus';
+
+DELETE FROM `definition` WHERE `sememe`='rotfüßchen' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rotfüßchen', -- $deu[0] = 'Rotfüßchen'
+    'rus',        -- $rus[0] = ''
+    'гриб вида Xerocomellus chrysenteron'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Xerocomellus chrysenteron';
+
+DELETE FROM `definition` WHERE `sememe`='rotkappe' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rotkappe', -- $deu[0] = 'Rotkappe'
+    'rus',      -- $rus[0] = ''
+    'гриб рода Leccinum с красной шляпкой'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Leccinum с красной шляпкой';
+
+DELETE FROM `definition` WHERE `sememe`='rundmorchel' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rundmorchel', -- $deu[0] = 'Rundmorchel'
+    'rus',         -- $rus[0] = ''
+    'гриб вида Morchella esculenta'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Morchella esculenta';
+
+DELETE FROM `definition` WHERE `sememe`='rußkopf' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rußkopf', -- $deu[0] = 'Rußkopf'
+    'rus',     -- $rus[0] = ''
+    'гриб вида Tricholoma portentosum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Tricholoma portentosum';
+
+DELETE FROM `definition` WHERE `sememe`='rötling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rötling', -- $deu[0] = 'Rötling'
+    'rus',     -- $rus[0] = ''
+    'гриб рода Entoloma'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Entoloma';
+
+DELETE FROM `definition` WHERE `sememe`='safranschirmling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'safranschirmling', -- $deu[0] = 'Safranschirmling'
+    'rus',              -- $rus[0] = ''
+    'гриб вида Chlorophyllum rhacodes'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Chlorophyllum rhacodes';
 
 DELETE FROM `definition` WHERE `sememe`='samtfußkrempling_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1318,6 +1824,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Sc подгруппы скандия';
 
+DELETE FROM `definition` WHERE `sememe`='schirmling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'schirmling', -- $deu[0] = 'Schirmling'
+    'rus',        -- $rus[0] = ''
+    'гриб рода Lepiota'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Lepiota';
+
 DELETE FROM `definition` WHERE `sememe`='schnittlauch_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'schnittlauch_0', -- $deu[0] = 'Schnittlauch'
@@ -1325,6 +1839,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Allium schoenoprasum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Allium schoenoprasum';
+
+DELETE FROM `definition` WHERE `sememe`='schopftintling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'schopftintling', -- $deu[0] = 'Schopftintling'
+    'rus',            -- $rus[0] = ''
+    'гриб вида Coprinus comatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Coprinus comatus';
 
 DELETE FROM `definition` WHERE `sememe`='schuhschnabel' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1358,6 +1880,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Boletus calopus';
 
+DELETE FROM `definition` WHERE `sememe`='schönkopf' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'schönkopf', -- $deu[0] = 'Schönkopf'
+    'rus',       -- $rus[0] = ''
+    'гриб рода Calocybe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Calocybe';
+
 DELETE FROM `definition` WHERE `sememe`='sekretär_2' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'sekretär_2', -- $deu[0] = 'Sekretär'
@@ -1366,6 +1896,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Sagittarius serpentarius';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'rus',   -- $rus[0] = 'сигма'
+    'греческая буква σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -1373,6 +1911,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'металл, химический элемент Ag подгруппы меди'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Ag подгруппы меди';
+
+DELETE FROM `definition` WHERE `sememe`='sommersteinpilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sommersteinpilz', -- $deu[0] = 'Sommersteinpilz'
+    'rus',             -- $rus[0] = ''
+    'гриб вида Boletus reticulatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Boletus reticulatus';
 
 DELETE FROM `definition` WHERE `sememe`='south_carolina' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1397,6 +1943,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение рода Xanthium'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение рода Xanthium';
+
+DELETE FROM `definition` WHERE `sememe`='spitzmorchel' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'spitzmorchel', -- $deu[0] = 'Spitzmorchel'
+    'rus',          -- $rus[0] = ''
+    'гриб вида Morchella elata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Morchella elata';
 
 DELETE FROM `definition` WHERE `sememe`='stadtchampignon_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1470,6 +2024,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
 
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'theta', -- $deu[0] = 'Theta'
+    'rus',   -- $rus[0] = 'тета'
+    'греческая буква θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква θ, Θ';
+
 DELETE FROM `definition` WHERE `sememe`='tiger_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'tiger_0', -- $deu[0] = 'Tiger'
@@ -1477,6 +2039,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Panthera tigris'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Panthera tigris';
+
+DELETE FROM `definition` WHERE `sememe`='tigerritterling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tigerritterling', -- $deu[0] = 'Tigerritterling'
+    'rus',             -- $rus[0] = ''
+    'гриб вида Tricholoma pardinum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Tricholoma pardinum';
 
 DELETE FROM `definition` WHERE `sememe`='timor-zebrafink' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1486,13 +2056,37 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное подвида Taeniopygia guttata guttata';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='rus';
+DELETE FROM `definition` WHERE `sememe`='tintling' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'rus',     -- $rus[0] = 'титан'
+    'tintling', -- $deu[0] = 'Tintling'
+    'rus',      -- $rus[0] = ''
+    'гриб рода Coprinus или Coprinopsis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Coprinus или Coprinopsis';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'rus',      -- $rus[0] = 'титан'
     'металл, химический элемент Ti подгруппы титана'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Ti подгруппы титана';
+
+DELETE FROM `definition` WHERE `sememe`='totentrompete' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'totentrompete', -- $deu[0] = 'Totentrompete'
+    'rus',           -- $rus[0] = ''
+    'гриб вида Craterellus cornucopioides'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Craterellus cornucopioides';
+
+DELETE FROM `definition` WHERE `sememe`='trichterling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'trichterling', -- $deu[0] = 'Trichterling'
+    'rus',          -- $rus[0] = ''
+    'гриб рода Clitocybe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Clitocybe';
 
 DELETE FROM `definition` WHERE `sememe`='truthuhn' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1501,6 +2095,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'животное вида Meleagris gallopavo'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Meleagris gallopavo';
+
+DELETE FROM `definition` WHERE `sememe`='täubling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'täubling', -- $deu[0] = 'Täubling'
+    'rus',      -- $rus[0] = 'сыроежка'
+    'гриб рода Russula'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Russula';
 
 DELETE FROM `definition` WHERE `sememe`='utah' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1542,6 +2144,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Sicista betulina';
 
+DELETE FROM `definition` WHERE `sememe`='wassermelone' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wassermelone', -- $deu[0] = 'Wassermelone'
+    'rus',          -- $rus[0] = 'арбуз'
+    'растение вида Citrullus lanatus и его плод'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Citrullus lanatus и его плод';
+
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'wasserstoff', -- $deu[0] = 'Wasserstoff'
@@ -1549,6 +2159,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'неметалл, при высоком давлении металл, химический элемент H, в виде газа H₂, щелочных металлов'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неметалл, при высоком давлении металл, химический элемент H, в виде газа H₂, щелочных металлов';
+
+DELETE FROM `definition` WHERE `sememe`='weißbuche' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'weißbuche', -- $deu[0] = 'Weißbuche'
+    'rus',       -- $rus[0] = 'граб обыкновенный'
+    'растение вида Carpinus betulus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Carpinus betulus';
 
 DELETE FROM `definition` WHERE `sememe`='weiße_taubnessel' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1598,6 +2216,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
 
+DELETE FROM `definition` WHERE `sememe`='wetterstern' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wetterstern', -- $deu[0] = 'Wetterstern'
+    'rus',         -- $rus[0] = ''
+    'гриб рода Astraeus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Astraeus';
+
 DELETE FROM `definition` WHERE `sememe`='wiesenchampignon_0' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'wiesenchampignon_0', -- $deu[0] = 'Wiesenchampignon'
@@ -1621,6 +2247,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'федеральный штат Америки'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='wulstling' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wulstling', -- $deu[0] = 'Wulstling'
+    'rus',       -- $rus[0] = ''
+    'гриб рода Amanita'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб рода Amanita';
 
 DELETE FROM `definition` WHERE `sememe`='wyoming' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1702,6 +2336,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Taeniopygia guttata';
 
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'rus',  -- $rus[0] = 'дзета'
+    'греческая буква ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'греческая буква ζ, Ζ';
+
+DELETE FROM `definition` WHERE `sememe`='ziegelroter_risspilz' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ziegelroter_risspilz', -- $deu[0] = 'Ziegelroter Risspilz'
+    'rus',                  -- $rus[0] = ''
+    'гриб вида Inosperma erubescens'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Inosperma erubescens';
+
+DELETE FROM `definition` WHERE `sememe`='ziegenlippe' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ziegenlippe', -- $deu[0] = 'Ziegenlippe'
+    'rus',         -- $rus[0] = ''
+    'гриб вида Xerocomus subtomentosus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Xerocomus subtomentosus';
+
 DELETE FROM `definition` WHERE `sememe`='zitronatzitrone' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'zitronatzitrone', -- $deu[0] = 'Zitronatzitrone'
@@ -1709,6 +2367,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'растение вида Citrus medica и его плод'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Citrus medica и его плод';
+
+DELETE FROM `definition` WHERE `sememe`='zweisporiger_champignon' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zweisporiger_champignon', -- $deu[0] = 'Zweisporiger Champignon'
+    'rus',                     -- $rus[0] = 'шампиньон двуспоровый'
+    'гриб вида Agaricus bisporus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'гриб вида Agaricus bisporus';
 
 DELETE FROM `definition` WHERE `sememe`='zügelseeschwalbe' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

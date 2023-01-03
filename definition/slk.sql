@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -45,6 +47,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemický prvok Ac'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Ac';
+
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'slk',   -- $slk[0] = 'alfa'
+    'grécke písmeno α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno α, Α';
 
 DELETE FROM `definition` WHERE `sememe`='arizona' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -85,6 +95,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemický prvok Be'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Be';
+
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'slk',  -- $slk[0] = 'beta'
+    'grécke písmeno β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno β, Β';
 
 DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -158,6 +176,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'slk',             -- $slk[100] = 'delta'
+    'grécke písmeno δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno δ, Δ';
+
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'
@@ -166,6 +192,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Fe';
 
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'slk',     -- $slk[0] = 'epsilon'
+    'grécke písmeno ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno ε, Ε';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'slk', -- $slk[0] = 'éta'
+    'grécke písmeno η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno η, Η';
+
 DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fluor', -- $deu[0] = 'Fluor'
@@ -173,6 +215,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemický prvok F'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok F';
+
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'slk',   -- $slk[0] = 'gama'
+    'grécke písmeno γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno γ, Γ';
 
 DELETE FROM `definition` WHERE `sememe`='georgia' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -214,6 +264,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok I';
 
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'slk',  -- $slk[0] = 'jota'
+    'grécke písmeno ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno ι, Ι';
+
 DELETE FROM `definition` WHERE `sememe`='iowa' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'iowa', -- $deu[0] = 'Iowa'
@@ -246,6 +304,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'slk',             -- $slk[0] = 'kapa'
+    'grécke písmeno κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno κ, Κ';
+
 DELETE FROM `definition` WHERE `sememe`='kentucky' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kentucky', -- $deu[0] = 'Kentucky'
@@ -261,6 +327,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemický prvok Cu'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Cu';
+
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'slk',    -- $slk[0] = 'lambda'
+    'grécke písmeno λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno λ, Λ';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -478,6 +552,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Sc';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'slk',   -- $slk[0] = 'sigma'
+    'grécke písmeno σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -534,18 +616,26 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'slk',     -- $slk[0] = 'titán'
+    'theta', -- $deu[0] = 'Theta'
+    'slk',   -- $slk[0] = 'théta'
+    'grécke písmeno θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno θ, Θ';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'slk',      -- $slk[0] = 'titán'
     'chemický prvok Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Ti';
 
-DELETE FROM `definition` WHERE `sememe`='titan_200' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='titan~mond' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_200', -- $deu[200] = 'Titan'
-    'slk',       -- $slk[100] = 'Titan'
+    'titan~mond', -- $deu[200] = 'Titan'
+    'slk',        -- $slk[100] = 'Titan'
     'najväčší mesiac Saturna'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'najväčší mesiac Saturna';
@@ -629,4 +719,12 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chemický prvok Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Y';
+
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='slk';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'slk',  -- $slk[0] = 'zéta'
+    'grécke písmeno ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grécke písmeno ζ, Ζ';
 

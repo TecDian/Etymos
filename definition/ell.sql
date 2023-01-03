@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -57,7 +59,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'arkansas_1', -- $deu[1] = 'Arkansas'
-    'ell',        -- $ell[0] = 'Αρκάνσας [πολιτεία]'
+    'ell',        -- $ell[0] = 'Αρκάνσας'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
@@ -534,10 +536,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'ell',     -- $ell[0] = 'τιτάνιο'
+    'titanium', -- $deu[0] = 'Titan'
+    'ell',      -- $ell[0] = 'τιτάνιο'
     'χημικό στοιχείο Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Ti';
@@ -561,7 +563,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='virginia' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'virginia', -- $deu[100] = 'Virginia'
-    'ell',      -- $ell[0] = 'Βιρτζίνια [πολιτεία]'
+    'ell',      -- $ell[0] = 'Βιρτζίνια'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
@@ -577,7 +579,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='west_virginia' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'west_virginia', -- $deu[0] = 'West Virginia'
-    'ell',           -- $ell[0] = 'Δυτική Βιρτζίνια [πολιτεία]'
+    'ell',           -- $ell[0] = 'Δυτική Βιρτζίνια'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';

@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'неметал і хімічний елемент E, у вигляді газу E₂, підгрупи хімічних елементів'
+--     'неметал, хімічний елемент E, у вигляді газу E₂, підгрупи хімічних елементів'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -270,10 +272,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неметал, хімічний елемент Ts галогенів';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='ukr';
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='ukr';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'ukr',     -- $ukr[0] = ''
+    'titanium', -- $deu[0] = 'Titan'
+    'ukr',      -- $ukr[0] = ''
     'метал, хімічний елемент Ti підгрупи титану'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'метал, хімічний елемент Ti підгрупи титану';

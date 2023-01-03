@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -86,6 +88,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'über dem Kapitell einer Säule liegende quadratische Deckplatte';
 
+DELETE FROM `definition` WHERE `sememe`='abbrechen~vi_stück' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'abbrechen~vi_stück', -- $deu[0] = 'abbrechen'
+    'deu',                -- $deu[0] = 'abbrechen'
+    'sich durch Bruch von einem größeren Stück ablösen'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'sich durch Bruch von einem größeren Stück ablösen';
+
+DELETE FROM `definition` WHERE `sememe`='abbrechen~vt_stück' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'abbrechen~vt_stück', -- $deu[1] = 'abbrechen'
+    'deu',                -- $deu[1] = 'abbrechen'
+    'ein Stück durch Bruch von einem größeren Stück ablösen'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'ein Stück durch Bruch von einem größeren Stück ablösen';
+
 DELETE FROM `definition` WHERE `sememe`='abelisaurus' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'abelisaurus', -- $deu[0] = 'Abelisaurus'
@@ -114,9 +132,9 @@ DELETE FROM `definition` WHERE `sememe`='ablegen_1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ablegen_1', -- $deu[1] = 'ablegen'
     'deu',       -- $deu[1] = 'ablegen'
-    'etwas, das getragen wurde, irgendwo hinlegen'
+    'Gegenstand, der gehalten oder getragen wurde, irgendwo hinlegen'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'etwas, das getragen wurde, irgendwo hinlegen';
+    'Gegenstand, der gehalten oder getragen wurde, irgendwo hinlegen';
 
 DELETE FROM `definition` WHERE `sememe`='ablegen_2' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -130,9 +148,9 @@ DELETE FROM `definition` WHERE `sememe`='ablegen_3' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ablegen_3', -- $deu[1] = 'ablegen'
     'deu',       -- $deu[1] = 'ablegen'
-    'etwas, das verwendet wurde, außer Gebrauch nehmen'
+    'Gegenstand, der verwendet wurde, außer Gebrauch nehmen'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'etwas, das verwendet wurde, außer Gebrauch nehmen';
+    'Gegenstand, der verwendet wurde, außer Gebrauch nehmen';
 
 DELETE FROM `definition` WHERE `sememe`='absatz_1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -254,6 +272,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Salamandra atra';
 
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'deu',   -- $deu[0] = 'Alpha'
+    'griechischer Buchstabe α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe α, Α';
+
 DELETE FROM `definition` WHERE `sememe`='ameisensäure' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ameisensäure', -- $deu[0] = 'Ameisensäure'
@@ -326,6 +352,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Frucht des Kulturapfelbaums (Malus domestica)';
 
+DELETE FROM `definition` WHERE `sememe`='apfelblütenstecher' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'apfelblütenstecher', -- $deu[0] = 'Apfelblütenstecher'
+    'deu',                -- $deu[0] = 'Apfelblütenstecher'
+    'Tier der Art Anthonomus pomorum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Anthonomus pomorum';
+
 DELETE FROM `definition` WHERE `sememe`='apfelwickler' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'apfelwickler', -- $deu[0] = 'Apfelwickler'
@@ -338,17 +372,25 @@ DELETE FROM `definition` WHERE `sememe`='aprikose' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'aprikose', -- $deu[0] = 'Aprikose'
     'deu',      -- $deu[0] = 'Aprikose'
-    'Frucht des Aprikosenbaums (Prunus armeniaca)'
+    'Frucht des Aprikosenbaums (Prunus subg. Prunus sect. Armeniaca)'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'Frucht des Aprikosenbaums (Prunus armeniaca)';
+    'Frucht des Aprikosenbaums (Prunus subg. Prunus sect. Armeniaca)';
 
 DELETE FROM `definition` WHERE `sememe`='aprikosenbaum' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'aprikosenbaum', -- $deu[0] = 'Aprikosenbaum'
     'deu',           -- $deu[0] = 'Aprikosenbaum'
-    'Pflanze der Art Prunus armeniaca'
+    'Pflanze der Sektion Armeniaca der Untergattung Prunus der Gattung Prunus'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'Pflanze der Art Prunus armeniaca';
+    'Pflanze der Sektion Armeniaca der Untergattung Prunus der Gattung Prunus';
+
+DELETE FROM `definition` WHERE `sememe`='april' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'april', -- $deu[0] = 'April'
+    'deu',   -- $deu[0] = 'April'
+    '4. Monat des gregorianischen und des julianischen Kalenderjahrs'
+) ON DUPLICATE KEY UPDATE `text` = 
+    '4. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='arabien' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -358,21 +400,21 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Gesamtheit des arabischsprachigen Kulturgebiets';
 
-DELETE FROM `definition` WHERE `sememe`='arabisch_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='arabisch_adj_sprache' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arabisch_0', -- $deu[0] = 'arabisch'
-    'deu',        -- $deu[0] = 'arabisch'
-    'mit Bezug auf die arabische Kultur, Länder oder Menschen'
-) ON DUPLICATE KEY UPDATE `text` = 
-    'mit Bezug auf die arabische Kultur, Länder oder Menschen';
-
-DELETE FROM `definition` WHERE `sememe`='arabisch_1' AND `language`='deu';
-INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arabisch_1', -- $deu[0] = 'arabisch'
-    'deu',        -- $deu[0] = 'arabisch'
+    'arabisch_adj_sprache', -- $deu[0] = 'arabisch'
+    'deu',                  -- $deu[0] = 'arabisch'
     'mit Bezug auf die arabische Sprache'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'mit Bezug auf die arabische Sprache';
+
+DELETE FROM `definition` WHERE `sememe`='arabisch~adj_kultur' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'arabisch~adj_kultur', -- $deu[0] = 'arabisch'
+    'deu',                 -- $deu[0] = 'arabisch'
+    'mit Bezug auf die arabische Kultur, Länder oder Menschen'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'mit Bezug auf die arabische Kultur, Länder oder Menschen';
 
 DELETE FROM `definition` WHERE `sememe`='arizona' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -454,6 +496,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'in der griechischen Mythologie eine der Horen, Göttin der ersten Tageszeit, des Sonnenaufgangs';
 
+DELETE FROM `definition` WHERE `sememe`='august' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'august', -- $deu[0] = 'August'
+    'deu',    -- $deu[0] = 'August'
+    '8. Monat des gregorianischen und des julianischen Kalenderjahrs'
+) ON DUPLICATE KEY UPDATE `text` = 
+    '8. Monat des gregorianischen und des julianischen Kalenderjahrs';
+
 DELETE FROM `definition` WHERE `sememe`='aus_10' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'aus_10', -- $deu[10] = 'aus'
@@ -486,6 +536,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'sich unerlaubt entfernen';
 
+DELETE FROM `definition` WHERE `sememe`='austernseitling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'austernseitling', -- $deu[0] = 'Austernseitling'
+    'deu',             -- $deu[0] = 'Austernseitling'
+    'Pilz der Art Pleurotus ostreatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Pleurotus ostreatus';
+
 DELETE FROM `definition` WHERE `sememe`='australische_passionsblume' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'australische_passionsblume', -- $deu[0] = 'Australische Passionsblume'
@@ -493,6 +551,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Pflanze der Art Passiflora herbertiana'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Art Passiflora herbertiana';
+
+DELETE FROM `definition` WHERE `sememe`='australische_weißbuche' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'australische_weißbuche', -- $deu[0] = 'Australische Weißbuche'
+    'deu',                    -- $deu[0] = 'Australische Weißbuche'
+    'Pflanze der Art Gmelina leichhardtii'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pflanze der Art Gmelina leichhardtii';
 
 DELETE FROM `definition` WHERE `sememe`='babsk' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -662,6 +728,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Person aus den Altbundesländern, der sich in den Neubundesländern gegenüber den Einheimischen als klüger und fähiger darstellt';
 
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'deu',  -- $deu[0] = 'Beta'
+    'griechischer Buchstabe β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe β, Β';
+
 DELETE FROM `definition` WHERE `sememe`='bete' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'bete', -- $deu[0] = 'Beete'
@@ -733,6 +807,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Holz der Birke (Betula)'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Holz der Birke (Betula)';
+
+DELETE FROM `definition` WHERE `sememe`='birkenpilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'birkenpilz', -- $deu[0] = 'Birkenpilz'
+    'deu',        -- $deu[0] = 'Birkenpilz'
+    'Pilz der Art Leccinum scabrum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Leccinum scabrum';
+
+DELETE FROM `definition` WHERE `sememe`='birkenrotkappe' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'birkenrotkappe', -- $deu[0] = 'Birkenrotkappe'
+    'deu',            -- $deu[0] = 'Birkenrotkappe'
+    'Pilz der Art Leccinum versipelle'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Leccinum versipelle';
 
 DELETE FROM `definition` WHERE `sememe`='birne_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -869,6 +959,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Art Ursus arctos'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Ursus arctos';
+
+DELETE FROM `definition` WHERE `sememe`='brauner_filzröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'brauner_filzröhrling', -- $deu[0] = 'Brauner Filzröhrling'
+    'deu',                  -- $deu[0] = 'Brauner Filzröhrling'
+    'Pilz der Art Xerocomus ferrugineus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Xerocomus ferrugineus';
+
+DELETE FROM `definition` WHERE `sememe`='braungelber_flechtenspinner' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'braungelber_flechtenspinner', -- $deu[0] = 'Braungelber Flechtenspinner'
+    'deu',                         -- $deu[0] = 'Braungelber Flechtenspinner'
+    'Tier der Art Pelosia obtusa'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Pelosia obtusa';
 
 DELETE FROM `definition` WHERE `sememe`='breitseite' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1014,6 +1120,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pilz der Gattung Agaricus';
 
+DELETE FROM `definition` WHERE `sememe`='chemisch~eigenschaft' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chemisch~eigenschaft', -- $deu[0] = 'chemisch'
+    'deu',                  -- $deu[0] = 'chemisch'
+    'mit Bezug auf die Reaktionseigenschaften eines Stoffes'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'mit Bezug auf die Reaktionseigenschaften eines Stoffes';
+
+DELETE FROM `definition` WHERE `sememe`='chemisch~wissenschaft' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'chemisch~wissenschaft', -- $deu[0] = 'chemisch'
+    'deu',                   -- $deu[0] = 'chemisch'
+    'mit Bezug auf die Chemie als System'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'mit Bezug auf die Chemie als System';
+
 DELETE FROM `definition` WHERE `sememe`='chlor' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'chlor', -- $deu[0] = 'Chlor'
@@ -1086,6 +1208,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Einheit der fysonischen Größe Masse für den atomaren Bereich, Symbol Da oder u, 1 Da = 1/12 der Masse eines Atoms des Kohlenstoff-Isotops ¹²C = 1,66053906660(50) · 10⁻²⁷ kg';
 
+DELETE FROM `definition` WHERE `sememe`='dehnungsstreifen' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'dehnungsstreifen', -- $deu[0] = 'Dehnungsstreifen'
+    'deu',              -- $deu[0] = 'Dehnungsstreifen'
+    'streifenartige Veränderungen in der Unterhaut, die durch starke Dehnung des Gewebes entstehen, fachsprachlich Striae cutis atrophicae'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'streifenartige Veränderungen in der Unterhaut, die durch starke Dehnung des Gewebes entstehen, fachsprachlich Striae cutis atrophicae';
+
 DELETE FROM `definition` WHERE `sememe`='delaware_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'delaware_0', -- $deu[0] = 'Delaware'
@@ -1101,6 +1231,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Bundesstaat von Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Bundesstaat von Amerika';
+
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'deu',             -- $deu[100] = 'Delta'
+    'griechischer Buchstabe δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe δ, Δ';
 
 DELETE FROM `definition` WHERE `sememe`='der~art' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1130,9 +1268,9 @@ DELETE FROM `definition` WHERE `sememe`='dezember' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'dezember', -- $deu[0] = 'Dezember'
     'deu',      -- $deu[0] = 'Dezember'
-    '12. Monat des gregorianischen Kalenderjahrs'
+    '12. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '12. Monat des gregorianischen Kalenderjahrs';
+    '12. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='dickröhrling' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1238,18 +1376,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Camelus dromedarius';
 
-DELETE FROM `definition` WHERE `sememe`='drucker_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='drucker~beruf' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'drucker_0', -- $deu[0] = 'Drucker'
-    'deu',       -- $deu[0] = 'Drucker'
+    'drucker~beruf', -- $deu[0] = 'Drucker'
+    'deu',           -- $deu[0] = 'Drucker'
     'Berufsbezeichnung für die Tätigkeit der Herstellung von Druckerzeugnissen'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Berufsbezeichnung für die Tätigkeit der Herstellung von Druckerzeugnissen';
 
-DELETE FROM `definition` WHERE `sememe`='drucker_1' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='drucker~gerät' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'drucker_1', -- $deu[0] = 'Drucker'
-    'deu',       -- $deu[0] = 'Drucker'
+    'drucker~gerät', -- $deu[0] = 'Drucker'
+    'deu',           -- $deu[0] = 'Drucker'
     'Gerät zum Ausdrucken von Computerinhalten auf Papier oder andere Trägermaterialien'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Gerät zum Ausdrucken von Computerinhalten auf Papier oder andere Trägermaterialien';
@@ -1286,6 +1424,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pilz der Art Lobaria pulmonaria';
 
+DELETE FROM `definition` WHERE `sememe`='echter_pfifferling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'echter_pfifferling', -- $deu[0] = 'Echter Pfifferling'
+    'deu',                -- $deu[0] = 'Echter Pfifferling'
+    'Pilz der Art Cantharellus cibarius'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Cantharellus cibarius';
+
 DELETE FROM `definition` WHERE `sememe`='echter_teppichhai' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'echter_teppichhai', -- $deu[0] = 'Echter Teppichhai'
@@ -1301,6 +1447,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Pflanze der Klasse Anthocerotopsida'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Klasse Anthocerotopsida';
+
+DELETE FROM `definition` WHERE `sememe`='eichenrotkappe' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eichenrotkappe', -- $deu[0] = 'Eichenrotkappe'
+    'deu',            -- $deu[0] = 'Eichenrotkappe'
+    'Pilz der Art Leccinum aurantiacum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Leccinum aurantiacum';
 
 DELETE FROM `definition` WHERE `sememe`='eichenspinner' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1333,6 +1487,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'etwas, das gleichzeitig allen Wünschen entspricht, selbst wenn diese sich widersprechen'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'etwas, das gleichzeitig allen Wünschen entspricht, selbst wenn diese sich widersprechen';
+
+DELETE FROM `definition` WHERE `sememe`='eierwulstling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eierwulstling', -- $deu[0] = 'Echter Eierwulstling'
+    'deu',           -- $deu[0] = 'Echter Eierwulstling'
+    'Pilz der Art Amanita ovoidea'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Amanita ovoidea';
+
+DELETE FROM `definition` WHERE `sememe`='eigentlicher_gimpel' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eigentlicher_gimpel', -- $deu[0] = 'Eigentlicher Gimpel'
+    'deu',                 -- $deu[0] = 'Eigentlicher Gimpel'
+    'Tier der Gattung Pyrrhula'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Gattung Pyrrhula';
 
 DELETE FROM `definition` WHERE `sememe`='eignungszertifikat' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1406,6 +1576,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Vorschrift eines US-amerikanischen Bundesstaats, wonach eine in einem Gerichtsverfahren zugesprochene Entschädigung zwischen dem Kläger und einem Dritten, oft dem Bundesstaat, aufgeteilt wird';
 
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'deu',     -- $deu[0] = 'Epsilon'
+    'griechischer Buchstabe ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe ε, Ε';
+
 DELETE FROM `definition` WHERE `sememe`='eriwan' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eriwan', -- $deu[0] = 'Eriwan'
@@ -1422,13 +1600,13 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'absichtlich, intentional oder beiläufig, inzidentiell Kenntnisse oder Fertigkeiten auf einem Gebiet oder in einem Beruf erwerben, das oder der als Objekt angegeben wird';
 
-DELETE FROM `definition` WHERE `sememe`='erntemond' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='erntemonat' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'erntemond', -- $deu[0] = 'Erntemond'
-    'deu',       -- $deu[0] = 'Erntemond'
-    'Zeit um die dem Herbstanfang am nächsten gelegene Vollmondnacht mit mehreren Nächten mit relativ hellem Mondlicht'
+    'erntemonat', -- $deu[0] = 'Erntemonat'
+    'deu',        -- $deu[0] = 'Erntemonat'
+    '10. Monat des französischen Revolutionskalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'Zeit um die dem Herbstanfang am nächsten gelegene Vollmondnacht mit mehreren Nächten mit relativ hellem Mondlicht';
+    '10. Monat des französischen Revolutionskalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='erzgebirge' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1446,10 +1624,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Gattung Fraxinus';
 
-DELETE FROM `definition` WHERE `sememe`='essen_100' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='espenrotkappe' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'essen_100', -- $deu[100] = 'Essen'
-    'deu',       -- $deu[100] = 'Essen'
+    'espenrotkappe', -- $deu[0] = 'Espenrotkappe'
+    'deu',           -- $deu[0] = 'Espenrotkappe'
+    'Pilz der Art Leccinum leucopodium'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Leccinum leucopodium';
+
+DELETE FROM `definition` WHERE `sememe`='essen~stadt' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'essen~stadt', -- $deu[100] = 'Essen'
+    'deu',         -- $deu[100] = 'Essen'
     'Stadt in Deutschland im Ruhrgebiet'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Stadt in Deutschland im Ruhrgebiet';
@@ -1461,6 +1647,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Art Curculio elephas'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Curculio elephas';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'deu', -- $deu[0] = 'Eta'
+    'griechischer Buchstabe η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe η, Η';
 
 DELETE FROM `definition` WHERE `sememe`='ethanal' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1502,6 +1696,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'amtliche Sammlung anerkannter pharmazeutischer Regeln über die Qualität, Prüfung, Lagerung und Bezeichnung von Arzneimitteln und die bei ihrer Herstellung und Prüfung verwendeten Stoffe, Materialien und Methoden beim Europarat';
 
+DELETE FROM `definition` WHERE `sememe`='faltentintling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'faltentintling', -- $deu[0] = 'Faltentintling'
+    'deu',            -- $deu[0] = 'Faltentintling'
+    'Pilz der Art Coprinopsis atramentaria'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Coprinopsis atramentaria';
+
 DELETE FROM `definition` WHERE `sememe`='fasan_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fasan_0', -- $deu[0] = 'Fasan'
@@ -1522,9 +1724,9 @@ DELETE FROM `definition` WHERE `sememe`='februar' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'februar', -- $deu[0] = 'Februar'
     'deu',     -- $deu[0] = 'Februar'
-    '2. Monat des gregorianischen Kalenderjahrs'
+    '2. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '2. Monat des gregorianischen Kalenderjahrs';
+    '2. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='feenlämpchenspinne' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1533,6 +1735,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Art Agroeca brunnea'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Agroeca brunnea';
+
+DELETE FROM `definition` WHERE `sememe`='feldtrichterling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'feldtrichterling', -- $deu[0] = 'Feldtrichterling'
+    'deu',              -- $deu[0] = 'Feldtrichterling'
+    'Pilz der Art Clitocybe dealbata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Clitocybe dealbata';
 
 DELETE FROM `definition` WHERE `sememe`='fels' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1550,6 +1760,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'isoliert stehende, im weitesten Sinne säulen- oder zackenförmige Gesteinsformation';
 
+DELETE FROM `definition` WHERE `sememe`='fibel~handbuch' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fibel~handbuch', -- $deu[100] = 'Fibel'
+    'deu',            -- $deu[100] = 'Fibel'
+    'illustriertes grundlegendes Handbuch oder Nachschlagewerk zu einem bestimmten Thema'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'illustriertes grundlegendes Handbuch oder Nachschlagewerk zu einem bestimmten Thema';
+
+DELETE FROM `definition` WHERE `sememe`='fibel~schließe' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fibel~schließe', -- $deu[0] = 'Fibel'
+    'deu',            -- $deu[0] = 'Fibel'
+    'metallene verschließbare Nadel, die von der Bronzezeit bis ins Hochmittelalter verwendet wurde, um Kleider, Umhänge und Mäntel am Körper zusammenzuhalten'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'metallene verschließbare Nadel, die von der Bronzezeit bis ins Hochmittelalter verwendet wurde, um Kleider, Umhänge und Mäntel am Körper zusammenzuhalten';
+
+DELETE FROM `definition` WHERE `sememe`='fibel~schulbuch' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fibel~schulbuch', -- $deu[100] = 'Fibel'
+    'deu',             -- $deu[100] = 'Fibel'
+    'gewöhnlich illustriertes Anfängerlesebuch zum Lesenlernen speziell für Kinder'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'gewöhnlich illustriertes Anfängerlesebuch zum Lesenlernen speziell für Kinder';
+
 DELETE FROM `definition` WHERE `sememe`='fichten-steinpilz' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fichten-steinpilz', -- $deu[0] = 'Fichten-Steinpilz'
@@ -1566,6 +1800,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Art Arctium tomentosum';
 
+DELETE FROM `definition` WHERE `sememe`='filzröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'filzröhrling', -- $deu[0] = 'Filzröhrling'
+    'deu',          -- $deu[0] = 'Filzröhrling'
+    'Pilz der Gattung Xerocomus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Xerocomus';
+
 DELETE FROM `definition` WHERE `sememe`='fledermausfalke' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fledermausfalke', -- $deu[0] = 'Fledermausfalke'
@@ -1581,6 +1823,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ein Loch in einem Textilgewebe ausbessern'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ein Loch in einem Textilgewebe ausbessern';
+
+DELETE FROM `definition` WHERE `sememe`='fliegenpilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'fliegenpilz', -- $deu[0] = 'Fliegenpilz'
+    'deu',         -- $deu[0] = 'Fliegenpilz'
+    'Pilz der Art Amanita muscaria'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Amanita muscaria';
 
 DELETE FROM `definition` WHERE `sememe`='flockenstieliger_hexenröhrling' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1630,6 +1880,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Silurus glanis';
 
+DELETE FROM `definition` WHERE `sememe`='frauentäubling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'frauentäubling', -- $deu[0] = 'Frauentäubling'
+    'deu',            -- $deu[0] = 'Frauentäubling'
+    'Pilz der Art Russula cyanoxantha'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Russula cyanoxantha';
+
 DELETE FROM `definition` WHERE `sememe`='freitag' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'freitag', -- $deu[0] = 'Freitag'
@@ -1646,6 +1904,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'mit Bezug auf den 5. Wochentag der Kalenderwoche';
 
+DELETE FROM `definition` WHERE `sememe`='frühjahrsgiftlorchel' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'frühjahrsgiftlorchel', -- $deu[0] = 'Frühjahrsgiftlorchel'
+    'deu',                  -- $deu[0] = 'Frühjahrsgiftlorchel'
+    'Pilz der Art Gyromitra esculenta'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Gyromitra esculenta';
+
 DELETE FROM `definition` WHERE `sememe`='fuchsschwanzkiefer' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fuchsschwanzkiefer', -- $deu[0] = 'Fuchsschwanzkiefer'
@@ -1661,6 +1927,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Stoff oder ähnliches Material, mit dem die Innenseite von Kleidungsstücken, Taschen und dergleichen ausgekleidet ist'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Stoff oder ähnliches Material, mit dem die Innenseite von Kleidungsstücken, Taschen und dergleichen ausgekleidet ist';
+
+DELETE FROM `definition` WHERE `sememe`='gallenröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gallenröhrling', -- $deu[0] = 'Gallenröhrling'
+    'deu',            -- $deu[0] = 'Gallenröhrling'
+    'Pilz der Gattung Tylopilus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Tylopilus';
+
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'deu',   -- $deu[0] = 'Gamma'
+    'griechischer Buchstabe γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe γ, Γ';
 
 DELETE FROM `definition` WHERE `sememe`='gans_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1734,6 +2016,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'weiblicher Mensch, der an einem fraglichen Tag Geburtstag hat';
 
+DELETE FROM `definition` WHERE `sememe`='gelbporiger_raufußröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gelbporiger_raufußröhrling', -- $deu[0] = 'Gelbporiger Raufußröhrling'
+    'deu',                        -- $deu[0] = 'Gelbporiger Raufußröhrling'
+    'Pilz der Art Leccinellum crocipodium'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Leccinellum crocipodium';
+
 DELETE FROM `definition` WHERE `sememe`='gemeine_esche' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'gemeine_esche', -- $deu[0] = 'Gemeine Esche'
@@ -1750,6 +2040,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Art Beta vulgaris und deren Wurzelknolle';
 
+DELETE FROM `definition` WHERE `sememe`='gemeiner_gallenröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gemeiner_gallenröhrling', -- $deu[0] = 'Gemeiner Gallenröhrling'
+    'deu',                     -- $deu[0] = 'Gemeiner Gallenröhrling'
+    'Pilz der Art Tylopilus felleus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Tylopilus felleus';
+
 DELETE FROM `definition` WHERE `sememe`='gemeiner_rhabarber_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'gemeiner_rhabarber_0', -- $deu[0] = 'Gemeiner Rhabarber'
@@ -1757,6 +2055,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Pflanze der Art Rheum rhabarbarum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Art Rheum rhabarbarum';
+
+DELETE FROM `definition` WHERE `sememe`='gemeiner_wetterstern' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gemeiner_wetterstern', -- $deu[0] = 'Gemeiner Wetterstern'
+    'deu',                  -- $deu[0] = 'Gemeiner Wetterstern'
+    'Pilz der Art Astraeus hygrometricus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Astraeus hygrometricus';
 
 DELETE FROM `definition` WHERE `sememe`='georgia' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1805,6 +2111,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Pflanze der Art Xanthium strumarium'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Art Xanthium strumarium';
+
+DELETE FROM `definition` WHERE `sememe`='gifthäubling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gifthäubling', -- $deu[0] = 'Gifthäubling'
+    'deu',          -- $deu[0] = 'Gifthäubling'
+    'Pilz der Art Galerina marginata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Galerina marginata';
+
+DELETE FROM `definition` WHERE `sememe`='giftlorchel' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'giftlorchel', -- $deu[0] = 'Giftlorchel'
+    'deu',         -- $deu[0] = 'Giftlorchel'
+    'Pilz der Gattung Gyromitra'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Gyromitra';
+
+DELETE FROM `definition` WHERE `sememe`='gimpel' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gimpel', -- $deu[0] = 'Gimpel'
+    'deu',    -- $deu[0] = 'Gimpel'
+    'Tier der Art Pyrrhula pyrrhula'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Pyrrhula pyrrhula';
 
 DELETE FROM `definition` WHERE `sememe`='gips_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1862,6 +2192,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pilz der Art Amanita phalloides';
 
+DELETE FROM `definition` WHERE `sememe`='grünsporschirmling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'grünsporschirmling', -- $deu[0] = 'Grünsporschirmling'
+    'deu',                -- $deu[0] = 'Grünsporschirmling'
+    'Pilz der Gattung Chlorophyllum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Chlorophyllum';
+
 DELETE FROM `definition` WHERE `sememe`='gürtelfischer_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'gürtelfischer_0', -- $deu[0] = 'Gürtelfischer'
@@ -1870,6 +2208,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Megaceryle alcyon';
 
+DELETE FROM `definition` WHERE `sememe`='habicht' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'habicht', -- $deu[0] = 'Habicht'
+    'deu',     -- $deu[0] = 'Habicht'
+    'Tier der Gattung Accipiter'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Gattung Accipiter';
+
 DELETE FROM `definition` WHERE `sememe`='habichtartiger' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'habichtartiger', -- $deu[0] = 'Habichtartiger'
@@ -1877,6 +2223,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Familie Accipitridae'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Familie Accipitridae';
+
+DELETE FROM `definition` WHERE `sememe`='hainbuche' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hainbuche', -- $deu[0] = 'Hainbuche'
+    'deu',       -- $deu[0] = 'Hainbuche'
+    'Pflanze der Gattung Carpinus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pflanze der Gattung Carpinus';
+
+DELETE FROM `definition` WHERE `sememe`='hainbuchenröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hainbuchenröhrling', -- $deu[0] = 'Hainbuchenröhrling'
+    'deu',                -- $deu[0] = 'Hainbuchenröhrling'
+    'Pilz der Art Leccinellum pseudoscabrum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Leccinellum pseudoscabrum';
+
+DELETE FROM `definition` WHERE `sememe`='hallimasch' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hallimasch', -- $deu[0] = 'Hallimasch'
+    'deu',        -- $deu[0] = 'Hallimasch'
+    'Pilz der Gattung Armillaria'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Armillaria';
 
 DELETE FROM `definition` WHERE `sememe`='hallo_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -1966,6 +2336,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ganz oder teilweise im Herbst liegender Monat';
 
+DELETE FROM `definition` WHERE `sememe`='herbstvollmond' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'herbstvollmond', -- $deu[0] = 'Herbstvollmond'
+    'deu',            -- $deu[0] = 'Herbstvollmond'
+    'Zeit um die dem Herbstanfang am nächsten gelegene Vollmondnacht mit mehreren Nächten mit relativ hellem Mondlicht'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Zeit um die dem Herbstanfang am nächsten gelegene Vollmondnacht mit mehreren Nächten mit relativ hellem Mondlicht';
+
 DELETE FROM `definition` WHERE `sememe`='hering' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'hering', -- $deu[0] = 'Hering'
@@ -1974,10 +2352,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Familie Clupeidae';
 
-DELETE FROM `definition` WHERE `sememe`='herr_2' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='herr~gott' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'herr_2', -- $deu[1] = 'Herr'
-    'deu',    -- $deu[1] = 'Herr'
+    'herr~gott', -- $deu[1] = 'Herr'
+    'deu',       -- $deu[1] = 'Herr'
     'Paraphrase für den abrahamitischen Gott, die seine absolute Befehlsgewalt herausstellt'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Paraphrase für den abrahamitischen Gott, die seine absolute Befehlsgewalt herausstellt';
@@ -2005,6 +2383,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Ruf, um die Aufmerksamkeit auf sich zu lenken'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Ruf, um die Aufmerksamkeit auf sich zu lenken';
+
+DELETE FROM `definition` WHERE `sememe`='honiggelber_hallimasch' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'honiggelber_hallimasch', -- $deu[0] = 'Honiggelber Hallimasch'
+    'deu',                    -- $deu[0] = 'Honiggelber Hallimasch'
+    'Pilz der Art Armillaria mellea'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Armillaria mellea';
 
 DELETE FROM `definition` WHERE `sememe`='hornmoos' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2038,6 +2424,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Clamator glandarius';
 
+DELETE FROM `definition` WHERE `sememe`='häubling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'häubling', -- $deu[0] = 'Häubling'
+    'deu',      -- $deu[0] = 'Häubling'
+    'Pilz der Gattung Galerina'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Galerina';
+
+DELETE FROM `definition` WHERE `sememe`='höhlenbär' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'höhlenbär', -- $deu[0] = 'Höhlenbär'
+    'deu',       -- $deu[0] = 'Höhlenbär'
+    'Tier der ausgestorbenen Art Ursus spelaeus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der ausgestorbenen Art Ursus spelaeus';
+
 DELETE FROM `definition` WHERE `sememe`='hörnchen_1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'hörnchen_1', -- $deu[0] = 'Hörnchen'
@@ -2045,6 +2447,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Familie Sciuridae'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Familie Sciuridae';
+
+DELETE FROM `definition` WHERE `sememe`='hühnerhabicht' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'hühnerhabicht', -- $deu[0] = 'Hühnerhabicht'
+    'deu',           -- $deu[0] = 'Hühnerhabicht'
+    'Tier der Art Accipiter gentilis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Accipiter gentilis';
 
 DELETE FROM `definition` WHERE `sememe`='hülsenfrüchtler_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2118,6 +2528,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Nichtmetall, chemisches Element I der Halogene';
 
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'deu',  -- $deu[100] = 'Jota'
+    'griechischer Buchstabe ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe ι, Ι';
+
 DELETE FROM `definition` WHERE `sememe`='iowa' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'iowa', -- $deu[0] = 'Iowa'
@@ -2170,9 +2588,9 @@ DELETE FROM `definition` WHERE `sememe`='januar' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'januar', -- $deu[0] = 'Januar'
     'deu',    -- $deu[0] = 'Januar'
-    '1. Monat des gregorianischen Kalenderjahrs'
+    '1. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '1. Monat des gregorianischen Kalenderjahrs';
+    '1. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='japan' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2226,17 +2644,17 @@ DELETE FROM `definition` WHERE `sememe`='juli' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'juli', -- $deu[0] = 'Juli'
     'deu',  -- $deu[0] = 'Juli'
-    '7. Monat des gregorianischen Kalenderjahrs'
+    '7. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '7. Monat des gregorianischen Kalenderjahrs';
+    '7. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='juni' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'juni', -- $deu[0] = 'Juni'
     'deu',  -- $deu[0] = 'Juni'
-    '6. Monat des gregorianischen Kalenderjahrs'
+    '6. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '6. Monat des gregorianischen Kalenderjahrs';
+    '6. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='juno' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2270,10 +2688,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Hauptstadt Ägyptens';
 
-DELETE FROM `definition` WHERE `sememe`='kaiserling_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='kaiserling' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'kaiserling_0', -- $deu[0] = 'Kaiserling'
-    'deu',          -- $deu[0] = 'Kaiserling'
+    'kaiserling', -- $deu[0] = 'Kaiserling'
+    'deu',        -- $deu[0] = 'Kaiserling'
     'Pilz der Art Amanita caesarea'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pilz der Art Amanita caesarea';
@@ -2350,6 +2768,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'deutsches Gesetz zur Verbesserung der Wettbewerbsfähigkeit deutscher Konzerne an Kapitalmärkten und zur Erleichterung der Aufnahme von Gesellschafterdarlehen';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'deu',             -- $deu[0] = 'Kappa'
+    'griechischer Buchstabe κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe κ, Κ';
+
+DELETE FROM `definition` WHERE `sememe`='kappa~hohlmaß' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~hohlmaß', -- $deu[100] = 'Kappa'
+    'deu',           -- $deu[100] = 'Kappa'
+    'veraltete finnische Einheit der fysonischen Größe Volumen, 1 kappa = 4,58 l'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'veraltete finnische Einheit der fysonischen Größe Volumen, 1 kappa = 4,58 l';
+
+DELETE FROM `definition` WHERE `sememe`='karbolchampignon' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'karbolchampignon', -- $deu[0] = 'Karbolchampignon'
+    'deu',              -- $deu[0] = 'Karbolchampignon'
+    'Pilz der Art Agaricus xanthodermus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Agaricus xanthodermus';
+
 DELETE FROM `definition` WHERE `sememe`='kardamom_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kardamom_0', -- $deu[0] = 'Kardamom'
@@ -2422,18 +2864,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier des Stamms Hemichordata';
 
-DELETE FROM `definition` WHERE `sememe`='kirche_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='kirche~bau' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'kirche_0', -- $deu[0] = 'Kirche'
-    'deu',      -- $deu[0] = 'Kirche'
+    'kirche~bau', -- $deu[0] = 'Kirche'
+    'deu',        -- $deu[0] = 'Kirche'
     'Gebäude für liturgische Handlungen einer religiösen Glaubensgemeinschaft, meist nur für christliche Gemeinschaften verwendet'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Gebäude für liturgische Handlungen einer religiösen Glaubensgemeinschaft, meist nur für christliche Gemeinschaften verwendet';
 
-DELETE FROM `definition` WHERE `sememe`='kirche_1' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='kirche~org' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'kirche_1', -- $deu[0] = 'Kirche'
-    'deu',      -- $deu[0] = 'Kirche'
+    'kirche~org', -- $deu[0] = 'Kirche'
+    'deu',        -- $deu[0] = 'Kirche'
     'religiöse Organisation einer Glaubensgemeinschaft mit bestimmtem Bekenntnis, meist nur für christliche Gemeinschaften verwendet'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'religiöse Organisation einer Glaubensgemeinschaft mit bestimmtem Bekenntnis, meist nur für christliche Gemeinschaften verwendet';
@@ -2470,6 +2912,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'etwas in siedender Flüssigkeit garen';
 
+DELETE FROM `definition` WHERE `sememe`='koffein' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'koffein', -- $deu[0] = 'Koffein'
+    'deu',     -- $deu[0] = 'Koffein'
+    'chemische Verbindung C₈H₁₀N₄O₂ aus der Gruppe der Purinalkaloide'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemische Verbindung C₈H₁₀N₄O₂ aus der Gruppe der Purinalkaloide';
+
 DELETE FROM `definition` WHERE `sememe`='kopeke' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kopeke', -- $deu[0] = 'Kopeke'
@@ -2485,6 +2935,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Art Ursus thibetanus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Ursus thibetanus';
+
+DELETE FROM `definition` WHERE `sememe`='kraterelle' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kraterelle', -- $deu[0] = 'Kraterelle'
+    'deu',        -- $deu[0] = 'Kraterelle'
+    'Pilz der Gattung Craterellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Craterellus';
 
 DELETE FROM `definition` WHERE `sememe`='krebs_1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2526,10 +2984,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'männliche Person, die im Sternzeichen des Krebses geboren wurde';
 
-DELETE FROM `definition` WHERE `sememe`='krempling_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='krempling' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'krempling_0', -- $deu[0] = 'Krempling'
-    'deu',         -- $deu[0] = 'Krempling'
+    'krempling', -- $deu[0] = 'Krempling'
+    'deu',       -- $deu[0] = 'Krempling'
     'Pilz der Gattung Paxillus oder Tapinella'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pilz der Gattung Paxillus oder Tapinella';
@@ -2566,6 +3024,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'aus dem Metall Kupfer bestehend';
 
+DELETE FROM `definition` WHERE `sememe`='kupferstecher~käfer' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kupferstecher~käfer', -- $deu[100] = 'Kupferstecher'
+    'deu',                 -- $deu[100] = 'Kupferstecher'
+    'Tier der Art Pityogenes chalcographus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Tier der Art Pityogenes chalcographus';
+
+DELETE FROM `definition` WHERE `sememe`='königsfliegenpilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'königsfliegenpilz', -- $deu[0] = 'Königsfliegenpilz'
+    'deu',               -- $deu[0] = 'Königsfliegenpilz'
+    'Pilz der Art Amanita regalis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Amanita regalis';
+
 DELETE FROM `definition` WHERE `sememe`='labellum' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'labellum', -- $deu[0] = 'Labellum'
@@ -2573,6 +3047,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'besonders markant ausgebildetes Blatt der Blütenhülle einiger Pflanzenarten als Lockmittel und Landeplattform für Bestäuber'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'besonders markant ausgebildetes Blatt der Blütenhülle einiger Pflanzenarten als Lockmittel und Landeplattform für Bestäuber';
+
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'deu',    -- $deu[0] = 'Lambda'
+    'griechischer Buchstabe λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe λ, Λ';
 
 DELETE FROM `definition` WHERE `sememe`='langwasser' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2782,6 +3264,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Metall, chemisches Element Mg der Erdalkalimetalle';
 
+DELETE FROM `definition` WHERE `sememe`='mai' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'mai', -- $deu[0] = 'Mai'
+    'deu', -- $deu[0] = 'Mai'
+    '5. Monat des gregorianischen und des julianischen Kalenderjahrs'
+) ON DUPLICATE KEY UPDATE `text` = 
+    '5. Monat des gregorianischen und des julianischen Kalenderjahrs';
+
 DELETE FROM `definition` WHERE `sememe`='maiasaura' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'maiasaura', -- $deu[0] = 'Maiasaura'
@@ -2798,13 +3288,21 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Bundesstaat von Amerika';
 
+DELETE FROM `definition` WHERE `sememe`='maipilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'maipilz', -- $deu[0] = 'Maipilz'
+    'deu',     -- $deu[0] = 'Maipilz'
+    'Pilz der Art Calocybe gambosa'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Calocybe gambosa';
+
 DELETE FROM `definition` WHERE `sememe`='man' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'man', -- $deu[0] = 'man'
     'deu', -- $deu[0] = 'man'
-    'unbestimmtes Personalpronomen, das stellvertretend für jede Person steht, die in der jeweiligen Situation infrage kommt'
+    'unbestimmtes Personalpronomen, das stellvertretend für alle Personen steht, die in der jeweiligen Situation infrage kommen, ist in vielen Sprachen nicht vorhanden'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'unbestimmtes Personalpronomen, das stellvertretend für jede Person steht, die in der jeweiligen Situation infrage kommt';
+    'unbestimmtes Personalpronomen, das stellvertretend für alle Personen steht, die in der jeweiligen Situation infrage kommen, ist in vielen Sprachen nicht vorhanden';
 
 DELETE FROM `definition` WHERE `sememe`='marder' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2821,6 +3319,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Familie Coccinellidae'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Familie Coccinellidae';
+
+DELETE FROM `definition` WHERE `sememe`='marille' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'marille', -- $deu[0] = 'Marille'
+    'deu',     -- $deu[0] = 'Marille'
+    'Frucht des Marillenbaums (Prunus armeniaca)'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Frucht des Marillenbaums (Prunus armeniaca)';
+
+DELETE FROM `definition` WHERE `sememe`='marillenbaum' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'marillenbaum', -- $deu[0] = 'Marillenbaum'
+    'deu',          -- $deu[0] = 'Marillenbaum'
+    'Pflanze der Art Prunus armeniaca'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pflanze der Art Prunus armeniaca';
 
 DELETE FROM `definition` WHERE `sememe`='mark_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2845,6 +3359,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ursprünglich Verwaltungseinheit an der Grenze eines Reiches im mittelalterlichen Europa, nach Änderung der Verwaltungsstruktur häufig Teil der Eigennamen dieser Landschaften'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ursprünglich Verwaltungseinheit an der Grenze eines Reiches im mittelalterlichen Europa, nach Änderung der Verwaltungsstruktur häufig Teil der Eigennamen dieser Landschaften';
+
+DELETE FROM `definition` WHERE `sememe`='maronenröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'maronenröhrling', -- $deu[0] = 'Maronenröhrling'
+    'deu',             -- $deu[0] = 'Maronenröhrling'
+    'Pilz der Art Imleria badia'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Imleria badia';
 
 DELETE FROM `definition` WHERE `sememe`='maryland' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2974,6 +3496,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Dinarolacerta montenegrina';
 
+DELETE FROM `definition` WHERE `sememe`='morchel' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'morchel', -- $deu[0] = 'Morchel'
+    'deu',     -- $deu[0] = 'Morchel'
+    'Pilz der Gattung Morchella'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Morchella';
+
 DELETE FROM `definition` WHERE `sememe`='murmeltier' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'murmeltier', -- $deu[0] = 'Murmeltier'
@@ -2989,6 +3519,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'jährlich am 2. Februar stattfindendes folkloristisches Ereignis, das in Teilen von Amerika und Kanada begangen wird und dem christlichen Fest der Darstellung des Herrn gegenübersteht'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'jährlich am 2. Februar stattfindendes folkloristisches Ereignis, das in Teilen von Amerika und Kanada begangen wird und dem christlichen Fest der Darstellung des Herrn gegenübersteht';
+
+DELETE FROM `definition` WHERE `sememe`='märz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'märz', -- $deu[0] = 'März'
+    'deu',  -- $deu[0] = 'März'
+    '3. Monat des gregorianischen und des julianischen Kalenderjahrs'
+) ON DUPLICATE KEY UPDATE `text` = 
+    '3. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='natrium' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3077,6 +3615,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier des Stamms Cnidaria'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier des Stamms Cnidaria';
+
+DELETE FROM `definition` WHERE `sememe`='netziger_wachsporling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'netziger_wachsporling', -- $deu[0] = 'Netziger Wachsporling'
+    'deu',                   -- $deu[0] = 'Netziger Wachsporling'
+    'Pilz der Art Ceriporia reticulata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Ceriporia reticulata';
 
 DELETE FROM `definition` WHERE `sememe`='neutra_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3226,9 +3772,9 @@ DELETE FROM `definition` WHERE `sememe`='november' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'november', -- $deu[0] = 'November'
     'deu',      -- $deu[0] = 'November'
-    '11. Monat des gregorianischen Kalenderjahrs'
+    '11. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '11. Monat des gregorianischen Kalenderjahrs';
+    '11. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='oahu-elepaio' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3282,9 +3828,9 @@ DELETE FROM `definition` WHERE `sememe`='oktober' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'oktober', -- $deu[0] = 'Oktober'
     'deu',     -- $deu[0] = 'Oktober'
-    '10. Monat des gregorianischen Kalenderjahrs'
+    '10. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '10. Monat des gregorianischen Kalenderjahrs';
+    '10. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='olive_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3414,6 +3960,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Asteroid des Hauptgürtels mit der Registriernummer 49, benannt nach einer Göttin der römischen Religion';
 
+DELETE FROM `definition` WHERE `sememe`='pantherpilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'pantherpilz', -- $deu[0] = 'Pantherpilz'
+    'deu',         -- $deu[0] = 'Pantherpilz'
+    'Pilz der Art Amanita pantherina'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Amanita pantherina';
+
 DELETE FROM `definition` WHERE `sememe`='part1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'part1', -- $deu[0] = '#part1'
@@ -3421,6 +3975,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Partikel zur Kennzeichnung eines Satzes als Frage'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Partikel zur Kennzeichnung eines Satzes als Frage';
+
+DELETE FROM `definition` WHERE `sememe`='part2' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'part2', -- $deu[0] = '#part2'
+    'deu',   -- $deu[0] = '#part2'
+    'Adverb zur Erhebung eines Adjektivs oder Adverbs in den Komparativ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Adverb zur Erhebung eines Adjektivs oder Adverbs in den Komparativ';
+
+DELETE FROM `definition` WHERE `sememe`='part3' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'part3', -- $deu[0] = '#part3'
+    'deu',   -- $deu[0] = '#part3'
+    'Adverb zur Erhebung eines Adjektivs oder Adverbs in den Superlativ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Adverb zur Erhebung eines Adjektivs oder Adverbs in den Superlativ';
 
 DELETE FROM `definition` WHERE `sememe`='pascal_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3438,34 +4008,50 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'imperative Programmiersprache';
 
-DELETE FROM `definition` WHERE `sememe`='person_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='peninkulma' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'person_0', -- $deu[0] = 'Person'
-    'deu',      -- $deu[0] = 'Person'
-    'konkreter, spezieller Mensch'
+    'peninkulma', -- $deu[0] = 'Peninkulma'
+    'deu',        -- $deu[0] = 'Peninkulma'
+    'veraltete finnische Einheit der fysonischen Größe Länge, wörtlich ‹Entfernung, bis zu der Hundegebell hörbar ist›, bis 1655 1 peninkulma ≈ 6 km, bis 1886 1 peninkulma = 10 virsta = 10,6884 km, ab 1887 1 peninkulma = 1 skandinavische Meile = 10 km'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'konkreter, spezieller Mensch';
+    'veraltete finnische Einheit der fysonischen Größe Länge, wörtlich ‹Entfernung, bis zu der Hundegebell hörbar ist›, bis 1655 1 peninkulma ≈ 6 km, bis 1886 1 peninkulma = 10 virsta = 10,6884 km, ab 1887 1 peninkulma = 1 skandinavische Meile = 10 km';
 
-DELETE FROM `definition` WHERE `sememe`='person_1' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='perlpilz' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'person_1', -- $deu[0] = 'Person'
-    'deu',      -- $deu[0] = 'Person'
+    'perlpilz', -- $deu[0] = 'Perlpilz'
+    'deu',      -- $deu[0] = 'Perlpilz'
+    'Pilz der Art Amanita rubescens'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Amanita rubescens';
+
+DELETE FROM `definition` WHERE `sememe`='person~anzahl' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'person~anzahl', -- $deu[0] = 'Person'
+    'deu',           -- $deu[0] = 'Person'
     'abstrakter, zählbarer Mensch'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'abstrakter, zählbarer Mensch';
 
-DELETE FROM `definition` WHERE `sememe`='person_2' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='person~schmähung' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'person_2', -- $deu[0] = 'Person'
-    'deu',      -- $deu[0] = 'Person'
-    'Mensch von zweifelhaftem Ruf oder mit ungebührlichem Verhalten'
+    'person~schmähung', -- $deu[0] = 'Person'
+    'deu',              -- $deu[0] = 'Person'
+    'abwertend Mensch von zweifelhaftem Ruf oder mit ungebührlichem Verhalten'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'Mensch von zweifelhaftem Ruf oder mit ungebührlichem Verhalten';
+    'abwertend Mensch von zweifelhaftem Ruf oder mit ungebührlichem Verhalten';
 
-DELETE FROM `definition` WHERE `sememe`='person_3' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='person~subjekt' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'person_3', -- $deu[0] = 'Person'
-    'deu',      -- $deu[0] = 'Person'
+    'person~subjekt', -- $deu[0] = 'Person'
+    'deu',            -- $deu[0] = 'Person'
+    'konkreter, spezieller Mensch oder konkrete, spezielle Vereinigung von Menschen'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'konkreter, spezieller Mensch oder konkrete, spezielle Vereinigung von Menschen';
+
+DELETE FROM `definition` WHERE `sememe`='person~voxonik' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'person~voxonik', -- $deu[0] = 'Person'
+    'deu',            -- $deu[0] = 'Person'
     'Bezug von Pronomen und Verben zu den Beteiligten einer grammatischen Handlung'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Bezug von Pronomen und Verben zu den Beteiligten einer grammatischen Handlung';
@@ -3485,6 +4071,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'veraltete Einheit der fysonischen Größe Leistung, Symbol PS, 1 PS = 735,48975 W'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'veraltete Einheit der fysonischen Größe Leistung, Symbol PS, 1 PS = 735,48975 W';
+
+DELETE FROM `definition` WHERE `sememe`='pfifferling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'pfifferling', -- $deu[0] = 'Pfifferling'
+    'deu',         -- $deu[0] = 'Pfifferling'
+    'Pilz der Gattung Cantharellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Cantharellus';
 
 DELETE FROM `definition` WHERE `sememe`='pnf' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3622,6 +4216,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Hirundo rustica';
 
+DELETE FROM `definition` WHERE `sememe`='rauer_stachelschirmling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rauer_stachelschirmling', -- $deu[0] = 'Rauer Stachelschirmling'
+    'deu',                     -- $deu[0] = 'Rauer Stachelschirmling'
+    'Pilz der Art Lepiota aspera'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Lepiota aspera';
+
+DELETE FROM `definition` WHERE `sememe`='raufußröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'raufußröhrling', -- $deu[0] = 'Raufußröhrling'
+    'deu',            -- $deu[0] = 'Raufußröhrling'
+    'Pilz der Gattung Leccinum oder Leccinellum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Leccinum oder Leccinellum';
+
 DELETE FROM `definition` WHERE `sememe`='rebhuhn_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'rebhuhn_0', -- $deu[0] = 'Rebhuhn'
@@ -3662,6 +4272,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'mit Bezug auf das Element Rhodium Rh';
 
+DELETE FROM `definition` WHERE `sememe`='riesenrötling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'riesenrötling', -- $deu[0] = 'Riesenrötling'
+    'deu',           -- $deu[0] = 'Riesenrötling'
+    'Pilz der Art Entoloma sinuatum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Entoloma sinuatum';
+
+DELETE FROM `definition` WHERE `sememe`='riesenschirmling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'riesenschirmling', -- $deu[0] = 'Riesenschirmling'
+    'deu',              -- $deu[0] = 'Riesenschirmling'
+    'Pilz der Gattung Macrolepiota'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Macrolepiota';
+
 DELETE FROM `definition` WHERE `sememe`='riga' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'riga', -- $deu[0] = 'Riga'
@@ -3677,6 +4303,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Art Branta bernicla'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Branta bernicla';
+
+DELETE FROM `definition` WHERE `sememe`='risspilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'risspilz', -- $deu[0] = 'Risspilz'
+    'deu',      -- $deu[0] = 'Risspilz'
+    'Pilz der Gattung Inocybe oder Inosperma'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Inocybe oder Inosperma';
+
+DELETE FROM `definition` WHERE `sememe`='ritterling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ritterling', -- $deu[0] = 'Ritterling'
+    'deu',        -- $deu[0] = 'Ritterling'
+    'Pilz der Gattung Tricholoma'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Tricholoma';
 
 DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3718,6 +4360,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Gruppe Conditiva der Unterart Beta vulgaris subsp. vulgaris mit roter Wurzelknolle und deren Wurzelknolle';
 
+DELETE FROM `definition` WHERE `sememe`='rotfußröhrling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rotfußröhrling', -- $deu[0] = 'Rotfußröhrling'
+    'deu',            -- $deu[0] = 'Rotfußröhrling'
+    'Pilz der Gattung Xerocomellus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Xerocomellus';
+
+DELETE FROM `definition` WHERE `sememe`='rotfüßchen' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rotfüßchen', -- $deu[0] = 'Rotfüßchen'
+    'deu',        -- $deu[0] = 'Rotfüßchen'
+    'Pilz der Art Xerocomellus chrysenteron'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Xerocomellus chrysenteron';
+
+DELETE FROM `definition` WHERE `sememe`='rotkappe' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rotkappe', -- $deu[0] = 'Rotkappe'
+    'deu',      -- $deu[0] = 'Rotkappe'
+    'Pilz der Gattung Leccinum mit rötlicher Kappe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Leccinum mit rötlicher Kappe';
+
 DELETE FROM `definition` WHERE `sememe`='rumelien' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'rumelien', -- $deu[0] = 'Rumelien'
@@ -3725,6 +4391,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'europäischer Teil des Osmanischen Reichs'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'europäischer Teil des Osmanischen Reichs';
+
+DELETE FROM `definition` WHERE `sememe`='rundmorchel' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rundmorchel', -- $deu[0] = 'Rundmorchel'
+    'deu',         -- $deu[0] = 'Rundmorchel'
+    'Pilz der Art Morchella esculenta'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Morchella esculenta';
+
+DELETE FROM `definition` WHERE `sememe`='rußkopf' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rußkopf', -- $deu[0] = 'Rußkopf'
+    'deu',     -- $deu[0] = 'Rußkopf'
+    'Pilz der Art Tricholoma portentosum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Tricholoma portentosum';
+
+DELETE FROM `definition` WHERE `sememe`='rötling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'rötling', -- $deu[0] = 'Rötling'
+    'deu',     -- $deu[0] = 'Rötling'
+    'Pilz der Gattung Entoloma'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Entoloma';
 
 DELETE FROM `definition` WHERE `sememe`='rübe_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3741,6 +4431,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Speicherorgan einer Pflanze, das aus einer Verdickung der Hauptwurzel und des untersten Sprossabschnittes besteht'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Speicherorgan einer Pflanze, das aus einer Verdickung der Hauptwurzel und des untersten Sprossabschnittes besteht';
+
+DELETE FROM `definition` WHERE `sememe`='safranschirmling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'safranschirmling', -- $deu[0] = 'Safranschirmling'
+    'deu',              -- $deu[0] = 'Safranschirmling'
+    'Pilz der Art Chlorophyllum rhacodes'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Chlorophyllum rhacodes';
 
 DELETE FROM `definition` WHERE `sememe`='samstag' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3814,6 +4512,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Militärformation des römischen Heeres zum Schutz vor starkem Beschuss und zum geschützten Vorrücken auf befestigte und überhöhte Stellungen';
 
+DELETE FROM `definition` WHERE `sememe`='schirmling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'schirmling', -- $deu[0] = 'Schirmling'
+    'deu',        -- $deu[0] = 'Schirmling'
+    'Pilz der Gattung Lepiota'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Lepiota';
+
 DELETE FROM `definition` WHERE `sememe`='schnittlauch_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'schnittlauch_0', -- $deu[0] = 'Schnittlauch'
@@ -3829,6 +4535,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Charakterisierung des Eintritts eines Ereignisses oder der Existenz einer Tatsache als früher als erwartet'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Charakterisierung des Eintritts eines Ereignisses oder der Existenz einer Tatsache als früher als erwartet';
+
+DELETE FROM `definition` WHERE `sememe`='schopftintling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'schopftintling', -- $deu[0] = 'Schopftintling'
+    'deu',            -- $deu[0] = 'Schopftintling'
+    'Pilz der Art Coprinus comatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Coprinus comatus';
 
 DELETE FROM `definition` WHERE `sememe`='schräglage-illusion' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3869,6 +4583,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'traditionell Ehemann der Schwester, modern Lebenspartner der Schwester oder des Bruders'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'traditionell Ehemann der Schwester, modern Lebenspartner der Schwester oder des Bruders';
+
+DELETE FROM `definition` WHERE `sememe`='schwangerschaftsstreifen' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'schwangerschaftsstreifen', -- $deu[0] = 'Schwangerschaftsstreifen'
+    'deu',                      -- $deu[0] = 'Schwangerschaftsstreifen'
+    'Dehnungsstreifen, die infolge einer Schangerschaft entstehen, fachsprachlich Striae gravidarum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Dehnungsstreifen, die infolge einer Schangerschaft entstehen, fachsprachlich Striae gravidarum';
 
 DELETE FROM `definition` WHERE `sememe`='schwarzbäuchige_ringelgans' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3934,6 +4656,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pilz der Art Boletus calopus';
 
+DELETE FROM `definition` WHERE `sememe`='schönkopf' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'schönkopf', -- $deu[0] = 'Schönkopf'
+    'deu',       -- $deu[0] = 'Schönkopf'
+    'Pilz der Gattung Calocybe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Calocybe';
+
 DELETE FROM `definition` WHERE `sememe`='seaborgium' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'seaborgium', -- $deu[0] = 'Seaborgium'
@@ -3954,9 +4684,9 @@ DELETE FROM `definition` WHERE `sememe`='september' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'september', -- $deu[0] = 'September'
     'deu',       -- $deu[0] = 'September'
-    '9. Monat des gregorianischen Kalenderjahrs'
+    '9. Monat des gregorianischen und des julianischen Kalenderjahrs'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    '9. Monat des gregorianischen Kalenderjahrs';
+    '9. Monat des gregorianischen und des julianischen Kalenderjahrs';
 
 DELETE FROM `definition` WHERE `sememe`='sieden_10' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -3982,6 +4712,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Einheit der fysonischen Größe Äquivalentdosis, Symbol Sv, 1 S = 1 m² · s⁻² = 1 J · kg⁻¹ ';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'deu',   -- $deu[0] = 'Sigma'
+    'griechischer Buchstabe σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -3989,6 +4727,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Metall, chemisches Element Ag der Kupfergruppe'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Metall, chemisches Element Ag der Kupfergruppe';
+
+DELETE FROM `definition` WHERE `sememe`='silbernitrat' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'silbernitrat', -- $deu[0] = 'Silbernitrat'
+    'deu',          -- $deu[0] = 'Silbernitrat'
+    'chemische Verbindung AgNO₃, Silbersalz der Salpetersäure'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'chemische Verbindung AgNO₃, Silbersalz der Salpetersäure';
 
 DELETE FROM `definition` WHERE `sememe`='sofia' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4005,6 +4751,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'ganz oder teilweise im Sommer liegender Monat'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ganz oder teilweise im Sommer liegender Monat';
+
+DELETE FROM `definition` WHERE `sememe`='sommersteinpilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sommersteinpilz', -- $deu[0] = 'Sommersteinpilz'
+    'deu',             -- $deu[0] = 'Sommersteinpilz'
+    'Pilz der Art Boletus reticulatus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Boletus reticulatus';
 
 DELETE FROM `definition` WHERE `sememe`='sonntag' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4061,6 +4815,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Pflanze der Gattung Xanthium'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze der Gattung Xanthium';
+
+DELETE FROM `definition` WHERE `sememe`='spitzmorchel' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'spitzmorchel', -- $deu[0] = 'Spitzmorchel'
+    'deu',          -- $deu[0] = 'Spitzmorchel'
+    'Pilz der Art Morchella elata'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Morchella elata';
 
 DELETE FROM `definition` WHERE `sememe`='stadtchampignon_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4278,6 +5040,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Pflanze, die aus einem vielzelligen Vegetationslörper ohne Sproßachse, Wurzel und Blättern besteht';
 
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'theta', -- $deu[0] = 'Theta'
+    'deu',   -- $deu[0] = 'Theta'
+    'griechischer Buchstabe θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe θ, Θ';
+
 DELETE FROM `definition` WHERE `sememe`='tiger_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'tiger_0', -- $deu[0] = 'Tiger'
@@ -4285,6 +5055,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Tier der Art Panthera tigris'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Art Panthera tigris';
+
+DELETE FROM `definition` WHERE `sememe`='tigerritterling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'tigerritterling', -- $deu[0] = 'Tigerritterling'
+    'deu',             -- $deu[0] = 'Tigerritterling'
+    'Pilz der Art Tricholoma pardinum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Tricholoma pardinum';
 
 DELETE FROM `definition` WHERE `sememe`='timor-zebrafink' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4294,29 +5072,53 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Tier der Unterart Taeniopygia guttata guttata';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='tintling' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'deu',     -- $deu[0] = 'Titan'
+    'tintling', -- $deu[0] = 'Tintling'
+    'deu',      -- $deu[0] = 'Tintling'
+    'Pilz der Gattung Coprinus oder Coprinopsis'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Coprinus oder Coprinopsis';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'deu',      -- $deu[0] = 'Titan'
     'Metall, chemisches Element Ti der Titangruppe'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Metall, chemisches Element Ti der Titangruppe';
 
-DELETE FROM `definition` WHERE `sememe`='titan_100' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='titan~gott' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_100', -- $deu[100] = 'Titan'
-    'deu',       -- $deu[100] = 'Titan'
+    'titan~gott', -- $deu[100] = 'Titan'
+    'deu',        -- $deu[100] = 'Titan'
     'Angehöriger eines Göttergeschlechts der altgriechischen Mythologie; figurativ für Personen mit überragender Bedeutung gebraucht, oft ironisch'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Angehöriger eines Göttergeschlechts der altgriechischen Mythologie; figurativ für Personen mit überragender Bedeutung gebraucht, oft ironisch';
 
-DELETE FROM `definition` WHERE `sememe`='titan_200' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='titan~mond' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_200', -- $deu[200] = 'Titan'
-    'deu',       -- $deu[200] = 'Titan'
+    'titan~mond', -- $deu[200] = 'Titan'
+    'deu',        -- $deu[200] = 'Titan'
     'größter Mond des Planeten Saturn'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'größter Mond des Planeten Saturn';
+
+DELETE FROM `definition` WHERE `sememe`='totentrompete' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'totentrompete', -- $deu[0] = 'Totentrompete'
+    'deu',           -- $deu[0] = 'Totentrompete'
+    'Pilz der Art Craterellus cornucopioides'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Craterellus cornucopioides';
+
+DELETE FROM `definition` WHERE `sememe`='trichterling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'trichterling', -- $deu[0] = 'Trichterling'
+    'deu',          -- $deu[0] = 'Trichterling'
+    'Pilz der Gattung Clitocybe'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Clitocybe';
 
 DELETE FROM `definition` WHERE `sememe`='trocken_1' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4357,6 +5159,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'mit Bezug auf die turkmenische Sprache'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'mit Bezug auf die turkmenische Sprache';
+
+DELETE FROM `definition` WHERE `sememe`='täubling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'täubling', -- $deu[0] = 'Täubling'
+    'deu',      -- $deu[0] = 'Täubling'
+    'Pilz der Gattung Russula'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Russula';
 
 DELETE FROM `definition` WHERE `sememe`='täublingsartiger' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4582,6 +5392,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Körper des Wasser eines Gewässers';
 
+DELETE FROM `definition` WHERE `sememe`='wassermelone' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wassermelone', -- $deu[0] = 'Wassermelone'
+    'deu',          -- $deu[0] = 'Wassermelone'
+    'Pflanze der Art Citrullus lanatus und deren Fucht'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pflanze der Art Citrullus lanatus und deren Fucht';
+
 DELETE FROM `definition` WHERE `sememe`='wasserstoff' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'wasserstoff', -- $deu[0] = 'Wasserstoff'
@@ -4590,13 +5408,21 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Nichtmetall, unter hohem Druck Metall, chemisches Element H, als Gas H₂, der Alkalimetalle';
 
-DELETE FROM `definition` WHERE `sememe`='watt~2' AND `language`='deu';
+DELETE FROM `definition` WHERE `sememe`='watt~einheit' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'watt~2', -- $deu[100] = 'Watt'
-    'deu',    -- $deu[100] = 'Watt'
+    'watt~einheit', -- $deu[100] = 'Watt'
+    'deu',          -- $deu[100] = 'Watt'
     'Einheit der fysonischen Größe Leistung, Symbol W, 1 W = 1 kg · m² · s³ = 1 V · A = 1 J · s⁻¹ = 1 N · m · s⁻¹ '
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Einheit der fysonischen Größe Leistung, Symbol W, 1 W = 1 kg · m² · s³ = 1 V · A = 1 J · s⁻¹ = 1 N · m · s⁻¹ ';
+
+DELETE FROM `definition` WHERE `sememe`='weißbuche' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'weißbuche', -- $deu[0] = 'Weißbuche'
+    'deu',       -- $deu[0] = 'Weißbuche'
+    'Pflanze der Art Carpinus betulus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pflanze der Art Carpinus betulus';
 
 DELETE FROM `definition` WHERE `sememe`='weiße_taubnessel' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4670,6 +5496,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Bundesstaat von Amerika';
 
+DELETE FROM `definition` WHERE `sememe`='wetterstern' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wetterstern', -- $deu[0] = 'Wetterstern'
+    'deu',         -- $deu[0] = 'Wetterstern'
+    'Pilz der Gattung Astraeus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Astraeus';
+
 DELETE FROM `definition` WHERE `sememe`='wiesel_0' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'wiesel_0', -- $deu[0] = 'Wiesel'
@@ -4717,6 +5551,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Stadt in Deutschland im südöstlichen Rheinland-Pfalz'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Stadt in Deutschland im südöstlichen Rheinland-Pfalz';
+
+DELETE FROM `definition` WHERE `sememe`='wulstling' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'wulstling', -- $deu[0] = 'Wulstling'
+    'deu',       -- $deu[0] = 'Wulstling'
+    'Pilz der Gattung Amanita'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Gattung Amanita';
 
 DELETE FROM `definition` WHERE `sememe`='wyoming' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -4886,6 +5728,30 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'nach oben verlängerte Lotrichtung eines Standortes auf einer Oberfläche';
 
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'deu',  -- $deu[0] = 'Zeta'
+    'griechischer Buchstabe ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'griechischer Buchstabe ζ, Ζ';
+
+DELETE FROM `definition` WHERE `sememe`='ziegelroter_risspilz' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ziegelroter_risspilz', -- $deu[0] = 'Ziegelroter Risspilz'
+    'deu',                  -- $deu[0] = 'Ziegelroter Risspilz'
+    'Pilz der Art Inosperma erubescens'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Inosperma erubescens';
+
+DELETE FROM `definition` WHERE `sememe`='ziegenlippe' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'ziegenlippe', -- $deu[0] = 'Ziegenlippe'
+    'deu',         -- $deu[0] = 'Ziegenlippe'
+    'Pilz der Art Xerocomus subtomentosus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Xerocomus subtomentosus';
+
 DELETE FROM `definition` WHERE `sememe`='zitronatzitrone' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'zitronatzitrone', -- $deu[0] = 'Zitronatzitrone'
@@ -4909,6 +5775,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Stadt in Malawi im Shire Hochland am Fuß des Zomba-Plateaus, Hauptstadt des gleichnamigen Bezirks'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Stadt in Malawi im Shire Hochland am Fuß des Zomba-Plateaus, Hauptstadt des gleichnamigen Bezirks';
+
+DELETE FROM `definition` WHERE `sememe`='zweisporiger_champignon' AND `language`='deu';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zweisporiger_champignon', -- $deu[0] = 'Zweisporiger Champignon'
+    'deu',                     -- $deu[0] = 'Zweisporiger Champignon'
+    'Pilz der Art Agaricus bisporus'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'Pilz der Art Agaricus bisporus';
 
 DELETE FROM `definition` WHERE `sememe`='zügelseeschwalbe' AND `language`='deu';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

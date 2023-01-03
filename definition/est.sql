@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -46,6 +48,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Ac';
 
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'est',   -- $est[0] = ''
+    'kreeka täht α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht α, Α';
+
 DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'astat', -- $deu[0] = 'Astat'
@@ -65,15 +75,23 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='beryllium' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'beryllium', -- $deu[0] = 'Beryllium'
-    'est',       -- $est[0] = ''
+    'est',       -- $est[0] = 'berüllium'
     'keemiline element Be'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Be';
 
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'est',  -- $est[0] = ''
+    'kreeka täht β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht β, Β';
+
 DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'bor', -- $deu[0] = 'Bor'
-    'est', -- $est[0] = ''
+    'est', -- $est[0] = 'boor'
     'keemiline element B'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element B';
@@ -118,6 +136,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Co';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'est',             -- $est[0] = ''
+    'kreeka täht δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht δ, Δ';
+
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'
@@ -125,6 +151,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'keemiline element Fe'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Fe';
+
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'est',     -- $est[0] = ''
+    'kreeka täht ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht ε, Ε';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'est', -- $est[0] = ''
+    'kreeka täht η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht η, Η';
 
 DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -134,10 +176,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element F';
 
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'est',   -- $est[0] = ''
+    'kreeka täht γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht γ, Γ';
+
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
-    'est',    -- $est[0] = ''
+    'est',    -- $est[0] = 'heelium'
     'keemiline element He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element He';
@@ -149,6 +199,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'keemiline element I'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element I';
+
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'est',  -- $est[0] = ''
+    'kreeka täht ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht ι, Ι';
 
 DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -166,6 +224,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element K';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'est',             -- $est[0] = ''
+    'kreeka täht κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht κ, Κ';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -174,10 +240,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Cu';
 
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'est',    -- $est[0] = ''
+    'kreeka täht λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht λ, Λ';
+
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
-    'est',     -- $est[0] = ''
+    'est',     -- $est[0] = 'liitium'
     'keemiline element Li'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Li';
@@ -238,6 +312,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Sc';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'est',   -- $est[0] = ''
+    'kreeka täht σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -262,10 +344,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Ts';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='est';
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='est';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'est',     -- $est[0] = ''
+    'theta', -- $deu[0] = 'Theta'
+    'est',   -- $est[0] = ''
+    'kreeka täht θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht θ, Θ';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'est',      -- $est[0] = ''
     'keemiline element Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Ti';
@@ -309,4 +399,12 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'keemiline element Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'keemiline element Y';
+
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='est';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'est',  -- $est[0] = ''
+    'kreeka täht ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'kreeka täht ζ, Ζ';
 

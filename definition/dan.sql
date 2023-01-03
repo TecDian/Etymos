@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -45,6 +47,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundstof Ac'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Ac';
+
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'dan',   -- $dan[0] = 'alfa'
+    'græsk bogstav α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav α, Α';
 
 DELETE FROM `definition` WHERE `sememe`='arizona' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -85,6 +95,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundstof Be'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Be';
+
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'dan',  -- $dan[0] = ''
+    'græsk bogstav β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav β, Β';
 
 DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -158,6 +176,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'dan',             -- $dan[0] = ''
+    'græsk bogstav δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav δ, Δ';
+
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'
@@ -166,6 +192,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Fe';
 
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'dan',     -- $dan[0] = ''
+    'græsk bogstav ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav ε, Ε';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'dan', -- $dan[0] = ''
+    'græsk bogstav η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav η, Η';
+
 DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fluor', -- $deu[0] = 'Fluor'
@@ -173,6 +215,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundstof F'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof F';
+
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'dan',   -- $dan[0] = ''
+    'græsk bogstav γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav γ, Γ';
 
 DELETE FROM `definition` WHERE `sememe`='georgia' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -214,6 +264,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof I';
 
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'dan',  -- $dan[0] = ''
+    'græsk bogstav ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav ι, Ι';
+
 DELETE FROM `definition` WHERE `sememe`='iowa' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'iowa', -- $deu[0] = 'Iowa'
@@ -254,6 +312,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'dan',             -- $dan[0] = ''
+    'græsk bogstav κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav κ, Κ';
+
 DELETE FROM `definition` WHERE `sememe`='kentucky' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kentucky', -- $deu[0] = 'Kentucky'
@@ -293,6 +359,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundstof Cu'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Cu';
+
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'dan',    -- $dan[0] = ''
+    'græsk bogstav λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav λ, Λ';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -502,6 +576,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Sc';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'dan',   -- $dan[0] = ''
+    'græsk bogstav σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -558,10 +640,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'dan',     -- $dan[0] = 'titan'
+    'theta', -- $deu[0] = 'Theta'
+    'dan',   -- $dan[0] = ''
+    'græsk bogstav θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav θ, Θ';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'dan',      -- $dan[0] = 'titan'
     'grundstof Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Ti';
@@ -645,4 +735,12 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundstof Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Y';
+
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='dan';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'dan',  -- $dan[0] = ''
+    'græsk bogstav ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'græsk bogstav ζ, Ζ';
 

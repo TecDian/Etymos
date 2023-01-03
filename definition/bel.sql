@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -13,14 +15,14 @@
 --     'Staat in Musterkontinent in Musterregion'
 --     'Staat auf der gleichnamigen Insel in der Karibik'
 --     'Hauptstadt Musterlands'
---     'administratives Zentrum von Musterland'
+--     'адміністрацыйны цэнтр ў Musterland'
 --     'Dorf in Musterland (in der Region Mustergebiet)'
 
 -- fysonische Größen
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -46,6 +48,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Ac';
 
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'bel',   -- $bel[0] = ''
+    'грэчаская літара α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара α, Α';
+
 DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'astat', -- $deu[0] = 'Astat'
@@ -69,6 +79,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'хімічны элемент Be'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Be';
+
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'bel',  -- $bel[0] = ''
+    'грэчаская літара β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара β, Β';
 
 DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -118,13 +136,37 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Co';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'bel',             -- $bel[0] = ''
+    'грэчаская літара δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара δ, Δ';
+
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'
-    'bel',   -- $bel[0] = ''
+    'bel',   -- $bel[0] = 'жалеза'
     'хімічны элемент Fe'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Fe';
+
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'bel',     -- $bel[0] = ''
+    'грэчаская літара ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара ε, Ε';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'bel', -- $bel[0] = ''
+    'грэчаская літара η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара η, Η';
 
 DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -134,10 +176,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент F';
 
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'bel',   -- $bel[0] = ''
+    'грэчаская літара γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара γ, Γ';
+
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'helium', -- $deu[0] = 'Helium'
-    'bel',    -- $bel[0] = ''
+    'bel',    -- $bel[0] = 'гелій'
     'хімічны элемент He'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент He';
@@ -145,10 +195,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'iod', -- $deu[0] = 'Iod'
-    'bel', -- $bel[0] = ''
+    'bel', -- $bel[0] = 'ёд'
     'хімічны элемент I'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент I';
+
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'bel',  -- $bel[0] = 'ёта'
+    'грэчаская літара ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара ι, Ι';
 
 DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -174,6 +232,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент K';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'bel',             -- $bel[0] = ''
+    'грэчаская літара κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара κ, Κ';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -182,10 +248,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Cu';
 
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'bel',    -- $bel[0] = ''
+    'грэчаская літара λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара λ, Λ';
+
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
-    'bel',     -- $bel[0] = ''
+    'bel',     -- $bel[0] = 'літый'
     'хімічны элемент Li'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Li';
@@ -246,6 +320,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Sc';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'bel',   -- $bel[0] = ''
+    'грэчаская літара σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -270,10 +352,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Ts';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='bel';
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='bel';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'bel',     -- $bel[0] = ''
+    'theta', -- $deu[0] = 'Theta'
+    'bel',   -- $bel[0] = ''
+    'грэчаская літара θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара θ, Θ';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'bel',      -- $bel[0] = ''
     'хімічны элемент Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Ti';
@@ -325,4 +415,12 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'хімічны элемент Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'хімічны элемент Y';
+
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='bel';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'bel',  -- $bel[0] = ''
+    'грэчаская літара ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'грэчаская літара ζ, Ζ';
 

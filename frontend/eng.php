@@ -281,7 +281,7 @@ $tooltip = array(
     'adn' => 'adnoun, to describe features',
     'adv' => 'adverb, to describe circumstances',
     'art' => 'article, to determine a noun',
-    'int' => 'interjection, to express a feeling',
+    'inj' => 'interjection, to express a feeling',
     'con' => 'conjunction, to connect parts of speech',
     'pro' => 'pronoun, to substitute a part of speech',
     's' => 'noun, to describe objects',
@@ -340,11 +340,11 @@ $tooltip = array(
     'va' => 'auxiliary verb, for the construction of gramatical forms',
     'vi' => 'intransitive verb, without objects and compulsory extentions',
     'via' => 'intransitive verb, with compulsory extention by an adverbial',
-    'vip' => 'intransitive verb, with compulsory extention by a prepositive object',
+    'vip' => 'intransitive verb, with compulsory extention by a peripheral object',
     'vis' => 'intransitive verb, with compulsory extention by a statual object',
+    'vm' => 'minutransitive verb, with indirect object',
     'vt' => 'transitive verb, with direct object',
     'vts' => 'transitive verb, with direct object and compulsory extention by a stative object',
-    'vm' => 'ministrative verb, with indirect object',
     'vd' => 'ditransitive verb, with direct and indirect object',
     'vr' => 'reflexive verb, with direct object identical to the subject',
     'vrs' => 'reflexive verb, with direct object identical to the subject and compulsory extention by a stative object',
@@ -419,12 +419,14 @@ $tooltip = array(
     'inac' => 'inaccentual, unstressed',
     '(in)' => 'initial, at the beginning of a sentence',
     '(fi)' => 'final, at the end of a sentence',
-    '(av)' => 'antivocal, before a vowel',
-    '(ac)' => 'anticonsonant, before a consonant',
+    '(av)' => 'antevocal, before a vowel',
+    '(ac)' => 'anteconsonant, before a consonant',
+    '(al)' => 'antelenis, before a lenis',
+    '(af)' => 'antelenis, before a fortis',
     '(pv)' => 'postvowel, after a vowel',
     '(pc)' => 'postconsonant, after a consonant',
-    '(aaj)' => 'antiadjective, before an adjective',
-    '(aav)' => 'antiadverbial, before an adverb',
+    '(aaj)' => 'anteadjective, before an adjective',
+    '(aav)' => 'anteadverbial, before an adverb',
     'nom' => 'nominative, subject who?',
     'gen' => 'genitive, owner whose?',
     'dat' => 'dative, indirect object whom?',
@@ -491,10 +493,6 @@ $loc_kein_inhalt1 = 'In order to be able to send a message, it is necessary to e
 $loc_kein_inhalt2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in your browser, correct it and submit again. Was it intentional: <span class="source">Stop this nonsense!</span>';
 $loc_spam1 = 'The security question was not answered correctly.';
 $loc_spam2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in your browser, correct it and submit again. Was it intentional: <span class="source">Stop this nonsense!</span>';
-
-// Portalseite
-$loc_willkommen = '### Welcome to Etymos. Most of it does work yet. Well, nearly everything, but … ###';
-$loc_wir_arbeiten = 'We work on it and we have a lot more in mind yet!';
 $loc_news = '30 September 2022</span> <span class="code">neu:</span> Entries were revised. Luxembourgish was considerably extended.';
 // Sprachwahlfenster
 $loc_waehlen = 'Choose source and target language';
@@ -518,10 +516,8 @@ $loc_achtung1.= 'They may contain traces of peanuts. During the production of th
 $loc_achtung1.= 'with climate-damaging greenhouse gases such as CO₂ from respiration and methane from digestion. However, all dictionary entries are completely recyclable and are offered on reusable websites.';
 $loc_achtung2 = 'Attention! This website contains links to external sites, especially to Amazon. Etymos is not responsible for the content of these sites and provides these links for information purposes only. ';
 $loc_achtung2.= 'Although they are hand-picked recommendations, legally, this is advertising - and yes, we earn a little commission for sales via Amazon.';
-
-// Suchseite
-$loc_warning1 = 'The search word was not found.';
-$loc_warning2 = 'The search word was not found as such. The following term is the best match.';
+$loc_warnung[1] = 'The search word was not found.';
+$loc_warnung[2] = 'The search word was not found as such. The following term is the best match.';
 $loc_explanation1 = 'not translated, expressed by case';
 $loc_explanation2 = 'not translatable, for function see definition';
 // Zusatzfunktionsfenster
@@ -550,6 +546,7 @@ $loc_kein_paradigma = 'There is no inflection paradigm available yet for this se
 $loc_inflektierbar = 'This search word is inflectible.';
 $loc_siehe_einzelworte = 'Information on inflection can be found at those components that must be inflected for usage:';
 $loc_anmerkung = 'Note';
+$loc_genitivartikel_untypisch = 'The <span class="term">genitive singular</span> ending can optionally be omitted if there is a preceding article.';
 $loc_genitivattribut_untypisch = 'If the word in singular is used as an isolated <span class="term">Saxon genitive</span>, the untypical genitive ending <span class="targetlight">-</span><span class="sourcelight">s</span> is added.';
 $loc_stummes_s = 'The <span class="targetlight">-s</span> is silent except for the <span class="term">genitive singular</span> and the <span class="term">plural</span>.';
 $loc_endung_kurz_lang = 'The ending is pronounced short in <span class="term">singular</span> and long in <span class="term">plural</span>.';
@@ -701,6 +698,7 @@ $loc_treiber_name1 = 'UniLatin';
 $loc_treiber_name2 = 'Phonetic';
 $loc_treiber_name3 = 'Cyrillic';
 $loc_treiber_name4 = 'Greek';
+$loc_treiber_name5 = 'Arabic';
 $loc_treiber_zweck1 = 'Latin script';
 $loc_treiber_zweck2 = 'phonetic transcription';
 $loc_treiber_zweck3 = 'Cyrillic script';
@@ -712,7 +710,8 @@ $loc_treiber_kommentar3 = 'based state language.';
 $loc_treiber_kommentar4 = '.';
 $loc_treiber_kommentar5 = 'based state language als well as Church Slavonic.';
 $loc_treiber_kommentar6 = 'for Greek and Ancient Greek.';
-$loc_treiber_kommentar7 = ' Numerous other useful special characters are available.';
+$loc_treiber_kommentar7 = 'based state language als well as Uyghur.';
+$loc_treiber_kommentar8 = ' Numerous other useful special characters are available.';
 $loc_treiber_inhalt1 = 'Installation files';
 $loc_treiber_inhalt2 = 'Functional description';
 $loc_treiber_inhalt3 = 'Layout schematics';

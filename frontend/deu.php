@@ -281,7 +281,7 @@ $tooltip = array(
     'adn' => 'Adnomen, Merkmalwort',
     'adv' => 'Adverb, Umstandswort',
     'art' => 'Artikel, Begleiter',
-    'int' => 'Interjektion, Empfindungswort',
+    'inj' => 'Interjektion, Empfindungswort',
     'con' => 'Konjunktion, Bindewort',
     'pro' => 'Pronomen, Fürwort',
     's' => 'Substantiv, Hauptwort',
@@ -340,11 +340,11 @@ $tooltip = array(
     'va' => 'auxiliares Verb, Hilfsverb',
     'vi' => 'intransitives Verb, ohne Objekte und zwingende Erweiterungen',
     'via' => 'intransitives Verb, mit zwingender Anfügung eines Adverbials',
-    'vip' => 'intransitives Verb, mit zwingender Anfügung eines präpositiven Objekts',
+    'vip' => 'intransitives Verb, mit zwingender Anfügung eines peripheren Objekts',
     'vis' => 'intransitives Verb, mit zwingender Anfügung eines statuellen Objekts',
+    'vm' => 'minutransitives Verb, mit indirektem Objekt',
     'vt' => 'transitives Verb, mit direktem Objekt',
     'vts' => 'transitives Verb, mit direktem Objekt und zwingender Anfügung eines stativen Objekts',
-    'vm' => 'ministratives Verb, mit indirektem Objekt',
     'vd' => 'ditransitives Verb, mit direktem und indirektem Objekt',
     'vr' => 'reflexives Verb, mit direktem Objekt identisch zum Subjekt',
     'vrs' => 'reflexives Verb, mit direktem Objekt identisch zum Subjekt und zwingender Anfügung eines stativen Objekts',
@@ -419,12 +419,14 @@ $tooltip = array(
     'inac' => 'inakzentual, unbetont',
     '(in)' => 'initial, am Satzanfang',
     '(fi)' => 'final, am Satzende',
-    '(av)' => 'antivokalisch, vor Vokal',
-    '(ac)' => 'antikonsonantisch, vor Konsonant',
+    '(av)' => 'antevokalisch, vor Vokal',
+    '(ac)' => 'antekonsonantisch, vor Konsonant',
+    '(al)' => 'antelenis, vor Lenis',
+    '(af)' => 'antefortis, vor Fortis',
     '(pv)' => 'postvokalisch, nach Vokal',
     '(pc)' => 'postkonsonantisch, nach Konsonant',
-    '(aaj)' => 'antiadjektiv, vor Adjektiv',
-    '(aav)' => 'antiadverbial, vor Adverb',
+    '(aaj)' => 'anteadjektiv, vor Adjektiv',
+    '(aav)' => 'anteadverbial, vor Adverb',
     'nom' => 'Nominativ, Subjekt wer?',
     'gen' => 'Genitiv, Eigentümer wessen?',
     'dat' => 'Dativ, indirektes Objekt wem?',
@@ -491,10 +493,6 @@ $loc_kein_inhalt1 = 'Um eine Nachricht senden zu können, muss sie vorher eingeg
 $loc_kein_inhalt2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
 $loc_spam1 = 'Die Sicherheitsfrage wurde falsch beantwortet.';
 $loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
-
-// Portalseite
-$loc_willkommen = '### Willkommen bei Etymos. Das Meiste funktioniert schon. Also eigentlich fast alles, aber … ###';
-$loc_wir_arbeiten = 'Wir arbeiten daran und haben noch viel vor!';
 $loc_news = '30. September 2022</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Luxemburgisch wurde wesentlich erweitert.';
 // Sprachwahlfenster
 $loc_waehlen = 'Quell- und Zielsprache wählen';
@@ -518,10 +516,8 @@ $loc_achtung1.= 'Sie können Spuren von Erdnüssen enthalten. Während der Herst
 $loc_achtung1.= 'mit klimaschädlichen Treibhausgasen wie CO₂ aus der Atmung und Methan aus der Verdauung belastet. Aber alle Wörterbucheinträge sind vollständig wiederverwertbar und werden auf Mehrweg-Webseiten angeboten.';
 $loc_achtung2 = 'Achtung! Diese Webseite enthält Links zu externen Seiten, namentlich zu Amazon. Etymos ist für den Inhalt dieser Seiten nicht verantwortlich und stellt die Links nur zu Informationszwecken zur Verfügung. ';
 $loc_achtung2.= 'Obwohl es sich um handverlesene Ratschläge handelt, stellen diese Links rechtlich Werbung dar - und ja, wir bekommen eine kleine Provision für Verkäufe über Amazon.';
-
-// Suchseite
-$loc_warning1 = 'Der Suchbegriff wurde nicht gefunden.';
-$loc_warning2 = 'Der Suchbegriff wurde nicht direkt gefunden. Der folgende Begriff kommt dem am nächsten.';
+$loc_warnung[1] = 'Der Suchbegriff wurde nicht gefunden.';
+$loc_warnung[2] = 'Der Suchbegriff wurde nicht direkt gefunden. Der folgende Begriff kommt dem am nächsten.';
 $loc_explanation1 = 'nicht übersetzt, durch Kasus ausgedrückt';
 $loc_explanation2 = 'nicht übersetzbar, zur Funktion siehe Definition';
 // Zusatzfunktionsfenster
@@ -550,6 +546,7 @@ $loc_kein_paradigma = 'Für diesen Suchbegriff ist noch kein Flexionsparadigma e
 $loc_inflektierbar = 'Dieser Suchbegriff ist nicht flektierbar.';
 $loc_siehe_einzelworte = 'Angaben zur Flexion sind bei denjenigen Bestandteilen zu finden, die bei Gebrauch flektiert werden müssen:';
 $loc_anmerkung = 'Anmerkung';
+$loc_genitivartikel_untypisch = 'Die Endung im <span class="term">Genitiv Singular</span> kann bei vorangestelltem Artikel optional weggelassen werden.';
 $loc_genitivattribut_untypisch = 'Wird das Wort im Singular als isoliertes vorangestelltes <span class="term">Genitivattribut</span> verwendet, tritt die untypische Genitivendung <span class="targetlight">-</span><span class="sourcelight">s</span> hinzu.';
 $loc_stummes_s = 'Das <span class="targetlight">-s</span> ist stumm, außer im <span class="term">Genitiv Singular</span> und im <span class="term">Plural</span>.';
 $loc_endung_kurz_lang = 'Die Endung wird im <span class="term">Singular</span> kurz, im <span class="term">Plural</span> lang ausgesprochen.';
@@ -557,7 +554,7 @@ $loc_endung_kurz_lang = 'Die Endung wird im <span class="term">Singular</span> k
 $loc_sononische_notation = 'Sononische Notation';
 $loc_grundlagen = 'Grundlagen';
 $loc_lautliche_umschrift1 = 'Für die <span class="state">lautliche Umschrift</span> wird die <span class="sourcelight">sononische Notation</span> verwendet. ';
-$loc_lautliche_umschrift2 = 'Sie gibt <span class="state">schalldistiktive Merkmale</span> wieder und weicht teilweise erheblich vom <span class="level1">IPA</span> ab.';
+$loc_lautliche_umschrift2 = 'Sie gibt <span class="state">schalldistinktive Merkmale</span> wieder und weicht teilweise erheblich vom <span class="level1">IPA</span> ab.';
 $loc_phon_deu1 = 'Grundlage der <span class="name">deutschen Aussprachebeschreibung</span> ist die in Deutschland gesprochene <span class="state">mitteldeutsche Standardform</span> der Umgangssprache. ';
 $loc_phon_deu2 = 'Deutsche <span class="name">r-Laute</span> werden als <span class="phon">[ʀ]</span> und <span class="name">teilrhotiziert</span> angegeben. ';
 $loc_phon_deu3 = '<span class="name">Kurzvokal</span> + <span class="source">r</span> wird alternativ als <span class="state">Dunkelvokal</span> + <span class="phon">[ʕ]</span> und als <span class="state">Klarvokal</span> + <span class="phon">[ʀ]</span> angegeben.';
@@ -701,6 +698,7 @@ $loc_treiber_name1 = 'UniLatein';
 $loc_treiber_name2 = 'Phonetisch';
 $loc_treiber_name3 = 'Kyrillisch';
 $loc_treiber_name4 = 'Griechisch';
+$loc_treiber_name5 = 'Arabisch';
 $loc_treiber_zweck1 = 'lateinischer Schrift';
 $loc_treiber_zweck2 = 'Lautumschrift';
 $loc_treiber_zweck3 = 'kyrillischer Schrift';
@@ -712,7 +710,8 @@ $loc_treiber_kommentar3 = 'basierenden Staatssprachen.';
 $loc_treiber_kommentar4 = '.';
 $loc_treiber_kommentar5 = 'basierenden Staatssprachen und Kirchenslawisch.';
 $loc_treiber_kommentar6 = 'für Griechisch und Altgriechisch.';
-$loc_treiber_kommentar7 = ' Zahlreiche weitere nützliche Sonderzeichen sind verfügbar.';
+$loc_treiber_kommentar7 = 'basierenden Staatssprachen und Uigurisch.';
+$loc_treiber_kommentar8 = ' Zahlreiche weitere nützliche Sonderzeichen sind verfügbar.';
 $loc_treiber_inhalt1 = 'Installationsdateien';
 $loc_treiber_inhalt2 = 'Funktionsbeschreibung';
 $loc_treiber_inhalt3 = 'Layoutschemata';

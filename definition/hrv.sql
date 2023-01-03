@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -46,6 +48,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Ac';
 
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'hrv',   -- $hrv[0] = ''
+    'grčko slovo α, Α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo α, Α';
+
 DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'astat', -- $deu[0] = 'Astat'
@@ -69,6 +79,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kemijski element Be'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Be';
+
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'hrv',  -- $hrv[0] = ''
+    'grčko slovo β, Β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo β, Β';
 
 DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -118,6 +136,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Co';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'hrv',             -- $hrv[0] = ''
+    'grčko slovo δ, Δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo δ, Δ';
+
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'
@@ -126,6 +152,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Fe';
 
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'hrv',     -- $hrv[0] = ''
+    'grčko slovo ε, Ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo ε, Ε';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'hrv', -- $hrv[0] = ''
+    'grčko slovo η, Η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo η, Η';
+
 DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fluor', -- $deu[0] = 'Fluor'
@@ -133,6 +175,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kemijski element F'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element F';
+
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'hrv',   -- $hrv[0] = ''
+    'grčko slovo γ, Γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo γ, Γ';
 
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -150,6 +200,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element I';
 
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'hrv',  -- $hrv[0] = ''
+    'grčko slovo ι, Ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo ι, Ι';
+
 DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'iridium', -- $deu[0] = 'Iridium'
@@ -166,6 +224,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element K';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'hrv',             -- $hrv[0] = ''
+    'grčko slovo κ, Κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo κ, Κ';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -173,6 +239,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kemijski element Cu'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Cu';
+
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'hrv',    -- $hrv[0] = ''
+    'grčko slovo λ, Λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo λ, Λ';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -238,6 +312,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Sc';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'hrv',   -- $hrv[0] = ''
+    'grčko slovo σ, Σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo σ, Σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -262,10 +344,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Ts';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='hrv';
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='hrv';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'hrv',     -- $hrv[0] = 'titanij'
+    'theta', -- $deu[0] = 'Theta'
+    'hrv',   -- $hrv[0] = ''
+    'grčko slovo θ, Θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo θ, Θ';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'hrv',      -- $hrv[0] = 'titanij'
     'kemijski element Ti'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Ti';
@@ -309,4 +399,12 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kemijski element Y'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kemijski element Y';
+
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='hrv';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'hrv',  -- $hrv[0] = ''
+    'grčko slovo ζ, Ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'grčko slovo ζ, Ζ';
 

@@ -4,7 +4,9 @@
 -- Beachte folgende Muster:
 
 -- Tiere, Pflanzen, Pilze und andere Lebewesen
+--     'Tier der Art Exemplum commune'
 --     'Pflanze der Art Exemplum commune'
+--     'Pilz der Art Exemplum commune'
 --     'Frucht des Musterbaums (Exemplum commune) und ähnliche Früchte'
 
 -- Flüsse, Berge und andere gejonische Objekte
@@ -20,7 +22,7 @@
 --     'fysonische Größe zur Beschreibung der Tatsache der Dauer von Ereignissen'
 
 -- hylonische Stoffe
---     'Nichtmetall und chemisches Element E, als Gas E₂, der Periodensystemgruppe'
+--     'Nichtmetall, chemisches Element E, als Gas E₂, der Periodensystemgruppe'
 
 -- Verben
 --     konkretes Beispiel: ablegen
@@ -46,6 +48,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Ac عنصر كيميائي';
 
+DELETE FROM `definition` WHERE `sememe`='alpha' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'alpha', -- $deu[0] = 'Alpha'
+    'ara',   -- $ara[0] = ''
+    'حرف يوناني Α، α'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Α، α';
+
 DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'astat', -- $deu[0] = 'Astat'
@@ -69,6 +79,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Be عنصر كيميائي'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Be عنصر كيميائي';
+
+DELETE FROM `definition` WHERE `sememe`='beta' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'beta', -- $deu[0] = 'Beta'
+    'ara',  -- $ara[0] = ''
+    'حرف يوناني Β، β'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Β، β';
 
 DELETE FROM `definition` WHERE `sememe`='bor' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -118,6 +136,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Co عنصر كيميائي';
 
+DELETE FROM `definition` WHERE `sememe`='delta~buchstabe' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'delta~buchstabe', -- $deu[100] = 'Delta'
+    'ara',             -- $ara[0] = ''
+    'حرف يوناني Δ، δ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Δ، δ';
+
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'
@@ -126,6 +152,22 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Fe عنصر كيميائي';
 
+DELETE FROM `definition` WHERE `sememe`='epsilon' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'epsilon', -- $deu[0] = 'Epsilon'
+    'ara',     -- $ara[0] = ''
+    'حرف يوناني Ε، ε'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Ε، ε';
+
+DELETE FROM `definition` WHERE `sememe`='eta' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'eta', -- $deu[0] = 'Eta'
+    'ara', -- $ara[0] = ''
+    'حرف يوناني Η، η'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Η، η';
+
 DELETE FROM `definition` WHERE `sememe`='fluor' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'fluor', -- $deu[0] = 'Fluor'
@@ -133,6 +175,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'F عنصر كيميائي'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'F عنصر كيميائي';
+
+DELETE FROM `definition` WHERE `sememe`='gamma' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'gamma', -- $deu[0] = 'Gamma'
+    'ara',   -- $ara[0] = ''
+    'حرف يوناني Γ، γ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Γ، γ';
 
 DELETE FROM `definition` WHERE `sememe`='helium' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -149,6 +199,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'I عنصر كيميائي'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'I عنصر كيميائي';
+
+DELETE FROM `definition` WHERE `sememe`='iota' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'iota', -- $deu[100] = 'Jota'
+    'ara',  -- $ara[0] = ''
+    'حرف يوناني Ι، ι'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Ι، ι';
 
 DELETE FROM `definition` WHERE `sememe`='iridium' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -174,6 +232,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'K عنصر كيميائي';
 
+DELETE FROM `definition` WHERE `sememe`='kappa~buchstabe' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'kappa~buchstabe', -- $deu[0] = 'Kappa'
+    'ara',             -- $ara[0] = ''
+    'حرف يوناني Κ، κ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Κ، κ';
+
 DELETE FROM `definition` WHERE `sememe`='kupfer' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kupfer', -- $deu[0] = 'Kupfer'
@@ -181,6 +247,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Cu عنصر كيميائي'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Cu عنصر كيميائي';
+
+DELETE FROM `definition` WHERE `sememe`='lambda' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'lambda', -- $deu[0] = 'Lambda'
+    'ara',    -- $ara[0] = ''
+    'حرف يوناني Λ، λ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Λ، λ';
 
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -246,6 +320,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Sc عنصر كيميائي';
 
+DELETE FROM `definition` WHERE `sememe`='sigma' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'sigma', -- $deu[0] = 'Sigma'
+    'ara',   -- $ara[0] = ''
+    'حرف يوناني Σ، σ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Σ، σ';
+
 DELETE FROM `definition` WHERE `sememe`='silber' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'silber', -- $deu[0] = 'Silber'
@@ -270,10 +352,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Ts عنصر كيميائي';
 
-DELETE FROM `definition` WHERE `sememe`='titan_0' AND `language`='ara';
+DELETE FROM `definition` WHERE `sememe`='theta' AND `language`='ara';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'titan_0', -- $deu[0] = 'Titan'
-    'ara',     -- $ara[0] = ''
+    'theta', -- $deu[0] = 'Theta'
+    'ara',   -- $ara[0] = ''
+    'حرف يوناني Θ، θ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Θ، θ';
+
+DELETE FROM `definition` WHERE `sememe`='titanium' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'titanium', -- $deu[0] = 'Titan'
+    'ara',      -- $ara[0] = ''
     'Ti عنصر كيميائي'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Ti عنصر كيميائي';
@@ -317,4 +407,12 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'Y عنصر كيميائي'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'Y عنصر كيميائي';
+
+DELETE FROM `definition` WHERE `sememe`='zeta' AND `language`='ara';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'zeta', -- $deu[0] = 'Zeta'
+    'ara',  -- $ara[0] = ''
+    'حرف يوناني Ζ، ζ'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'حرف يوناني Ζ، ζ';
 
