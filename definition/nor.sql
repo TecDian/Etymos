@@ -1144,6 +1144,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grunnstoff Ag';
 
+DELETE FROM `definition` WHERE `sememe`='singdrossel' AND `language`='nor';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'singdrossel', -- $deu[0] = 'Singdrossel'
+    'nor',         -- $nor[0] = ''
+    'dyr av arten Turdus philomelos'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'dyr av arten Turdus philomelos';
+
 DELETE FROM `definition` WHERE `sememe`='south_carolina' AND `language`='nor';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'south_carolina', -- $deu[0] = 'South Carolina'

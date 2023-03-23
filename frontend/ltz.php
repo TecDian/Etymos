@@ -729,6 +729,19 @@ $loc_listen_inhalt1 = 'Excel-Datei mat Tabellen';
 $loc_listen_inhalt2 = 'Uwendungshiweiser (PDF)';
 $loc_listen_inhalt3 = 'Lëscht mat Grammatikofkierzungen (PDF)';
 $loc_listen_inhalt4 = 'Lëscht mat Kategoriecoden (PDF)';
+// $loc_apps = '';
+// $loc_apps_typ = '';
+// $loc_apps_name1 = '';
+// $loc_apps_kommentar1 = '';
+// $loc_apps_kommentar2 = '';
+// $loc_apps_zweck1 = '';
+// $loc_apps_inhalt1 = '';
+// $loc_apps_installation1 = '';
+// $loc_apps_installation2 = '';
+// $loc_apps_installation3 = '';
+// $loc_apps_anmerkung1 = '';
+// $loc_apps_anmerkung2 = '';
+// $loc_apps_anmerkung3 = '';
 
 // Fragenseite
 $loc_fragen_antworten = 'Froen an Äntwerten';

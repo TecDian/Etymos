@@ -552,6 +552,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'животное вида Camelus dromedarius';
 
+DELETE FROM `definition` WHERE `sememe`='drossel~familie' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'drossel~familie', -- $deu[0] = 'Drossel'
+    'rus',             -- $rus[0] = 'дрозд'
+    'животное вида Turdidae'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Turdidae';
+
 DELETE FROM `definition` WHERE `sememe`='dunkler_kleintenrek' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'dunkler_kleintenrek', -- $deu[0] = 'Dunkler Kleintenrek'
@@ -1624,6 +1632,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'растение вида Petroselinum crispum';
 
+DELETE FROM `definition` WHERE `sememe`='pfefferstrauch' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'pfefferstrauch', -- $deu[0] = 'Pfefferstrauch'
+    'rus',            -- $rus[0] = 'перец чёрный'
+    'растение вида Piper nigrum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Piper nigrum';
+
 DELETE FROM `definition` WHERE `sememe`='pfifferling' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'pfifferling', -- $deu[0] = 'Pfifferling'
@@ -1912,6 +1928,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'металл, химический элемент Ag подгруппы меди';
 
+DELETE FROM `definition` WHERE `sememe`='singdrossel' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'singdrossel', -- $deu[0] = 'Singdrossel'
+    'rus',         -- $rus[0] = ''
+    'животное вида Turdus philomelos'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'животное вида Turdus philomelos';
+
 DELETE FROM `definition` WHERE `sememe`='sommersteinpilz' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'sommersteinpilz', -- $deu[0] = 'Sommersteinpilz'
@@ -1935,6 +1959,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'федеральный штат Америки'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'федеральный штат Америки';
+
+DELETE FROM `definition` WHERE `sememe`='spanischer_pfeffer' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'spanischer_pfeffer', -- $deu[0] = 'spanischer Pfeffer'
+    'rus',                -- $rus[0] = 'перец овощной [Capsicum annuum]'
+    'растение вида Capsicum annuum'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Capsicum annuum';
 
 DELETE FROM `definition` WHERE `sememe`='spitzklette' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -2079,6 +2111,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'гриб вида Craterellus cornucopioides'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'гриб вида Craterellus cornucopioides';
+
+DELETE FROM `definition` WHERE `sememe`='traubeneiche' AND `language`='rus';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'traubeneiche', -- $deu[0] = 'Traubeneiche'
+    'rus',          -- $rus[0] = ''
+    'растение вида Quercus petraea'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'растение вида Quercus petraea';
 
 DELETE FROM `definition` WHERE `sememe`='trichterling' AND `language`='rus';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

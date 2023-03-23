@@ -163,7 +163,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='kalium' AND `language`='gle';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'kalium', -- $deu[0] = 'Kalium'
-    'gle',    -- $gle[0] = ''
+    'gle',    -- $gle[0] = 'potaisiam'
     'dúil cheimiceach K'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dúil cheimiceach K';
@@ -211,7 +211,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='neon' AND `language`='gle';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'neon', -- $deu[0] = 'Neon'
-    'gle',  -- $gle[0] = ''
+    'gle',  -- $gle[0] = 'neon'
     'dúil cheimiceach Ne'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'dúil cheimiceach Ne';

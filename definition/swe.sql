@@ -1128,6 +1128,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
+DELETE FROM `definition` WHERE `sememe`='oslo' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'oslo', -- $deu[0] = 'Oslo'
+    'swe',  -- $swe[0] = 'Oslo'
+    'huvudstad i Norge'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'huvudstad i Norge';
+
 DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'radium', -- $deu[0] = 'Radium'
@@ -1239,6 +1247,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'grundämne Ag'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Ag';
+
+DELETE FROM `definition` WHERE `sememe`='singdrossel' AND `language`='swe';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'singdrossel', -- $deu[0] = 'Singdrossel'
+    'swe',         -- $swe[0] = 'taltrast'
+    'djur av arten Turdus philomelos'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'djur av arten Turdus philomelos';
 
 DELETE FROM `definition` WHERE `sememe`='sofia' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

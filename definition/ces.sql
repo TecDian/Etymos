@@ -288,6 +288,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvek Ne';
 
+DELETE FROM `definition` WHERE `sememe`='oslo' AND `language`='ces';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'oslo', -- $deu[0] = 'Oslo'
+    'ces',  -- $ces[0] = 'Oslo'
+    'hlavní město Norska'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'hlavní město Norska';
+
 DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='ces';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'radium', -- $deu[0] = 'Radium'

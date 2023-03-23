@@ -493,7 +493,7 @@ $loc_kein_inhalt1 = 'In order to be able to send a message, it is necessary to e
 $loc_kein_inhalt2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in your browser, correct it and submit again. Was it intentional: <span class="source">Stop this nonsense!</span>';
 $loc_spam1 = 'The security question was not answered correctly.';
 $loc_spam2 = 'Was it a mistake, just go <span class="level7">»Back«</span> in your browser, correct it and submit again. Was it intentional: <span class="source">Stop this nonsense!</span>';
-$loc_news = '30 September 2022</span> <span class="code">neu:</span> Entries were revised. Luxembourgish was considerably extended.';
+$loc_news = '23 March 2023</span> <span class="code">neu:</span> Errors have been eliminated. Irish and Albanian have been significantly expanded. Ukrainian and Swedish have been expanded.';
 // Sprachwahlfenster
 $loc_waehlen = 'Choose source and target language';
 $loc_aufschlagen = 'Open dictionary';
@@ -732,6 +732,19 @@ $loc_listen_inhalt1 = 'Excel file with tables';
 $loc_listen_inhalt2 = 'Usage instructions (PDF)';
 $loc_listen_inhalt3 = 'List of grammar abbreviations (PDF)';
 $loc_listen_inhalt4 = 'List of category codes (PDF)';
+$loc_apps = 'Web applications';
+$loc_apps_typ = 'Web application';
+$loc_apps_name1 = 'Android Application';
+$loc_apps_kommentar1 = 'for smart phones with ';
+$loc_apps_kommentar2 = 'for accessing the Etymos-Dictionary online.';
+$loc_apps_zweck1 = 'Android';
+$loc_apps_inhalt1 = 'apk file';
+$loc_apps_installation1 = 'Extract the contents of the archive to any directory on the smart phone.';
+$loc_apps_installation2 = 'If necessary, activate the installation from unknown sources in <span class="reg">Settings</span>.';
+$loc_apps_installation3 = 'Run file with extension <span class="reg">.apk</span> on smartphone.';
+$loc_apps_anmerkung1 = 'The web application does not require any special permissions other than internet access.';
+$loc_apps_anmerkung2 = 'The use of the web application is free of charge and free of advertising.';
+$loc_apps_anmerkung3 = 'The web application requires an online connection in order to function. This causes data traffic and may lead to costs depending on the tariff.';
 
 // Fragenseite
 $loc_fragen_antworten = 'Questions and Answers';

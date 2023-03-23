@@ -493,7 +493,7 @@ $loc_kein_inhalt1 = 'Um eine Nachricht senden zu können, muss sie vorher eingeg
 $loc_kein_inhalt2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
 $loc_spam1 = 'Die Sicherheitsfrage wurde falsch beantwortet.';
 $loc_spam2 = 'War es ein Fehler, einfach im Browser auf <span class="level7">»Zurück«</span>, korrigieren und nochmals senden. War es Absicht: <span class="source">Lass den Unsinn!</span>';
-$loc_news = '30. September 2022</span> <span class="code">neu:</span> Einträge wurden überarbeitet. Luxemburgisch wurde wesentlich erweitert.';
+$loc_news = '23. März 2023</span> <span class="code">neu:</span> Fehler wurden beseitigt. Irisch und Albanisch wurden wesentlich erweitert. Ukrainisch und Schwedisch wurden erweitert.';
 // Sprachwahlfenster
 $loc_waehlen = 'Quell- und Zielsprache wählen';
 $loc_aufschlagen = 'Wörterbuch aufschlagen';
@@ -732,6 +732,19 @@ $loc_listen_inhalt1 = 'Excel-Datei mit Tabellen';
 $loc_listen_inhalt2 = 'Anwendungshinweise (PDF)';
 $loc_listen_inhalt3 = 'Liste mit Grammatikkürzeln (PDF)';
 $loc_listen_inhalt4 = 'Liste mit Kategoriecodes (PDF)';
+$loc_apps = 'Webanwendungen';
+$loc_apps_typ = 'Webanwendung';
+$loc_apps_name1 = 'Android-Anwendung';
+$loc_apps_kommentar1 = 'für Smartphones mit ';
+$loc_apps_kommentar2 = ' zum Online-Zugriff auf das Etymos-Wörterbuch.';
+$loc_apps_zweck1 = 'Android';
+$loc_apps_inhalt1 = 'apk-Datei';
+$loc_apps_installation1 = 'Inhalt des Archivs in ein beliebiges Verzeichnis auf dem Smatphone entpacken.';
+$loc_apps_installation2 = 'Bei Bedarf in <span class="reg">Einstellungen</span> die Installation aus unbekannten Quellen aktivieren.';
+$loc_apps_installation3 = 'Datei mit Endung <span class="reg">.apk</span> auf Smartphone ausführen.';
+$loc_apps_anmerkung1 = 'Die Webanwendung benötigt außer dem Internetzugriff keine speziellen Berechtigungen.';
+$loc_apps_anmerkung2 = 'Die Benutzung der Webanwendung ist kostenfrei und werbefrei.';
+$loc_apps_anmerkung3 = 'Die Webanwendung benötigt zu ihrer Funktion eine Online-Verbindung. Dies verursacht Datenverkehr und kann je nach Tarif zu Kosten führen.';
 
 // Fragenseite
 $loc_fragen_antworten = 'Fragen und Antworten';

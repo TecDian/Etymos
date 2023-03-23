@@ -147,7 +147,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='iod' AND `language`='ukr';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'iod', -- $deu[0] = 'Iod'
-    'ukr', -- $ukr[0] = ''
+    'ukr', -- $ukr[0] = 'йод'
     'неметал, хімічний елемент I галогенів'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'неметал, хімічний елемент I галогенів';
@@ -179,7 +179,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='lithium' AND `language`='ukr';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'lithium', -- $deu[0] = 'Lithium'
-    'ukr',     -- $ukr[0] = ''
+    'ukr',     -- $ukr[0] = 'літій'
     'метал, хімічний елемент Li лужних металів'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'метал, хімічний елемент Li лужних металів';

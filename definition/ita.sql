@@ -376,6 +376,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'elemento chimico Ne';
 
+DELETE FROM `definition` WHERE `sememe`='oslo' AND `language`='ita';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'oslo', -- $deu[0] = 'Oslo'
+    'ita',  -- $ita[0] = ''
+    'capitale della Norvegia'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'capitale della Norvegia';
+
 DELETE FROM `definition` WHERE `sememe`='radium' AND `language`='ita';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'radium', -- $deu[0] = 'Radium'
