@@ -64,10 +64,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Ac';
 
-DELETE FROM `definition` WHERE `sememe`='admiral_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='admiral~schmetterling' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'admiral_1', -- $deu[0] = 'Admiral'
-    'swe',       -- $swe[0] = ''
+    'admiral~schmetterling', -- $deu[0] = 'Admiral'
+    'swe',                   -- $swe[0] = ''
     'djur av arten Vanessa atalanta'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Vanessa atalanta';
@@ -152,10 +152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='arkansas~staat' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arkansas_1', -- $deu[1] = 'Arkansas'
-    'swe',        -- $swe[0] = ''
+    'arkansas~staat', -- $deu[1] = 'Arkansas'
+    'swe',            -- $swe[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -171,7 +171,7 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 DELETE FROM `definition` WHERE `sememe`='atlantischer_hering_0' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'atlantischer_hering_0', -- $deu[0] = 'Atlantischer Hering'
-    'swe',                   -- $swe[0] = 'sill [Clupea harengus]'
+    'swe',                   -- $swe[0] = 'sill'
     'djur av arten Clupea harengus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Clupea harengus';
@@ -216,10 +216,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Eurostopodus mystacalis';
 
-DELETE FROM `definition` WHERE `sememe`='bekassine' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='bekassine~art' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'bekassine', -- $deu[0] = 'Bekassine'
-    'swe',       -- $swe[0] = 'enkelbeckasin [Gallinago gallinago]'
+    'bekassine~art', -- $deu[0] = 'Bekassine'
+    'swe',           -- $swe[0] = 'enkelbeckasin'
     'djur av arten Gallinago gallinago'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Gallinago gallinago';
@@ -440,10 +440,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Co';
 
-DELETE FROM `definition` WHERE `sememe`='colorado_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='colorado~staat' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'colorado_1', -- $deu[1] = 'Colorado'
-    'swe',        -- $swe[0] = ''
+    'colorado~staat', -- $deu[1] = 'Colorado'
+    'swe',            -- $swe[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -456,10 +456,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='delaware_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='delaware~staat' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'delaware_1', -- $deu[1] = 'Delaware'
-    'swe',        -- $swe[0] = ''
+    'delaware~staat', -- $deu[1] = 'Delaware'
+    'swe',            -- $swe[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -560,18 +560,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grekisk bokstav η, Η';
 
-DELETE FROM `definition` WHERE `sememe`='eurasisches_eichhörnchen_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='eurasisches_eichhörnchen' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'eurasisches_eichhörnchen_0', -- $deu[0] = 'Eurasisches Eichhörnchen'
-    'swe',                        -- $swe[0] = 'eurasisk ekorre'
+    'eurasisches_eichhörnchen', -- $deu[0] = 'Eurasisches Eichhörnchen'
+    'swe',                      -- $swe[0] = 'eurasisk ekorre'
     'djur av arten Sciurus vulgaris'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Sciurus vulgaris';
 
-DELETE FROM `definition` WHERE `sememe`='fasan_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='fasan' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'fasan_0', -- $deu[0] = 'Fasan'
-    'swe',     -- $swe[0] = 'fasan'
+    'fasan', -- $deu[0] = 'Fasan'
+    'swe',   -- $swe[0] = 'fasan'
     'djur av arten Phasianus colchicus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Phasianus colchicus';
@@ -664,10 +664,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Syngnathus typhle';
 
-DELETE FROM `definition` WHERE `sememe`='gürtelfischer_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='gürtelfischer' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'gürtelfischer_0', -- $deu[0] = 'Gürtelfischer'
-    'swe',             -- $swe[0] = ''
+    'gürtelfischer', -- $deu[0] = 'Gürtelfischer'
+    'swe',           -- $swe[0] = ''
     'djur av arten Megaceryle alcyon'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Megaceryle alcyon';
@@ -776,10 +776,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Ir';
 
-DELETE FROM `definition` WHERE `sememe`='kaffeekirschenkäfer_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='kaffeekirschenkäfer' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'kaffeekirschenkäfer_0', -- $deu[0] = 'Kaffeekirschenkäfer'
-    'swe',                   -- $swe[0] = ''
+    'kaffeekirschenkäfer', -- $deu[0] = 'Kaffeekirschenkäfer'
+    'swe',                 -- $swe[0] = ''
     'djur av arten Hypothenemus hampei'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Hypothenemus hampei';
@@ -848,10 +848,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='kiebitz_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='kiebitz~art' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'kiebitz_0', -- $deu[0] = 'Kiebitz'
-    'swe',       -- $swe[0] = 'tofsvipa [Vanellus vanellus]'
+    'kiebitz~art', -- $deu[0] = 'Kiebitz'
+    'swe',         -- $swe[0] = 'tofsvipa [Vanellus vanellus]'
     'djur av arten Vanellus vanellus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Vanellus vanellus';
@@ -864,9 +864,9 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Ursus thibetanus';
 
-DELETE FROM `definition` WHERE `sememe`='kuckuck_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='kuckuck~s' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'kuckuck_0', -- $deu[0] = 'Kuckuck'
+    'kuckuck~s', -- $deu[0] = 'Kuckuck'
     'swe',       -- $swe[0] = 'gök'
     'djur av arten Cuculus canorus'
 ) ON DUPLICATE KEY UPDATE `text` = 
@@ -920,18 +920,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='luxemburg_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='luxemburg~stadt' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'luxemburg_1', -- $deu[0] = 'Luxemburg'
-    'swe',         -- $swe[0] = ''
+    'luxemburg~stadt', -- $deu[0] = 'Luxemburg'
+    'swe',             -- $swe[0] = ''
     'huvudstad i Luxemburg'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'huvudstad i Luxemburg';
 
-DELETE FROM `definition` WHERE `sememe`='löwe_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='löwe~tier' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'löwe_0', -- $deu[0] = 'Löwe'
-    'swe',    -- $swe[0] = 'lejon [Panthera leo]'
+    'löwe~tier', -- $deu[0] = 'Löwe'
+    'swe',       -- $swe[0] = 'lejon [Panthera leo]'
     'djur av arten Panthera leo'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Panthera leo';
@@ -992,18 +992,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='mississippi_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='mississippi~staat' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'mississippi_1', -- $deu[1] = 'Mississippi'
-    'swe',           -- $swe[0] = ''
+    'mississippi~staat', -- $deu[1] = 'Mississippi'
+    'swe',               -- $swe[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='missouri_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='missouri~staat' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'missouri_1', -- $deu[1] = 'Missouri'
-    'swe',        -- $swe[0] = ''
+    'missouri~staat', -- $deu[1] = 'Missouri'
+    'swe',            -- $swe[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -1112,10 +1112,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Chasiempis ibidis';
 
-DELETE FROM `definition` WHERE `sememe`='ohio_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='ohio~staat' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ohio_1', -- $deu[1] = 'Ohio'
-    'swe',    -- $swe[0] = ''
+    'ohio~staat', -- $deu[1] = 'Ohio'
+    'swe',        -- $swe[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -1152,10 +1152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Hirundo rustica';
 
-DELETE FROM `definition` WHERE `sememe`='rebhuhn_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='rebhuhn' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'rebhuhn_0', -- $deu[0] = 'Rebhuhn'
-    'swe',       -- $swe[0] = 'rapphöna [Perdix perdix]'
+    'rebhuhn', -- $deu[0] = 'Rebhuhn'
+    'swe',     -- $swe[0] = 'rapphöna [Perdix perdix]'
     'djur av arten Perdix perdix'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Perdix perdix';
@@ -1192,10 +1192,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Branta bernicla';
 
-DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='rom~stadt' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'rom_0', -- $deu[0] = 'Rom'
-    'swe',   -- $swe[0] = 'Rom'
+    'rom~stadt', -- $deu[0] = 'Rom'
+    'swe',       -- $swe[0] = 'Rom'
     'huvudstad i Italien'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'huvudstad i Italien';
@@ -1224,10 +1224,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Rynchops niger';
 
-DELETE FROM `definition` WHERE `sememe`='sekretär_2' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='sekretär~vogel' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'sekretär_2', -- $deu[0] = 'Sekretär'
-    'swe',        -- $swe[0] = 'sekreterarfågel'
+    'sekretär~vogel', -- $deu[0] = 'Sekretär'
+    'swe',            -- $swe[0] = 'sekreterarfågel'
     'djur av arten Sagittarius serpentarius'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Sagittarius serpentarius';
@@ -1296,10 +1296,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Sr';
 
-DELETE FROM `definition` WHERE `sememe`='sturmmöwe_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='sturmmöwe' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'sturmmöwe_0', -- $deu[0] = 'Sturmmöwe'
-    'swe',         -- $swe[0] = 'fiskmås'
+    'sturmmöwe', -- $deu[0] = 'Sturmmöwe'
+    'swe',       -- $swe[0] = 'fiskmås'
     'djur av arten Larus canus'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Larus canus';
@@ -1312,10 +1312,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Ts';
 
-DELETE FROM `definition` WHERE `sememe`='tennessee_1' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='tennessee~staat' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tennessee_1', -- $deu[1] = 'Tennessee'
-    'swe',         -- $swe[0] = ''
+    'tennessee~staat', -- $deu[1] = 'Tennessee'
+    'swe',             -- $swe[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -1336,10 +1336,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grekisk bokstav θ, Θ';
 
-DELETE FROM `definition` WHERE `sememe`='tiger_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='tiger' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tiger_0', -- $deu[0] = 'Tiger'
-    'swe',     -- $swe[0] = 'tiger [Panthera tigris]'
+    'tiger', -- $deu[0] = 'Tiger'
+    'swe',   -- $swe[0] = 'tiger [Panthera tigris]'
     'djur av arten Panthera tigris'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Panthera tigris';
@@ -1448,10 +1448,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Gyps africanus';
 
-DELETE FROM `definition` WHERE `sememe`='weißwangengans_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='weißwangengans' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'weißwangengans_0', -- $deu[0] = 'Weißwangengans'
-    'swe',              -- $swe[0] = 'vitkindad gås [Branta leucopsis]'
+    'weißwangengans', -- $deu[0] = 'Weißwangengans'
+    'swe',            -- $swe[0] = 'vitkindad gås [Branta leucopsis]'
     'djur av arten Branta leucopsis'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Branta leucopsis';
@@ -1528,10 +1528,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundämne Y';
 
-DELETE FROM `definition` WHERE `sememe`='yungas-sperlingskauz_0' AND `language`='swe';
+DELETE FROM `definition` WHERE `sememe`='yungas-sperlingskauz' AND `language`='swe';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'yungas-sperlingskauz_0', -- $deu[0] = 'Yungas-Sperlingskauz'
-    'swe',                    -- $swe[0] = 'yungassparvuggla'
+    'yungas-sperlingskauz', -- $deu[0] = 'Yungas-Sperlingskauz'
+    'swe',                  -- $swe[0] = 'yungassparvuggla'
     'djur av arten Glaucidium bolivianum'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'djur av arten Glaucidium bolivianum';

@@ -120,6 +120,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemescht Element Co';
 
+DELETE FROM `definition` WHERE `sememe`='der~art' AND `language`='ltz';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'der~art', -- $deu[0] = 'der'
+    'ltz',     -- $ltz[0] = 'deen'
+    'definitiven Artikel, existéiert a ville Sproochen net'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'definitiven Artikel, existéiert a ville Sproochen net';
+
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='ltz';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'eisen', -- $deu[0] = 'Eisen'

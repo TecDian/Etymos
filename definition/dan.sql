@@ -64,10 +64,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='arkansas~staat' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arkansas_1', -- $deu[1] = 'Arkansas'
-    'dan',        -- $dan[0] = ''
+    'arkansas~staat', -- $deu[1] = 'Arkansas'
+    'dan',            -- $dan[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -152,10 +152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Co';
 
-DELETE FROM `definition` WHERE `sememe`='colorado_1' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='colorado~staat' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'colorado_1', -- $deu[1] = 'Colorado'
-    'dan',        -- $dan[0] = ''
+    'colorado~staat', -- $deu[1] = 'Colorado'
+    'dan',            -- $dan[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -168,10 +168,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='delaware_1' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='delaware~staat' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'delaware_1', -- $deu[1] = 'Delaware'
-    'dan',        -- $dan[0] = ''
+    'delaware~staat', -- $deu[1] = 'Delaware'
+    'dan',            -- $dan[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -328,26 +328,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='krebs_3' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='krebsgeborene' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'krebs_3', -- $deu[0] = 'Krebs'
-    'dan',     -- $dan[0] = 'krebs'
-    'person født i stjernetegnet Krebsen'
-) ON DUPLICATE KEY UPDATE `text` = 
-    'person født i stjernetegnet Krebsen';
-
-DELETE FROM `definition` WHERE `sememe`='krebsgeborene_0' AND `language`='dan';
-INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'krebsgeborene_0', -- $deu[0] = 'Krebsgeborene'
-    'dan',             -- $dan[0] = 'krebs'
+    'krebsgeborene', -- $deu[0] = 'Krebsgeborene'
+    'dan',           -- $dan[0] = 'krebs'
     'kvindelig person født i stjernetegnet Krebsen'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'kvindelig person født i stjernetegnet Krebsen';
 
-DELETE FROM `definition` WHERE `sememe`='krebsgeborener_0' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='krebsgeborener' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'krebsgeborener_0', -- $deu[0] = 'Krebsgeborener'
-    'dan',              -- $dan[0] = 'krebs'
+    'krebsgeborener', -- $deu[0] = 'Krebsgeborener'
+    'dan',            -- $dan[0] = 'krebs'
     'mandlig person født i stjernetegnet Krebsen'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'mandlig person født i stjernetegnet Krebsen';
@@ -432,18 +424,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='mississippi_1' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='mississippi~staat' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'mississippi_1', -- $deu[1] = 'Mississippi'
-    'dan',           -- $dan[0] = ''
+    'mississippi~staat', -- $deu[1] = 'Mississippi'
+    'dan',               -- $dan[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='missouri_1' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='missouri~staat' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'missouri_1', -- $deu[1] = 'Missouri'
-    'dan',        -- $dan[0] = ''
+    'missouri~staat', -- $deu[1] = 'Missouri'
+    'dan',            -- $dan[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -536,10 +528,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
 
-DELETE FROM `definition` WHERE `sememe`='ohio_1' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='ohio~staat' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ohio_1', -- $deu[1] = 'Ohio'
-    'dan',    -- $dan[0] = ''
+    'ohio~staat', -- $deu[1] = 'Ohio'
+    'dan',        -- $dan[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';
@@ -624,10 +616,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'grundstof Ts';
 
-DELETE FROM `definition` WHERE `sememe`='tennessee_1' AND `language`='dan';
+DELETE FROM `definition` WHERE `sememe`='tennessee~staat' AND `language`='dan';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tennessee_1', -- $deu[1] = 'Tennessee'
-    'dan',         -- $dan[0] = ''
+    'tennessee~staat', -- $deu[1] = 'Tennessee'
+    'dan',             -- $dan[0] = ''
     'delstat i Amerika'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'delstat i Amerika';

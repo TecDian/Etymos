@@ -56,10 +56,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
 
-DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='arkansas~staat' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arkansas_1', -- $deu[1] = 'Arkansas'
-    'ell',        -- $ell[0] = 'Αρκάνσας'
+    'arkansas~staat', -- $deu[1] = 'Arkansas'
+    'ell',            -- $ell[0] = 'Αρκάνσας'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
@@ -136,10 +136,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Co';
 
-DELETE FROM `definition` WHERE `sememe`='colorado_1' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='colorado~staat' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'colorado_1', -- $deu[1] = 'Colorado'
-    'ell',        -- $ell[0] = 'Κολοράντο'
+    'colorado~staat', -- $deu[1] = 'Colorado'
+    'ell',            -- $ell[0] = 'Κολοράντο'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
@@ -152,10 +152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
 
-DELETE FROM `definition` WHERE `sememe`='delaware_1' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='delaware~staat' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'delaware_1', -- $deu[1] = 'Delaware'
-    'ell',        -- $ell[0] = 'Ντελάγουερ'
+    'delaware~staat', -- $deu[1] = 'Delaware'
+    'ell',            -- $ell[0] = 'Ντελάγουερ'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
@@ -328,18 +328,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
 
-DELETE FROM `definition` WHERE `sememe`='mississippi_1' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='mississippi~staat' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'mississippi_1', -- $deu[1] = 'Mississippi'
-    'ell',           -- $ell[0] = 'Μισισίπι'
+    'mississippi~staat', -- $deu[1] = 'Mississippi'
+    'ell',               -- $ell[0] = 'Μισισίπι'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
 
-DELETE FROM `definition` WHERE `sememe`='missouri_1' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='missouri~staat' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'missouri_1', -- $deu[1] = 'Missouri'
-    'ell',        -- $ell[0] = 'Μιζούρι'
+    'missouri~staat', -- $deu[1] = 'Missouri'
+    'ell',            -- $ell[0] = 'Μιζούρι'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
@@ -432,10 +432,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
 
-DELETE FROM `definition` WHERE `sememe`='ohio_1' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='ohio~staat' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ohio_1', -- $deu[1] = 'Ohio'
-    'ell',    -- $ell[0] = 'Οχάιο [πολιτεία]'
+    'ohio~staat', -- $deu[1] = 'Ohio'
+    'ell',        -- $ell[0] = 'Οχάιο [πολιτεία]'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';
@@ -520,10 +520,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'χημικό στοιχείο Ts';
 
-DELETE FROM `definition` WHERE `sememe`='tennessee_1' AND `language`='ell';
+DELETE FROM `definition` WHERE `sememe`='tennessee~staat' AND `language`='ell';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tennessee_1', -- $deu[1] = 'Tennessee'
-    'ell',         -- $ell[0] = 'Τενεσί'
+    'tennessee~staat', -- $deu[1] = 'Tennessee'
+    'ell',             -- $ell[0] = 'Τενεσί'
     'ομοσπονδιακή πολιτεία της Αμερικής'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'ομοσπονδιακή πολιτεία της Αμερικής';

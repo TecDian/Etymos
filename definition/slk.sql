@@ -64,10 +64,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
-DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='arkansas~staat' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arkansas_1', -- $deu[1] = 'Arkansas'
-    'slk',        -- $slk[0] = 'Arkansas'
+    'arkansas~staat', -- $deu[1] = 'Arkansas'
+    'slk',            -- $slk[0] = 'Arkansas'
     'spolkový štát Ameriky'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
@@ -152,10 +152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Co';
 
-DELETE FROM `definition` WHERE `sememe`='colorado_1' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='colorado~staat' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'colorado_1', -- $deu[1] = 'Colorado'
-    'slk',        -- $slk[0] = 'Colorado'
+    'colorado~staat', -- $deu[1] = 'Colorado'
+    'slk',            -- $slk[0] = 'Colorado'
     'spolkový štát Ameriky'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
@@ -168,10 +168,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
-DELETE FROM `definition` WHERE `sememe`='delaware_1' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='delaware~staat' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'delaware_1', -- $deu[1] = 'Delaware'
-    'slk',        -- $slk[0] = 'Delaware'
+    'delaware~staat', -- $deu[1] = 'Delaware'
+    'slk',            -- $slk[0] = 'Delaware'
     'spolkový štát Ameriky'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
@@ -408,18 +408,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
-DELETE FROM `definition` WHERE `sememe`='mississippi_1' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='mississippi~staat' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'mississippi_1', -- $deu[1] = 'Mississippi'
-    'slk',           -- $slk[1] = 'Mississippi'
+    'mississippi~staat', -- $deu[1] = 'Mississippi'
+    'slk',               -- $slk[1] = 'Mississippi'
     'spolkový štát Ameriky'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
-DELETE FROM `definition` WHERE `sememe`='missouri_1' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='missouri~staat' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'missouri_1', -- $deu[1] = 'Missouri'
-    'slk',        -- $slk[1] = 'Missouri'
+    'missouri~staat', -- $deu[1] = 'Missouri'
+    'slk',            -- $slk[1] = 'Missouri'
     'spolkový štát Ameriky'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
@@ -512,10 +512,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
 
-DELETE FROM `definition` WHERE `sememe`='ohio_1' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='ohio~staat' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ohio_1', -- $deu[1] = 'Ohio'
-    'slk',    -- $slk[0] = 'Ohio [spolkový štát v USA]'
+    'ohio~staat', -- $deu[1] = 'Ohio'
+    'slk',        -- $slk[0] = 'Ohio [spolkový štát v USA]'
     'spolkový štát Ameriky'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';
@@ -600,10 +600,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvok Ts';
 
-DELETE FROM `definition` WHERE `sememe`='tennessee_1' AND `language`='slk';
+DELETE FROM `definition` WHERE `sememe`='tennessee~staat' AND `language`='slk';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tennessee_1', -- $deu[1] = 'Tennessee'
-    'slk',         -- $slk[0] = 'Tennessee'
+    'tennessee~staat', -- $deu[1] = 'Tennessee'
+    'slk',             -- $slk[0] = 'Tennessee'
     'spolkový štát Ameriky'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'spolkový štát Ameriky';

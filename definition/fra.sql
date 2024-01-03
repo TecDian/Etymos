@@ -64,10 +64,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
 
-DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='fra';
+DELETE FROM `definition` WHERE `sememe`='arkansas~staat' AND `language`='fra';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arkansas_1', -- $deu[1] = 'Arkansas'
-    'fra',        -- $fra[0] = 'Arkansas'
+    'arkansas~staat', -- $deu[1] = 'Arkansas'
+    'fra',            -- $fra[0] = 'Arkansas'
     'état fédéré d’Amérique'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
@@ -152,10 +152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'élément chimique Co';
 
-DELETE FROM `definition` WHERE `sememe`='colorado_1' AND `language`='fra';
+DELETE FROM `definition` WHERE `sememe`='colorado~staat' AND `language`='fra';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'colorado_1', -- $deu[1] = 'Colorado'
-    'fra',        -- $fra[0] = 'Colorado'
+    'colorado~staat', -- $deu[1] = 'Colorado'
+    'fra',            -- $fra[0] = 'Colorado'
     'état fédéré d’Amérique'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
@@ -168,10 +168,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
 
-DELETE FROM `definition` WHERE `sememe`='delaware_1' AND `language`='fra';
+DELETE FROM `definition` WHERE `sememe`='delaware~staat' AND `language`='fra';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'delaware_1', -- $deu[1] = 'Delaware'
-    'fra',        -- $fra[0] = 'Delaware'
+    'delaware~staat', -- $deu[1] = 'Delaware'
+    'fra',            -- $fra[0] = 'Delaware'
     'état fédéré d’Amérique'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
@@ -400,18 +400,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
 
-DELETE FROM `definition` WHERE `sememe`='mississippi_1' AND `language`='fra';
+DELETE FROM `definition` WHERE `sememe`='mississippi~staat' AND `language`='fra';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'mississippi_1', -- $deu[1] = 'Mississippi'
-    'fra',           -- $fra[0] = 'Mississippi'
+    'mississippi~staat', -- $deu[1] = 'Mississippi'
+    'fra',               -- $fra[0] = 'Mississippi'
     'état fédéré d’Amérique'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
 
-DELETE FROM `definition` WHERE `sememe`='missouri_1' AND `language`='fra';
+DELETE FROM `definition` WHERE `sememe`='missouri~staat' AND `language`='fra';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'missouri_1', -- $deu[1] = 'Missouri'
-    'fra',        -- $fra[0] = 'Missouri'
+    'missouri~staat', -- $deu[1] = 'Missouri'
+    'fra',            -- $fra[0] = 'Missouri'
     'état fédéré d’Amérique'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
@@ -504,10 +504,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
 
-DELETE FROM `definition` WHERE `sememe`='ohio_1' AND `language`='fra';
+DELETE FROM `definition` WHERE `sememe`='ohio~staat' AND `language`='fra';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ohio_1', -- $deu[1] = 'Ohio'
-    'fra',    -- $fra[0] = 'Ohio [États-Unis]'
+    'ohio~staat', -- $deu[1] = 'Ohio'
+    'fra',        -- $fra[0] = 'Ohio [États-Unis]'
     'état fédéré d’Amérique'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';
@@ -592,10 +592,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'élément chimique Ts';
 
-DELETE FROM `definition` WHERE `sememe`='tennessee_1' AND `language`='fra';
+DELETE FROM `definition` WHERE `sememe`='tennessee~staat' AND `language`='fra';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tennessee_1', -- $deu[1] = 'Tennessee'
-    'fra',         -- $fra[0] = 'Tennessee'
+    'tennessee~staat', -- $deu[1] = 'Tennessee'
+    'fra',             -- $fra[0] = 'Tennessee'
     'état fédéré d’Amérique'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'état fédéré d’Amérique';

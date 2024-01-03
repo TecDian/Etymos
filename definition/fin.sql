@@ -124,9 +124,9 @@ DELETE FROM `definition` WHERE `sememe`='der~art' AND `language`='fin';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'der~art', -- $deu[0] = 'der'
     'fin',     -- $fin[0] = '#part1'
-    'määräinen artikkeli, ei saatavilla monilla kielillä'
+    'määrätty artikkeli, ei ole olemassa monilla kielillä'
 ) ON DUPLICATE KEY UPDATE `text` = 
-    'määräinen artikkeli, ei saatavilla monilla kielillä';
+    'määrätty artikkeli, ei ole olemassa monilla kielillä';
 
 DELETE FROM `definition` WHERE `sememe`='eisen' AND `language`='fin';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (

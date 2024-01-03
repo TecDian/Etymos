@@ -40,10 +40,10 @@
 -- Definitionsliste
 -- -----------------------------------------------------------------------------------------------
 
-DELETE FROM `definition` WHERE `sememe`='aa_0' AND `language`='ron';
+DELETE FROM `definition` WHERE `sememe`='aa~fluss' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'aa_0', -- $deu[0] = 'Aa'
-    'ron',  -- $ron[0] = 'Aa'
+    'aa~fluss', -- $deu[0] = 'Aa'
+    'ron',      -- $ron[0] = 'Aa'
     'râu situat în partea de nord a Franței în regiunea Hauts-de-France'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'râu situat în partea de nord a Franței în regiunea Hauts-de-France';
@@ -55,6 +55,14 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'element chimic Ac'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic Ac';
+
+DELETE FROM `definition` WHERE `sememe`='altendorf' AND `language`='ron';
+INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
+    'altendorf', -- $deu[0] = 'Altendorf'
+    'ron',       -- $ron[0] = 'Bătrâna'
+    'sat în România în Transilvania'
+) ON DUPLICATE KEY UPDATE `text` = 
+    'sat în România în Transilvania';
 
 DELETE FROM `definition` WHERE `sememe`='astat' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
@@ -144,14 +152,6 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitala României';
 
-DELETE FROM `definition` WHERE `sememe`='bătrâna' AND `language`='ron';
-INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'bătrâna', -- $deu[0] = 'Bătrâna'
-    'ron',     -- $ron[0] = 'Bătrâna'
-    'sat în România în Transilvania'
-) ON DUPLICATE KEY UPDATE `text` = 
-    'sat în România în Transilvania';
-
 DELETE FROM `definition` WHERE `sememe`='calcium' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
     'calcium', -- $deu[0] = 'Calcium'
@@ -208,10 +208,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic F';
 
-DELETE FROM `definition` WHERE `sememe`='futter_1' AND `language`='ron';
+DELETE FROM `definition` WHERE `sememe`='futter~stoff' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'futter_1', -- $deu[0] = 'Futter'
-    'ron',      -- $ron[0] = 'căptușeală'
+    'futter~stoff', -- $deu[0] = 'Futter'
+    'ron',          -- $ron[0] = 'căptușeală'
     'material textil sau material similar care se aplică în interiorul obiectelor de îmbrăcăminte sau de genți și altele asemenea'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'material textil sau material similar care se aplică în interiorul obiectelor de îmbrăcăminte sau de genți și altele asemenea';
@@ -272,10 +272,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'element chimic Li';
 
-DELETE FROM `definition` WHERE `sememe`='luxemburg_1' AND `language`='ron';
+DELETE FROM `definition` WHERE `sememe`='luxemburg~stadt' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'luxemburg_1', -- $deu[0] = 'Luxemburg'
-    'ron',         -- $ron[0] = ''
+    'luxemburg~stadt', -- $deu[0] = 'Luxemburg'
+    'ron',             -- $ron[0] = ''
     'capitala Luxemburgului'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitala Luxemburgului';
@@ -344,10 +344,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitala Letoniei';
 
-DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='ron';
+DELETE FROM `definition` WHERE `sememe`='rom~stadt' AND `language`='ron';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'rom_0', -- $deu[0] = 'Rom'
-    'ron',   -- $ron[0] = 'Roma'
+    'rom~stadt', -- $deu[0] = 'Rom'
+    'ron',       -- $ron[0] = 'Roma'
     'capitala Italiei'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'capitala Italiei';

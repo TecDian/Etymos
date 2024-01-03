@@ -56,10 +56,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
 
-DELETE FROM `definition` WHERE `sememe`='arkansas_1' AND `language`='isl';
+DELETE FROM `definition` WHERE `sememe`='arkansas~staat' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'arkansas_1', -- $deu[1] = 'Arkansas'
-    'isl',        -- $isl[0] = ''
+    'arkansas~staat', -- $deu[1] = 'Arkansas'
+    'isl',            -- $isl[0] = ''
     'fylki Ameríku'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
@@ -136,10 +136,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'frumefni Co';
 
-DELETE FROM `definition` WHERE `sememe`='colorado_1' AND `language`='isl';
+DELETE FROM `definition` WHERE `sememe`='colorado~staat' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'colorado_1', -- $deu[1] = 'Colorado'
-    'isl',        -- $isl[0] = ''
+    'colorado~staat', -- $deu[1] = 'Colorado'
+    'isl',            -- $isl[0] = ''
     'fylki Ameríku'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
@@ -152,10 +152,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
 
-DELETE FROM `definition` WHERE `sememe`='delaware_1' AND `language`='isl';
+DELETE FROM `definition` WHERE `sememe`='delaware~staat' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'delaware_1', -- $deu[1] = 'Delaware'
-    'isl',        -- $isl[0] = ''
+    'delaware~staat', -- $deu[1] = 'Delaware'
+    'isl',            -- $isl[0] = ''
     'fylki Ameríku'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
@@ -328,18 +328,18 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
 
-DELETE FROM `definition` WHERE `sememe`='mississippi_1' AND `language`='isl';
+DELETE FROM `definition` WHERE `sememe`='mississippi~staat' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'mississippi_1', -- $deu[1] = 'Mississippi'
-    'isl',           -- $isl[0] = ''
+    'mississippi~staat', -- $deu[1] = 'Mississippi'
+    'isl',               -- $isl[0] = ''
     'fylki Ameríku'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
 
-DELETE FROM `definition` WHERE `sememe`='missouri_1' AND `language`='isl';
+DELETE FROM `definition` WHERE `sememe`='missouri~staat' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'missouri_1', -- $deu[1] = 'Missouri'
-    'isl',        -- $isl[0] = ''
+    'missouri~staat', -- $deu[1] = 'Missouri'
+    'isl',            -- $isl[0] = ''
     'fylki Ameríku'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
@@ -432,10 +432,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
 
-DELETE FROM `definition` WHERE `sememe`='ohio_1' AND `language`='isl';
+DELETE FROM `definition` WHERE `sememe`='ohio~staat' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'ohio_1', -- $deu[1] = 'Ohio'
-    'isl',    -- $isl[0] = ''
+    'ohio~staat', -- $deu[1] = 'Ohio'
+    'isl',        -- $isl[0] = ''
     'fylki Ameríku'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';
@@ -512,10 +512,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'frumefni Ts, eðalgas';
 
-DELETE FROM `definition` WHERE `sememe`='tennessee_1' AND `language`='isl';
+DELETE FROM `definition` WHERE `sememe`='tennessee~staat' AND `language`='isl';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'tennessee_1', -- $deu[1] = 'Tennessee'
-    'isl',         -- $isl[0] = ''
+    'tennessee~staat', -- $deu[1] = 'Tennessee'
+    'isl',             -- $isl[0] = ''
     'fylki Ameríku'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'fylki Ameríku';

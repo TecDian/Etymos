@@ -248,10 +248,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'chemický prvek Li';
 
-DELETE FROM `definition` WHERE `sememe`='luxemburg_1' AND `language`='ces';
+DELETE FROM `definition` WHERE `sememe`='luxemburg~stadt' AND `language`='ces';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'luxemburg_1', -- $deu[0] = 'Luxemburg'
-    'ces',         -- $ces[0] = 'Lucemburk'
+    'luxemburg~stadt', -- $deu[0] = 'Luxemburg'
+    'ces',             -- $ces[0] = 'Lucemburk'
     'hlavní město Lucemburska'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hlavní město Lucemburska';
@@ -320,10 +320,10 @@ INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hlavní město Lotyšska';
 
-DELETE FROM `definition` WHERE `sememe`='rom_0' AND `language`='ces';
+DELETE FROM `definition` WHERE `sememe`='rom~stadt' AND `language`='ces';
 INSERT INTO `definition` (`sememe`,`language`,`text`) VALUES (
-    'rom_0', -- $deu[0] = 'Rom'
-    'ces',   -- $ces[0] = 'Řím'
+    'rom~stadt', -- $deu[0] = 'Rom'
+    'ces',       -- $ces[0] = 'Řím'
     'hlavní město Itálie'
 ) ON DUPLICATE KEY UPDATE `text` = 
     'hlavní město Itálie';
